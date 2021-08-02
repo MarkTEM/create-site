@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     justify-content: space-between;
     padding: 15px 20px;
     border-radius: 12px;
-    background: #333;
+    background: linear-gradient(153.22deg, #2e2e2e 51.74%, #202022 134.15%);
 }
 .qs__section2 {
     display: flex;
@@ -73,21 +73,11 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     background: rgb(44, 44, 44);
 }
 .item2 {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin: 10px;
     border-radius: 4px;
     background: #2a9985;
-}
-@media only screen and (max-width: 480px) {
-    .item {
-        width: 15px;
-        height: 15px;
-    }
-    .item2 {
-        width: 15px;
-        height: 15px;
-    }
 }
 
 .txt__qs {
