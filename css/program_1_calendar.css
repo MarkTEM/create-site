@@ -81,8 +81,8 @@ body.dark .select {
     transform: scale(1.02);
 }
 .select h4 {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
 }
 .select p {
     margin-top: 0px;
@@ -116,6 +116,7 @@ body.dark .select:hover {
     }
     .select h4 {
         font-size: 14px;
+        font-weight: 500;
         padding-bottom: 0px;
     }
     .select p {
@@ -160,6 +161,30 @@ body.dark .select:hover {
     justify-content: flex-start;
     padding-top: 15%;
     padding-bottom: 60px;
+}
+@media only screen and (max-width: 420px) {
+    .hint {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 20%;
+        padding-bottom: 60px;
+    }
+}
+@media only screen and (min-width: 420px) {
+    .hint {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 10%;
+        padding-bottom: 60px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .hint {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 5%;
+        padding-bottom: 60px;
+    }
 }
 
 .hint__line {
