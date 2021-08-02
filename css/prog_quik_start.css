@@ -57,7 +57,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 15px 20px;
 }
 .qs__section3 {
     display: flex;
@@ -77,8 +77,19 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     height: 20px;
     margin: 10px;
     border-radius: 4px;
-    background: rgb(34, 194, 34);
+    background: #2a9985;
 }
+@media only screen and (max-width: 480px) {
+    .item {
+        width: 15px;
+        height: 15px;
+    }
+    .item2 {
+        width: 15px;
+        height: 15px;
+    }
+}
+
 .txt__qs {
     color: #fff;
     font-size: 18px;
@@ -99,7 +110,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 .txt__qs2 {
     color: #fff;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .btn__start {
     text-decoration: none;

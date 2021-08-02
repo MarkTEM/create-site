@@ -49,10 +49,9 @@ body.dark .line2 {background: #202227;}
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    /* background: linear-gradient(153.22deg, #3D3D3D 51.74%, #1C1C1E 134.15%); */
-    background: conic-gradient(from 202.32deg at 81.1% 50.77%, #323234 0deg, #262628 360deg);
+    background: linear-gradient(153.22deg, #2e2e2e 51.74%, #151516 134.15%);
     color: #EAEAEA;
-    box-shadow: 2px 2px 2px #0c0c0c;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
     padding: 1.4em 1.2em;
     border-radius: 1em;
     cursor: pointer;
@@ -172,16 +171,20 @@ body.dark .line2 {background: #202227;}
 .help{
     text-decoration: none;
     cursor: pointer;
-    font-size: 14px;
-    background: #32BCA3;
+    font-size: 16px;
     border-radius: 8px;
     color: #ffffff;
     font-size: 16px;
     padding: 0.7em 1.5em;
     border: 0px solid #D1D2D6;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(140.21deg, #32BC59 14.07%, #2196F3 148.1%);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
     margin-top: 20px;
+    
 }
+.help:hover { 
+    background: linear-gradient(143.93deg, #32BC59 12%, #2196F3 109.39%);
+    transition: 0.8s; transform: scale(1.00); }
 .text_help {
     font-size: 14px;
     color: #8a8a8a;
