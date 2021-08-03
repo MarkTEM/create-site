@@ -30,8 +30,7 @@ body.dark  {
 }
 @media only screen and (max-width: 420px) {
     .box__color {
-        padding: 10px;
-        border-radius: 8px;
+        padding: 12px;
     }
 }
 .box {
@@ -88,6 +87,9 @@ body.dark  {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
+}
+.upr2 {
+    background-image: url(../upr/upr2.jpg);
 }
 /* -------------2------------------ */
 
@@ -151,7 +153,7 @@ margin-bottom: 10px;
 }
 @media only screen and (max-width: 620px) {
     .select {
-        grid-gap: 10px;
+        grid-gap: 6px;
     }
 }
 .item__cont {
@@ -184,7 +186,7 @@ margin-bottom: 10px;
 }
 @media only screen and (max-width: 620px) {
     .card2 {
-        padding: 10px;
+        padding: 12px;
     }
 }
 

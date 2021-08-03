@@ -41,16 +41,13 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 /*body::-webkit-scrollbar-button {background-color: #858585; height: 10px;}*/
 /*-------------------------------------------*/
 
-@media only screen and (max-width: 420px) {
-    h3 {
-        font-size: 14px;
-    }
-}
-@media only screen and (min-width: 420px) {
-    h3 {
-        font-size: 18px;
-    }
-}
+
+@media only screen and (max-width: 420px) { h3 { font-size: 16px; } }
+@media only screen and (min-width: 420px) { h3 { font-size: 18px; } }
+@media only screen and (max-width: 420px) { h4 { font-size: 14px; } }
+@media only screen and (min-width: 420px) { h4 { font-size: 16px; } }
+@media only screen and (max-width: 420px) { h5 { font-size: 12px; } }
+@media only screen and (min-width: 420px) { h5 { font-size: 14px; } }
 
 
 
@@ -61,7 +58,8 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     font-weight: 500;
     font-size: 16px;
 }
-
+.fit { font-weight: 600;}
+.skinny { font-weight: 500;}
 .text_prev    { margin-left: 10px; }
 .text__weight { font-weight: 400; }
 
