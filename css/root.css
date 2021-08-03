@@ -210,7 +210,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 }
 .head__text {
 	color: #fff;
-	margin-left: 30px;
+	
 	font-size: 24px;
 	font-weight: 500;
 	transition: 0.3s;
@@ -218,7 +218,6 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 @media only screen and (max-width: 600px) {
     .head__text {
 		font-size: 18px;
-		margin-left: 15px;
 	}
 }
 .icon__back {
@@ -232,6 +231,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 2.6em 2.4em;
+    margin-right: 30px;
 	transition: 0.2s;
 }
 .icon__back:hover {
@@ -246,6 +246,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 		height: 2.4em;
 		width: 2.4em;
 		background-size: 2.4em 2.2em;
+        margin-right: 15px;
 	}
 }
 .icon__menu {
