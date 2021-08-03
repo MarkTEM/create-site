@@ -42,13 +42,13 @@ body.dark  {
         grid-template-rows: 1fr;
         grid-gap: 10px 40px;
     }
-    .item-sel:nth-child(2){
+    .item__text {
         grid-row: 2;
     }
-    .item-sel:nth-child(4){
+    .item:nth-child(4){
         grid-row: 3;
     }
-    .item-sel:nth-child(5){
+    .item:nth-child(5){
         grid-row: 4;
     }
 }

@@ -306,3 +306,14 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 }
 .txt__akk { font-size: 14px; font-weight: 400; }
 
+
+
+
+.btn_teg {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0.4em 1.2em;
+    border-radius: 2em;
+    cursor: pointer;
+}
