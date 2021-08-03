@@ -4,7 +4,6 @@ body {
     /* background: #FCFCFC; */
     /* background: #101010; */
     background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
-    color: #333; /*Цвет текста*/
     min-height: 100vh;
 }
 body.dark  {
@@ -18,18 +17,27 @@ body.dark  {
     margin-left: 20px;
     color: #eeeeee;
     font-weight: 400;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 420px) {
+    .upr {
+        margin-top: 20%;
+        margin-left: 12px;
+    }
 }
 /* --------------Box--------------- */
 
 .box__color {
     background: #fff;
     box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
-    border-radius: 12px;
+    border-radius: 18px;
     padding: 20px;
     margin: 20px 0;
+    transition: 0.3s;
 }
 @media only screen and (max-width: 420px) {
     .box__color {
+        border-radius: 12px;
         padding: 12px;
     }
 }
@@ -120,7 +128,7 @@ margin-bottom: 10px;
     padding: 10px 0;
 }
 .hint__element {
-    background: #ff4851af;
+    background: #ff636b;
     border-radius: 4px;
 }
 .hint__line {
@@ -130,6 +138,7 @@ margin-bottom: 10px;
     /* background: #ff4851af; */
     border-radius: 4px;
 }
+@media only screen and (max-width: 420px) { .hint__line { width: 2px; } }
 .items__bar {
     margin-left: 10px;
     display: flex;
@@ -199,13 +208,57 @@ margin-bottom: 10px;
     margin: 0 0 0 5px;
 }
 @media only screen and (max-width: 420px) {
-    .teg {
+    .teg2 {
         margin-top: 5px;
     }
 }
 
 .teg {
-    color: #ff4851af;
-    border: 2px solid #ff4851af;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #ff636b;
+    background: #ff636b;
+}
+.teg2 {
+    font-weight: 500;
+    color: #595959;
+    border: 1px solid #595959;
     background: transparent;
+}
+
+
+.ok {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text__ok {
+    color: #C4C4C4;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.icon__down {
+    background-image: url(../ico/down.svg);
+    height: 2.0em;
+    width: 2.0em;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.5em 1.5em;
+}
+.btn__ok {
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 2em;
+    margin: 10px 5px;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    background: #00B2FF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
 }
