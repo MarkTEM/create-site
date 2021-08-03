@@ -41,6 +41,17 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 /*body::-webkit-scrollbar-button {background-color: #858585; height: 10px;}*/
 /*-------------------------------------------*/
 
+@media only screen and (max-width: 420px) {
+    h3 {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 420px) {
+    h3 {
+        font-size: 18px;
+    }
+}
+
 
 
 /*---------------TEXT WEIGHT----------------*/
@@ -313,7 +324,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
     text-decoration: none;
     font-size: 12px;
     font-weight: 600;
-    padding: 0.4em 1.2em;
+    padding: 0.3em 0.8em;
     border-radius: 2em;
     cursor: pointer;
 }

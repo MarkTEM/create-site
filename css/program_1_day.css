@@ -28,7 +28,12 @@ body.dark  {
     padding: 20px;
     margin: 20px 0;
 }
-
+@media only screen and (max-width: 420px) {
+    .box__color {
+        padding: 10px;
+        border-radius: 8px;
+    }
+}
 .box {
     display: grid;
     grid-template-columns: 400px 1fr;
@@ -95,6 +100,14 @@ body.dark  {
 .item__text {
 margin-bottom: 10px;
 }
+.text__p {
+    font-size: 16px;
+}
+@media only screen and (max-width: 420px) {
+    .text__p {
+        font-size: 14px;
+    }
+}
 .margin__top10 {
     padding-top: 10px;
 }
@@ -105,7 +118,6 @@ margin-bottom: 10px;
     padding: 10px 0;
 }
 .hint__element {
-    margin: 5px 0;
     background: #ff4851af;
     border-radius: 4px;
 }
@@ -123,6 +135,12 @@ margin-bottom: 10px;
     align-items: center;
     
 }
+@media only screen and (max-width: 420px) {
+    .ch1 {
+        flex: 100%;
+        margin-bottom: 5px;
+    }
+}
 /* ----items----- */
 .select {
     display: grid;
@@ -131,7 +149,11 @@ margin-bottom: 10px;
     grid-template-columns: repeat(3,1fr);
     margin-top: 10px;
 }
-
+@media only screen and (max-width: 620px) {
+    .select {
+        grid-gap: 10px;
+    }
+}
 .item__cont {
     display: grid;
     grid-gap: 20px;
@@ -139,7 +161,7 @@ margin-bottom: 10px;
     grid-template-columns: repeat(1,1fr);
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 320px) {
     .select {
         grid-template-columns: repeat(1,1fr);;
     }
@@ -160,7 +182,11 @@ margin-bottom: 10px;
     border-radius: 8px;
     padding: 20px;
 }
-
+@media only screen and (max-width: 620px) {
+    .card2 {
+        padding: 10px;
+    }
+}
 
 
 
@@ -168,7 +194,12 @@ margin-bottom: 10px;
 
 
 .teg, .teg2 {
-    margin: 0 5px;
+    margin: 0 0 0 5px;
+}
+@media only screen and (max-width: 420px) {
+    .teg {
+        margin-top: 5px;
+    }
 }
 
 .teg {
