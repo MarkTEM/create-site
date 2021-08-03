@@ -107,6 +107,7 @@ margin-bottom: 10px;
 .hint__element {
     margin: 5px 0;
     background: #ff4851af;
+    border-radius: 4px;
 }
 .hint__line {
     display: flex;
