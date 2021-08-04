@@ -18,4 +18,4 @@ function preloader() {
 
 preloader();
 
-setInterval(() => preloader(), 5000);
+// setInterval(() => preloader(), 5000);
