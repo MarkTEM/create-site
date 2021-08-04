@@ -1,0 +1,231 @@
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color .3s; /*Плавный цвет фона*/
+    /* background: #FCFCFC; */
+    /* background: #101010; */
+    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    min-height: 100vh;
+    color: #272727;
+}
+body.dark  {
+    background: #0F0F10; /*Цвет фона*/
+}
+
+
+
+/* --------------Box--------------- */
+
+.box__color {
+    background: #fff;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+    border-radius: 18px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 420px) {
+    .box__color {
+        border-radius: 12px;
+        padding: 12px;
+    }
+}
+.box {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 300px 1fr;
+    grid-gap: 0px 15px;
+}
+@media only screen and (max-width: 720px) {
+    .box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px 40px;
+    }
+    .item__text {
+        grid-row: 2;
+    }
+}
+@media only screen and (min-width: 720px) {
+    .box {
+        grid-template-columns: 300px 1fr;
+        grid-auto-rows: 1fr;
+        grid-gap: 0px 15px;
+    }
+}
+@media only screen and (min-width: 830px) {
+    .box {
+        grid-template-columns: 300px 1fr;
+        grid-auto-rows: 350px 1fr;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .box {
+        grid-template-columns: 350px 1fr;
+        grid-template-rows: 350px 1fr;
+        grid-gap: 0px 15px;
+    }
+}
+/* -------------1------------------ */
+
+.photo {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    background: rgb(240, 240, 240);
+    background-image: url(../upr/upr1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 102%;
+}
+.upr2 {
+    background-image: url(../upr/upr2.jpg);
+}
+/* -------------2------------------ */
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+/* ----text----- */
+.item__text {
+    /* margin-bottom: 10px; */
+}
+@media only screen and (max-width: 720px) {
+    .item__text {
+        order: 2;
+    }
+}
+.text__p {
+    font-size: 16px;
+}
+@media only screen and (max-width: 420px) {
+    .text__p {
+        font-size: 14px;
+    }
+}
+.margin__top10 {
+    padding-top: 10px;
+}
+/* ----tag----- */
+.box__tag {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+@media only screen and (max-width: 420px) {
+    .box__tag {
+        order: 2;
+    }
+}
+.hint__element {
+    background: #ff636b;
+    border-radius: 4px;
+}
+.hint__line {
+    display: flex;
+    width: 3px;
+    height: 50%;
+    /* background: #ff4851af; */
+    border-radius: 4px;
+}
+@media only screen and (max-width: 420px) { .hint__line { width: 2px; } }
+.items__bar {
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+@media only screen and (max-width: 420px) {
+    .ch1 {
+        flex: 100%;
+        margin-bottom: 5px;
+    }
+}
+/* ----items----- */
+
+.item-cont2 {
+    padding-bottom: 10px;
+}
+@media only screen and (max-width: 420px) {
+    .item-cont2 {
+        order: 1;
+    }
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    .select {
+        grid-template-columns: repeat(1,1fr);;
+    }
+}
+@media only screen and (min-width: 420px) {
+    .select {
+        grid-template-columns: repeat(3,1fr);;
+    }
+}
+
+
+
+
+.teg, .teg2 {
+    margin: 0 0 0 5px;
+}
+@media only screen and (max-width: 420px) {
+    .teg2 {
+        margin-top: 5px;
+    }
+}
+
+.teg {
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #ff636b;
+    background: #ff636b;
+}
+.teg2 {
+    font-weight: 500;
+    color: #595959;
+    border: 1px solid #595959;
+    background: transparent;
+}
+
+
+.ok {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text__ok {
+    color: #C4C4C4;
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.icon__down {
+    background-image: url(../ico/down.svg);
+    height: 2.0em;
+    width: 2.0em;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.5em 1.5em;
+}
+.btn__ok {
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 2em;
+    margin: 10px 5px;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.8em 1.7em;
+    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+}
