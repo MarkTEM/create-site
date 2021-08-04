@@ -33,6 +33,16 @@ body.dark .line2 {background: #202227;}
 /*------------------------------------------*/
 
 
+@media screen and (max-width: 380px) {
+    .prew {
+        position: fixed;
+        pointer-events: none;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(39, 39, 39, 0) 0%, #000000 100%);  
+    }
+}
 
 /*------------------MENU--------------------*/
 .box {
@@ -153,7 +163,9 @@ body.dark .line2 {background: #202227;}
         background-size: 1.8em 1.8em;
     }
 }
-/*------------------------------------------*/  
+/*------------------------------------------*/ 
+
+
 
 #clock {
     color: #fff;
@@ -167,11 +179,9 @@ body.dark .line2 {background: #202227;}
     transition: 0.3s;
 }
 @media screen and (max-width: 600px) {
-    #clock {font-size: 14px; font-weight: 400; text-align: left; padding-left: 15px;padding-top: 2%;
+    #clock {font-size: 12px; font-weight: 400; text-align: left; padding-left: 15px;padding-top: 2%;
         padding-bottom: 2%;}
 }
-
-
 
 
 
