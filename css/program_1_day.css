@@ -258,7 +258,7 @@ body.dark  {
 .text__ok {
     color: #C4C4C4;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 10px;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
@@ -269,16 +269,16 @@ body.dark  {
     border-radius: 2px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.5em 1.5em;
+    background-size: 1.2em 1.2em;
 }
 .btn__ok {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 2em;
     margin: 10px 5px;
     cursor: pointer;
     color: #fff;
-    padding: 0.8em 1.5em;
-    background: #00B2FF;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    padding: 0.8em 1.7em;
+    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
 }
