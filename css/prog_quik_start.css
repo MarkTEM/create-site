@@ -19,7 +19,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .box {
@@ -42,16 +42,14 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 .qs__section {
     
     
-    
-    
 }
 .box__items {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 20px;
+    padding: 20px 20px;
     border-radius: 12px;
-    background: linear-gradient(153.22deg, #2e2e2e 51.74%, #202022 134.15%);
+    background: linear-gradient(153.22deg, #272727 51.74%, #1d1d1f 134.15%);
 }
 .qs__section2 {
     display: flex;
@@ -82,14 +80,14 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 
 .txt__qs {
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     margin-right: 20px;
 }
 @media only screen and (max-width: 800px) {
     .txt__qs {
         color: #fff;
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 @media only screen and (min-width: 800px) {
@@ -99,7 +97,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 }
 .txt__qs2 {
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 .btn__start {
@@ -107,7 +105,6 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     font-size: 16px;
     color: #fff;
     border-radius: 2em;
-    margin: 10px 5px;
     cursor: pointer;
     font-size: 16px;
     padding: 0.7em 1.5em;
@@ -119,7 +116,6 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     font-size: 16px;
     color: #fff;
     border-radius: 2em;
-    margin: 10px 5px;
     cursor: pointer;
     font-size: 16px;
     padding: 0.7em 1.5em;
