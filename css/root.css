@@ -139,8 +139,8 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 
 .preloader span {
 	display: block;
-	height: 10px;
-	width: 8px;
+	height: 8px;
+	width: 6px;
 	background: #19e3d5;
 	margin: 0 7px;
 	border-radius: 10px;
@@ -169,15 +169,15 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 
 @keyframes upDown {
 	0% {
-		height: 15px;
+		height: 8px;
 		background: #19e3d5;
 	}
 	50% {
-		height: 60px;
+		height: 40px;
 		background: #d33deb;
 	}
 	100% {
-		height: 15px;
+		height: 8px;
 		background: #f00e43;
 	}
 }
@@ -325,5 +325,4 @@ body.dark .text_prev2 { color: #B6B8C9; } */
     font-weight: 600;
     padding: 0.3em 0.8em;
     border-radius: 2em;
-    cursor: pointer;
 }
