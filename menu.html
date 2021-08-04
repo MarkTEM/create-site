@@ -35,7 +35,23 @@
     
 
 
-    <div class="prew wrapper"></div>
+    <div class="wrapper">
+        <div id="clock"></div>
+        <script>
+            window.onload = function(){
+                window.setInterval(function(){
+                    var now = new Date();
+                    var clock = document.getElementById("clock");
+                    clock.innerHTML = now.toLocaleTimeString();
+                }, 1000);
+                };
+        </script>
+    </div>
+
+
+
+
+
 
 
 
@@ -73,10 +89,14 @@
 		
 	</div>
 
+
+    
 <!-------------------------------------------------->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Подключен скрипт js -->
 <script src="js/main.js"></script>
+
+
     
 </body>
 </html>
