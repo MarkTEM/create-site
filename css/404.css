@@ -1,0 +1,99 @@
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color .3s; /*Плавный цвет фона*/
+    /* background: #FCFCFC; */
+    /* background: #101010; */
+    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    min-height: 120vh;
+    color: #272727;
+}
+body.dark  {
+    background: #0F0F10; /*Цвет фона*/
+}
+
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    height: 50px;
+}
+.item h2 {
+    color: #fff;
+    font-weight: 500;
+    
+}
+.item2 h4 {
+    color: rgb(134, 134, 134);
+    font-weight: 400;
+    margin: 0 20px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+}
+.icon__404 {
+	background-image: url(../ico/404.svg);
+	height: 2.6em;
+	width: 2.6em;
+	/* background-color: rgb(255, 255, 255); */
+	box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
+	border-radius: 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.icon__404 {
+    animation-delay: 1s;
+    animation-duration: 0.8s;
+    animation-name: slidein;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-right: 50%;
+      width: 0px;
+      height: 0px;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+}
+
+
+.item {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: slidein2;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+  }
+
+@keyframes slidein2 {
+    from {
+        margin-left: 100%;
+    }
+    
+    to {
+
+    }
+}
+
+
+.btn__category {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 2em;
+    color: #fff;
+    padding: 0.8em 1.7em;
+    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+    margin-left: 20px;
+}
