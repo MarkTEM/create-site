@@ -53,10 +53,12 @@ body.dark .selectcolor4 {
     /* border: 2px solid #eeeeee; */
     padding: 1.4em 1.2em;
     /* background: #2c2e33; */
-    background: linear-gradient(153.22deg, #2e2e2e 51.74%, #202022 134.15%);
+    background: linear-gradient(153.22deg, #292929 51.74%, #1a1a1b 134.15%);
     /* background: #29292c; */
     /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(254, 254, 254, 0.8) 100%); */
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.40));
+    text-shadow: 0px 2px 2px #0d0f11b9;
     cursor: pointer;
 }
 
@@ -74,15 +76,15 @@ body.dark .select {
 
 .select:hover {
     background-color: #00a2ff;
-    background: linear-gradient(170.98deg, #FFAA05 51.54%, #FA00FF 170%);
+    background: linear-gradient(143.93deg, #32BC59 12%, #2196F3 109.39%);
     transition: 0.3s;
 }
 .select:hover {
     transform: scale(1.02);
 }
 .select h4 {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
 }
 .select p {
     margin-top: 0px;
@@ -121,6 +123,7 @@ body.dark .select:hover {
     }
     .select p {
         font-size: 14px;
+        margin-right: 40px;
     }
     
 }
@@ -132,8 +135,8 @@ body.dark .select:hover {
         padding: 1.2em 1.2em;
     }
     .select p {
-        margin-top: 10px;
-        margin-left: 10px; 
+        margin-top: 30px;
+        margin-left: 0px; 
         font-size: 14px;
     }
 }
@@ -198,31 +201,30 @@ body.dark .select:hover {
     margin-left: 15px;
 }
 
-.convas {
-    padding: 0.5em 0.8em;
-    border-radius: 2em;
-    background: #1d1d1d;
-}
 /*------------------------------------------*/
 .icon__404 {
+    position: absolute;
+    right: 15px;
 	background-image: url(../ico/404.svg);
-	height: 2.3em;
-	width: 2.3em;
+	height: 2.2em;
+	width: 2.2em;
 	/* background-color: rgb(255, 255, 255); */
 	box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
 	background-repeat: no-repeat;
 	background-position: center center;
-    background-size: 2.3em 2.3em;
+    background-size: 3.2em 3.2em;
 }
 .icon__done {
+    position: absolute;
+    right: 15px;
 	background-image: url(../ico/done.svg);
-	height: 2.3em;
-	width: 2.3em;
+	height: 2.2em;
+	width: 2.2em;
+    border-radius: 2em;
 	/* background-color: rgb(255, 255, 255); */
-	box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
 	background-repeat: no-repeat;
 	background-position: center center;
-    background-size: 2.3em 2.3em;
+    background-size: 3.2em 3.2em;
 }
 /*------------------------------------------*/
 
