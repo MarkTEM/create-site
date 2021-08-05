@@ -161,7 +161,7 @@ body.dark .select:hover {
     display: flex;
     justify-content: flex-start;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 @media only screen and (max-width: 420px) {
     .hint {
@@ -230,32 +230,33 @@ body.dark .select:hover {
 
 /*------------------------------------------*/
 .card__pin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
     /* margin-top: 60%; */
     margin-top: 60px;
     /* border: 1px dashed #3A3A3E; */
-    background: linear-gradient(153.22deg, #252525 51.74%, #151516 134.15%);
+    /* background: linear-gradient(153.22deg, #252525 51.74%, #151516 134.15%); */
     border-radius: 12px;
 }
 .card__pin p {
     color: rgb(201, 201, 201);
-    font-size: 14px;
+    font-size: 12px;
 }
 .text__pin{
     color: #fff;
-    font-size: 18px;
-    padding-bottom: 10px;
+    font-size: 24px;
+    padding-top: 10px;
 }
-@media only screen and (max-width: 420px) {
-    .card__pin {
-        text-align: left;
-        align-items: flex-start;
-        padding: 20px; 
-    }
+
+
+
+
+.pin__calendar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.pin__calendar h3 {
+    color: #fff;
+    font-weight: 400;
 }
 /*------------------------------------------*/
 
