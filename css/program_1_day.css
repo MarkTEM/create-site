@@ -282,3 +282,64 @@ body.dark  {
     background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
 }
+
+
+/*------------------------------------------*/
+.card__pin {
+    /* margin-top: 60%; */
+    margin-top: 60px;
+    /* border: 1px dashed #3A3A3E; */
+    /* background: linear-gradient(153.22deg, #252525 51.74%, #151516 134.15%); */
+    border-radius: 12px;
+}
+.card__pin p {
+    color: rgb(201, 201, 201);
+    font-size: 12px;
+}
+.text__pin{
+    color: #fff;
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+
+.hint {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+@media only screen and (max-width: 420px) {
+    .hint {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media only screen and (min-width: 420px) {
+    .hint {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .hint {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.hint__line {
+    width: 3px;
+    height: 100%;
+    background: #FFAA05;
+    border-radius: 4px;
+}
+
+.hint__text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}
