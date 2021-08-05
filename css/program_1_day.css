@@ -307,8 +307,26 @@ body.dark  {
 }
 .text__pin{
     color: #fff;
+    height: 40px;
     font-size: 24px;
     padding-top: 10px;
+}
+.text__pin {
+    animation-delay: 1s;
+    animation-duration: 0.8s;
+    animation-name: text__pin2;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+  }
+
+@keyframes text__pin2 {
+    from {
+        font-size: 12px;
+        opacity: 0%;
+    }
+    
+    to {
+    }
 }
 
 
@@ -351,4 +369,10 @@ body.dark  {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 15px;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 420px) {
+    .pin__text {
+        margin-left: 12px;
+    }
 }
