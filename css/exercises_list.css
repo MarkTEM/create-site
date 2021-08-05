@@ -4,7 +4,7 @@ body {
     /* background: #FCFCFC; */
     /* background: #101010; */
     background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
-    min-height: 100vh;
+    min-height: 150vh;
     color: #272727;
 }
 body.dark  {
@@ -82,13 +82,18 @@ body.dark  {
     padding-bottom: 100%;
     width: 100%;
     background: rgb(240, 240, 240);
-    background-image: url(../upr/upr1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 102%;
 }
+.upr1 {
+    background-image: url(../upr/upr1.jpg);
+}
 .upr2 {
     background-image: url(../upr/upr2.jpg);
+}
+.upr3 {
+    background-image: url(../upr/upr3.jpg);
 }
 /* -------------2------------------ */
 
@@ -200,41 +205,4 @@ body.dark  {
     color: #595959;
     border: 1px solid #595959;
     background: transparent;
-}
-
-
-.ok {
-    margin-top: 60px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.text__ok {
-    color: #C4C4C4;
-    font-weight: 300;
-    font-size: 10px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-.icon__down {
-    background-image: url(../ico/down.svg);
-    height: 2.0em;
-    width: 2.0em;
-    border-radius: 2px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 1.2em 1.2em;
-}
-.btn__ok {
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 2em;
-    margin: 10px 5px;
-    cursor: pointer;
-    color: #fff;
-    padding: 0.8em 1.7em;
-    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
 }
