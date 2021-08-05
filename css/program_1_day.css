@@ -14,18 +14,27 @@ body.dark  {
 
 
 .upr {
-    margin-top: 10%;
-    margin-left: 20px;
     color: #eeeeee;
     font-weight: 400;
-    transition: 0.3s;
+    /* transition: 0.3s; */
+}
+.m_top_60px {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.m_top_20px {
+    margin-top: 20px;
+    margin-left: 20px;
 }
 @media only screen and (max-width: 420px) {
-    .upr {
-        margin-top: 20%;
+    .m_top_60px {
+        margin-left: 12px;
+    }
+    .m_top_20px {
         margin-left: 12px;
     }
 }
+
 /* --------------Box--------------- */
 
 .box__color {
@@ -328,14 +337,14 @@ body.dark  {
     }
 }
 
-.hint__line {
+.pin__line {
     width: 3px;
     height: 100%;
     background: #FFAA05;
     border-radius: 4px;
 }
 
-.hint__text {
+.pin__text {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
