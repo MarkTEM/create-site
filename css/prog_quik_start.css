@@ -3,7 +3,7 @@ body {
     transition: background-color .3s; /*Плавный цвет фона*/
     background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
     /* color: #333; */
-    min-height: 100vh;
+    min-height: 120vh;
 }
 body.dark  {
     background: #0F0F10; /*Цвет фона*/
