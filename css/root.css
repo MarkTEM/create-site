@@ -125,7 +125,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 }
 /*---------------PLEROADER------------------*/
 .preloader {
-	position: absolute;
+	position: fixed;
     background: #101010;
 	width: 100%;
 	height: 100%;
