@@ -56,8 +56,6 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 12px;
-    background: linear-gradient(153.22deg, #272727 51.74%, #1d1d1f 134.15%);
 }
 .line {
     height: 2px;
