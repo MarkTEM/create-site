@@ -36,7 +36,7 @@ body.dark  {
     cursor: pointer;
 }
 .item h4{
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 14px;
 }
 .item:hover {
@@ -130,5 +130,17 @@ body.dark  {
     background-position: center center;
     background-size: 1.0em 1.0em;
 }
+.image__programs {
+    display: block;
+    height: 3em;
+    width: 3em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 3em 3em;
+}
 .ico__right {background-image: url(../ico/right.svg);}
+.ico__gr {background-image: url(../upr/scale_1200.jpg);}
+
 
