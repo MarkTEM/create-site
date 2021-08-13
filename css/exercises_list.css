@@ -4,7 +4,7 @@ body {
     /* background: #FCFCFC; */
     /* background: #101010; */
     background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
-    min-height: 150vh;
+    min-height: 200vh;
     color: #272727;
 }
 body.dark  {
