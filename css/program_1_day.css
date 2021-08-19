@@ -106,8 +106,17 @@ body.dark  {
     background-position: center center;
     background-size: 100%;
 }
+.upr1 {
+    background-image: url(../upr/upr1.jpg);
+}
 .upr2 {
+    background-image: url(../upr/upr4.jpg);
+}
+.upr3 {
     background-image: url(../upr/upr2.jpg);
+}
+.upr4 {
+    background-image: url(../upr/upr5.jpeg);
 }
 /* -------------2------------------ */
 
