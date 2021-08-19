@@ -239,7 +239,11 @@ body.dark  {
 
 
 
-
+summary {
+    padding: 5px;
+    border-bottom: 1px solid #1B1B1B;
+    cursor: pointer;
+}
 
 
 .teg, .teg2 {
@@ -247,6 +251,11 @@ body.dark  {
 }
 @media only screen and (max-width: 420px) {
     .teg2 {
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .teg {
         margin-top: 5px;
     }
 }
@@ -261,6 +270,7 @@ body.dark  {
     font-weight: 500;
     color: #595959;
     border: 1px solid #595959;
+    margin-top: 4px;
     background: transparent;
 }
 
