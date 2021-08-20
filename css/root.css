@@ -24,12 +24,13 @@ a {
     --grey: #777;
     --light-color: rgb(228, 13, 13);
     --btn-color: rgb(0, 140, 255);
-    --fon-light: #EFEFEF;
-    --text-light: #b7b8bb;
+    --fon-light: #fff;
+    --text-light: #fff;
+    --text-dark: #0F0F10;
     --fon-dark: #0F0F10;
-    --text-dark: #b7b8bb;
     --card-dark: #191b1d;
     --line-dark: #26282B;
+    --box_light: #fff;
 }
 /*------------------------------------------*/
 
@@ -54,14 +55,22 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 /*---------------TEXT WEIGHT----------------*/
 
 .text_prev, .text_prev2 {
-    color: #e4e4e4;
+    /* color: var(--text-light); */
     font-weight: 500;
     font-size: 16px;
+}
+body.dark .text_prev, .text_prev2 {
+    /* color: var(--text-dark); font-weight: 600; */
 }
 .fit { font-weight: 600;}
 .skinny { font-weight: 500;}
 .text_prev    { margin-left: 10px; }
 .text__weight { font-weight: 400; }
+
+.text__color {color: var(--text-light);}
+body.dark .text__color {
+    color: var(--text-dark);
+}
 
 /*^^^^^^^^^^^^^^^ TEXT DARK ^^^^^^^^^^^^^^^^*/
 /* body.dark .text__weight { font-weight: 500; }
@@ -91,15 +100,15 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 @media only screen and (min-width: 600px) {
     .wrapper {
         max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 @media only screen and (min-width: 768px) {
     .wrapper {
         max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -209,12 +218,12 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 
 }
 .head__text {
-	color: #fff;
-	
+	/* color: var(--text-light); */
 	font-size: 24px;
 	font-weight: 500;
 	transition: 0.3s;
 }
+/* body.dark .head__text {color: var(--text-dark);} */
 @media only screen and (max-width: 600px) {
     .head__text {
 		font-size: 18px;
@@ -226,7 +235,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 	height: 2.6em;
 	width: 2.6em;
 	background-color: rgb(255, 255, 255);
-	box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 24px;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -304,10 +313,9 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 }
 .btn__akk {
     text-decoration: none;
-    
     color: #fff;
     border-radius: 2em;
-    margin: 10px 5px;
+    /* margin: 10px 5px; */
     cursor: pointer;
     font-size: 14px;
     padding: 0.7em 1.5em;
