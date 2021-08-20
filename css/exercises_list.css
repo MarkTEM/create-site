@@ -10,20 +10,21 @@ body {
 body.dark  {
     background: #0F0F10; /*Цвет фона*/
 }
-
+/* ----------------pin----------------- */
 .pin {
     padding-left: 12px;
     color: #fff;
     font-weight: 500;
     margin-top: 10%;
 }
-@media only screen and (max-width: 720px) {
-    .pin {
-        margin-top: 20%;
-    }
-}
+@media only screen and (max-width: 720px) { .pin { margin-top: 20%; } }
+/* ------------------------------------ */
 
 
+
+
+
+/* ------------------------------------ */
 .slide__box {
     position: absolute;
     right: 33px;
@@ -72,17 +73,22 @@ body.dark  {
 	background-size: 1em 1em;
 	transition: 0.2s;
 }
-
+/* ---------------line----------------- */
 .line {
     width: 100%;
     background: #1a1a1a;
     height: 2px;
 }
+/* ------------------------------------ */
 
-/* --------------Box--------------- */
+
+
+
+
+/* ----------------Box----------------- */
 
 .box__color {
-    background: #fff;
+    background: var(--box_light);
     box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
     border-radius: 18px;
     padding: 20px;

@@ -4,17 +4,17 @@ body {
     /* background: #FCFCFC; */
     /* background: #101010; */
     background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
-    min-height: 100vh;
+    min-height: 150vh;
     color: #272727;
 }
 body.dark  {
-    background: #0F0F10; /*Цвет фона*/
+    background: var(--fon-light); /*Цвет фона*/
 }
 
 
 
 .upr {
-    color: #eeeeee;
+    color: var(--text-light);
     font-weight: 400;
     /* transition: 0.3s; */
 }
@@ -38,8 +38,8 @@ body.dark  {
 /* --------------Box--------------- */
 
 .box__color {
-    background: #fff;
-    box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
+    background: var(--box_light);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
     padding: 20px;
     margin: 20px 0;
@@ -225,7 +225,7 @@ body.dark  {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background: #fff;
+    /* background: #fff; */
     /* box-shadow: 0px 0px 4px rgb(0 0 0 / 10%); */
     border: 2px solid #eeeeee;
     border-radius: 8px;
@@ -239,11 +239,11 @@ body.dark  {
 
 
 
-summary {
+/* summary {
     padding: 5px;
     border-bottom: 1px solid #1B1B1B;
     cursor: pointer;
-}
+} */
 
 
 .teg, .teg2 {
@@ -286,9 +286,10 @@ summary {
 .text__ok {
     color: #C4C4C4;
     font-weight: 300;
-    font-size: 10px;
-    letter-spacing: 2px;
+    font-size: 12px;
+    letter-spacing: 1px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .icon__down {
     background-image: url(../ico/down.svg);
@@ -314,10 +315,8 @@ summary {
 
 /*------------------------------------------*/
 .card__pin {
-    /* margin-top: 60%; */
     margin-top: 40px;
     /* border: 1px dashed #3A3A3E; */
-    /* background: linear-gradient(153.22deg, #252525 51.74%, #151516 134.15%); */
     border-radius: 12px;
 }
 .card__pin p {
@@ -325,12 +324,12 @@ summary {
     font-size: 12px;
 }
 .text__pin{
-    color: #fff;
+    /* color: var(--text-light); */
     height: 40px;
-    font-size: 24px;
+    /* font-size: 24px; */
     padding-top: 10px;
 }
-
+/*------------------------------------------*/
 
 .hint {
     display: flex;
@@ -356,7 +355,7 @@ summary {
         justify-content: flex-start;
     }
 }
-
+/*------------------------------------------*/
 .pin__line {
     width: 3px;
     height: 100%;
@@ -365,16 +364,13 @@ summary {
 }
 
 .pin__text {
-    color: #fff;
+    /* color: var(--text-light); */
     font-size: 14px;
     font-weight: 400;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 15px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
-@media only screen and (max-width: 420px) {
-    .pin__text {
-        margin-left: 12px;
-    }
-}
+@media only screen and (max-width: 420px) { .pin__text { margin-left: 12px; } }
+/*------------------------------------------*/
