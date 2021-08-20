@@ -5,12 +5,18 @@ body {
     /* background: #101010; */
     background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
     color: #333; /*Цвет текста*/
-    min-height: 150vh;
+    min-height: 200vh;
 }
 body.dark  {
-    background: #0F0F10; /*Цвет фона*/
+    color: rgb(31, 31, 31); /*Цвет текста*/
+    background: #ffffff; /*Цвет фона*/
 }
 
+
+.upr {
+    padding-top: 10%;
+    font-weight: 500;
+}
 /*-------------------------------------------*/
 /*-------------------------------------------*/
 /*------------------line--------------------*/
@@ -44,6 +50,9 @@ body.dark .line2 {background: #202227;}
         bottom: 0;
         background: linear-gradient(180deg, rgba(39, 39, 39, 0) 0%, #000000 100%);  
     }
+    body.dark .prew {
+        display: none;
+    }
 }
 
 /*------------------MENU--------------------*/
@@ -53,7 +62,7 @@ body.dark .line2 {background: #202227;}
     grid-template-rows: 1fr;
     grid-gap: 20px;
     margin: 30px auto;
-    padding-top: 10%;
+    /* padding-top: 10%; */
 }
 .box h4 {font-weight: 400;}
 .item {
@@ -68,9 +77,17 @@ body.dark .line2 {background: #202227;}
     /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.30); */
     /* transition: 0.3s; */
 }
+body.dark .item {
+    background: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.30);
+}
+
 .item h4{
     padding-top: 5px;
     font-size: 14px;
+}
+body.dark .item h4{
+    color: #1C1C1E; font-weight: 600;
 }
 @media only screen and (max-width: 680px) {
     .item h4{
@@ -84,7 +101,9 @@ body.dark .line2 {background: #202227;}
     transform: scale(1.02);
     
 }
-
+body.dark .item:hover {
+    box-shadow: 0px 0px 4px rgb(16, 231, 124);
+}
 @media only screen and (max-width: 380px) {
     .box {
         grid-template-columns: repeat(1, 1fr);
@@ -203,6 +222,10 @@ body.dark .line2 {background: #202227;}
     /* border: 1px dashed #3A3A3E; */
     background: linear-gradient(153.22deg, #1a1a1a 51.74%, #151516 134.15%);
     border-radius: 12px;
+}
+body.dark .card_help {
+    background: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.30);
 }
 @media only screen and (max-width: 420px) {
     .card_help {
