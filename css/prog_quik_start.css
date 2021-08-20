@@ -19,15 +19,16 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     color: #fff;
     font-size: 14px;
     font-weight: 500;
-    margin-top: 15%;
     margin-left: 20px;
+    padding-top: 10%;
+    padding-bottom: 15px;
 }
 
 .box {
     display: grid;
     grid-template-columns: repeat(1,1fr);
     grid-gap: 15px 15px;
-    margin-top: 30px;
+    margin-top: 20px;
     
 }
 @media only screen and (max-width: 800px) {
@@ -40,10 +41,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
         grid-template-columns: repeat(2, 1fr);
     }
 }
-.qs__section {
-    
-    
-}
+
 .box__items {
     /* display: flex;
     align-items: center;
@@ -84,11 +82,11 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     background: rgb(44, 44, 44);
 }
 .item2 {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     margin: 10px;
     border-radius: 4px;
-    background: linear-gradient(135deg, #32BCA3 0%, #00B2FF 100%);
+    background: linear-gradient(135deg, #1AA88E 0%, #00B2FF 100%);
 }
 
 .txt__qs {
@@ -117,7 +115,6 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     font-size: 16px;
     color: #fff;
     border-radius: 2em;
-    cursor: pointer;
     font-size: 16px;
     padding: 0.7em 1.5em;
     background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
@@ -128,9 +125,53 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     font-size: 16px;
     color: #fff;
     border-radius: 2em;
-    cursor: pointer;
     font-size: 16px;
     padding: 0.7em 1.5em;
     background: linear-gradient(136.2deg, #FFBC10 16.28%, #FA00FF 224.54%);
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+}
+.btn__start:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+}
+.btn__start2:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media only screen and (max-width: 870px) {
+    .flex {
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.box2 {
+    padding: 10px;
+    width: 600px;
+}
+@media only screen and (max-width: 870px) {
+    .box2 {
+        padding: 0px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+.box3 {
+    background: linear-gradient(153.22deg, #272727 51.74%, #1d1d1f 134.15%);
+    padding: 20px;
+    border-radius: 12px;
+    
+}
+.box__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
