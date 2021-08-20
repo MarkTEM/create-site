@@ -88,7 +88,7 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     height: 18px;
     margin: 10px;
     border-radius: 4px;
-    background: #2a9985;
+    background: linear-gradient(135deg, #32BCA3 0%, #00B2FF 100%);
 }
 
 .txt__qs {
