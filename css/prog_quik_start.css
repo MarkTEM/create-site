@@ -141,7 +141,7 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
 .flex {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     padding-left: 20px;
     padding-right: 20px;
 }
