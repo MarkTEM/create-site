@@ -73,7 +73,7 @@ body.dark .line2 {background: #202227;}
     align-items: center;
     padding: 1.4em 1.2em;
     border-radius: 8px;
-    background: #222222;
+    background: #252525;
     /* background: linear-gradient(153.22deg, #2e2e2e 51.74%, #202022 134.15%); */
     color: #EAEAEA;
     /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.30); */
@@ -109,7 +109,7 @@ body.dark .item:hover {
 @media only screen and (max-width: 380px) {
     .box {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 15px;
+        grid-gap: 10px;
         margin: 20px auto;
     }
     .item {
@@ -223,7 +223,7 @@ body.dark .item:hover {
     margin-bottom: 60px;
     /* border: 1px dashed #3A3A3E; */
     /* background: linear-gradient(153.22deg, #1a1a1a 51.74%, #151516 134.15%); */
-    background: #222222;
+    background: #252525;
     border-radius: 8px;
 }
 body.dark .card_help {
