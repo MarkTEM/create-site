@@ -3,7 +3,8 @@ body {
     transition: background-color .3s; /*Плавный цвет фона*/
     /* background: #FCFCFC; */
     /* background: #101010; */
-    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    /* background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%); */
+    background: #141414;
     color: #333; /*Цвет текста*/
     min-height: 200vh;
 }
@@ -71,8 +72,9 @@ body.dark .line2 {background: #202227;}
     flex-direction: row;
     align-items: center;
     padding: 1.4em 1.2em;
-    border-radius: 1em;
-    background: linear-gradient(153.22deg, #2e2e2e 51.74%, #202022 134.15%);
+    border-radius: 8px;
+    background: #222222;
+    /* background: linear-gradient(153.22deg, #2e2e2e 51.74%, #202022 134.15%); */
     color: #EAEAEA;
     /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.30); */
     /* transition: 0.3s; */
@@ -220,8 +222,9 @@ body.dark .item:hover {
     /* margin-top: 60%; */
     margin-bottom: 60px;
     /* border: 1px dashed #3A3A3E; */
-    background: linear-gradient(153.22deg, #1a1a1a 51.74%, #151516 134.15%);
-    border-radius: 12px;
+    /* background: linear-gradient(153.22deg, #1a1a1a 51.74%, #151516 134.15%); */
+    background: #222222;
+    border-radius: 8px;
 }
 body.dark .card_help {
     background: #fff;
@@ -248,9 +251,10 @@ body.dark .card_help {
     margin-top: 20px;
     
 }
-.help:hover { 
-    background: linear-gradient(143.93deg, #32BC59 12%, #2196F3 109.39%);
-    transition: 0.8s; transform: scale(1.00); }
+.help:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+    transition: 0.8s; transform: scale(1.00);
+}
 .text_help {
     font-size: 14px;
     color: #9c9c9c;

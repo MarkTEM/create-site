@@ -3,7 +3,7 @@ body {
     transition: background-color .3s; /*Плавный цвет фона*/
     /* background: #FCFCFC; */
     /* background: #101010; */
-    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    background: #141414;
     min-height: 150vh;
     color: #272727;
 }
@@ -20,11 +20,11 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 
 .flex {
     display: flex;
-    
     justify-content: center;
-    margin-top: 10%;
-    padding-left: 30px;
-    padding-right: 30px;
+    align-items: flex-end;
+    margin-top: 15%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 @media only screen and (max-width: 870px) {
     .flex {
@@ -34,10 +34,11 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     }
 }
 .box {
-    background: #2C2C2E;
+    /* background: linear-gradient(153.22deg, #272727 51.74%, #1d1d1f 134.15%); */
+    background: #222222;
     padding: 20px;
     border-radius: 12px;
-    width: 800px;
+    width: 600px;
     margin: 10px;
 }
 @media only screen and (max-width: 870px) {
@@ -49,24 +50,23 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 }
 .box__item {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 10px;
 }
 .box__item__bat {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 10px;
 }
 p {
-    color: #adadad;
-    padding: 10px 0;
+    color: #8F8F8F;
+    padding: 20px 0;
 }
 .line {
     border-bottom: 1px dashed #1C1C1E;
     padding: 5px 0;
-}
-.text__color {
-    font-weight: 400;
 }
 
 
@@ -83,6 +83,10 @@ p {
     background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
     margin-right: 10px;
+    margin-top: 10px;
+}
+.btn__start:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
 .btn__start2 {
     display: inline-block;
@@ -94,4 +98,8 @@ p {
     padding: 0.7em 1.5em;
     background: linear-gradient(136.2deg, #FFBC10 16.28%, #FA00FF 224.54%);
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+    margin-top: 10px;
+}
+.btn__start2:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }

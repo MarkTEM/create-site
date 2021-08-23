@@ -25,7 +25,7 @@ a {
     --light-color: rgb(228, 13, 13);
     --btn-color: rgb(0, 140, 255);
     --fon-light: #fff;
-    --text-light: #fff;
+    --text-light: #E5E5E5;
     --text-dark: #0F0F10;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
@@ -121,7 +121,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 }
 @media only screen and (min-width: 1200px) {
     .wrapper {
-        max-width: 94%;
+        max-width: 85%;
         padding-left: 0px;
         padding-right: 0px;
     }
