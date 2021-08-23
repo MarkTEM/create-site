@@ -50,7 +50,8 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 @media only screen and (max-width: 420px) { h5 { font-size: 12px; } }
 @media only screen and (min-width: 420px) { h5 { font-size: 14px; } }
 
-
+h3 { font-weight: 600;}
+h4 { font-weight: 400;}
 
 /*---------------TEXT WEIGHT----------------*/
 
@@ -345,6 +346,9 @@ body.dark .text_prev2 { color: #B6B8C9; } */
     padding: 0.7em 1.5em;
     background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+}
+.btn__akk:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
 .txt__akk { font-size: 14px; font-weight: 400; }
 
