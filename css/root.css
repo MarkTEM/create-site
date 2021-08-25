@@ -26,6 +26,7 @@ a {
     --btn-color: rgb(0, 140, 255);
     --fon-light: #fff;
     --text-light: #E5E5E5;
+    --text-light2: #fff;
     --text-dark: #0F0F10;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
@@ -70,6 +71,10 @@ body.dark .text_prev, .text_prev2 {
 
 .text__color {color: var(--text-light);}
 body.dark .text__color {
+    color: var(--text-dark);
+}
+.text__color2 {color: var(--text-light2);}
+body.dark .text__color2 {
     color: var(--text-dark);
 }
 
