@@ -27,7 +27,7 @@ a {
     --fon-light: #fff;
     --text-light: #E5E5E5;
     --text-light2: #fff;
-    --text-dark: #0F0F10;
+    --text-dark: #1C1C1E;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
     --line-dark: #26282B;
@@ -69,9 +69,9 @@ body.dark .text_prev, .text_prev2 {
 .text_prev    { margin-left: 10px; }
 .text__weight { font-weight: 400; }
 
-.text__color {color: var(--text-light);}
+.text__color {color: var(--text-dark);}
 body.dark .text__color {
-    color: var(--text-dark);
+    color: var(--text-light);
 }
 .text__color2 {color: var(--text-light2);}
 body.dark .text__color2 {
@@ -343,12 +343,14 @@ body.dark .text_prev2 { color: #B6B8C9; } */
     transition: 0.3s; 
 }
 .btn__akk {
+    border: none;
     text-decoration: none;
     color: #fff;
     border-radius: 2em;
-    /* margin: 10px 5px; */
+    font-size: 14px;
     cursor: pointer;
     font-size: 14px;
+    font-weight: 400;
     padding: 0.7em 1.5em;
     background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
@@ -356,8 +358,6 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 .btn__akk:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
-.txt__akk { font-size: 14px; font-weight: 400; }
-
 
 
 
@@ -375,7 +375,6 @@ body.dark .text_prev2 { color: #B6B8C9; } */
     text-decoration: none;
     color: dark;
     border-radius: 2em;
-    /* margin: 10px 5px; */
     cursor: pointer;
     font-size: 14px;
     padding: 0.7em 1.5em;
@@ -386,3 +385,6 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 .btn__theme:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
+/* body.dark .btn__theme {
+    background: #fff;
+} */
