@@ -2,12 +2,13 @@ body {
     font-family: 'Inter', sans-serif;
     transition: background-color .3s; /*Плавный цвет фона*/
     /* background: #101010; */
-    background: #f2f2f3; /*Цвет фона*/
+    background: #f2f2f3;
     /* background: #141414; */
     color: #333; /*Цвет текста*/
     min-height: 200vh;
 }
 body.dark {
+    /* background: #19191A; */
     background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
     color: rgb(31, 31, 31);
     
@@ -54,9 +55,10 @@ body.dark {
     align-items: center;
     padding: 1.4em 1.2em;
     border-radius: 12px;
-    background: #252525;
+    /* background: #252525; */
+    /* background: #313135; */
     /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10); */
-    /* background: linear-gradient(153.22deg, #2e2e2e 51.74%, #202022 134.15%); */
+    background: linear-gradient(153.22deg, #2c2c2c 51.74%, #202022 134.15%);
     color: #EAEAEA;
     /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.30); */
     /* transition: 0.3s; */
@@ -220,7 +222,8 @@ body.dark #clock {color: var(--text-light);background: var(--fon-dark);}
     border-radius: 12px;
 }
 body.dark .card_help {
-    background: #252525;
+    /* background: #252525; */
+    background: #232325;
     border: 1px dashed #252525;
     
 }

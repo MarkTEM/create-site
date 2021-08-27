@@ -1,7 +1,8 @@
 body {
     font-family: 'Inter', sans-serif;
     transition: background-color .3s; /*Плавный цвет фона*/
-    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    /* background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%); */
+    background: #f2f2f3; /*Цвет фона*/
     /* color: #333; */
     min-height: 120vh;
 }
@@ -88,6 +89,9 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     height: 20px;
     margin: 10px;
     border-radius: 4px;
+    background: rgb(223, 223, 223);
+}
+body.dark .item {
     background: rgb(44, 44, 44);
 }
 .item2 {
@@ -95,8 +99,12 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     height: 20px;
     margin: 10px;
     border-radius: 4px;
+    background: linear-gradient(135deg, #20d8b6 0%, #00B2FF 100%);
+}
+body.dark .item {
     background: linear-gradient(135deg, #1AA88E 0%, #00B2FF 100%);
 }
+
 
 .txt__qs {
     color: #fff;
@@ -127,7 +135,7 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     font-size: 16px;
     padding: 0.7em 1.5em;
     background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 }
 .btn__start2 {
     text-decoration: none;
@@ -137,7 +145,7 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     font-size: 16px;
     padding: 0.7em 1.5em;
     background: linear-gradient(136.2deg, #FFBC10 16.28%, #FA00FF 224.54%);
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 }
 .btn__start:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
@@ -174,11 +182,14 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
         margin-bottom: 15px;
     }
 }
-.box3 {
-    background: linear-gradient(153.22deg, #272727 51.74%, #1d1d1f 134.15%);
+.box3 { 
+    background: #fff; /*Цвет фона*/
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
     padding: 20px;
     border-radius: 12px;
-    
+}
+body.dark .box3 {
+    background: linear-gradient(153.22deg, #272727 51.74%, #1d1d1f 134.15%); 
 }
 .box__item {
     display: flex;
@@ -186,3 +197,5 @@ p {margin: 15px 0; color: rgb(175, 175, 175); font-size: 14px;}
     justify-content: space-between;
     align-items: center;
 }
+
+.off__teg { color: #929292; font-weight: 400; padding-bottom: 5px;}
