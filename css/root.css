@@ -24,7 +24,7 @@ a {
     --grey: #777;
     --light-color: rgb(228, 13, 13);
     --btn-color: rgb(0, 140, 255);
-    --fon-light: #fff;
+    --fon-light: #f2f2f3;
     --text-light: #E5E5E5;
     --text-light2: #fff;
     --text-dark: #1C1C1E;
@@ -32,6 +32,7 @@ a {
     --card-dark: #191b1d;
     --line-dark: #26282B;
     --box_light: #fff;
+    --box_dark: #222222;
 }
 /*------------------------------------------*/
 
@@ -397,7 +398,7 @@ body.dark .icon__menu:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
 body.dark .btn__theme {
-    background: #232325;
+    background: #222222;
     color: #E5E5E5;
     
 }

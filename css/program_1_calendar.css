@@ -3,11 +3,11 @@ body {
     transition: background-color .3s; /*Плавный цвет фона*/
     /* background: #FCFCFC; */
     /* background: #101010; */
-    background: #141414; /*Цвет текста*/
+    background: var(--fon-light); /*Цвет текста*/
     min-height: 100vh;
 }
 body.dark  {
-    background: #0F0F10; /*Цвет фона*/
+    background: #141414; /*Цвет фона*/
 }
 /*-----------------SCROLLBAR-----------------*/
 body::-webkit-scrollbar {width: 8px;}
@@ -51,26 +51,26 @@ body.dark .selectcolor4 {
     color: #E5E5E5;
     /* border: 2px solid #eeeeee; */
     padding: 1.4em 1.2em;
-    background: #222222;
+    background: var(--box_dark);
     /* background: linear-gradient(153.22deg, #292929 51.74%, #1a1a1b 134.15%); */
     /* background: #29292c; */
     /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(254, 254, 254, 0.8) 100%); */
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.40));
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.20));
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
-
+body.dark .select {
+    background: var(--box_dark);
+}
 body.dark .select h2{
     color: #2C2C2E;
 }
 body.dark .select p{
     color: #cfd0d6;
 }
-body.dark .select {
-    background: #2c2e33;
-    color: #e8e9ee;
+/* body.dark .select {
     border: 2px solid #2c2e33;
-}
+} */
 
 .select:hover {
     /* background-color: #00a2ff; */
@@ -90,12 +90,12 @@ body.dark .select {
     font-size: 18px;
     color: #8F8F8F;
 }
-body.dark .select:hover {
+/* body.dark .select:hover {
     background: #157fbd;
     border: 2px solid #157fbd;
     color: #fff;
     transition: 0.3s;
-}
+} */
 .calendar {
     position: relative;
     display: grid;
@@ -131,10 +131,10 @@ body.dark .select:hover {
     .select {
         justify-content: space-around;
         align-items: flex-start;
-        padding: 1.2em 1.2em;
+        padding: 1em 1em;
     }
     .select p {
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 0px; 
         font-size: 14px;
     }
@@ -162,8 +162,8 @@ body.dark .select:hover {
 .hint {
     display: flex;
     justify-content: flex-start;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 15px;
 }
 @media only screen and (max-width: 420px) {
     .hint {
@@ -194,12 +194,14 @@ body.dark .select:hover {
 .hint__text {
     color: #E5E5E5;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 15px;
 }
-
+body.dark .hint__text {
+    font-weight: 400;
+}
 /*------------------------------------------*/
 .icon__404 {
     position: absolute;
@@ -215,8 +217,8 @@ body.dark .select:hover {
 }
 .icon__done {
     position: absolute;
-    right: 12px;
-    bottom: 12px;
+    right: 8px;
+    bottom: 8px;
 	background-image: url(../ico/done2.svg);
 	height: 2.2em;
 	width: 2.2em;
@@ -257,7 +259,6 @@ body.dark .select:hover {
     padding: 20px 0;
 }
 .pin__calendar h3 {
-    color: #E5E5E5;
     font-weight: 400;
 }
 /*------------------------------------------*/

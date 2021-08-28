@@ -216,16 +216,14 @@ body.dark #clock {color: var(--text-light);background: var(--fon-dark);}
     text-align: center;
     padding: 30px;
     margin-bottom: 60px;
-    border: 1px dashed #aaaaaa;
+    /* border: 1px dashed #aaaaaa; */
     background: #fff;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
     border-radius: 12px;
 }
 body.dark .card_help {
-    /* background: #252525; */
-    background: #232325;
-    border: 1px dashed #252525;
-    
+    background: var(--box_dark);
+    /* border: 1px dashed #252525; */  
 }
 @media only screen and (max-width: 420px) {
     .card_help {
