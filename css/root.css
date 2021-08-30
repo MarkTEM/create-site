@@ -66,7 +66,7 @@ h3 { font-weight: 600;}
 body.dark .text_prev, .text_prev2 {
     /* color: var(--text-dark); font-weight: 600; */
 }
-.fit { font-weight: 600; padding-bottom: 5px;}
+.fit { font-weight: 600; padding-bottom: 3px;}
 .skinny { font-weight: 500;}
 .text_prev    { margin-left: 10px; }
 .text__weight { font-weight: 500; }
@@ -204,6 +204,10 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 }
 /*------------------------------------------*/
 
+
+
+
+
 /*------------------------------------------*/
 .header{
 	display: flex;
@@ -227,8 +231,6 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 .items__header{
 	display: flex;
 	align-items: center;
-	
-
 }
 .head__text {
 	color: var(--text-light);
@@ -273,7 +275,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 }
 .icon__menu {
     display: block;
-    background-image: url(../ico/Menu_dark.svg);
+    background-image: url(../ico/MenuBurger.svg);
     height: 2.8em;
     width: 2.8em;
     border-radius: 24px;
@@ -285,7 +287,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 	transition: 0.2s;
 }
 .icon__menu:hover {
-	background-color: #ffffff;
+	/* background-color: #ffffff; */
 	transform: scale(1.04);
 }
 body.dark .icon__menu {
@@ -333,28 +335,33 @@ body.dark .icon__menu:hover {
 }
 
 
-.btn, .btn2 {
+.mod__btn, .btn2 {
+    text-decoration: none;
+    border: none;
+    color: #fff;
     font-size: 16px;
     border-radius: 2em;
+    padding: 0.7em 1.5em;
     margin: 10px 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
     cursor: pointer;
 }
 
-.btn {
-    text-decoration: none;
+/* .mod__btn {
+    
     color: #6b6b6b;
-    padding: 0.7em 1.5em;
+    
     background: #FFFFFF;
-    border: 2px solid #D1D2D6;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid #D1D2D6;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 }
 
-.btn:hover {
+.mod__btn:hover {
     color: #fff;
     background: #00c3ff;
     border: 2px solid #00c3ff;
     transition: 0.3s; 
-}
+} */
 .btn__akk {
     border: none;
     text-decoration: none;
@@ -372,7 +379,13 @@ body.dark .icon__menu:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
 
-
+.btn__ok {
+    margin: 10px 5px;
+    background: #00add3;
+}
+.btn__ok:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+}
 
 .btn_teg {
     text-decoration: none;
@@ -410,3 +423,8 @@ body.dark .btn__theme:hover {
 /* body.dark .btn__theme {
     background: #fff;
 } */
+footer {
+    width: 100%;
+    height: 400px;
+    background: #1B1B1B;
+}

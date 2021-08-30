@@ -235,10 +235,13 @@ body.dark .hint__text {
 /*------------------------------------------*/
 .card__pin {
     /* margin-top: 60%; */
-    margin-top: 40px;
+    margin-top: 100px;
     /* border: 1px dashed #3A3A3E; */
     /* background: linear-gradient(153.22deg, #252525 51.74%, #151516 134.15%); */
     border-radius: 12px;
+}
+body.dark .card__pin {
+    margin-top: 50px;
 }
 .card__pin p {
     color: #8F8F8F;
@@ -259,10 +262,20 @@ body.dark .hint__text {
     padding: 20px 0;
 }
 .pin__calendar h3 {
+    font-weight: 600;
+}
+body.dark .pin__calendar h3{
     font-weight: 400;
 }
 /*------------------------------------------*/
-
+#convas {
+    background: #1B1B1B;
+    padding-bottom: 30px;
+}
+body.dark #convas {
+    background: none;
+    padding-bottom: 0;
+}
 
 
 

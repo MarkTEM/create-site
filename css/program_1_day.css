@@ -4,12 +4,12 @@ body {
     /* background: #FCFCFC; */
     /* background: #101010; */
     /* background: var(--fon-light); */
-    background: #ffffff;
+    /* background: #ffffff; */
     min-height: 300vh;
     color: #272727;
 }
 body.dark  {
-    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    background: #141414;
     
 }
 
@@ -264,13 +264,13 @@ body.dark .upr {
     /* box-shadow: 0px 0px 4px rgb(0 0 0 / 10%); */
     border: 2px solid #eeeeee;
     border-radius: 8px;
-    padding: 15px;
+    padding: 12px;
 }
-@media only screen and (max-width: 720px) {
+/* @media only screen and (max-width: 720px) {
     .card2 {
         padding: 12px;
     }
-}
+} */
 
 
 
@@ -323,12 +323,16 @@ body.dark .upr {
     align-items: center;
 }
 .text__ok {
-    color: #C4C4C4;
-    font-weight: 300;
-    font-size: 12px;
+    color: #575757;
+    font-weight: 500;
+    font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
+}
+body.dark .text__ok {
+    font-weight: 400;
+    color: #C4C4C4;
 }
 .icon__down {
     background-image: url(../ico/down.svg);
@@ -339,19 +343,7 @@ body.dark .upr {
     background-position: center center;
     background-size: 1.2em 1.2em;
 }
-.btn__ok {
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 2em;
-    margin: 10px 5px;
-    color: #fff;
-    padding: 0.8em 1.7em;
-    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
-}
-.btn__ok:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
-}
+
 /* ---------------------------------------- */
 
 
@@ -363,6 +355,9 @@ body.dark .upr {
     margin-top: 100px;
     /* border: 1px dashed #3A3A3E; */
     border-radius: 12px;
+}
+body.dark .card__pin {
+    margin-top: 50px;
 }
 .card__pin p {
     color: rgb(201, 201, 201);
@@ -430,7 +425,10 @@ body.dark .upr {
 #convas {
     background: #1B1B1B;
 }
-
+body.dark #convas {
+    background: none;
+    
+}
 #convas2 {
     padding-top: 30px;
     background: #fff;
@@ -438,6 +436,6 @@ body.dark .upr {
 }
 body.dark #convas2 {
     background: none;
-    
+    padding-top: 0;
 }
 /* ---------------------------------------- */
