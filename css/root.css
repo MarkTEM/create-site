@@ -28,7 +28,7 @@ a {
     --text-light: #fff;
     /* --text-light: #E5E5E5; */
     --text-light2: #fff;
-    --text-dark: #1C1C1E;
+    --text-dark: #2c2c2e;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
     --line-dark: #26282B;
@@ -427,5 +427,6 @@ body.dark .btn__theme:hover {
 footer {
     width: 100%;
     height: 400px;
-    background: #1B1B1B;
+    background: #111111;
+    /* border-top: 1px solid#111111; */
 }

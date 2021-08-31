@@ -2,10 +2,11 @@ body {
     font-family: 'Inter', sans-serif;
     transition: background-color .3s; /*Плавный цвет фона*/
     /* background: #101010; */
-    background: #fff;
+    /* background: #fff; */
     /* background: #141414; */
+    background: #1B1B1B; /*Цвет фона*/
     color: #333; /*Цвет текста*/
-    min-height: 200vh;
+    /* min-height: 200vh; */
 }
 body.dark {
     /* background: #19191A; */
@@ -57,7 +58,8 @@ body.dark {
     border-radius: 12px;
     /* background: #252525; */
     /* background: #313135; */
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20);
+    border: 1px solid #e4e4e4;
     background: var(--box_light);
     
     color: #EAEAEA;
@@ -66,6 +68,7 @@ body.dark {
 }
 body.dark .item {
     background: linear-gradient(153.22deg, #2c2c2c 51.74%, #202022 134.15%);
+    border: 0px;
 }
 
 .item h4{
@@ -159,19 +162,28 @@ body.dark .item {
     background-position: center center;
     background-size: 1.5em 1.5em;
 }
-.image__programs {background-image: url(../ico/programs.svg);}
-.image__training {background-image: url(../ico/upg2.svg);}
-.image__upr {background-image: url(../ico/upr.svg);}
-.image__calendar {background-image: url(../ico/calendar.svg);}
-.image__new {background-image: url(../ico/new.svg);}
-.image__file {background-image: url(../ico/file.svg);}
-.image__progress {background-image: url(../ico/progress.svg);}
-.image__box {background-image: url(../ico/box.svg);}
+.image__programs {background-image: url(../ico/programs_dark.svg);}
+body.dark .image__programs {background-image: url(../ico/programs.svg);}
+.image__training {background-image: url(../ico/upg2_dark.svg);}
+body.dark .image__training {background-image: url(../ico/upg2.svg);}
+.image__upr {background-image: url(../ico/upr_dark.svg);}
+body.dark .image__upr {background-image: url(../ico/upr.svg);}
+.image__calendar {background-image: url(../ico/calendar_dark.svg);}
+.image__new {background-image: url(../ico/new_dark.svg);}
+/* .image__file {background-image: url(../ico/file.svg);} */
+.image__progress {background-image: url(../ico/progress_dark.svg);}
+.image__box {background-image: url(../ico/box_dark.svg);}
+body.dark .image__calendar {background-image: url(../ico/calendar.svg);}
+body.dark .image__new {background-image: url(../ico/new.svg);}
+body.dark .image__file {background-image: url(../ico/file.svg);}
+body.dark .image__progress {background-image: url(../ico/progress.svg);}
+body.dark .image__box {background-image: url(../ico/box.svg);}
 @media only screen and (min-width: 768px){
     .icon {
         background-size: 1.8em 1.8em;
     }
 }
+
 /*------------------------------------------*/ 
 
 
@@ -286,6 +298,15 @@ footer {
 body.dark #convas {
     background: none;
     
+}
+#convas2 {
+    background: #fff;
+    border-radius: 12px 12px 0px 0px;
+    padding-bottom: 400px;
+}
+body.dark #convas2 {
+    background: none;
+    padding-top: 0;
 }
 /*------------------------------------------*/
 /*------------------------------------------*/

@@ -53,6 +53,9 @@ body.dark .upr {
     margin: 20px 0;
     transition: 0.3s;
 }
+body.dark .box__color {
+    border: 0px;
+}
 @media only screen and (max-width: 420px) {
     .box__color {
         border-radius: 12px;
@@ -356,9 +359,6 @@ body.dark .text__ok {
     /* border: 1px dashed #3A3A3E; */
     border-radius: 12px;
 }
-body.dark .card__pin {
-    margin-top: 50px;
-}
 .card__pin p {
     color: rgb(201, 201, 201);
     font-size: 12px;
@@ -423,7 +423,7 @@ body.dark .card__pin {
 /*------------------------------------------*/
 
 #convas {
-    background: #1B1B1B;
+    background: #151516;
 }
 body.dark #convas {
     background: none;
@@ -437,5 +437,23 @@ body.dark #convas {
 body.dark #convas2 {
     background: none;
     padding-top: 0;
+}
+
+.an1 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: an1;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+  }
+
+@keyframes an1 {
+    from {
+        padding-top: 70px;
+    }
+    
+    to {
+
+    }
 }
 /* ---------------------------------------- */
