@@ -5,6 +5,7 @@ body {
     /* background: #101010; */
     /* background: var(--fon-light); */
     /* background: #ffffff; */
+    background: #1B1B1B; /*Цвет фона*/
     min-height: 300vh;
     color: #272727;
 }
@@ -127,10 +128,16 @@ body.dark .box__color {
     background-image: url(../upr/upr4.jpg);
 }
 .upr3 {
-    background-image: url(../upr/upr2.jpg);
+    background-image: url(../upr/upr3.jpg);
 }
 .upr4 {
     background-image: url(../upr/upr5.jpeg);
+}
+.upr5 {
+    background-image: url(../upr/tim_upr1.jpg);
+}
+.upr6 {
+    background-image: url(../upr/tim_upr2.jpg);
 }
 /* -------------2------------------ */
 
@@ -439,7 +446,7 @@ body.dark #convas2 {
     padding-top: 0;
 }
 
-.an1 {
+#convas2 {
     animation-delay: 1s;
     animation-duration: 1s;
     animation-name: an1;
@@ -449,7 +456,7 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
-        padding-top: 70px;
+        margin-top: 70px;
     }
     
     to {
