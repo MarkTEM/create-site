@@ -311,6 +311,23 @@ body.dark #convas2 {
     background: none;
     padding-top: 0;
 }
+#convas2 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: an1;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+  }
+
+@keyframes an1 {
+    from {
+        margin-top: 70px;
+    }
+    
+    to {
+
+    }
+}
 /*------------------------------------------*/
 /*------------------------------------------*/
 /*------------------------------------------*/
