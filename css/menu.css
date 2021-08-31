@@ -85,7 +85,8 @@ body.dark .item {
     }
 }
 .item:hover {
-    background: linear-gradient(143.93deg, #32BC59 12%, #2196F3 109.39%);
+    box-shadow: 0px 0px 4px #2cc3ff;
+    transition: 0.3s;
     transform: scale(1.02);
     
 }
