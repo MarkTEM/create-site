@@ -231,11 +231,13 @@ body.dark #clock {color: var(--text-light);background: #161616;}
     margin-bottom: 60px;
     /* border: 1px dashed #aaaaaa; */
     background: #fff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20);
+    border: 1px solid #e4e4e4;
     border-radius: 12px;
 }
 body.dark .card_help {
     background: var(--box_dark);
+    border: 1px;
     /* border: 1px dashed #252525; */  
 }
 @media only screen and (max-width: 420px) {
