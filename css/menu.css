@@ -295,8 +295,7 @@ footer {
 /*------------------------------------------*/
 
 #convas {
-    background: #1B1B1B;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 body.dark #convas {
     background: none;
