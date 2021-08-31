@@ -13,11 +13,8 @@ body.dark  {
 /* ----------------pin----------------- */
 .pin {
     padding-left: 12px;
-    color: #fff;
     font-weight: 500;
-    margin-top: 10%;
 }
-@media only screen and (max-width: 720px) { .pin { margin-top: 20%; } }
 /* ------------------------------------ */
 
 
@@ -269,4 +266,68 @@ body.dark  {
     color: #2C2C2E;
     border: 1.8px solid #2C2C2E;
     background: transparent;
+}
+
+.txt {
+    padding: 30px 0;
+    color: #fff;
+    font-weight: 500;
+}
+.sor {
+    display: table;
+    color: #fff;
+}
+.sor_detal {
+    padding: 10px 15px;
+    background: #272727;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.teg_sor {
+    
+    display: block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: rgb(230, 230, 230);
+}
+
+
+#convas2 {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: #fff;
+    border-radius: 12px 12px 0px 0px;
+}
+body.dark #convas2 {
+    background: none;
+    padding-top: 0;
+}
+
+#convas2 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: an1;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+@keyframes an1 {
+    from {
+        margin-top: 70px;
+    }
+    
+    to {
+
+    }
+}
+
+.dit {
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    background: #f5f5f5;
+    padding: 5px 12px;
 }

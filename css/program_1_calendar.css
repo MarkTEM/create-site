@@ -54,11 +54,12 @@ body.dark .selectcolor4 {
     /* border: 2px solid #eeeeee; */
     padding: 1.4em 1.2em;
     background: var(--box_light);
+    border: 1px solid #e4e4e4;
     /* background: linear-gradient(153.22deg, #292929 51.74%, #1a1a1b 134.15%); */
     /* background: #29292c; */
     /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(254, 254, 254, 0.8) 100%); */
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.20));
+    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1); */
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.20));
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
 body.dark .select {
@@ -242,7 +243,7 @@ body.dark .hint__text {
 /*------------------------------------------*/
 .card__pin {
     /* margin-top: 60%; */
-    margin-top: 100px;
+    margin-top: 60px;
     /* border: 1px dashed #3A3A3E; */
     /* background: linear-gradient(153.22deg, #252525 51.74%, #151516 134.15%); */
     border-radius: 12px;
@@ -276,7 +277,6 @@ body.dark .pin__calendar h3{
 }
 /*------------------------------------------*/
 #convas {
-    background: #151516;
     padding-bottom: 30px;
 }
 #convas2 {
@@ -287,22 +287,22 @@ body.dark .pin__calendar h3{
 }
 body.dark #convas {
     background: none;
-    padding-bottom: 0;
 }
-.an1 {
+body.dark #convas2 {
+    background: none;
+}
 
-}
-.an1 {
+#convas2 {
     animation-delay: 1s;
     animation-duration: 1s;
     animation-name: an1;
     /* animation-iteration-count: infinite;
     animation-direction: alternate; */
-  }
+}
 
 @keyframes an1 {
     from {
-        padding-top: 70px;
+        margin-top: 70px;
     }
     
     to {

@@ -49,7 +49,7 @@ body.dark .upr {
     background: var(--box_light);
     /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20); */
     border-radius: 18px;
-    border: 1px solid #c5bfbf;
+    border: 1px solid #c9c9c9;
     padding: 20px;
     margin: 20px 0;
     transition: 0.3s;
@@ -452,7 +452,7 @@ body.dark #convas2 {
     animation-name: an1;
     /* animation-iteration-count: infinite;
     animation-direction: alternate; */
-  }
+}
 
 @keyframes an1 {
     from {
