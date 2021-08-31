@@ -2,7 +2,7 @@ body {
     font-family: 'Inter', sans-serif;
     transition: background-color .3s; /*Плавный цвет фона*/
     /* background: #101010; */
-    background: #f2f2f3;
+    background: #fff;
     /* background: #141414; */
     color: #333; /*Цвет текста*/
     min-height: 200vh;
@@ -57,16 +57,16 @@ body.dark {
     border-radius: 12px;
     /* background: #252525; */
     /* background: #313135; */
-    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10); */
-    background: linear-gradient(153.22deg, #2c2c2c 51.74%, #202022 134.15%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+    background: var(--box_light);
+    
     color: #EAEAEA;
     /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.30); */
     /* transition: 0.3s; */
 }
-/* body.dark .item {
-    background: #fff;
-    
-} */
+body.dark .item {
+    background: linear-gradient(153.22deg, #2c2c2c 51.74%, #202022 134.15%);
+}
 
 .item h4{
     padding-top: 5px;
@@ -180,8 +180,9 @@ body.dark {
 
 /*-------------------TIME-------------------*/
 #clock {
-    color: var(--fon-dark);
-    background: #d1d2d6;
+    color: var(--fon-light);
+    background: #161616;
+    border-bottom: 1px solid#111111;
     padding-top: 0.7%;
     padding-bottom: 0.7%;
     font-weight: 400;
@@ -190,7 +191,7 @@ body.dark {
     padding-right: 30px;
     transition: 0.3s;
 }
-body.dark #clock {color: var(--text-light);background: var(--fon-dark);}
+body.dark #clock {color: var(--text-light);background: #161616;}
 @media screen and (max-width: 600px) {
     #clock {
         font-size: 12px;
@@ -278,7 +279,14 @@ footer {
 
 /*------------------------------------------*/
 
-
+#convas {
+    background: #1B1B1B;
+    padding-bottom: 50px;
+}
+body.dark #convas {
+    background: none;
+    
+}
 /*------------------------------------------*/
 /*------------------------------------------*/
 /*------------------------------------------*/

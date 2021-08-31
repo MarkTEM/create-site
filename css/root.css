@@ -404,7 +404,8 @@ body.dark .icon__menu:hover {
     cursor: pointer;
     font-size: 14px;
     padding: 0.7em 1.5em;
-    background: #fff;
+    background: #38393a;
+    color: #dcdfe4;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
     margin-right: 10px;
 }

@@ -3,8 +3,9 @@ body {
     transition: background-color .3s; /*Плавный цвет фона*/
     /* background: #FCFCFC; */
     /* background: #101010; */
-    background: var(--fon-light); /*Цвет текста*/
+    /* background: var(--fon-light); */
     min-height: 100vh;
+    background: #1B1B1B; /*Цвет фона*/
 }
 body.dark  {
     background: #141414; /*Цвет фона*/
@@ -49,9 +50,10 @@ body.dark .selectcolor4 {
     text-align: center;
     border-radius: 8px;
     color: #E5E5E5;
+    /* border: 1px solid #c5bfbf; */
     /* border: 2px solid #eeeeee; */
     padding: 1.4em 1.2em;
-    background: var(--box_dark);
+    background: var(--box_light);
     /* background: linear-gradient(153.22deg, #292929 51.74%, #1a1a1b 134.15%); */
     /* background: #29292c; */
     /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(254, 254, 254, 0.8) 100%); */
@@ -61,6 +63,7 @@ body.dark .selectcolor4 {
 }
 body.dark .select {
     background: var(--box_dark);
+    border: none;
 }
 body.dark .select h2{
     color: #2C2C2E;
@@ -88,7 +91,11 @@ body.dark .select p{
 .select p {
     margin-top: 0px;
     font-size: 18px;
-    color: #8F8F8F;
+    
+}
+.text__pr {
+    color: #5d5d5e;
+    font-weight: 400;
 }
 /* body.dark .select:hover {
     background: #157fbd;
@@ -103,7 +110,7 @@ body.dark .select p{
     row-gap: 15px;
     column-gap: 15px;        68%*/
     grid-template-columns: repeat(6,1fr);
-    grid-gap: 12px 12px; /*92%*/
+    grid-gap: 15px 15px; /*92%*/
     padding: 0px;
 }
 @media only screen and (max-width: 320px) {
@@ -131,7 +138,7 @@ body.dark .select p{
     .select {
         justify-content: space-around;
         align-items: flex-start;
-        padding: 1em 1em;
+        padding: 1.2em 1em;
     }
     .select p {
         margin-top: 20px;
@@ -269,14 +276,39 @@ body.dark .pin__calendar h3{
 }
 /*------------------------------------------*/
 #convas {
-    background: #1B1B1B;
+    background: #151516;
     padding-bottom: 30px;
+}
+#convas2 {
+    background: #fff;
+    border-radius: 12px 12px 0px 0px;
+    padding-bottom: 400px;
+    
 }
 body.dark #convas {
     background: none;
     padding-bottom: 0;
 }
+.an1 {
 
+}
+.an1 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: an1;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+  }
+
+@keyframes an1 {
+    from {
+        padding-top: 70px;
+    }
+    
+    to {
+
+    }
+}
 
 
 
