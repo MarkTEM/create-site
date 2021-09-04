@@ -21,7 +21,7 @@ body.dark {
 }
 @media screen and (max-width: 600px) {
     .txt__categoru {
-        padding-top: 12px;  
+        padding-top: 20px;  
     }
 }
 /*-------------------------------------------*/
