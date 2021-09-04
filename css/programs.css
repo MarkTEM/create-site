@@ -19,9 +19,9 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 .tag__bar {display: flex; flex-wrap: wrap;}
 .tag__bar h4 {margin-left: 5px; margin-top: 5px;}
 .tag__inf {
-    color: #adadad;
+    color: var(--text-dark);
     padding: 6px 12px;
-    background: #2e2e2e;
+    background: #f3f3f3;
     margin-left: 5px; margin-top: 5px;
     /* border-radius: 12px; */
 }
@@ -31,7 +31,6 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 15%;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -43,13 +42,15 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     }
 }
 .box {
-    /* background: linear-gradient(153.22deg, #272727 51.74%, #1d1d1f 134.15%); */
-    background: #222222;
-    padding: 20px;
-    border-radius: 12px;
     width: 600px;
     margin: 10px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 20%);
+    border: 1px solid #e4e4e4;
+    background: var(--box_light);
+    padding: 20px;
+    border-radius: 12px;
 }
+
 @media only screen and (max-width: 870px) {
     .box {
         padding: 15px;
@@ -84,7 +85,7 @@ p {
     padding: 20px 0;
 }
 .line {
-    border-bottom: 1px dashed #101011;
+    border-bottom: 1px dashed #cdcdd4;
     padding: 5px 0;
 }
 
@@ -100,7 +101,7 @@ p {
     font-size: 16px;
     padding: 0.7em 1.5em;
     background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
     margin-right: 10px;
     margin-top: 10px;
 }
@@ -116,9 +117,42 @@ p {
     font-size: 16px;
     padding: 0.7em 1.5em;
     background: linear-gradient(136.2deg, #FFBC10 16.28%, #FA00FF 224.54%);
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
     margin-top: 10px;
 }
 .btn__start2:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+}
+
+#convas2 {
+    padding-top: 60px;
+    background: #fff;
+    border-radius: 12px 12px 0px 0px;
+    padding-bottom: 500px;
+}
+body.dark #convas2 {
+    background: none;
+    padding-top: 0;
+}
+
+#convas2 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: an1;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+@media screen and (max-width: 600px) {
+    #convas2 {
+        padding-top: 30px;  
+    }
+}
+@keyframes an1 {
+    from {
+        margin-top: 70px;
+    }
+    
+    to {
+
+    }
 }
