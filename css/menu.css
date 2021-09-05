@@ -27,7 +27,35 @@ body.dark {
 /*-------------------------------------------*/
 
 
-
+/*-------------------TIME-------------------*/
+.clock_flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 35px;
+    background: #161616;
+    border-bottom: 1px solid#111111;
+}
+#clock {
+    color: var(--fon-light);
+    font-weight: 400;
+    font-size: 14px;
+    padding-right: 30px;
+}
+body.dark #clock {color: var(--text-light);background: #161616;}
+@media screen and (max-width: 720px) {
+    .clock_flex {
+        justify-content: flex-start;
+        height: 35px;
+    }
+    #clock {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: left;
+        padding-left: 15px;
+    }
+}
+/*------------------------------------------*/
 
 
 
@@ -195,31 +223,7 @@ body.dark .image__box {background-image: url(../ico/box.svg);}
 
 
 
-/*-------------------TIME-------------------*/
-#clock {
-    color: var(--fon-light);
-    background: #161616;
-    border-bottom: 1px solid#111111;
-    padding-top: 0.7%;
-    padding-bottom: 0.7%;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: right;
-    padding-right: 30px;
-    transition: 0.3s;
-}
-body.dark #clock {color: var(--text-light);background: #161616;}
-@media screen and (max-width: 600px) {
-    #clock {
-        font-size: 12px;
-        font-weight: 400;
-        text-align: left;
-        padding-left: 15px;
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-}
-/*------------------------------------------*/
+
 
 
 
@@ -315,7 +319,7 @@ body.dark #convas2 {
     padding-top: 0;
 }
 #convas2 {
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
     animation-duration: 1s;
     animation-name: an1;
     /* animation-iteration-count: infinite;

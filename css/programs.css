@@ -130,7 +130,7 @@ body.dark #convas2 {
 }
 
 #convas2 {
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
     animation-duration: 1s;
     animation-name: an1;
     /* animation-iteration-count: infinite;
