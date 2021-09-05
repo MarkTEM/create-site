@@ -16,10 +16,10 @@ body.dark {
 
 
 .txt__categoru {
-    padding-top: 10%;
+    padding-top: 60px;
     font-weight: 500;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .txt__categoru {
         padding-top: 20px;  
     }
@@ -313,7 +313,6 @@ body.dark #convas {
     background: #fff;
     border-radius: 12px 12px 0px 0px;
     min-height: 100vh;
-    transition: background-color 0.6s; /*Плавный цвет фона*/
 }
 body.dark #convas2 {
     background: none;
@@ -326,7 +325,6 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
-        opacity: 0;
         margin-top: 70px;
         padding: 70px 0;
     }

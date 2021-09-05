@@ -7,7 +7,7 @@ body {
     color: #272727;
 }
 body.dark  {
-    background: #0F0F10; /*Цвет фона*/
+    background: #1B1B1B; /*Цвет фона*/
 }
 /* ----------------pin----------------- */
 .pin {

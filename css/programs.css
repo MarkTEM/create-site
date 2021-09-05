@@ -118,7 +118,7 @@ p {
     padding-top: 60px;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
-    padding-bottom: 500px;
+    min-height: 100vh;
 }
 body.dark #convas2 {
     background: none;
@@ -139,7 +139,6 @@ body.dark #convas2 {
 }
 @keyframes an1 {
     from {
-        opacity: 0;
         margin-top: 70px;
         padding: 70px 0;
     }

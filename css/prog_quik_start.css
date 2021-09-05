@@ -22,7 +22,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     font-size: 14px;
     font-weight: 500;
     margin-left: 20px;
-    padding-top: 10%;
+    padding-top: 20px;
     padding-bottom: 15px;
 }
 .title2 {
@@ -229,7 +229,6 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
-        opacity: 0;
         margin-top: 70px;
         padding: 70px 0;
     }
