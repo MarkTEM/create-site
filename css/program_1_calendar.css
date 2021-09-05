@@ -1,14 +1,11 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color .3s; /*Плавный цвет фона*/
-    /* background: #FCFCFC; */
-    /* background: #101010; */
-    /* background: var(--fon-light); */
+    transition: background-color 1s; /*Плавный цвет фона*/
     min-height: 100vh;
     background: #1B1B1B; /*Цвет фона*/
 }
 body.dark  {
-    background: #141414; /*Цвет фона*/
+    background: #1B1B1B; /*Цвет фона*/
 }
 /*-----------------SCROLLBAR-----------------*/
 body::-webkit-scrollbar {width: 8px;}
@@ -22,13 +19,6 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 
 
 /*----------------CALENDAR-----------------*/
-.selectcolor4 {
-    border-radius: 18px;
-    margin-bottom: 37vh;
-}
-body.dark .selectcolor4 {
-    color: #cfd3e0;
-}
 @media screen and ( max-width: 690px ) {
     
 }
@@ -50,15 +40,9 @@ body.dark .selectcolor4 {
     text-align: center;
     border-radius: 8px;
     color: #E5E5E5;
-    /* border: 1px solid #c5bfbf; */
-    /* border: 2px solid #eeeeee; */
     padding: 1.4em 1.2em;
     background: var(--box_light);
     border: 1px solid #e4e4e4;
-    /* background: linear-gradient(153.22deg, #292929 51.74%, #1a1a1b 134.15%); */
-    /* background: #29292c; */
-    /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(254, 254, 254, 0.8) 100%); */
-    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1); */
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.20));
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
@@ -72,13 +56,7 @@ body.dark .select h2{
 body.dark .select p{
     color: #cfd0d6;
 }
-/* body.dark .select {
-    border: 2px solid #2c2e33;
-} */
-
 .select:hover {
-    /* background-color: #00a2ff; */
-    /* background: linear-gradient(143.93deg, #32BC59 12%, #2196F3 109.39%); */
     box-shadow: 0px 0px 6px #2cf8ff;
     transition: 0.3s;
 }
@@ -98,12 +76,8 @@ body.dark .select p{
     color: #5d5d5e;
     font-weight: 400;
 }
-/* body.dark .select:hover {
-    background: #157fbd;
-    border: 2px solid #157fbd;
-    color: #fff;
-    transition: 0.3s;
-} */
+
+
 .calendar {
     position: relative;
     display: grid;
@@ -217,7 +191,6 @@ body.dark .hint__text {
 	background-image: url(../ico/404.svg);
 	height: 2.2em;
 	width: 2.2em;
-	/* background-color: rgb(255, 255, 255); */
 	box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -230,8 +203,6 @@ body.dark .hint__text {
 	background-image: url(../ico/done2.svg);
 	height: 2.2em;
 	width: 2.2em;
-    /* border-radius: 2em; */
-	/* background-color: rgb(255, 255, 255); */
 	background-repeat: no-repeat;
 	background-position: center center;
     background-size: 2.0em 2.0em;
@@ -240,13 +211,11 @@ body.dark .hint__text {
 
 
 
+
+
 /*------------------------------------------*/
 .card__pin {
-    /* margin-top: 60%; */
-    margin-top: 60px;
-    /* border: 1px dashed #3A3A3E; */
-    /* background: linear-gradient(153.22deg, #252525 51.74%, #151516 134.15%); */
-    border-radius: 12px;
+    margin-top: 30px;
 }
 body.dark .card__pin {
     margin-top: 50px;
@@ -260,10 +229,13 @@ body.dark .card__pin {
     font-size: 24px;
     padding-top: 10px;
 }
+/*------------------------------------------*/
 
 
 
 
+
+/*------------------------------------------*/
 .pin__calendar {
     display: flex;
     justify-content: space-between;
@@ -276,13 +248,19 @@ body.dark .pin__calendar h3{
     font-weight: 400;
 }
 /*------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------*/
 #convas {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 #convas2 {
     background: #fff;
     border-radius: 12px 12px 0px 0px;
-    padding-bottom: 400px;
+    min-height: 100vh;
     
 }
 body.dark #convas {
@@ -302,15 +280,22 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
+        opacity: 0;
         margin-top: 70px;
+        padding: 70px 0;
     }
     
     to {
 
     }
 }
+/*------------------------------------------*/
 
 
 
+
+
+/*------------------------------------------*/
+/*------------------------------------------*/
 
 

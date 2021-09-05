@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color .3s; /*Плавный цвет фона*/
+    transition: background-color 1s; /*Плавный цвет фона*/
     /* background: #101010; */
     /* background: #141414; */
     background: #1B1B1B;
@@ -312,23 +312,23 @@ body.dark #convas {
 #convas2 {
     background: #fff;
     border-radius: 12px 12px 0px 0px;
-    padding-bottom: 400px;
+    min-height: 100vh;
+    transition: background-color 0.6s; /*Плавный цвет фона*/
 }
 body.dark #convas2 {
     background: none;
     padding-top: 0;
 }
 #convas2 {
-    /* animation-delay: 1s; */
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-name: an1;
-    /* animation-iteration-count: infinite;
-    animation-direction: alternate; */
   }
 
 @keyframes an1 {
     from {
+        opacity: 0;
         margin-top: 70px;
+        padding: 70px 0;
     }
     
     to {

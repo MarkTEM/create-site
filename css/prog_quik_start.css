@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color .3s; /*Плавный цвет фона*/
+    transition: background-color 1s; /*Плавный цвет фона*/
     /* background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%); */
     /* background: #f2f2f3; */
     background: #1B1B1B; /*Цвет фона*/
@@ -229,7 +229,9 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
+        opacity: 0;
         margin-top: 70px;
+        padding: 70px 0;
     }
     
     to {

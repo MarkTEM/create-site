@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color .3s; /*Плавный цвет фона*/
+    transition: background-color 1s; /*Плавный цвет фона*/
     /* background: #FCFCFC; */
     /* background: #101010; */
     /* background: var(--fon-light); */
@@ -430,7 +430,7 @@ body.dark .text__ok {
 /*------------------------------------------*/
 
 #convas {
-    background: #1B1B1B;
+    /* background: #1B1B1B; */
 }
 body.dark #convas {
     background: none;
@@ -456,7 +456,9 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
+        opacity: 0;
         margin-top: 70px;
+        padding: 70px 0;
     }
     
     to {

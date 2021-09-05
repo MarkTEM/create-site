@@ -1,14 +1,10 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color .3s; /*Плавный цвет фона*/
-    /* background: #FCFCFC; */
-    /* background: #101010; */
-    background: #141414;
-    min-height: 150vh;
-    color: #272727;
+    transition: background-color 1s; /*Плавный цвет фона*/
+    background: #1B1B1B;
 }
 body.dark  {
-    background: var(--fon-light); /*Цвет фона*/
+    background: #1B1B1B; /*Цвет фона*/
 }
 /*-----------------SCROLLBAR-----------------*/
 body::-webkit-scrollbar {width: 8px;}
@@ -143,7 +139,9 @@ body.dark #convas2 {
 }
 @keyframes an1 {
     from {
+        opacity: 0;
         margin-top: 70px;
+        padding: 70px 0;
     }
     
     to {

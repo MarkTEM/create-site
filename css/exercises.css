@@ -170,7 +170,9 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
+        opacity: 0;
         margin-top: 70px;
+        padding: 70px 0;
     }
     
     to {
