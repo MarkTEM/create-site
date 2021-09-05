@@ -1,24 +1,34 @@
-function preloader() {
-    $(() => {
-        setInterval(() => {
+// function preloader() {
+//     $(() => {
+//         setInterval(() => {
 
-          let p = $('.preloader');
+//           let p = $('.preloader');
 
-          p.css('opacity', 0);
+//           p.css('opacity', 0);
 
-          setInterval(
-            () => p.remove(),
-            parseInt(p.css('--duration')) *1000
-          );
+//           setInterval(
+//             () => p.remove(),
+//             parseInt(p.css('--duration')) *1000
+//           );
 
-        }, 1000);
+//         }, 1000);
 
-    });
-}
+//     });
+// }
 
 // preloader();
 
-setInterval(() => preloader(), 0);
+// setInterval(() => preloader(), 0);
+
+
+let preloader = document.querySelector('.preloader');
+
+window.addEventListener('load', () => {
+  preloader.classList.add('hide');
+  setTimeout(() => {
+    preloader.remove()
+  },600)
+});
 
 
 
