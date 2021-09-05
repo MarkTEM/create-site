@@ -204,6 +204,9 @@ body.dark .preloader {
 		background: #f00e43;
 	}
 }
+.hide {
+    opacity: 0;
+}
 /*------------------------------------------*/
 
 
