@@ -374,7 +374,7 @@ body.dark .text__ok {
     /* color: var(--text-light); */
     color: #fff;
     height: 40px;
-    /* font-size: 24px; */
+    font-size: 24px;
     padding-top: 10px;
 }
 /*------------------------------------------*/
