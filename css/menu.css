@@ -88,15 +88,9 @@ body.dark #clock {color: var(--text-light);background: #161616;}
     align-items: center;
     padding: 1.4em 1.2em;
     border-radius: 12px;
-    /* background: #252525; */
-    /* background: #313135; */
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20);
     border: 1px solid #e4e4e4;
     background: var(--box_light);
-    
-    color: #EAEAEA;
-    /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.30); */
-    /* transition: 0.3s; */
 }
 body.dark .item {
     background: linear-gradient(153.22deg, #2c2c2c 51.74%, #202022 134.15%);
@@ -239,10 +233,8 @@ body.dark .image__box {background-image: url(../ico/box.svg);}
     padding: 30px;
     margin-bottom: 60px;
     /* border: 1px dashed #aaaaaa; */
-    background: #fff;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20);
+    background: var(--box_light);
     border: 1px solid #e4e4e4;
-    border-radius: 12px;
 }
 body.dark .card_help {
     background: var(--box_dark);
