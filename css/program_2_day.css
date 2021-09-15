@@ -14,7 +14,72 @@ body.dark  {
     
 }
 
+/* ---------------------------------------- */
 
+
+#convas {
+    /* height: 300px; */
+}
+
+body.dark #convas {
+    background: none;
+    
+}
+.fff {
+    /* margin-bottom: -20px; */
+    background-image: url(../img/prog2.jfif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.filter {
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.644);
+    backdrop-filter: blur(5px);
+}
+#convas2 {
+    margin-top: -20px;
+    z-index: 10;
+    background: #fff;
+    border-radius: 12px 12px 0px 0px;
+}
+body.dark #convas2 {
+    background: none;
+    padding-top: 0;
+}
+
+#convas2 {
+    /* animation-delay: 1s; */
+    animation-duration: 1s;
+    animation-name: an1;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+/* @keyframes an1 {
+    from {
+        opacity: 0;
+        margin-top: 70px;
+        padding: 70px 0;
+    }
+    
+    to {
+
+    }
+} */
+.img__prog1 {
+    border-radius: 12px 12px 0px 0px;
+    /* display: block; */
+    padding-bottom: 60%;
+    width: 100%;
+    background: rgb(247, 247, 247);
+    
+    
+}
+
+/* ---------------------------------------- */
 
 .upr {
     color: var(--text-dark);
@@ -31,7 +96,7 @@ body.dark .upr {
     margin-left: 20px;
 }
 .m_top_20px {
-    margin-top: 20px;
+    padding-top: 20px;
     margin-left: 20px;
 }
 @media only screen and (max-width: 420px) {
@@ -357,7 +422,8 @@ body.dark .text__ok {
 
 /*------------------------------------------*/
 .card__pin {
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     /* border: 1px dashed #3A3A3E; */
     border-radius: 12px;
 }
@@ -369,8 +435,9 @@ body.dark .text__ok {
     /* color: var(--text-light); */
     color: #fff;
     height: 40px;
+    font-weight: 500;
     /* font-size: 24px; */
-    padding-top: 10px;
+    padding-top: 5px;
 }
 /*------------------------------------------*/
 
@@ -382,8 +449,8 @@ body.dark .text__ok {
 .hint {
     display: flex;
     justify-content: flex-start;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 @media only screen and (max-width: 420px) {
     .hint {
@@ -413,9 +480,9 @@ body.dark .text__ok {
 
 .pin__text {
     /* color: var(--text-light); */
-    color: #fff;
+    color: #0c0c0c;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 6px;
     padding-bottom: 6px;
     margin-left: 15px;
@@ -424,40 +491,5 @@ body.dark .text__ok {
 @media only screen and (max-width: 420px) { .pin__text { margin-left: 12px; } }
 /*------------------------------------------*/
 
-#convas {
-    /* background: #1B1B1B; */
-}
-body.dark #convas {
-    background: none;
-    
-}
-#convas2 {
-    padding-top: 5px;
-    background: #fff;
-    border-radius: 12px 12px 0px 0px;
-}
-body.dark #convas2 {
-    background: none;
-    padding-top: 0;
-}
 
-#convas2 {
-    /* animation-delay: 1s; */
-    animation-duration: 1s;
-    animation-name: an1;
-    /* animation-iteration-count: infinite;
-    animation-direction: alternate; */
-}
-
-@keyframes an1 {
-    from {
-        opacity: 0;
-        margin-top: 70px;
-        padding: 70px 0;
-    }
-    
-    to {
-
-    }
-}
 /* ---------------------------------------- */
