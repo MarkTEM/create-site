@@ -40,10 +40,11 @@ summary {
     background: #ffffff;
     padding: 0.2em 0.2em;
     
+    
 }
 .head_txt {
     color: var(--text-dark);
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 8px;
     font-weight: 500;
     padding: 0.3em 0.8em;
@@ -51,7 +52,6 @@ summary {
 .head_txt:hover {
     background: #c9d5da;
     color: var(--text-dark);
-    font-size: 18px;
     font-weight: 500;
 }
 .line2 {
@@ -68,7 +68,7 @@ summary {
     padding-left: 20px;
     padding-right: 20px;
 }
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 720px) {
     .flex {
         flex-wrap: wrap;
         align-items: stretch;
@@ -267,10 +267,20 @@ body.dark #convas2 {
 }
 
 .tag__items {
-    padding: 5px 12px;
-    border-radius: 4px;
-    background: #f1f1f1;
-    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    /* background: #f1f1f1; */
+    border: 1px solid #1fa874;
+    color: #1fa874;
+    /* margin: 0; */
+    margin-left: 8px;
+}
+@media only screen and (max-width: 340px) {
+    .tag__items {
+        margin: 4px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
 }
 .tag__text {
     font-weight: 500;
@@ -284,10 +294,15 @@ body.dark #convas2 {
     grid-gap: 10px 10px; /*92%*/
     padding: 10px 0;
 }
+@media only screen and (max-width: 380px) {
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 .box__op {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
@@ -301,13 +316,14 @@ body.dark #convas2 {
 @media screen and (max-width: 420px) {
     .box__op {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: space-between;
         align-items: flex-start;
         padding: 10px;
     }
     .op__text {
-        padding-bottom: 5px;
+        padding-right: 15px;
+        /* padding-bottom: 5px; */
     }
 }
 
