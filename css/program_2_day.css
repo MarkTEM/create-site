@@ -25,22 +25,30 @@ body.dark #convas {
     background: none;
     
 }
-.fff {
-    /* margin-bottom: -20px; */
+#fff {
+    /* height: 400px; */
+    /* padding-top: 50%;
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: -20px;
     background-image: url(../img/prog2.jfif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
+    padding-left: 12px;
+    padding-right: 12px; */
+    /* margin-bottom: 20px; */
 }
-.filter {
-    margin-bottom: 20px;
-    height: 100%;
+/* .filter {
+    position: relative;
+    bottom: 0px;
+    padding: 20px;
+    height: 50%;
     width: 100%;
     background: rgba(0, 0, 0, 0.644);
     backdrop-filter: blur(5px);
-}
+} */
 #convas2 {
-    margin-top: -20px;
+    /* margin-top: -20px; */
     z-index: 10;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
