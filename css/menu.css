@@ -302,6 +302,7 @@ body.dark #convas {
     
 }
 #convas2 {
+    padding-bottom: 60px;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
     min-height: 100vh;
