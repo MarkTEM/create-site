@@ -38,12 +38,12 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 12px;
     color: #E5E5E5;
     padding: 1.4em 1.2em;
     background: var(--box_light);
     border: 1px solid #e4e4e4;
-    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.20));
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20);
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
 body.dark .select {
@@ -63,10 +63,10 @@ body.dark .select p{
 .select:hover {
     transform: scale(1.02);
 }
-.select h4 {
+/* .select h4 {
     font-size: 18px;
     font-weight: 500;
-}
+} */
 .select p {
     margin-top: 0px;
     font-size: 18px;
@@ -85,7 +85,7 @@ body.dark .select p{
     row-gap: 15px;
     column-gap: 15px;        68%*/
     grid-template-columns: repeat(6,1fr);
-    grid-gap: 15px 15px; /*92%*/
+    grid-gap: 12px 12px; /*92%*/
     padding: 0px;
 }
 @media only screen and (max-width: 320px) {
@@ -116,7 +116,7 @@ body.dark .select p{
         padding: 1.2em 1em;
     }
     .select p {
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 0px; 
         font-size: 14px;
     }
@@ -144,7 +144,7 @@ body.dark .select p{
 .hint {
     display: flex;
     justify-content: flex-start;
-    padding-top: 40px;
+    padding-top: 15px;
     padding-bottom: 15px;
 }
 @media only screen and (max-width: 420px) {
@@ -174,11 +174,11 @@ body.dark .select p{
 }
 
 .hint__text {
-    color: #E5E5E5;
+    color: #0c0c0c;
     font-size: 14px;
     font-weight: 500;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     margin-left: 15px;
 }
 body.dark .hint__text {
@@ -216,22 +216,33 @@ body.dark .hint__text {
 /*------------------------------------------*/
 .card__pin {
     margin-top: 30px;
+    margin-bottom: 10px;
+    /* padding-top: 60px;
+    padding-bottom: 30px; */
+    border: 1px dashed #4b4b50;
+    border-radius: 12px;
+    padding: 15px;
 }
 body.dark .card__pin {
     margin-top: 50px;
 }
 .card__pin p {
-    color: #8F8F8F;
+    color: #9e9ea8;
     font-size: 12px;
 }
 .text__pin{
-    color: #E5E5E5;
-    font-size: 24px;
+    color: var(--text-light);
     padding-top: 10px;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 /*------------------------------------------*/
 
-
+.calenrar_txt {
+    font-weight: 500;
+}
 
 
 
@@ -258,6 +269,7 @@ body.dark .pin__calendar h3{
     padding-bottom: 20px;
 }
 #convas2 {
+    padding-bottom: 60px;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
     min-height: 100vh;
@@ -271,18 +283,14 @@ body.dark #convas2 {
 }
 
 #convas2 {
-    /* animation-delay: 1s; */
-    animation-duration: 1s;
+    animation-duration: 0.6s;
     animation-name: an1;
-    /* animation-iteration-count: infinite;
-    animation-direction: alternate; */
-}
+  }
 
 @keyframes an1 {
     from {
-        opacity: 0;
-        margin-top: 70px;
-        padding: 70px 0;
+        margin-top: 40px;
+        padding: 50px 0;
     }
     
     to {
