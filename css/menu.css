@@ -80,7 +80,7 @@ body.dark #clock {color: var(--text-light);background: #161616;}
     margin: 30px auto;
     /* padding-top: 10%; */
 }
-.box h4 {font-weight: 400;}
+.box h4 {font-weight: 500;}
 .item {
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@ body.dark .item {
 
 .item h4{
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 15px;
 }
 /* body.dark .item h4{
     color: #1C1C1E; font-weight: 600;
