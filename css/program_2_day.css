@@ -49,7 +49,6 @@ body.dark #convas {
 } */
 #convas2 {
     /* margin-top: -20px; */
-    z-index: 10;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
 }
@@ -68,9 +67,8 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
-        opacity: 0;
-        margin-top: 70px;
-        padding: 70px 0;
+        margin-top: 40px;
+        padding: 50px 0;
     }
     
     to {
@@ -430,6 +428,22 @@ body.dark .text__ok {
 
 /*------------------------------------------*/
 .card__pin {
+    animation-duration: 0.6s;
+    animation-name: an3;
+    transition-timing-function: ease-out;
+}
+
+@keyframes an3 {
+    from {
+        /* opacity: 0; */
+        padding-top: 0px;
+        font-size: 10px;
+        /* padding-left: 60px; */
+    }
+    
+    to { }
+}
+.card__pin {
     padding-top: 60px;
     padding-bottom: 30px;
     /* border: 1px dashed #3A3A3E; */
@@ -447,6 +461,7 @@ body.dark .text__ok {
     /* font-size: 24px; */
     padding-top: 5px;
 }
+
 /*------------------------------------------*/
 
 
