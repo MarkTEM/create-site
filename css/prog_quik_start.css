@@ -128,32 +128,7 @@ body.dark .item2 {
     font-size: 14px;
     font-weight: 400;
 }
-.btn__start {
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    border-radius: 2em;
-    font-size: 16px;
-    padding: 0.7em 1.5em;
-    background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
-}
-.btn__start2 {
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    border-radius: 2em;
-    font-size: 16px;
-    padding: 0.7em 1.5em;
-    background: linear-gradient(136.2deg, #FFBC10 16.28%, #FA00FF 224.54%);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
-}
-.btn__start:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
-}
-.btn__start2:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
-}
+
 
 
 .flex {

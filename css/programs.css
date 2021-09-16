@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     text-align: center;
 }
 @media only screen and (max-width: 520px) {
-    .hint__text { text-align: left; margin-left: 12px;}
+    .hint__text { text-align: left;}
 }
 /*-------------------------------------------*/
 summary {
@@ -201,45 +201,7 @@ p {
     background-size: 100%;
 }
 
-.btn__start {
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    border-radius: 2em;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 0.7em 1.5em;
-    background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
-}
-.btn__start:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
-}
-.btn__start2 {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    border-radius: 2em;
-    font-size: 16px;
-    padding: 0.7em 1.5em;
-    background: linear-gradient(136.2deg, #FFBC10 16.28%, #FA00FF 224.54%);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
-}
-.btn__start3 {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    border-radius: 2em;
-    font-size: 16px;
-    padding: 0.7em 1.5em;
-    background: linear-gradient(136.2deg, #FA6060 16.28%, #FA00FF 224.54%);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
-}
-.btn__start2:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
-}
+
 
 #convas2 {
     padding-top: 60px;
@@ -261,7 +223,7 @@ body.dark #convas2 {
     animation-direction: alternate; */
 }
 @media screen and (max-width: 600px) {
-    #convas2 { padding-top: 15px; }
+    #convas2 { padding-top: 10px; }
 }
 @keyframes an1 {
     from {
@@ -325,7 +287,6 @@ body.dark #convas2 {
     .box__op {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: flex-start;
         padding: 10px;
     }

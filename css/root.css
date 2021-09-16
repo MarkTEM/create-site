@@ -16,7 +16,6 @@ a {
 
 
 /*----------------Collors-------------------*/
-
 :root {
     --primary-color: #EFEFEF;
     --black: rgb(24, 24, 24);
@@ -41,16 +40,6 @@ a {
 
 
 
-/*------------------------------------------*/
-.m_border_radius { border-radius: 12px; }
-.m_shadow { box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.30); }
-/* .m_font_weight { font-weight: 500; } */
-/*------------------------------------------*/
-
-
-
-
-
 /*----------------SCROLLBAR-----------------*/
 body::-webkit-scrollbar {width: 5px;}
 body::-webkit-scrollbar-track {background-color: #000000;}
@@ -59,11 +48,22 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 /*body::-webkit-scrollbar-button {background-color: #858585; height: 10px;}*/
 /*------------------------------------------*/
 
+
+
+
+
+/*------------------------------------------*/
+.m_border_radius { border-radius: 12px; }
+.m_shadow { box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.30); }
+/* .m_font_weight { font-weight: 500; } */
+/*------------------------------------------*/
+
+
 /*-----------------TEXT---------------------*/
 @media only screen and (max-width: 720px) { h3 { font-size: 16px; } }
 @media only screen and (min-width: 720px) { h3 { font-size: 18px; } }
-@media only screen and (max-width: 720px) { h4 { font-size: 14px; } }
-@media only screen and (min-width: 720px) { h4 { font-size: 15px; } }
+@media only screen and (max-width: 720px) { h4 { font-size: 15px; } }
+@media only screen and (min-width: 720px) { h4 { font-size: 16px; } }
 @media only screen and (max-width: 720px) { h5 { font-size: 12px; } }
 @media only screen and (min-width: 720px) { h5 { font-size: 14px; } }
 /*------------------------------------------*/
@@ -237,7 +237,7 @@ body.dark .preloader {
 	align-items: center;
 	justify-content: space-between;
     flex-wrap: wrap;
-	padding: 30px 0;
+	padding: 20px 0;
 	margin-left: 30px;
 	margin-right: 30px;
 	/* height: 60px; */
@@ -249,7 +249,7 @@ body.dark .preloader {
 	align-items: flex-start;
 	justify-content: space-between;
     flex-wrap: wrap;
-	padding: 30px 0;
+	padding: 20px 0;
 	margin-left: 30px;
 	margin-right: 30px;
 	/* height: 60px; */
@@ -385,22 +385,6 @@ body.dark .icon__menu:hover {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
     cursor: pointer;
 }
-
-/* .mod__btn {
-    
-    color: #6b6b6b;
-    
-    background: #FFFFFF;
-    border: 1px solid #D1D2D6;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
-}
-
-.mod__btn:hover {
-    color: #fff;
-    background: #00c3ff;
-    border: 2px solid #00c3ff;
-    transition: 0.3s; 
-} */
 .btn__akk {
     border: none;
     text-decoration: none;
@@ -460,12 +444,66 @@ body.dark .btn__theme:hover {
     background: linear-gradient(136.2deg, #0099ff 16.28%, #FA00FF 224.54%);
     
 }
-/* body.dark .btn__theme {
-    background: #fff;
-} */
+/*------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------*/
 footer {
     width: 100%;
     height: 400px;
     background: #111111;
     /* border-top: 1px solid#111111; */
 }
+/*------------------------------------------*/
+
+
+
+
+
+/*------------------M-BTN-------------------*/
+.m__btn {
+    border-radius: 2em;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0.7em 1.5em;
+}
+/*------------------------------------------*/
+
+
+
+/*-----------------BTN-NONE-----------------*/
+.btn__none {
+    display: inline-block;
+    text-decoration: none;
+    /* cursor: pointer; */
+    border: 0px solid #D1D2D6;
+    /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); */
+    background: linear-gradient(136.2deg, #FA6060 16.28%, #FA00FF 224.54%);
+}
+.btn__none:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+    /* transition: 0.8s; transform: scale(1.00); */
+}
+/*------------------------------------------*/
+
+/*------------------------------------------*/
+.btn__start {
+    text-decoration: none;
+    background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+}
+.btn__start2 {
+    text-decoration: none;
+    background: linear-gradient(136.2deg, #FFBC10 16.28%, #FA00FF 224.54%);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+}
+.btn__start:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+}
+.btn__start2:hover {
+    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+}
+/*------------------------------------------*/
