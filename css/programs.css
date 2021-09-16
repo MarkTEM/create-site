@@ -23,9 +23,10 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 
 .hint__text {
     color: #4b4b4b;
-    padding-bottom: 15px;
     font-size: 15px;
-    /* margin-left: 15px; */
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
     font-weight: 500;
     text-align: center;
 }
@@ -34,7 +35,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 }
 /*-------------------------------------------*/
 summary {
-    /* list-style: none; */
+    list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
     color: var(--text-light);
@@ -49,7 +50,6 @@ summary {
     border-radius: 12px;
     background: #ffffff;
     padding: 0.2em 0.2em;
-    
     
 }
 .head_txt {
@@ -201,10 +201,11 @@ p {
     background-size: 100%;
 }
 
-
-
+#convas {
+    padding-bottom: 30px;
+}
 #convas2 {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
@@ -214,6 +215,10 @@ body.dark #convas2 {
     background: none;
     padding-top: 0;
 }
+@media screen and (max-width: 720px) {
+    #convas2 { padding-top: 15px; }
+}
+
 
 #convas2 {
     /* animation-delay: 1s; */
@@ -222,9 +227,7 @@ body.dark #convas2 {
     /* animation-iteration-count: infinite;
     animation-direction: alternate; */
 }
-@media screen and (max-width: 600px) {
-    #convas2 { padding-top: 15px; }
-}
+
 @keyframes an1 {
     from {
         margin-top: 70px;

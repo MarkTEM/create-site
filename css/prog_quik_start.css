@@ -22,7 +22,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     font-size: 15px;
     font-weight: 500;
     margin-left: 15px;
-    padding-top: 20px;
+    padding-top: 5px;
     padding-bottom: 15px;
 }
 
@@ -194,16 +194,20 @@ body.dark .box3 {
 #convas {
     padding-bottom: 30px;
 }
+body.dark #convas {
+    background: none;
+    padding-bottom: 0px;
+}
 #convas2 {
     padding-bottom: 400px;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
     
 }
-body.dark #convas {
-    background: none;
-    padding-bottom: 0px;
+@media screen and (max-width: 600px) {
+    #convas2 { padding-top: 15px; }
 }
+
 body.dark #convas2 {
     background: none;
 }
@@ -254,9 +258,8 @@ body.dark #convas2 {
     }
 }
 
-.tag__items {
-    
-}
+
+
 .tag__text {
     padding: 5px 10px;
     border-radius: 8px;
