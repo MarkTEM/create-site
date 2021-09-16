@@ -137,7 +137,6 @@ body.dark .item {
     .box {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 10px;
-        margin-bottom: 30px;
     }
     .item {
         justify-content: flex-start;
