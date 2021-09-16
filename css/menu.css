@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color 1s; /*Плавный цвет фона*/
+    transition: background-color 0s; /*Плавный цвет фона*/
     /* background: #101010; */
     /* background: #141414; */
     background: #1B1B1B;
@@ -231,7 +231,7 @@ body.dark .image__box {background-image: url(../ico/box.svg);}
     align-items: center;
     text-align: center;
     padding: 30px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     /* border: 1px dashed #aaaaaa; */
     background: var(--box_light);
     border: 1px solid #e4e4e4;
@@ -258,13 +258,14 @@ body.dark .card_help {
     padding: 0.7em 1.5em;
     border: 0px solid #D1D2D6;
     background: #87898a;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
+    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10); */
+    background: linear-gradient(136.2deg, #FA6060 16.28%, #FA00FF 224.54%);
     margin-top: 20px;
     
 }
 .help:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
-    transition: 0.8s; transform: scale(1.00);
+    /* transition: 0.8s; transform: scale(1.00); */
 }
 .text_help {
     font-size: 14px;
@@ -295,7 +296,7 @@ footer {
 /*------------------------------------------*/
 
 #convas {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 body.dark #convas {
     background: none;
@@ -306,20 +307,21 @@ body.dark #convas {
     background: #fff;
     border-radius: 12px 12px 0px 0px;
     min-height: 100vh;
+    transition: background-color 0.6s; /*Плавный цвет фона*/
 }
 body.dark #convas2 {
     background: none;
     padding-top: 0;
 }
 #convas2 {
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-name: an1;
   }
 
 @keyframes an1 {
     from {
-        margin-top: 70px;
-        padding: 70px 0;
+        margin-top: 50px;
+        padding: 30px 0;
     }
     
     to {

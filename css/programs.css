@@ -245,7 +245,7 @@ body.dark #convas2 {
 
 #convas2 {
     /* animation-delay: 1s; */
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-name: an1;
     /* animation-iteration-count: infinite;
     animation-direction: alternate; */
@@ -294,7 +294,7 @@ body.dark #convas2 {
     grid-gap: 10px 10px; /*92%*/
     padding: 10px 0;
 }
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 300px) {
     .grid {
         grid-template-columns: repeat(1,1fr);
     }
@@ -316,14 +316,14 @@ body.dark #convas2 {
 @media screen and (max-width: 420px) {
     .box__op {
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         padding: 10px;
     }
     .op__text {
         padding-right: 15px;
-        /* padding-bottom: 5px; */
+        padding-bottom: 5px;
     }
 }
 
