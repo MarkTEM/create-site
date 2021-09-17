@@ -199,10 +199,10 @@ body.dark #convas {
     padding-bottom: 0px;
 }
 #convas2 {
+    padding-top: 30px;
     padding-bottom: 400px;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
-    
 }
 @media screen and (max-width: 600px) {
     #convas2 { padding-top: 15px; }
