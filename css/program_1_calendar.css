@@ -215,8 +215,24 @@ body.dark .hint__text {
 
 /*------------------------------------------*/
 .card__pin {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    animation-duration: 0.6s;
+    animation-name: an3;
+    transition-timing-function: ease-out;
+}
+
+@keyframes an3 {
+    from {
+        /* opacity: 0; */
+        padding-top: 0px;
+        font-size: 10px;
+        /* padding-left: 60px; */
+    }
+    
+    to { }
+}
+.card__pin {
+    padding-top: 60px;
+    padding-bottom: 30px;
     /* padding-top: 60px;
     padding-bottom: 30px; */
     /* border: 1px dashed #4b4b50; */
@@ -265,7 +281,7 @@ body.dark .pin__calendar h3{
 
 /*------------------------------------------*/
 #convas {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 #convas2 {
     padding-bottom: 60px;
@@ -288,7 +304,7 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
-        margin-top: 40px;
+        margin-top: 60px;
         padding: 50px 0;
     }
     
