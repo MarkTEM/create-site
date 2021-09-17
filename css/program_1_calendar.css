@@ -219,9 +219,8 @@ body.dark .hint__text {
     margin-bottom: 10px;
     /* padding-top: 60px;
     padding-bottom: 30px; */
-    border: 1px dashed #4b4b50;
+    /* border: 1px dashed #4b4b50; */
     border-radius: 12px;
-    padding: 15px;
 }
 body.dark .card__pin {
     margin-top: 50px;
