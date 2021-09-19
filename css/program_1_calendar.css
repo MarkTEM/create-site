@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
 body.dark .select {
-    background: #242426;
+    background: var(--box_dark);
     border: 1px solid #131314;
 }
 body.dark .select h2{
