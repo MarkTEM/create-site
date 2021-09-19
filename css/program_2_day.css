@@ -9,7 +9,7 @@ body {
     color: #272727;
 }
 body.dark  {
-    background: #141414; 
+    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
 }
 
 /* ---------------------------------------- */
@@ -49,8 +49,8 @@ body.dark #convas {
     border-radius: 12px 12px 0px 0px;
 }
 body.dark #convas2 {
-    background: none;
-    padding-top: 0;
+    background: #131314;
+    border: 1px solid #0B0B0C;
 }
 
 #convas2 {
@@ -496,6 +496,9 @@ body.dark .text__ok {
     padding-bottom: 6px;
     margin-left: 15px;
     /* transition: 0.5s; */
+}
+body.dark .pin__text {
+    color: #fff;
 }
 @media only screen and (max-width: 420px) { .pin__text { margin-left: 12px; } }
 /*------------------------------------------*/

@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color 0s; /*Плавный цвет фона*/
+    transition: background-color 0s;
     /* background: #101010; */
     /* background: #141414; */
     background: #1B1B1B;
@@ -94,8 +94,9 @@ body.dark #clock {color: var(--text-light);background: #161616;}
     background: var(--box_light);
 }
 body.dark .item {
-    background: linear-gradient(153.22deg, #2c2c2c 51.74%, #202022 134.15%);
-    border: 0px;
+    background: #242426;
+    border: 1px solid #131314;
+    /* border: 0px; */
 }
 
 .item h4{
@@ -230,8 +231,8 @@ body.dark .image__box {background-image: url(../ico/box.svg);}
     border: 1px solid #e4e4e4;
 }
 body.dark .card_help {
-    background: var(--box_dark);
-    border: 1px;
+    background: #242426;
+    border: 1px solid #131314;
     /* border: 1px dashed #252525; */  
 }
 @media only screen and (max-width: 420px) {
@@ -270,12 +271,6 @@ footer {
     height: 100px;
     background: #0d0f11;
 }
-@media screen and (max-width: 905px) {
-    footer{margin-top: 20px;}
-}
-@media screen and (max-width: 490px) {
-    footer{margin-top: 10px;}
-}
 .create{margin: auto; text-align: center;}
 
 /*------------------------------------------*/
@@ -293,7 +288,6 @@ body.dark #convas {
     background: #fff;
     border-radius: 12px 12px 0px 0px;
     min-height: 100vh;
-    transition: background-color 0.6s; /*Плавный цвет фона*/
 }
 @media screen and (max-width: 720px) {
     #convas2 {
@@ -301,8 +295,8 @@ body.dark #convas {
     }
 }
 body.dark #convas2 {
-    background: none;
-    padding-top: 0;
+    background: #131314;
+    border: 1px solid #0B0B0C;
 }
 #convas2 {
     animation-duration: 0.6s;
@@ -355,6 +349,10 @@ body.dark #convas2 {
     padding: 20px;
     border-radius: 12px;
 }
+body.dark .prog__prev {
+    background: #242426;
+    border: 1px solid #131314;
+}
 @media screen and (max-width: 720px) {
     .prog__prev {
         padding: 15px;
@@ -364,3 +362,9 @@ body.dark #convas2 {
 .txt__prog_prew2 { font-weight: 500; color: var(--text-dark); }
 .txt__prog_prew3 { font-weight: 500; color: var(--text-dark); padding-top: 5px ;}
 /*------------------------------------------*/
+body.dark .txt__prog_prew2 {
+    color: #fff;
+}
+body.dark .txt__prog_prew3 {
+    color: #fff;
+}
