@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     margin-bottom: 15px;
     background: rgb(26, 26, 26);
 }
-p {margin: 15px 0 30px; color: rgb(122 122 122); font-size: 14px;}
+p {margin: 15px 0 20px; color: rgb(122 122 122); font-size: 14px;}
 .qs__section2 {
     display: flex;
     align-items: center;
@@ -166,13 +166,13 @@ body.dark .box3 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
-@media only screen and (max-width: 420px) {
+/* @media only screen and (max-width: 420px) {
     .box__item {
         padding-top: 10px;
     }
-}
+} */
 .box__item__bat {
     display: flex;
     flex-wrap: wrap;
@@ -213,7 +213,7 @@ body.dark #convas2 {
 }
 #convas2 {
     /* animation-delay: 1s; */
-    animation-duration: 1s;
+    animation-duration: 0.6s;
     animation-name: an1;
     /* animation-iteration-count: infinite;
     animation-direction: alternate; */
@@ -221,7 +221,7 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
-        margin-top: 40px;
+        margin-top: 60px;
         padding: 50px 0;
     }
     
