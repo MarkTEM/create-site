@@ -27,14 +27,14 @@ body.dark .off__teg { color: #8f8f8f; }
 .hint__text {
     color: #4b4b4b;
     font-size: 15px;
-    margin-left: 15px;
     padding-top: 5px;
     padding-bottom: 15px;
     font-weight: 500;
     text-align: center;
 }
+body.dark .hint__text { font-weight: 400; }
 @media only screen and (max-width: 520px) {
-    .hint__text { text-align: left;}
+    .hint__text { text-align: left; margin-left: 15px;}
 }
 /*-------------------------------------------*/
 summary {
@@ -208,7 +208,7 @@ body.dark .line {
 }
 
 #convas {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 #convas2 {
     padding-top: 30px;
@@ -247,7 +247,7 @@ body.dark #convas2 {
 
 .tag__items {
     padding: 5px 12px;
-    border-radius: 2em;
+    border-radius: 8px;
     background: #333333;
     /* border: 1px solid #1fa874; */
     color: var(--text-light);
