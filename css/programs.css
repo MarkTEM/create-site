@@ -106,6 +106,7 @@ summary {
 }
 body.dark .box {
     background: var(--box_dark);
+    border: 1px solid #0B0B0C;
 }
 @media only screen and (max-width: 720px) {
     .box {
@@ -252,6 +253,11 @@ body.dark #convas2 {
     color: var(--text-light);
     /* margin: 0; */
     margin-left: 8px;
+}
+body.dark .tag__items {
+    background: none;
+    color: #1fa874;
+    border: 1px solid #1fa874;
 }
 @media only screen and (max-width: 340px) {
     .tag__items {
