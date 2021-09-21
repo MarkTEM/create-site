@@ -27,7 +27,7 @@ a {
     --text-light: #fff;
     --text-light: #E5E5E5;
     --text-light2: #fff;
-    --text-dark: #2c2c2e;
+    --text-dark: #1C1C1E;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
     --line-dark: #26282B;
@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 @media only screen and (max-width: 720px) { h5 { font-size: 12px; } }
 @media only screen and (min-width: 720px) { h5 { font-size: 14px; } }
 /*------------------------------------------*/
-h3 { font-weight: 600;}
+/* h3 { font-weight: 600;} */
 
 /*---------------TEXT WEIGHT----------------*/
 

@@ -97,8 +97,12 @@ body.dark .item2 {
     background: linear-gradient(135deg, #16967e 0%, #0291ce 100%);
 }
 
-
-.txt__qs {
+.txt__prog_prew3 {
+    font-weight: 500;
+    color: #4E4E54;
+    padding-top: 5px;
+}
+/* .txt__qs {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -108,7 +112,7 @@ body.dark .item2 {
     .txt__qs {
         font-size: 18px;
     }
-}
+} */
 @media only screen and (min-width: 800px) {
     .box {
         grid-template-columns: repeat(2, 1fr);
