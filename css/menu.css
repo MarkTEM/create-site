@@ -363,10 +363,10 @@ body.dark .prog__prev {
 .txt__prog_prew3 { font-weight: 500; color: var(--text-dark); padding-top: 5px ;}
 /*------------------------------------------*/
 body.dark .txt__prog_prew2 {
-    color: #fff;
+    color: #E6E6E6;
 }
 body.dark .txt__prog_prew3 {
-    color: #fff;
+    color: #b8b8b8;
 }
 
 /* .flex {

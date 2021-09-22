@@ -27,7 +27,7 @@ a {
     --text-light: #fff;
     --text-light: #E5E5E5;
     --text-light2: #fff;
-    --text-dark: #1C1C1E;
+    --text-dark: #3C3C3E;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
     --line-dark: #26282B;
@@ -84,6 +84,8 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 .text_prev    { margin-left: 10px; }
 .text__weight { font-weight: 500; }
 body.dark .text__weight { font-weight: 400; }
+.text__weight2 { font-weight: 600; }
+body.dark .text__weight2 { font-weight: 400; }
 
 
 .text__color {color: var(--text-dark);}
@@ -469,6 +471,11 @@ footer {
     color: #ffffff;
     font-size: 16px;
     padding: 0.7em 1.5em;
+}
+body.dark .m__btn {
+    color: #212121;
+    font-weight: 500;
+    
 }
 /*------------------------------------------*/
 
