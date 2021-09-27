@@ -469,12 +469,12 @@ footer {
 .m__btn {
     border-radius: 2em;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
     padding: 0.7em 1.5em;
 }
 body.dark .m__btn {
-    color: #212121;
-    font-weight: 500;
+    color: rgb(255 255 255);
+    font-weight: 400;
     
 }
 /*------------------------------------------*/
