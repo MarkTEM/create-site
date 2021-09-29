@@ -144,25 +144,13 @@ body.dark .select p{
 .hint {
     display: flex;
     justify-content: flex-start;
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 15px;
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 720px) {
     .hint {
-        display: flex;
-        justify-content: flex-start;
-    }
-}
-@media only screen and (min-width: 420px) {
-    .hint {
-        display: flex;
-        justify-content: flex-start;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .hint {
-        display: flex;
-        justify-content: flex-start;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
 
