@@ -24,7 +24,6 @@ a {
     --light-color: rgb(228, 13, 13);
     --btn-color: rgb(0, 140, 255);
     --fon-light: #f2f2f3;
-    --text-light: #fff;
     --text-light: #E5E5E5;
     --text-light2: #fff;
     --text-dark: #3C3C3E;
@@ -275,7 +274,7 @@ body.dark .preloader {
 	align-items: center;
 }
 .head__text {
-	color: var(--text-light);
+	color: var(--text-light2);
 	font-size: 24px;
 	font-weight: 500;
 	transition: 0.3s;
