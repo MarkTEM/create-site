@@ -255,7 +255,7 @@ body.dark #convas2 {
 }
 
 .tag__items {
-    padding: 5px 12px;
+    padding: 5px 10px;
     border-radius: 8px;
     background: #333333;
     /* border: 1px solid #1fa874; */
@@ -328,7 +328,7 @@ body.dark .tag__items2 {
 }
 body.dark .box__op { border: 1px solid #151517; }
 .op__text {
-    font-weight: 500;
+    font-weight: 400;
     padding-bottom: 0px;
 }
 @media screen and (max-width: 420px) {
