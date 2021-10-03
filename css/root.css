@@ -247,7 +247,7 @@ body.dark .preloader {
 }
 .header__open{
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
     flex-wrap: wrap;
 	padding: 20px 0;
