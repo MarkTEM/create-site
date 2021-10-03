@@ -49,7 +49,8 @@ body.dark #convas {
     border-radius: 12px 12px 0px 0px;
 }
 body.dark #convas2 {
-    background: #131314;
+    background: #141414;
+    box-shadow: 0px -10px 10px rgba(56, 58, 58, 0.1);
     border: 1px solid #0B0B0C;
 }
 
@@ -122,8 +123,8 @@ body.dark .upr {
     transition: 0.3s;
 }
 body.dark .box__color {
-    background: #262627;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* background: #262627;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     border: 0px;
 }
 @media only screen and (max-width: 420px) {
@@ -395,12 +396,11 @@ body.dark .text__ok {
     border-radius: 12px;
 }
 .card__pin p {
-    color: rgb(201, 201, 201);
+    color: rgb(147 147 147);
     font-size: 12px;
 }
 .text__pin{
-    /* color: var(--text-light); */
-    color: #fff;
+    color: var(--text-light);
     height: 40px;
     font-weight: 500;
     /* font-size: 24px; */
@@ -447,7 +447,8 @@ body.dark .text__ok {
     /* transition: 0.5s; */
 }
 body.dark .pin__text {
-    color: #fff;
+    color: var(--text-light);
+    font-weight: 400;
 }
 @media only screen and (max-width: 420px) { .pin__text { margin-left: 12px; } }
 /*------------------------------------------*/
@@ -480,7 +481,7 @@ body.dark .pin__text {
 body.dark .el1 {
     background: #262627;
     border: 0px solid #c9c9c9;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20);
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20); */
 }
 @media only screen and (max-width: 480px) { .el1 { margin-right: 0px; }}
 .flex_el {
