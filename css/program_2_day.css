@@ -359,7 +359,7 @@ body.dark .text__ok {
     font-weight: 400;
     color: #C4C4C4;
 }
-@media only screen and (max-width: 720px) { .text__ok { font-size: 12px; }}
+@media only screen and (max-width: 720px) { .text__ok { font-size: 13px; }}
 .icon__down {
     background-image: url(../ico/down.svg);
     height: 2.0em;
@@ -444,8 +444,7 @@ body.dark .text__ok {
 }
 
 .pin__text {
-    /* color: var(--text-light); */
-    color: #0c0c0c;
+    color: var(--text-dark);
     font-size: 14px;
     font-weight: 500;
     padding-top: 6px;

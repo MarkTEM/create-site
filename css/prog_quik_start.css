@@ -94,7 +94,7 @@ body.dark .item {
     height: 20px;
     margin: 10px;
     border-radius: 4px;
-    background: #00c3ff;
+    background: #02b4eb;
 }
 body.dark .item2 {
     background: linear-gradient(135deg, #16967e 0%, #0291ce 100%);
@@ -201,7 +201,8 @@ body.dark #convas {
 }
 #convas2 {
     padding-top: 30px;
-    padding-bottom: 400px;
+    /* padding-bottom: 400px; */
+     min-height: 100vh;
     background: #fff;
     border-radius: 12px 12px 0px 0px;
 }
