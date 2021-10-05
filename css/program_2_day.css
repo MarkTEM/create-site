@@ -394,6 +394,10 @@ body.dark .text__ok {
     to { }
 }
 .card__pin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
     /* border: 1px dashed #3A3A3E; */
@@ -461,6 +465,7 @@ body.dark .pin__text {
 .box__el_flex {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 5px;
 }
 @media only screen and (max-width: 480px) {
     .box__el_flex {
@@ -468,15 +473,16 @@ body.dark .pin__text {
     }
 }
 .box_el1 {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    min-width: 240px;
 }
 .rx {
     margin-left: 12px;
 }
 .el1 {
     /* display: table-cell; */
-    margin-top: 15px;
-    background: #fff;
+    margin-top: 10px;
+    background: var(--box_light);
     border: 1px solid #c9c9c9;
     min-height: 50px;
     padding: 10px 20px;
@@ -485,7 +491,7 @@ body.dark .pin__text {
     /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15); */
 }
 body.dark .el1 {
-    background: #262627;
+    background: var(--box_dark);
     border: 0px solid #c9c9c9;
     /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20); */
 }
@@ -505,6 +511,16 @@ body.dark .line_el { border: 1px solid #3C3C3F; }
 .color_fix {font-size: 12px; color: #15beb3; font-weight: 500; padding-top: 5px;}
 body.dark .color_fix { color: #19CBC0; font-weight: 400;}
 /* ---------------------------------------- */
+
+
+.item__day {
+    display: inline-block;
+    background: #262627;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: var(--text-light);
+    font-weight: 400;
+}
 
 
 
