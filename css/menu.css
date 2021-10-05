@@ -251,12 +251,13 @@ body.dark .card_help {
 
 /*------------------------------------------*/
 .text_help {
-    font-size: 14px;
-    color: #9c9c9c;
+    font-size: 15px;
+    color: #525258;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+@media only screen and (max-width: 720px) {.text_help { font-size: 14px; }}
 /*------------------------------------------*/
 
 
