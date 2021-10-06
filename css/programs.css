@@ -46,7 +46,7 @@ body.dark .hint__text { font-weight: 400; }
 }
 .btn__all {
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 2em;
     padding: 0.4em 1.2em;
     margin-top: 10px;
@@ -108,15 +108,17 @@ body.dark .hint__text { font-weight: 400; }
     display: block;
     background: var(--box_light);
     padding: 20px;
+    min-height: 400px;
 }
 body.dark .box {
     background: var(--box_dark);
-    border: 1px solid #0B0B0C;
+    border: 0px solid #0B0B0C;
 }
 @media only screen and (max-width: 720px) {
     .box {
         padding: 15px;
         margin: 0;
+        min-height: 0px;
         /* margin-bottom: 30px; */
     }
 }
