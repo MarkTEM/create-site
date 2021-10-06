@@ -1,21 +1,51 @@
 body {
     font-family: 'Inter', sans-serif;
-    /* background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%); */
-    /* background: #f2f2f3; */
-    background: #1B1B1B; /*Цвет фона*/
+    background: #1B1B1B;
     transition: background-color 0s; /*Плавный цвет фона*/
-    /* color: #333; */
     min-height: 120vh;
 }
 body.dark  {
-    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    background: #1B1B1B;
 }
 /*-----------------SCROLLBAR-----------------*/
 body::-webkit-scrollbar {width: 8px;}
 body::-webkit-scrollbar-track {background-color: #adadad;}
 body::-webkit-scrollbar-thumb {background-color: #333;}
 /*-------------------------------------------*/
-
+/*-------------------------------------------*/
+.flex__batt {
+    display: flex;
+    /* margin-top: 5px; */
+    /* margin-left: 12px; */
+}
+.btn__all {
+    color: #fff;
+    font-size: 16px;
+    border-radius: 2em;
+    padding: 0.4em 1.2em;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: linear-gradient(
+        139.21deg
+        , #32BCA3 14.62%, #2196F3 124.55%);
+}
+.btn__all2 {
+    color: #c7c7c7;
+    font-size: 15px;
+    border: 1px solid #4E4E54;
+    font-weight: 400;
+    border-radius: 2em;
+    padding: 0.4em 1.2em;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.btn__all2:hover {
+    color: #fff;
+    background: linear-gradient(
+        139.21deg
+        , #32BCA3 14.62%, #2196F3 124.55%);
+}
+/*-------------------------------------------*/
 .title {
     /* text-align: center; */
     color: #fff;
@@ -176,26 +206,7 @@ body.dark .box3 {
     justify-content: space-between;
     align-items: center;
 }
-/* @media only screen and (max-width: 420px) {
-    .box__item {
-        padding-top: 10px;
-    }
-} */
-.box__item__bat {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* padding-top: 10px; */
-}
-.tag__bar {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.off__teg { color: #595959; font-weight: 500; padding-bottom: 5px;}
-body.dark .off__teg {
-    color: #b8b8b8;
-}
 /*------------------------------------------*/
 
 
@@ -261,22 +272,9 @@ body.dark #convas2 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 @media only screen and (max-width: 870px) {
     #grid__groop {
         grid-template-columns: repeat(1,1fr);
     }
-}
-
-
-
-.tag__text {
-    padding: 5px 10px;
-    border-radius: 8px;
-    border: 1px solid #1fa874;
-    color: #1fa874;
-    margin-left: 8px;
-    font-weight: 500;
 }
