@@ -40,11 +40,11 @@ body.dark .hint__text { font-weight: 400; }
 
 /*-------------------------------------------*/
 /* .m-butoom-5{margin: 5px;} */
-.flex {
+/* .flex {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -55,19 +55,24 @@ body.dark .hint__text { font-weight: 400; }
         padding-left: 10px;
         padding-right: 10px;
     }
-}
+} */
 .box__g {
-    width: 500px;
-    margin-bottom: 40px;
-    margin: 10px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    /* width: 70%; */
+    /* margin-bottom: 40px; */
+    margin-bottom: 60px;
 }
 @media screen and (max-width: 720px) {
     .box__g {
-        margin: 0px;
+        grid-template-columns: 1fr;
+        /* margin: 0px; */
         margin-bottom: 30px;
     }
 }
 .box {
+    display: block;
     background: var(--box_light);
     padding: 20px;
 }
@@ -80,6 +85,14 @@ body.dark .box {
         padding: 15px;
         margin: 0;
         /* margin-bottom: 30px; */
+    }
+}
+.box__radius {
+    border-radius: 0px 12px 12px 0px;
+}
+@media only screen and (max-width: 720px) {
+    .box__radius {
+        border-radius: 0px 0px 12px 12px;
     }
 }
 .box__item {
@@ -125,16 +138,24 @@ body.dark .line {
 
 
 .img__prog1 {
+    /* position: relative; */
     margin-bottom: -20px;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px 0px 0px 12px;
     /* display: block; */
-    padding-bottom: 60%;
     width: 100%;
+    height: 100%;
     background: rgb(247, 247, 247);
     background-image: url(../img/prog2.jfif);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 720px) {
+    .img__prog1 {
+        border-radius: 12px 12px 0px 0px;
+        padding-bottom: 60%;
+        width: 100%;
+    }
 }
 .img__prog1 {
     animation-duration: 1s;
@@ -160,27 +181,39 @@ body.dark .line {
 
 .img__prog2 {
     margin-bottom: -20px;
-    border-radius: 12px 12px 0px 0px;
-    /* display: block; */
-    padding-bottom: 60%;
+    border-radius: 12px 0px 0px 12px;
     width: 100%;
+    height: 100%;
     background: rgb(247, 247, 247);
     background-image: url(../img/prog1.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 720px) {
+    .img__prog2 {
+        border-radius: 12px 12px 0px 0px;
+        padding-bottom: 60%;
+        width: 100%;
+    }
 }
 .img__prog3 {
     margin-bottom: -20px;
-    border-radius: 12px 12px 0px 0px;
-    /* display: block; */
-    padding-bottom: 60%;
+    border-radius: 12px 0px 0px 12px;
     width: 100%;
+    height: 100%;
     background: rgb(247, 247, 247);
     background-image: url(../img/prog3.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (max-width: 720px) {
+    .img__prog3 {
+        border-radius: 12px 12px 0px 0px;
+        padding-bottom: 60%;
+        width: 100%;
+    }
 }
 
 #convas {
