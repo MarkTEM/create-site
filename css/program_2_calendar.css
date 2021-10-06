@@ -230,7 +230,7 @@ body.dark .hint__text {
 }
 .card__pin {
     padding-top: 60px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     /* padding-top: 60px;
     padding-bottom: 30px; */
     /* border: 1px dashed #4b4b50; */
@@ -260,7 +260,52 @@ body.dark .calenrar_txt {
     font-size: 17px;
     font-weight: 400;
 }
+/*------------------------------------------*/
+.prog_day {
+    padding: 12px;
+    background: #262627;
+    border-radius: 0px 8px 8px 8px;
+    margin-bottom: 15px;
+}
 
+
+
+.qs__section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.txt__qs2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-light);
+}
+/*------------------------------------------*/
+.qs__section3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* margin-bottom: 15px; */
+}
+.item {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background: rgb(47, 48, 49);
+}
+.item2 {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background: #02b4eb;
+    /* background: linear-gradient(135deg, #16967e 0%, #0291ce 100%); */
+}
 
 /*------------------------------------------*/
 .pin__calendar {
