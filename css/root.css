@@ -26,12 +26,12 @@ a {
     --fon-light: #f2f2f3;
     --text-light: #E5E5E5;
     --text-light2: #fff;
-    --text-dark: #3C3C3E;
+    --text-dark: #575761;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
     --line-dark: #26282B;
     --box_light: #fff;
-    --box_dark: #222222;
+    --box_dark: #19191B;
 }
 /*------------------------------------------*/
 .text__dark { 
@@ -404,6 +404,13 @@ body.dark .icon__menu:hover {
 .btn__akk:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
+body.dark .btn__akk {
+    background: none;
+    border: 1px solid #434352;
+    color: #E5E5E5;
+    
+}
+
 
 .btn__ok {
     margin: 10px 5px;
@@ -434,15 +441,16 @@ body.dark .icon__menu:hover {
     font-size: 14px;
     padding: 0.7em 1.5em;
     background: #38393a;
-    color: #dcdfe4;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+    color: #E5E5E5;
+    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20); */
     margin-left: 10px;
 }
 .btn__theme:hover {
     background: linear-gradient(130deg, #0099ff 16.28%, #FA00FF 224.54%);
 }
 body.dark .btn__theme {
-    background: #2c2c2c;
+    background: none;
+    border: 1px solid #434352;
     color: #E5E5E5;
     
 }
@@ -504,6 +512,11 @@ body.dark .m__btn {
     text-decoration: none;
     background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+}
+body.dark .btn__start {
+    background: linear-gradient(123.9deg, #1DBEB5 29.91%, #258EC9 87.5%);
+    font-weight: 400;
+    
 }
 .btn__start2 {
     text-decoration: none;

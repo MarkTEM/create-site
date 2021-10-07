@@ -9,7 +9,7 @@ body {
 }
 body.dark {
     /* background: #19191A; */
-    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    background: #0D0D0E;
     color: rgb(31, 31, 31);
 }
 
@@ -35,13 +35,16 @@ body.dark {
     background: #161616;
     border-bottom: 1px solid#111111;
 }
+body.dark .clock_flex {
+    background: #09090a;
+}
 #clock {
     color: var(--fon-light);
     font-weight: 400;
     font-size: 14px;
     padding-right: 30px;
 }
-body.dark #clock {color: var(--text-light);background: #161616;}
+body.dark #clock {color: var(--text-light);background: #09090a;}
 @media screen and (max-width: 720px) {
     .clock_flex {
         justify-content: flex-start;
@@ -114,7 +117,8 @@ body.dark .item {
     }
 }
 .item:hover {
-    box-shadow: 0px 0px 4px #2cc3ff;
+    /* box-shadow: 0px 0px 4px #3C3C3E; */
+    border: 1px solid #3C3C3E;
     transition: 0.3s;
     transform: scale(1.02);
     
@@ -252,7 +256,7 @@ body.dark .card_help {
 /*------------------------------------------*/
 .text_help {
     font-size: 15px;
-    color: #525258;
+    color: var(--text-dark);
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -294,8 +298,8 @@ body.dark #convas {
     }
 }
 body.dark #convas2 {
-    background: #131314;
-    border: 1px solid #0B0B0C;
+    background: none;
+    border: 0px solid #0B0B0C;
 }
 #convas2 {
     animation-duration: 0.6s;
@@ -358,7 +362,7 @@ body.dark .prog__prev {
     }
 }
 .txt__prog_prew1 { font-weight: 500; color: var(--text-dark); padding-bottom: 10px; padding-top: 20px; }
-.txt__prog_prew2 { color: var(--text-dark); }
+.txt__prog_prew2 { color: #F2F2F2; }
 .txt__prog_prew3 { font-weight: 500; color: var(--text-dark); padding-top: 5px ;}
 /*------------------------------------------*/
 body.dark .txt__prog_prew2 {
