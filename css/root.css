@@ -31,8 +31,8 @@ a {
     --card-dark: #191b1d;
     --line-dark: #26282B;
     --box_light: #fff;
-    --box_dark: #1c1c1c;
-    --box_item_dark: #222222;
+    --box_dark: #202020;
+    --box_item_dark: #252525;
 }
 /*------------------------------------------*/
 .text__dark { 
@@ -262,7 +262,7 @@ body.dark .preloader {
 }
 @media only screen and (max-width: 720px) {
     .header{
-		padding: 15px 0;
+		padding: 10px 0;
 		margin-left: 15px;
 		margin-right: 15px;
 	}

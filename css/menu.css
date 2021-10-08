@@ -10,7 +10,7 @@ body {
 body.dark {
     /* background: #19191A; */
     background: var(--fon-dark); /*Цвет фона*/
-    /* color: rgb(31, 31, 31); */
+    background: #141414;
 }
 
 
@@ -307,7 +307,7 @@ body.dark #convas {
 @media screen and (max-width: 720px) {
     #convas2 {
         padding-top: 20px;
-        border-radius: 12px 12px 0px 0px;
+        border-radius: 15px 15px 0px 0px;
     }
 }
 body.dark #convas2 {

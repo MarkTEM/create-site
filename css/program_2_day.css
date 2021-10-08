@@ -9,7 +9,7 @@ body {
     /* color: #272727; */
 }
 body.dark  {
-    background: var(--fon-dark); /*Цвет фона*/
+    background: #141414;
 }
 
 /* ---------------------------------------- */
@@ -21,38 +21,22 @@ body.dark #convas {
     background: none;
     
 }
-#fff {
-    /* height: 400px; */
-    /* padding-top: 50%;
-    border-radius: 12px 12px 0px 0px;
-    margin-bottom: -20px;
-    background-image: url(../img/prog2.jfif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    padding-left: 12px;
-    padding-right: 12px; */
-    /* margin-bottom: 20px; */
-}
-/* .filter {
-    position: relative;
-    bottom: 0px;
-    padding: 20px;
-    height: 50%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.644);
-    backdrop-filter: blur(5px);
-} */
+/* --- */
 #convas2 {
     /* margin-top: -20px; */
     background: #fff;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 18px 18px 0px 0px;
 }
 body.dark #convas2 {
-    background: #141414;
-    border: 0px solid #0B0B0C;
+    background: #1B1B1B;
+    border-top: 1px solid #0B0B0C;
 }
-
+@media screen and (max-width: 720px) {
+    #convas2 {
+        padding-top: 20px;
+        border-radius: 15px 15px 0px 0px;
+    }
+}
 #convas2 {
     /* animation-delay: 1s; */
     animation-duration: 1s;
@@ -60,6 +44,7 @@ body.dark #convas2 {
     /* animation-iteration-count: infinite;
     animation-direction: alternate; */
 }
+/* ----------------Animate----------------- */
 
 @keyframes an1 {
     from {
@@ -71,6 +56,10 @@ body.dark #convas2 {
 
     }
 }
+
+/* ---------------------------------------- */
+
+
 .img__prog1 {
     border-radius: 12px 12px 0px 0px;
     /* display: block; */
@@ -81,7 +70,7 @@ body.dark #convas2 {
     
 }
 
-/* ---------------------------------------- */
+
 
 .upr {
     color: var(--text-dark);
@@ -436,7 +425,7 @@ body.dark .text__ok {
     .hint {
         display: flex;
         justify-content: flex-start;
-        padding-top: 20px;
+        padding-top: 0px;
     }
 }
 /*------------------------------------------*/
@@ -509,7 +498,7 @@ body.dark .el1 {
 body.dark .line_el { border: 1px solid #3C3C3F; }
 
 .color_fix {font-size: 12px; color: #15beb3; font-weight: 500; padding-top: 5px;}
-body.dark .color_fix { color: #19CBC0; font-weight: 400;}
+body.dark .color_fix { color: #7e8183; font-weight: 400;}
 /* ---------------------------------------- */
 
 
