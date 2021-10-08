@@ -134,7 +134,7 @@ body.dark .item:hover {
 @media only screen and (max-width: 380px) {
     .box {
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 10px;
         grid-gap: 10px;
     }
@@ -261,7 +261,7 @@ body.dark .card_help {
 /*------------------------------------------*/
 .text_help {
     font-size: 15px;
-    color: var(--text-dark);
+    color: #b8b8b8;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -284,7 +284,13 @@ footer {
 /*------------------------------------------*/
 
 #convas {
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    transition: 0.3s;
+}
+@media screen and (max-width: 720px) {
+    #convas {
+        padding-bottom: 15px;
+    }
 }
 body.dark #convas {
     background: none;
@@ -294,13 +300,14 @@ body.dark #convas {
     padding-top: 60px;
     padding-bottom: 60px;
     background: #fff;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 18px 18px 0px 0px;
     min-height: 100vh;
     /* transition: 0.6s; */
 }
 @media screen and (max-width: 720px) {
     #convas2 {
         padding-top: 20px;
+        border-radius: 12px 12px 0px 0px;
     }
 }
 body.dark #convas2 {
@@ -357,7 +364,7 @@ body.dark #convas2 {
     box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
     padding: 20px;
     border-radius: 12px;
-    transition: 0.6s;
+    /* transition: 0.6s; */
 }
 body.dark .prog__prev {
     background: var(--box_dark);
@@ -369,7 +376,7 @@ body.dark .prog__prev {
     }
 }
 .txt__prog_prew1 { font-weight: 500; color: var(--text-dark); padding-bottom: 10px; padding-top: 20px; }
-.txt__prog_prew2 { color: #F2F2F2; }
+/* .txt__prog_prew2 { color: #F2F2F2; } */
 .txt__prog_prew3 { font-weight: 500; color: var(--text-dark); padding-top: 5px ;}
 /*------------------------------------------*/
 body.dark .txt__prog_prew2 {

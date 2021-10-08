@@ -26,12 +26,13 @@ a {
     --fon-light: #f2f2f3;
     --text-light: #E5E5E5;
     --text-light2: #fff;
-    --text-dark: #77777c;
+    --text-dark: #3C3C3E;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
     --line-dark: #26282B;
     --box_light: #fff;
-    --box_dark: #1e1e1e;
+    --box_dark: #1c1c1c;
+    --box_item_dark: #222222;
 }
 /*------------------------------------------*/
 .text__dark { 
@@ -261,7 +262,7 @@ body.dark .preloader {
 }
 @media only screen and (max-width: 720px) {
     .header{
-		padding: 10px 0;
+		padding: 15px 0;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
