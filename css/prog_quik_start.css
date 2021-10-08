@@ -15,19 +15,19 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 /*-------------------------------------------*/
 .flex__batt {
     display: flex;
+    justify-content: center;
+    align-items: center
     /* margin-top: 5px; */
     /* margin-left: 12px; */
 }
 .btn__all {
-    color: #fff;
+    color: #32BCA3;
     font-size: 15px;
     border-radius: 2em;
     padding: 0.4em 1.2em;
     margin-top: 10px;
     margin-right: 10px;
-    background: linear-gradient(
-        139.21deg
-        , #32BCA3 14.62%, #2196F3 124.55%);
+    border: 1px solid #32BCA3;
 }
 .btn__all2 {
     color: #c7c7c7;
@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 }
 .btn__all2:hover {
     color: #fff;
+    border: 1px solid #32BCA3;
     background: linear-gradient(
         139.21deg
         , #32BCA3 14.62%, #2196F3 124.55%);
@@ -221,18 +222,20 @@ body.dark #convas {
 }
 #convas2 {
     padding-top: 30px;
-    /* padding-bottom: 400px; */
-     min-height: 100vh;
+    padding-bottom: 60px;
     background: #fff;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 18px 18px 0px 0px;
+    min-height: 100vh;
 }
-@media screen and (max-width: 600px) {
-    #convas2 { padding-top: 15px; }
-}
-
 body.dark #convas2 {
     background: #131314;
     border: 1px solid #0B0B0C;
+}
+@media screen and (max-width: 720px) {
+    #convas2 {
+        padding-top: 15px;
+        border-radius: 15px 15px 0px 0px;
+    }
 }
 #convas2 {
     /* animation-delay: 1s; */

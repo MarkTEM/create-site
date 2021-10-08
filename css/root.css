@@ -262,7 +262,7 @@ body.dark .preloader {
 }
 @media only screen and (max-width: 720px) {
     .header{
-		padding: 10px 0;
+		padding: 15px 0;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
@@ -474,9 +474,16 @@ body.dark .btn__theme:hover {
 
 /*------------------------------------------*/
 footer {
+    margin-top: -20px;
     width: 100%;
     height: 200px;
     background: #111111;
+    border-radius: 18px 18px 0px 0px;
+}
+@media screen and (max-width: 720px) {
+    footer {
+        border-radius: 15px 15px 0px 0px;
+    }
 }
 /*------------------------------------------*/
 

@@ -33,7 +33,7 @@ body.dark #convas2 {
 }
 @media screen and (max-width: 720px) {
     #convas2 {
-        padding-top: 20px;
+        padding-top: 15px;
         border-radius: 15px 15px 0px 0px;
     }
 }
@@ -388,7 +388,7 @@ body.dark .text__ok {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     /* border: 1px dashed #3A3A3E; */
     border-radius: 12px;
 }
@@ -443,7 +443,7 @@ body.dark .text__ok {
     padding-top: 6px;
     padding-bottom: 6px;
     margin-left: 15px;
-    /* transition: 0.5s; */
+    /* transition: 0.3s; */
 }
 body.dark .pin__text {
     color: var(--text-light);
@@ -475,7 +475,7 @@ body.dark .pin__text {
     border: 1px solid #c9c9c9;
     min-height: 50px;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-right: 10px;
     /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15); */
 }
