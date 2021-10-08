@@ -9,7 +9,7 @@ body {
     /* color: #272727; */
 }
 body.dark  {
-    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    background: var(--fon-dark); /*Цвет фона*/
 }
 
 /* ---------------------------------------- */
@@ -49,8 +49,8 @@ body.dark #convas {
     border-radius: 12px 12px 0px 0px;
 }
 body.dark #convas2 {
-    background: #141414;
-    border: 1px solid #0B0B0C;
+    background: #181818;
+    border: 0px solid #0B0B0C;
 }
 
 #convas2 {

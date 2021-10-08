@@ -9,8 +9,8 @@ body {
 }
 body.dark {
     /* background: #19191A; */
-    background: #0D0D0E;
-    color: rgb(31, 31, 31);
+    background: var(--fon-dark); /*Цвет фона*/
+    /* color: rgb(31, 31, 31); */
 }
 
 
@@ -81,8 +81,9 @@ body.dark #clock {color: var(--text-light);background: #09090a;}
     grid-template-rows: 1fr;
     grid-gap: 15px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     /* padding-top: 10%; */
+    transition: 0.6s;
 }
 .box h4 {font-weight: 500;}
 .item {
@@ -99,10 +100,14 @@ body.dark #clock {color: var(--text-light);background: #09090a;}
 }
 body.dark .item {
     background: var(--box_dark);
-    border: 1px solid #131314;
+    border: 1px solid var(--box_dark)
     /* border: 0px; */
 }
-
+body.dark .item:hover {
+    background: var(--box_dark);
+    border: 1px solid #505050;
+    /* border: 0px; */
+}
 .item h4{
     padding-top: 5px;
     font-size: 15px;
@@ -129,8 +134,8 @@ body.dark .item {
 @media only screen and (max-width: 380px) {
     .box {
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 10px;
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
         grid-gap: 10px;
     }
     .item {
@@ -142,7 +147,7 @@ body.dark .item {
 @media only screen and (min-width: 380px) {
     .box {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .item {
         justify-content: flex-start;
@@ -291,6 +296,7 @@ body.dark #convas {
     background: #fff;
     border-radius: 12px 12px 0px 0px;
     min-height: 100vh;
+    /* transition: 0.6s; */
 }
 @media screen and (max-width: 720px) {
     #convas2 {
@@ -351,10 +357,11 @@ body.dark #convas2 {
     box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
     padding: 20px;
     border-radius: 12px;
+    transition: 0.6s;
 }
 body.dark .prog__prev {
     background: var(--box_dark);
-    border: 1px solid #131314;
+    border: 0px solid #131314;
 }
 @media screen and (max-width: 720px) {
     .prog__prev {
@@ -388,3 +395,15 @@ body.dark .txt__prog_prew3 {
     background-size: 100%;
 }
 .foto_txt {padding-left: 15px;} */
+
+.child {
+        
+    grid-column: 0;
+}
+
+@media only screen and (max-width: 760px) {
+    .child {
+        
+        grid-column: 1fr;
+    }
+}

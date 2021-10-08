@@ -26,12 +26,12 @@ a {
     --fon-light: #f2f2f3;
     --text-light: #E5E5E5;
     --text-light2: #fff;
-    --text-dark: #575761;
+    --text-dark: #77777c;
     --fon-dark: #0F0F10;
     --card-dark: #191b1d;
     --line-dark: #26282B;
     --box_light: #fff;
-    --box_dark: #19191B;
+    --box_dark: #1e1e1e;
 }
 /*------------------------------------------*/
 .text__dark { 
@@ -406,11 +406,16 @@ body.dark .icon__menu:hover {
 }
 body.dark .btn__akk {
     background: none;
-    border: 1px solid #434352;
-    color: #E5E5E5;
+    border: 1px solid #303030;
+    color: #c4c4c4;
     
 }
-
+body.dark .btn__akk:hover {
+    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
+    border: 1px solid #32BCA3;
+    color: #fff;
+    
+}
 
 .btn__ok {
     margin: 10px 5px;
@@ -450,12 +455,14 @@ body.dark .btn__akk {
 }
 body.dark .btn__theme {
     background: none;
-    border: 1px solid #434352;
-    color: #E5E5E5;
+    border: 1px solid #303030;
+    color: #c4c4c4;
     
 }
 body.dark .btn__theme:hover {
-    background: linear-gradient(136.2deg, #0099ff 16.28%, #FA00FF 224.54%);
+    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
+    border: 1px solid #32BCA3;
+    color: #fff;
     
 }
 /*------------------------------------------*/
