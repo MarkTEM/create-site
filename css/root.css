@@ -27,12 +27,14 @@ a {
     --text-light: #E5E5E5;
     --text-light2: #fff;
     --text-dark: #3C3C3E;
-    --fon-dark: #0F0F10;
+    --fon-dark: #141414;
+    --sheet: #fff;
     --card-dark: #191b1d;
     --line-dark: #26282B;
     --box_light: #fff;
     --box_dark: #202020;
     --box_item_dark: #252525;
+    
 }
 /*------------------------------------------*/
 .text__dark { 
@@ -267,7 +269,7 @@ body.dark .preloader {
 		margin-right: 15px;
 	}
     .header__open{
-		padding: 10px 0;
+		padding: 15px 0;
 		margin-left: 15px;
 		margin-right: 15px;
 	}
@@ -403,7 +405,7 @@ body.dark .icon__menu:hover {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
 }
 .btn__akk:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
 }
 body.dark .btn__akk {
     background: none;
@@ -426,7 +428,7 @@ body.dark .btn__akk:hover {
     background: #0fb8f6;
 }
 .btn__ok:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
 }
 
 .btn_teg {
@@ -441,18 +443,16 @@ body.dark .btn__akk:hover {
 .btn__theme {
     border: none;
     text-decoration: none;
-    color: dark;
     border-radius: 2em;
     cursor: pointer;
     font-size: 14px;
     padding: 0.7em 1.5em;
-    background: #38393a;
+    background: #262626;
     color: #E5E5E5;
-    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20); */
     margin-left: 10px;
 }
 .btn__theme:hover {
-    background: linear-gradient(130deg, #0099ff 16.28%, #FA00FF 224.54%);
+    background: #353636;
 }
 body.dark .btn__theme {
     background: none;
@@ -461,9 +461,9 @@ body.dark .btn__theme {
     
 }
 body.dark .btn__theme:hover {
-    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
-    border: 1px solid #32BCA3;
-    color: #fff;
+    background: nine;
+    border: 1px solid #717175;
+    color: #c4c4c4;
     
 }
 /*------------------------------------------*/
@@ -529,9 +529,7 @@ body.dark .m__btn {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 }
 body.dark .btn__start {
-    background: linear-gradient(123.9deg, #1DBEB5 29.91%, #258EC9 87.5%);
-    font-weight: 400;
-    
+    font-weight: 400; 
 }
 .btn__start2 {
     text-decoration: none;
