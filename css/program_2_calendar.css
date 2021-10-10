@@ -55,7 +55,7 @@ body.dark .right {
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
 body.dark .select {
-    background: var(--box_dark);
+    background: #262626;
     border: 1px solid #131314;
 }
 body.dark .select h2{
@@ -104,7 +104,7 @@ body.dark .select p{
     .select {
         flex-direction: row;
         justify-content: space-between;
-        padding: 1.4em 1.2em;
+        padding: 1em 1.2em;
     }
     .select h4 {
         font-size: 15px;
@@ -112,9 +112,9 @@ body.dark .select p{
         padding-bottom: 0px;
     }
     .select p {
-        margin-top: 10px;
+        margin-top: 5px;
         font-size: 14px;
-        margin-right: 40px;
+        /* margin-right: 40px; */
     }
     
 }
@@ -126,7 +126,7 @@ body.dark .select p{
         padding: 1.2em 1em;
     }
     .select p {
-        margin-top: 15px;
+        margin-top: 5px;
         margin-left: 0px; 
         font-size: 14px;
     }
@@ -234,7 +234,7 @@ body.dark .hint__text {
     transition: 0.6s;
 }
 @media only screen and (max-width: 720px) {
-    .card__pin { padding-top: 50px; }
+    .card__pin { padding-top: 30px; }
 }
 body.dark .card__pin {
     /* margin-top: 50px; */
@@ -263,7 +263,7 @@ body.dark .calenrar_txt {
 /*------------------------------------------*/
 .prog_day {
     padding: 12px;
-    background: #262627;
+    background: #1B1B1B;
     border-radius: 0px 8px 8px 8px;
     margin-bottom: 15px;
 }
@@ -291,21 +291,21 @@ body.dark .calenrar_txt {
     /* margin-bottom: 15px; */
 }
 .item {
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    margin-right: 8px;
     border-radius: 4px;
     background: rgb(47, 48, 49);
 }
 .item2 {
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+    margin-right: 8px;
     border-radius: 4px;
-    background: #02b4eb;
-    /* background: linear-gradient(135deg, #16967e 0%, #0291ce 100%); */
+    /* background: #02b4eb; */
+    background: linear-gradient(135deg, #16967e 0%, #0291ce 100%);
 }
 
 /*------------------------------------------*/
@@ -333,7 +333,7 @@ body.dark .pin__calendar h3{
 #convas2 {
     padding-bottom: 60px;
     background: #fff;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 18px 18px 0px 0px;
     min-height: 100vh;
     
 }
@@ -346,7 +346,7 @@ body.dark #convas2 {
 }
 @media screen and (max-width: 720px) {
     #convas2 {
-        padding-top: 20px;
+        /* padding-top: 20px; */
         border-radius: 15px 15px 0px 0px;
     }
 }
@@ -368,7 +368,9 @@ body.dark #convas2 {
 }
 /*------------------------------------------*/
 
-
+/* .an1 {
+    display: flex;
+} */
 
 
 
