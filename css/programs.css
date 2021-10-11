@@ -100,7 +100,7 @@ body.dark .box {
 }
 @media only screen and (max-width: 720px) {
     .box__radius {
-        border-radius: 0px 0px 12px 12px;
+        border-radius: 12px 12px 12px 12px;
     }
 }
 .box__item {
