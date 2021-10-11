@@ -84,7 +84,7 @@ body.dark .hint__text { font-weight: 400; }
     min-height: 400px;
 }
 body.dark .box {
-    background: var(--box_dark);
+    background: #262626;
     border: 0px solid #0B0B0C;
 }
 @media only screen and (max-width: 720px) {
@@ -235,8 +235,8 @@ body.dark .line {
     min-height: 100vh;
 }
 body.dark #convas2 {
-    background: #131314;
-    border: 1px solid #0B0B0C;
+    background: #1B1B1B;
+    border-top: 1px solid #0B0B0C;
 }
 @media screen and (max-width: 720px) {
     #convas2 {

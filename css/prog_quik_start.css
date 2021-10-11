@@ -101,21 +101,23 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     justify-content: flex-start;
 }
 .item {
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    margin-top: 8px;
+    margin-right: 8px;
     border-radius: 4px;
-    background: rgb(232, 233, 233);
+    background: rgb(238, 238, 238);
 }
 body.dark .item {
+    width: 12px;
+    height: 12px;
     background: rgb(45, 46, 46);
 }
 .item2 {
-    width: 20px;
-    height: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+    margin-right: 8px;
     border-radius: 4px;
     background: #02b4eb;
 }
@@ -180,7 +182,7 @@ body.dark .txt__prog_prew3 {
     padding: 15px;
 }
 body.dark .box3 {
-    background: var(--box_dark);
+    background: #262626;
     border: none;
 }
 /*------------------------------------------*/
@@ -220,8 +222,8 @@ body.dark #convas {
     min-height: 100vh;
 }
 body.dark #convas2 {
-    background: #131314;
-    border: 1px solid #0B0B0C;
+    background: #1B1B1B;
+    border-top: 1px solid #0B0B0C;
 }
 @media screen and (max-width: 720px) {
     #convas2 {
