@@ -239,7 +239,7 @@ body.dark .image__box {background-image: url(../ico/box.svg);}
 }
 body.dark .card_help {
     background: var(--box_dark);
-    border: 1px solid #131314;
+    border: 0px solid #131314;
     /* border: 1px dashed #252525; */  
 }
 @media only screen and (max-width: 420px) {
@@ -311,8 +311,8 @@ body.dark #convas {
     }
 }
 body.dark #convas2 {
-    background: none;
-    border: 0px solid #0B0B0C;
+    background: #1B1B1B;
+    border-top: 1px solid #0B0B0C;
 }
 #convas2 {
     animation-duration: 0.6s;
