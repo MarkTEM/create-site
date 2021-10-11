@@ -1,20 +1,15 @@
 body {
     font-family: 'Inter', sans-serif;
-    /* transition: background-color 1s; */
-    /* background: #FCFCFC; */
-    /* background: #101010; */
-    /* background: var(--fon-light); */
-    /* background: #ffffff; */
-    background: #1B1B1B;
-    /* color: #272727; */
+    background: var(--fon-dark);
 }
 body.dark  {
-    background: #141414;
+    /* background: #141414; */
+    background: var(--fon-dark);
 }
 
 /* ---------------------------------------- */
 #convas {
-    /* height: 300px; */
+    
 }
 
 body.dark #convas {
@@ -504,7 +499,7 @@ body.dark .color_fix { color: #7e8183; font-weight: 400;}
 
 .item__day {
     display: inline-block;
-    background: #262627;
+    background: #1B1B1B;
     padding: 6px 12px;
     border-radius: 8px;
     color: var(--text-light);

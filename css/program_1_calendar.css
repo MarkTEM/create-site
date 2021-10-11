@@ -1,22 +1,11 @@
 body {
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    background: #1B1B1B; /*Цвет фона*/
-    transition: background-color 0s; /*Плавный цвет фона*/
+    background: var(--fon-dark);
 }
 body.dark  {
-    background: linear-gradient(180deg, #1B1B1B 0%, #000000 100%);
+    background: var(--fon-dark);
 }
-/*-----------------SCROLLBAR-----------------*/
-body::-webkit-scrollbar {width: 8px;}
-body::-webkit-scrollbar-track {background-color: #adadad;}
-body::-webkit-scrollbar-thumb {background-color: #333;}
-/*body::-webkit-scrollbar-thumb:hover {background-color: rgb(46, 146, 228);}*/
-/*body::-webkit-scrollbar-button {background-color: #858585; height: 10px;}*/
-/*-------------------------------------------*/
-
-
-
 
 /*----------------CALENDAR-----------------*/
 @media screen and ( max-width: 690px ) {
@@ -47,7 +36,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
 body.dark .select {
-    background: var(--box_dark);
+    background: #262626;
     border: 1px solid #131314;
 }
 body.dark .select h2{
@@ -57,10 +46,11 @@ body.dark .select p{
     color: #cfd0d6;
 }
 .select:hover {
-    box-shadow: 0px 0px 6px #2cf8ff;
+    /* box-shadow: 0px 0px 6px #2cf8ff; */
     transition: 0.3s;
 }
 .select:hover {
+    border: 1px solid #3C3C3E;
     transform: scale(1.02);
 }
 /* .select h4 {
@@ -84,7 +74,7 @@ body.dark .select p{
     /*flex-wrap: wrap;
     row-gap: 15px;
     column-gap: 15px;        68%*/
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(200px,1fr);
     grid-gap: 12px 12px; /*92%*/
     padding: 0px;
 }
@@ -162,9 +152,9 @@ body.dark .select p{
 }
 
 .hint__text {
-    color: #0c0c0c;
+    color: var(--text-dark);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     padding-top: 6px;
     padding-bottom: 6px;
     margin-left: 15px;
@@ -220,37 +210,100 @@ body.dark .hint__text {
     to { }
 }
 .card__pin {
-    padding-top: 60px;
-    padding-bottom: 30px;
-    /* padding-top: 60px;
-    padding-bottom: 30px; */
-    /* border: 1px dashed #4b4b50; */
-    border-radius: 12px;
+    padding-top: 10px;
+    transition: 0.6s;
 }
-body.dark .card__pin {
-    /* margin-top: 50px; */
+@media only screen and (max-width: 720px) {
+    .card__pin { padding-top: 30px; }
 }
 .card__pin p {
     color: #9e9ea8;
     font-size: 12px;
 }
-.text__pin{
+.text__pin {
     color: var(--text-light);
-    padding-top: 10px;
-    color: #fff;
+    height: 40px;
     font-weight: 500;
+    font-size: 18px;
     padding-top: 5px;
-    padding-bottom: 10px;
 }
 /*------------------------------------------*/
 
 .calenrar_txt {
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
+}
+body.dark .calenrar_txt {
+    font-size: 17px;
+    font-weight: 400;
+}
+/*------------------------------------------*/
+.prog_day {
+    padding: 12px;
+    background: #1B1B1B;
+    border-radius: 0px 8px 8px 8px;
+    margin-bottom: 15px;
 }
 
 
 
+.qs__section2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.txt__qs2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-light);
+}
 /*------------------------------------------*/
+.qs__section3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* margin-bottom: 15px; */
+}
+.item {
+    width: 12px;
+    height: 12px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background: rgb(47, 48, 49);
+}
+.item2 {
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+    /* background: #02b4eb; */
+    background: linear-gradient(135deg, #16967e 0%, #0291ce 100%);
+}
+
+/*------------------------------------------*/
+
+/*------------------------------------------*/
+.card__pin {
+    animation-duration: 0.6s;
+    animation-name: an3;
+    transition-timing-function: ease-out;
+}
+
+@keyframes an3 {
+    from {
+        /* opacity: 0; */
+        padding-top: 100px;
+        font-size: 10px;
+        /* padding-left: 60px; */
+    }
+    
+    to { }
+}
 .pin__calendar {
     display: flex;
     justify-content: space-between;
@@ -273,9 +326,9 @@ body.dark .pin__calendar h3{
     /* padding-bottom: 20px; */
 }
 #convas2 {
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     background: #fff;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 18px 18px 0px 0px;
     min-height: 100vh;
     
 }
@@ -283,8 +336,14 @@ body.dark #convas {
     background: none;
 }
 body.dark #convas2 {
-    background: #131314;
-    border: 1px solid #0B0B0C;
+    background: #1B1B1B;
+    border-top: 1px solid #0B0B0C;
+}
+@media screen and (max-width: 720px) {
+    #convas2 {
+        /* padding-top: 20px; */
+        border-radius: 15px 15px 0px 0px;
+    }
 }
 
 #convas2 {

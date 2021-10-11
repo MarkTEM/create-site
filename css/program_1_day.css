@@ -1,19 +1,11 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color 1s; /*Плавный цвет фона*/
-    /* background: #FCFCFC; */
-    /* background: #101010; */
-    /* background: var(--fon-light); */
-    /* background: #ffffff; */
-    background: #1B1B1B; /*Цвет фона*/
-    min-height: 300vh;
-    color: #272727;
+    background: var(--fon-dark);
 }
 body.dark  {
-    background: #141414;
-    
+    /* background: #141414; */
+    background: var(--fon-dark);
 }
-
 
 
 .upr {
@@ -402,15 +394,13 @@ body.dark .text__ok {
 .hint {
     display: flex;
     justify-content: flex-start;
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 30px;
     transition: 0.3s;
 }
 @media only screen and (max-width: 720px) {
     .hint {
-        display: flex;
-        justify-content: flex-start;
-        padding-top: 20px;
+        padding-top: 0px;
     }
 }
 /*------------------------------------------*/
@@ -440,14 +430,21 @@ body.dark #convas {
     background: none;
     
 }
+/* --- */
 #convas2 {
+    /* margin-top: -20px; */
     background: #fff;
-    border-radius: 12px 12px 0px 0px;
-    min-height: 100vh;
+    border-radius: 18px 18px 0px 0px;
 }
 body.dark #convas2 {
-    background: none;
-    padding-top: 0;
+    background: #1B1B1B;
+    border-top: 1px solid #0B0B0C;
+}
+@media screen and (max-width: 720px) {
+    #convas2 {
+        padding-top: 15px;
+        border-radius: 15px 15px 0px 0px;
+    }
 }
 
 #convas2 {
