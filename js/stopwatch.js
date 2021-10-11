@@ -39,7 +39,7 @@ function startOn(){
 
         document.getElementById('stopwatch').innerText = h + ':' + m + ':' + s;
 
-        setTimeout("startOn()", 200);
+        setTimeout("startOn()", 1000);
     }
 }
 
