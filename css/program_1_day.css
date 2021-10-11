@@ -418,7 +418,11 @@ body.dark .text__ok {
     padding-top: 6px;
     padding-bottom: 6px;
     margin-left: 15px;
-    /* transition: 0.5s; */
+    /* transition: 0.3s; */
+}
+body.dark .pin__text {
+    color: var(--text-light);
+    font-weight: 400;
 }
 @media only screen and (max-width: 420px) { .pin__text { margin-left: 12px; } }
 /*------------------------------------------*/
@@ -449,7 +453,7 @@ body.dark #convas2 {
 
 #convas2 {
     /* animation-delay: 1s; */
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-name: an1;
     /* animation-iteration-count: infinite;
     animation-direction: alternate; */
@@ -457,7 +461,7 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
-        margin-top: 40px;
+        margin-top: 70px;
         padding: 50px 0;
     }
     
