@@ -32,6 +32,7 @@ body.dark #convas {
     background: #fff;
     border-radius: 18px 18px 0px 0px;
     min-height: 100vh;
+    transition: 0.3s;
     /* transition: 0.6s; */
 }
 @media screen and (max-width: 720px) {
@@ -47,6 +48,7 @@ body.dark #convas2 {
 #convas2 {
     animation-duration: 0.6s;
     animation-name: an1;
+    transition-timing-function: ease-out;
   }
 
 @keyframes an1 {
@@ -104,6 +106,7 @@ button {
     font-weight: 500;
     border-radius: 24px;
     border: none;
+    color: var(--text-dark);
     margin: 5px;
     cursor: pointer;
     outline: none;
