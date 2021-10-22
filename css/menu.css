@@ -182,13 +182,13 @@ body.dark .item:hover {
 /*------------------------------------------*/
 .icon {
     display: block;
-    height: 3.2em;
-    width: 3.2em;
+    height: 2.5em;
+    width: 2.5em;
     border-radius: 2px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 3.2em 3.2em;
+    background-size: 2.5em 2.5em;
 }
 .image__programs {background-image: url(../ico/Group\ 118.png);}
 body.dark .image__programs {background-image: url(../ico/Group\ 118.png);}
@@ -206,9 +206,11 @@ body.dark .image__new {background-image: url(../ico/Frame\ 6.png);}
 body.dark .image__file {background-image: url(../ico/file.svg);}
 body.dark .image__progress {background-image: url(../ico/Frame\ 5.png);}
 body.dark .image__box {background-image: url(../ico/Frame\ 7.png);}
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 700px){
     .icon {
-        background-size: 3.2em 3.2em;
+        height: 3em;
+        width: 3em;
+        background-size: 3em 3em;
     }
 }
 
