@@ -5,7 +5,7 @@ body {
     /* min-height: 200vh; */
 }
 body.dark {
-    /* background: #19191A; */
+    background: #19191A;
     background: var(--fon-dark); /*Цвет фона*/
     /* background: #141414; */
 }
@@ -86,8 +86,8 @@ body.dark #clock {color: var(--text-light);background: #09090a;}
 .item {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 1.4em 1.2em;
     border-radius: 12px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20);
@@ -114,8 +114,8 @@ body.dark .item:hover {
 } */
 @media only screen and (max-width: 680px) {
     .item h4{
-        padding-top: 0;
-        padding-left: 10px;
+        padding-top: 4px;
+        padding-left: 0px;
     }
 }
 .item:hover {
@@ -130,7 +130,7 @@ body.dark .item:hover {
 } */
 @media only screen and (max-width: 380px) {
     .box {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 20px;
         margin-bottom: 10px;
         grid-gap: 10px;
@@ -138,7 +138,7 @@ body.dark .item:hover {
     .item {
         justify-content: flex-start;
         font-size: 14px;
-        padding: 1.2em 1.2em;
+        padding: 1em 1em;
     }
 }
 @media only screen and (min-width: 380px) {
@@ -162,17 +162,17 @@ body.dark .item:hover {
 }
 @media only screen and (min-width: 768px) {
     .box {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media only screen and (min-width: 992px) {
     .box {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 @media only screen and (min-width: 1200px){
     .box {
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
     .item {
         flex-direction: column;
@@ -182,40 +182,42 @@ body.dark .item:hover {
 /*------------------------------------------*/
 .icon {
     display: block;
-    height: 2.0em;
-    width: 2.0em;
+    height: 3.2em;
+    width: 3.2em;
     border-radius: 2px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.5em 1.5em;
+    background-size: 3.2em 3.2em;
 }
-.image__programs {background-image: url(../ico/programs_dark.svg);}
-body.dark .image__programs {background-image: url(../ico/programs.svg);}
-.image__training {background-image: url(../ico/upg2_dark.svg);}
-body.dark .image__training {background-image: url(../ico/upg2.svg);}
-.image__upr {background-image: url(../ico/upr_dark.svg);}
-body.dark .image__upr {background-image: url(../ico/upr.svg);}
-.image__stopwatch {background-image: url(../ico/stopwatch_dark.svg);}
-.image__new {background-image: url(../ico/new_dark.svg);}
+.image__programs {background-image: url(../ico/Group\ 118.png);}
+body.dark .image__programs {background-image: url(../ico/Group\ 118.png);}
+.image__training {background-image: url(../ico/Group\ 120.png);}
+body.dark .image__training {background-image: url(../ico/Group\ 120.png);}
+.image__upr {background-image: url(../ico/Group\ 121.png);}
+body.dark .image__upr {background-image: url(../ico/Group\ 121.png);}
+.image__stopwatch {background-image: url(../ico/Frame\ 4.png);}
+.image__new {background-image: url(../ico/Frame\ 6.png);}
 /* .image__file {background-image: url(../ico/file.svg);} */
-.image__progress {background-image: url(../ico/progress_dark.svg);}
-.image__box {background-image: url(../ico/box_dark.svg);}
-body.dark .image__stopwatch {background-image: url(../ico/stopwatch_light.svg);}
-body.dark .image__new {background-image: url(../ico/new.svg);}
+.image__progress {background-image: url(../ico/Frame\ 5.png);}
+.image__box {background-image: url(../ico/Frame\ 7.png);}
+body.dark .image__stopwatch {background-image: url(../ico/Frame\ 4.png);}
+body.dark .image__new {background-image: url(../ico/Frame\ 6.png);}
 body.dark .image__file {background-image: url(../ico/file.svg);}
-body.dark .image__progress {background-image: url(../ico/progress.svg);}
-body.dark .image__box {background-image: url(../ico/box.svg);}
+body.dark .image__progress {background-image: url(../ico/Frame\ 5.png);}
+body.dark .image__box {background-image: url(../ico/Frame\ 7.png);}
 @media only screen and (min-width: 768px){
     .icon {
-        background-size: 1.8em 1.8em;
+        background-size: 3.2em 3.2em;
     }
 }
 
 /*------------------------------------------*/ 
 
 
-
+.head__text {
+    padding-left: 10px;
+}
 
 
 
@@ -311,8 +313,8 @@ body.dark #convas {
     }
 }
 body.dark #convas2 {
-    background: #1B1B1B;
-    border-top: 1px solid #0B0B0C;
+    background: #111111;
+    /* border-top: 1px solid #0B0B0C; */
 }
 #convas2 {
     animation-duration: 0.6s;

@@ -27,12 +27,13 @@ a {
     --text-light: #E5E5E5;
     --text-light2: #fff;
     --text-dark: #3C3C3E;
-    --fon-dark: #141414;
+    --fon-dark: #111111;
     --sheet: #fff;
     --card-dark: #191b1d;
     --line-dark: #26282B;
     --box_light: #fff;
-    --box_dark: #202020;
+    /* --box_dark: #262626; */
+    --box_dark: #1D1D1E;
     --box_item_dark: #252525;
     
 }
@@ -447,8 +448,9 @@ body.dark .btn__akk:hover {
     cursor: pointer;
     font-size: 14px;
     padding: 0.7em 1.5em;
-    background: #262626;
+    background: none;
     color: #E5E5E5;
+    border: 1px solid #36393A;
     margin-left: 10px;
 }
 .btn__theme:hover {
@@ -493,7 +495,7 @@ footer {
 
 /*------------------M-BTN-------------------*/
 .m__btn {
-    border-radius: 2em;
+    border-radius: 12px;
     color: #ffffff;
     font-size: 15px;
     padding: 0.7em 1.5em;
@@ -512,12 +514,14 @@ body.dark .m__btn {
     display: inline-block;
     text-decoration: none;
     /* cursor: pointer; */
-    border: 0px solid #D1D2D6;
+    border: 1px solid #36393A;
+    font-weight: 600;
     /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); */
-    background: linear-gradient(136.2deg, #FA6060 16.28%, #FA00FF 224.54%);
+    background: none;
 }
 .btn__none:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+    border: 1px solid #36393A;
     /* transition: 0.8s; transform: scale(1.00); */
 }
 /*------------------------------------------*/
@@ -525,7 +529,8 @@ body.dark .m__btn {
 /*------------------------------------------*/
 .btn__start {
     text-decoration: none;
-    background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%);
+    /* background: linear-gradient(136.2deg, #32BC59 16.28%, #2196F3 224.54%); */
+    background: linear-gradient(120deg, #3AD1AD 30%, #0D8BA7 90%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 }
 body.dark .btn__start {
