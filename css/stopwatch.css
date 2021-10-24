@@ -6,20 +6,42 @@ body {
 }
 body.dark {
     /* background: #19191A; */
-    background: #060606;
+    background: var(--fon-dark);
     /* background: #141414; */
 }
 
 
-
-
+/*------------------------------------------*/
+.buttom {
+    width: 100%;
+    height: 10px;
+    background: var(--fon-dark);
+    border-radius: 2em 2em 0px 0px;
+}
 
 .top__body {
     background: #060606;
     padding-top: 15px;
 }
+.top__body {
+    animation-duration: 0.3s;
+    animation-name: an4;
+    transition-timing-function: ease-out;
+  }
+
+@keyframes an4 {
+    from {
+        padding-top: 120px;
+    }
+    
+    to {
+
+    }
+}
+
 .list {
-    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 8px;
     background: #1A1A1A;
     border-radius: 2em 2em 0px 0px;
@@ -33,7 +55,7 @@ body.dark {
         height: 6px;
     }
 }
-
+/*------------------------------------------*/
 
 .head__it {
     margin-left: 15px;
@@ -64,7 +86,6 @@ body.dark {
 }
 body.dark #convas {
     background: none;
-    background: var(--fon-dark);
     
 }
 #convas2 {
@@ -82,7 +103,6 @@ body.dark #convas {
 }
 body.dark #convas2 {
     background: none;
-    background: var(--fon-dark);
     
 }
 #convas2 {
@@ -173,7 +193,7 @@ ul {
     /* margin-left: 12px; */
 }
 .btn__all {
-    color: #4E4E54;
+    color: rgb(211, 211, 211);
     font-size: 15px;
     border-radius: 2em;
     padding: 0.4em 1.2em;
@@ -192,9 +212,7 @@ ul {
     margin-right: 10px;
 }
 .btn__all2:hover {
-    color: #fff;
+    color: rgb(211, 211, 211);
     /* border: 1px solid #32BCA3; */
-    background: linear-gradient(
-        139.21deg
-        , #32BCA3 14.62%, #2196F3 124.55%);
+    background: #1D1D1E;
 }
