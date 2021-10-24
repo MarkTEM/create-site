@@ -285,6 +285,11 @@ body.dark .preloader {
 	font-weight: 500;
 	transition: 0.3s;
 }
+.head__text2 {
+	font-size: 24px;
+	font-weight: 600;
+	transition: 0.3s;
+}
 /* body.dark .head__text {color: var(--text-dark);} */
 @media only screen and (max-width: 720px) {
     .head__text {
@@ -322,7 +327,7 @@ body.dark .preloader {
 }
 .icon__menu {
     display: block;
-    background-image: url(../ico/MenuBurger.svg);
+    background-image: url(../ico/Menu_dark.svg);
     height: 2.6em;
     width: 2.8em;
     border-radius: 8px;
@@ -334,7 +339,7 @@ body.dark .preloader {
 	transition: 0.2s;
 }
 .icon__menu:hover {
-	/* background-color: #ffffff; */
+	background-color: #f1f1f1;
 	transform: scale(1.04);
 }
 body.dark .icon__menu {
