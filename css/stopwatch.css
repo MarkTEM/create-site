@@ -6,7 +6,7 @@ body {
 }
 body.dark {
     /* background: #19191A; */
-    background: var(--fon-dark);
+    background: #060606;
     /* background: #141414; */
 }
 
@@ -16,14 +16,25 @@ body.dark {
 
 .top__body {
     background: #060606;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .list {
     width: 100%;
-    height: 10px;
+    height: 8px;
     background: #1A1A1A;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 2em 2em 0px 0px;
+    transition: 0.6s;
 }
+@media only screen and (max-width: 700px) {
+    .top__body {
+        padding-top: 10px;
+    }
+    .list {
+        height: 6px;
+    }
+}
+
+
 .head__it {
     margin-left: 15px;
 }
@@ -53,13 +64,13 @@ body.dark {
 }
 body.dark #convas {
     background: none;
+    background: var(--fon-dark);
     
 }
 #convas2 {
     padding-top: 60px;
     padding-bottom: 60px;
     background: #fff;
-    border-radius: 18px 18px 0px 0px;
     min-height: 100vh;
     transition: 0.3s;
     /* transition: 0.6s; */
@@ -67,11 +78,11 @@ body.dark #convas {
 @media screen and (max-width: 720px) {
     #convas2 {
         padding-top: 20px;
-        border-radius: 15px 15px 0px 0px;
     }
 }
 body.dark #convas2 {
     background: none;
+    background: var(--fon-dark);
     
 }
 #convas2 {
