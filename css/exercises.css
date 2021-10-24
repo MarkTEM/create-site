@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--fon-dark);
+    background: #f3f3f3;
 }
 body.dark  { background: var(--fon-dark); }
 /*------------------------------------------*/
@@ -10,13 +10,14 @@ body.dark  { background: var(--fon-dark); }
 /*------------------------------------------*/
 .txt__categoru {
     text-align: center;
-    padding-top: 0px;
+    padding-bottom: 15px;
     font-weight: 500;
+    transition: 0.3s;
 }
 body.dark .txt__categoru { font-weight: 400; }
 @media only screen and (min-width: 720px) {
     .txt__categoru {
-        padding-top: 60px;
+        padding-top: 30px;
     }
 }
 /*------------------------------------------*/
@@ -30,7 +31,7 @@ body.dark .txt__categoru { font-weight: 400; }
     grid-gap: 10px;
     padding-top: 15px;
 }
-.box h4 {font-weight: 400;}
+.box h4 {font-weight: 500;}
 .item {
     display: flex;
     justify-content: center;
@@ -42,9 +43,10 @@ body.dark .txt__categoru { font-weight: 400; }
     padding: 0.8em 1em;
     border-radius: 12px;
     cursor: pointer;
+    min-height: 64px;
 }
 body.dark .item {
-    background: #262626;
+    background: var(--box_dark);
     border: 1px solid var(--box_dark)
     /* border: 0px; */
 }
@@ -54,16 +56,16 @@ body.dark .item {
     transform: scale(1.02);
 }
 body.dark .item:hover {
-    background: #262626;
     border: 1px solid #505050;
     /* border: 0px; */
 }
 .item h4{
+    /* padding-top: 10px; */
     padding-left: 10px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 330px) {
     .box {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
@@ -74,7 +76,7 @@ body.dark .item:hover {
         padding: 0.8em 1em;
     }
 }
-@media only screen and (min-width: 380px) {
+@media only screen and (min-width: 330px) {
     .box {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
@@ -91,7 +93,7 @@ body.dark .item:hover {
     }
     .item {
         flex-direction: column;
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -168,7 +170,7 @@ body.dark #convas {
 }
 @media screen and (max-width: 720px) {
     #convas {
-        padding-bottom: 15px;
+        padding-bottom: 0px;
     }
 }
 /* --- */
@@ -179,8 +181,8 @@ body.dark #convas {
     
 }
 body.dark #convas2 {
-    background: #1B1B1B;
-    border-top: 1px solid #0B0B0C;
+    background: none;
+    /* border-top: 1px solid #0B0B0C; */
 }
 @media screen and (max-width: 720px) {
     #convas2 {
