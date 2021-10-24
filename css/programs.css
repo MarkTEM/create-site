@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--fon-dark);
+    background: #f3f3f3;
 }
 body.dark  {
     background: var(--fon-dark);
@@ -45,7 +45,7 @@ body.dark .hint__text { font-weight: 400; }
     border: 1px solid #32BCA3;
 }
 .btn__all2 {
-    color: #c7c7c7;
+    color: #4E4E54;
     font-size: 15px;
     border: 1px solid #4E4E54;
     font-weight: 400;
@@ -53,6 +53,9 @@ body.dark .hint__text { font-weight: 400; }
     padding: 0.4em 1.2em;
     margin-top: 10px;
     margin-right: 10px;
+}
+body.dark .btn__all2 {
+    color: var(--text-light);
 }
 .btn__all2:hover {
     color: #fff;
@@ -226,8 +229,13 @@ body.dark .line {
 
 #convas {
     padding-bottom: 20px;
+    background: #f3f3f3;
+}
+body.dark #convas {
+    background: #0a0a0a;
 }
 #convas2 {
+    margin-top: -20px;
     padding-top: 30px;
     padding-bottom: 60px;
     background: #fff;
@@ -235,7 +243,7 @@ body.dark .line {
     min-height: 100vh;
 }
 body.dark #convas2 {
-    background: none;
+    background: var(--fon-dark);
 }
 @media screen and (max-width: 720px) {
     #convas2 {

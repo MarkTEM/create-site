@@ -521,16 +521,19 @@ body.dark .m__btn {
     display: inline-block;
     text-decoration: none;
     /* cursor: pointer; */
+    color: #36393A;
     border: 1px solid #36393A;
     font-weight: 600;
     /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); */
     background: none;
 }
 .btn__none:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
+    background: #36393A;
+    color: #F2F2F2;
     border: 1px solid #36393A;
     /* transition: 0.8s; transform: scale(1.00); */
 }
+body.dark .btn__none { color: #F2F2F2; font-weight: 500; }
 /*------------------------------------------*/
 
 /*------------------------------------------*/
@@ -541,7 +544,7 @@ body.dark .m__btn {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 }
 body.dark .btn__start {
-    font-weight: 400; 
+    font-weight: 400;
 }
 .btn__start2 {
     text-decoration: none;
