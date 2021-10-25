@@ -264,15 +264,22 @@ body.dark .list {
     display: block;
     height: 2.5em;
     width: 2.5em;
-    border-radius: 2px;
+    border-radius: 8px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1.2em 1.2em;
 }
-.ico__back { background-image: url(../ico/top_dark.svg); }
-body.dark .ico__back { background-image: url(../ico/top.svg); }
-
+.ico__back { background-color: #f1f1f1; background-image: url(../ico/top_dark.svg); }
+body.dark .ico__back { background-color: #1D1D1E; background-image: url(../ico/top.svg); }
+.ico__back:hover {
+    border: 1px solid #3C3C3E;
+	transform: scale(1.04);
+}
+body.dark .ico__back:hover {
+    border: 1px solid #505050;
+	transform: scale(1.04);
+}
 /*------------------------------------------*/
 .txt_back { color: #6f6f72; font-size: 12px; font-weight: 400;}
 /*------------------------------------------*/
