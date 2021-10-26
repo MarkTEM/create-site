@@ -550,15 +550,7 @@ body.dark .btn__none { color: #F2F2F2; font-weight: 500; }
 body.dark .btn__start {
     font-weight: 400;
 }
-.btn__start2 {
-    text-decoration: none;
-    background: linear-gradient(136.2deg, #FFBC10 16.28%, #FA00FF 224.54%);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
-}
 .btn__start:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
-}
-.btn__start2:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
 /*------------------------------------------*/
