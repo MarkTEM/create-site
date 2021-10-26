@@ -660,6 +660,7 @@ body.dark #convas {
 /* --- */
 #convas2 {
     padding-top: 30px;
+    padding-bottom: 60px;
     /* margin-top: -20px; */
     background: #fff;
     min-height: 100vh;
@@ -671,8 +672,9 @@ body.dark #convas2 {
 
 #convas2 {
     /* animation-delay: 1s; */
-    animation-duration: 0.6s;
+    animation-duration: 0.3s;
     animation-name: an1;
+    /* transition-timing-function: ease-out; */
     /* animation-iteration-count: infinite; */
     /* animation-direction: alternate; */
 }
@@ -681,7 +683,6 @@ body.dark #convas2 {
 @keyframes an1 {
     from {
         padding-top: 70px;
-        padding: 50px 0;
     }
     
     to {

@@ -47,7 +47,7 @@ body.dark .right {
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
 body.dark .select {
-    background: #262626;
+    background: var(--box_dark);
     border: 1px solid #131314;
 }
 body.dark .select h2{
@@ -87,7 +87,7 @@ body.dark .select p{
     column-gap: 15px;        68%*/
     grid-template-columns: repeat(6,1fr);
     grid-gap: 12px 12px; /*92%*/
-    padding: 0px;
+    padding-bottom: 100px;
 }
 @media only screen and (max-width: 320px) {
     .calendar {
@@ -206,30 +206,12 @@ body.dark .hint__text {
 
 /*------------------------------------------*/
 .card__pin {
-    animation-duration: 0.6s;
-    animation-name: an3;
-    transition-timing-function: ease-out;
-}
-
-@keyframes an3 {
-    from {
-        /* opacity: 0; */
-        padding-top: 100px;
-        font-size: 10px;
-        /* padding-left: 60px; */
-    }
-    
-    to { }
-}
-.card__pin {
-    padding-top: 10px;
-    transition: 0.6s;
-}
-@media only screen and (max-width: 720px) {
-    .card__pin { padding-top: 30px; }
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 15%);
 }
 body.dark .card__pin {
-    /* margin-top: 50px; */
+    background: #1D1D1E;
 }
 .card__pin p {
     color: #9e9ea8;
@@ -237,10 +219,9 @@ body.dark .card__pin {
 }
 .text__pin {
     color: var(--text-light);
-    height: 40px;
+    /* height: 40px; */
     font-weight: 500;
     font-size: 18px;
-    padding-top: 5px;
 }
 /*------------------------------------------*/
 
@@ -253,13 +234,6 @@ body.dark .calenrar_txt {
     font-weight: 400;
 }
 /*------------------------------------------*/
-.prog_day {
-    padding: 12px;
-    background: #1B1B1B;
-    border-radius: 0px 8px 8px 8px;
-}
-
-
 
 .qs__section2 {
     display: flex;
@@ -269,9 +243,9 @@ body.dark .calenrar_txt {
     
 }
 .txt__qs2 {
+    margin-top: 15px;
     font-size: 14px;
-    font-weight: 400;
-    color: var(--text-light);
+    font-weight: 500;
 }
 /*------------------------------------------*/
 .qs__section3 {
@@ -287,6 +261,9 @@ body.dark .calenrar_txt {
     margin-top: 8px;
     margin-right: 8px;
     border-radius: 4px;
+    background-color: #e7e7e7;
+}
+body.dark .item {
     background: rgb(47, 48, 49);
 }
 .item2 {
@@ -296,14 +273,16 @@ body.dark .calenrar_txt {
     margin-right: 8px;
     border-radius: 4px;
     /* background: #02b4eb; */
-    background: linear-gradient(135deg, #16967e 0%, #0291ce 100%);
+    background: #0fb8f6;
 }
-
+body.dark .item {
+    background: rgb(47, 48, 49);
+}
 /*------------------------------------------*/
 .pin__calendar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 .pin__calendar h3 {
     font-weight: 600;
@@ -314,10 +293,22 @@ body.dark .pin__calendar h3{
 /*------------------------------------------*/
 
 
-
-
-
+.box__dished {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #d1d1d1;
+    margin-bottom: 15px;
+}
+body.dark .box__dished {
+    border: 1px dashed #303030;
+}
+.text__dished {font-size: 14px; font-weight: 500;}
+body.dark .text__dished { font-weight: 400; }
+@media only screen and (min-width: 720px) { .text__dished { font-size: 15px; }}
 /*------------------------------------------*/
+
+.margin__p { margin-bottom: 20px;}
 /*------------------------------------------*/
 /*------------------------------------------*/
 
