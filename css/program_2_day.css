@@ -343,6 +343,9 @@ body.dark .text__ok {
     padding: 15px;
     margin-bottom: 30px;
 }
+body.dark .card__pin {
+    background: var(--box_dark);
+}
 .card__pin p {
     color: rgb(147 147 147);
     font-size: 12px;
@@ -351,7 +354,6 @@ body.dark .text__ok {
     /* height: 40px; */
     font-weight: 600;
     font-size: 18px;
-    padding-top: 5px;
 }
 body.dark .text__pin {
     font-weight: 500;
@@ -366,6 +368,9 @@ body.dark .text__pin {
     color: #fff;
     font-weight: 400;
 }
+body.dark .item__day {
+    background: #121212;
+}
 /*------------------------------------------*/
 
 
@@ -378,6 +383,7 @@ body.dark .text__pin {
     justify-content: flex-start;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding: 15px;
     transition: 0.3s;
 }
 @media only screen and (max-width: 720px) {
