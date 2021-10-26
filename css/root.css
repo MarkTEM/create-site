@@ -645,3 +645,56 @@ body.dark .ico__back:hover {
 /*------------------------------------------*/
 .txt_back { color: #6f6f72; font-size: 12px; font-weight: 400;}
 /*------------------------------------------*/
+
+
+
+/* ---------------------------------------- */
+#convas {
+    background: var(--fon-light);
+    border-radius: 18px 18px 0px 0px;
+    /* transition: 0.3s; */
+}
+
+body.dark #convas {
+    border-radius: 18px 18px 0px 0px;
+    background: var(--fon-dark);
+    
+}
+@media screen and (max-width: 720px) {
+    #convas {
+        border-radius: 15px 15px 0px 0px;
+    }
+}
+/* --- */
+#convas2 {
+    padding-top: 30px;
+    /* margin-top: -20px; */
+    background: #fff;
+    min-height: 100vh;
+}
+body.dark #convas2 {
+    background: var(--fon-dark);
+    /* border-top: 1px solid #0B0B0C; */
+}
+
+#convas2 {
+    /* animation-delay: 1s; */
+    animation-duration: 0.6s;
+    animation-name: an1;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+}
+/* ----------------Animate----------------- */
+
+@keyframes an1 {
+    from {
+        padding-top: 70px;
+        padding: 50px 0;
+    }
+    
+    to {
+
+    }
+}
+
+/* ---------------------------------------- */

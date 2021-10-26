@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    transition: background-color 0s;
+    /* transition: background-color 0s; */
     /* min-height: 200vh; */
 }
 body.dark {
@@ -286,52 +286,8 @@ footer {
 
 /*------------------------------------------*/
 
-#convas {
-    /* padding-bottom: 20px; */
-    transition: 0.3s;
-}
-@media screen and (max-width: 720px) {
-    #convas {
-        padding-bottom: 15px;
-    }
-}
-body.dark #convas {
-    background: none;
-    
-}
-#convas2 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: #fff;
-    border-radius: 18px 18px 0px 0px;
-    min-height: 100vh;
-    /* transition: 0.6s; */
-}
-@media screen and (max-width: 720px) {
-    #convas2 {
-        padding-top: 20px;
-        border-radius: 15px 15px 0px 0px;
-    }
-}
-body.dark #convas2 {
-    background: #111111;
-    /* border-top: 1px solid #0B0B0C; */
-}
-#convas2 {
-    animation-duration: 0.6s;
-    animation-name: an1;
-  }
 
-@keyframes an1 {
-    from {
-        margin-top: 60px;
-        padding: 50px 0;
-    }
-    
-    to {
 
-    }
-}
 /*------------------------------------------*/
 
 .btn__setting {
