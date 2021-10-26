@@ -117,16 +117,16 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 .wrapper {
     max-width: 100%;
     margin: 0 auto;
-	padding-left: 10px;
-    padding-right: 10px;
+	/* padding-left: 10px;
+    padding-right: 10px; */
     transition: 0.3s;
 }
 
 @media only screen and (max-width: 720px) {
     .wrapper {
         max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 @media only screen and (min-width: 720px) {
@@ -265,9 +265,9 @@ body.dark .preloader {
 }
 @media only screen and (max-width: 720px) {
     .header{
-		padding: 10px 0;
-		margin-left: 10px;
-		margin-right: 10px;
+		padding: 12px 0;
+		margin-left: 12px;
+		margin-right: 12px;
 	}
     .header__open{
 		padding: 10px 0;
@@ -280,7 +280,6 @@ body.dark .preloader {
 	align-items: center;
 }
 .head__text {
-	color: var(--text-light2);
 	font-size: 24px;
 	font-weight: 500;
 	transition: 0.3s;
@@ -457,17 +456,18 @@ body.dark .btn__akk:hover {
     font-size: 14px;
     padding: 0.7em 1.5em;
     background: none;
-    color: #E5E5E5;
+    color: #353636;
     border: 1px solid #36393A;
     margin-left: 10px;
 }
 .btn__theme:hover {
     background: #353636;
+    color: #E5E5E5;
 }
 body.dark .btn__theme {
     background: none;
     border: 1px solid #303030;
-    color: #c4c4c4;
+    color: #E5E5E5;
     
 }
 body.dark .btn__theme:hover {
@@ -488,6 +488,7 @@ footer {
     width: 100%;
     height: 200px;
     /* background: #111111; */
+    background: #e9e9e9;
     background: #060606;
     /* border-radius: 18px 18px 0px 0px; */
     border-radius: 0px 0px 0px 0px;

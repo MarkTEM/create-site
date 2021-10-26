@@ -396,11 +396,13 @@ body.dark .text__ok {
 }
 .text__pin{
     height: 40px;
-    font-weight: 500;
+    font-weight: 600;
     /* font-size: 24px; */
     padding-top: 5px;
 }
-
+body.dark .text__pin {
+    font-weight: 500;
+}
 /*------------------------------------------*/
 
 
