@@ -60,6 +60,9 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 /*------------------------------------------*/
 .m_border_radius { border-radius: 12px; }
 .m_shadow { box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15); }
+.m__right {
+    margin-right: 1rem;
+}
 /* .m_font_weight { font-weight: 500; } */
 /*------------------------------------------*/
 
@@ -460,6 +463,8 @@ body.dark .btn__akk:hover {
     border: 1px solid #36393A;
     margin-left: 10px;
     font-weight: 600;
+    transition-duration: 0.2s;
+    transition-property: background-color;
 }
 .btn__theme:hover {
     background: #353636;
@@ -577,14 +582,14 @@ body.dark .top__body {
     background: #060606;
 }
 .top__body {
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
     animation-name: an4;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
 }
 
 @keyframes an4 {
     from {
-        padding-top: 120px;
+        padding-top: 100px;
     }
     
     to {
@@ -624,9 +629,11 @@ body.dark .list {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1.2em 1.2em;
+    transition-duration: 0.2s;
+    transition-property: border;
 }
-.ico__back { background-color: #f1f1f1; background-image: url(../ico/top_dark.svg); }
-body.dark .ico__back { background-color: #242424; background-image: url(../ico/top.svg); }
+.ico__back { background-color: #f1f1f1; border: 1px solid #f1f1f1; background-image: url(../ico/top_dark.svg); }
+body.dark .ico__back { background-color: #242424; border: 1px solid #242424; background-image: url(../ico/top.svg); }
 .ico__back:hover {
     border: 1px solid #3C3C3E;
 	transform: scale(1.04);
@@ -673,9 +680,9 @@ body.dark #convas2 {
 
 #convas2 {
     /* animation-delay: 1s; */
-    animation-duration: 0.3s;
+    animation-duration: 0.6s;
     animation-name: an1;
-    /* transition-timing-function: ease-out; */
+    transition-timing-function: ease-in-out;
     /* animation-iteration-count: infinite; */
     /* animation-direction: alternate; */
 }
@@ -683,7 +690,7 @@ body.dark #convas2 {
 
 @keyframes an1 {
     from {
-        padding-top: 70px;
+        padding-top: 100px;
     }
     
     to {
