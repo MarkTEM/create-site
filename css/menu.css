@@ -3,74 +3,39 @@ body {
     /* transition: background-color 0s; */
     /* min-height: 200vh; */
 }
-body.dark {
-    background: #19191A;
-    background: var(--fon-dark); /*Цвет фона*/
-    /* background: #141414; */
-}
-
-
-.txt__categoru {
-    padding-top: 30px;
-    /* font-weight: 500; */
-}
-/* @media screen and (max-width: 720px) {
-    .txt__categoru {
-        padding-top: 30px;
-    }
-} */
+body.dark { background: var(--fon-dark); }
 /*-------------------------------------------*/
 
 
-/*-------------------TIME-------------------*/
-.clock_flex {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 35px;
-    background: #161616;
-    border-bottom: 1px solid#111111;
-}
-body.dark .clock_flex {
-    background: #09090a;
-}
-#clock {
-    color: var(--fon-light);
-    font-weight: 400;
-    font-size: 14px;
-    padding-right: 30px;
-}
-body.dark #clock {color: var(--text-light);background: #09090a;}
-@media screen and (max-width: 720px) {
-    .clock_flex {
-        justify-content: flex-start;
-        height: 35px;
-    }
-    #clock {
-        font-size: 12px;
-        font-weight: 400;
-        text-align: left;
-        padding-left: 15px;
-    }
-}
-/*------------------------------------------*/
 
 
-
+/*-------------------LOGO--------------------*/
+.icon__logo {
+    display: block;
+    height: 2.5em;
+    width: 2.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.5em 2.5em;
+}
+.icon__logo { background-image: url(../ico/Frame\ 7.png); }
 /*-------------------------------------------*/
 
-@media screen and (max-width: 380px) {
+/*------------------PREW---------------------*/
+
+/* @media screen and (max-width: 380px) {
     body.dark .prew {
         position: fixed;
         pointer-events: none;
         width: 100%;
         height: 100px;
         bottom: 0;
-        background: linear-gradient(180deg, rgba(39, 39, 39, 0) 0%, #000000 100%);  
+        background: linear-gradient(180deg, rgba(39, 39, 39, 0) 0%, #000000 100%); 
     }
-}
+} */
+/*-------------------------------------------*/
 
-/*------------------MENU--------------------*/
+/*-------------------MENU--------------------*/
 .box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,9 +76,6 @@ body.dark .item:hover {
     padding-top: 5px;
     font-size: 15px;
 }
-/* body.dark .item h4{
-    color: #1C1C1E; font-weight: 600;
-} */
 @media only screen and (max-width: 680px) {
     .item h4{
         padding-top: 4px;
@@ -127,9 +89,7 @@ body.dark .item:hover {
     transform: scale(1.02);
     
 }
-/* body.dark .item:hover {
-    box-shadow: 0px 0px 4px rgb(16, 231, 124);
-} */
+
 @media only screen and (max-width: 350px) {
     .box {
         grid-template-columns: repeat(1, 1fr);
@@ -177,7 +137,14 @@ body.dark .item:hover {
         font-size: 14px;
     }
 }
-/*------------------------------------------*/
+/*-------------------------------------------*/
+
+
+
+
+
+/*-------------------ICON-------------------*/
+
 .icon {
     display: block;
     height: 2.5em;
@@ -203,12 +170,11 @@ body.dark .image__upr {background-image: url(../ico/Group\ 121.png);}
 .image__new {background-image: url(../ico/Frame\ 6.png);}
 /* .image__file {background-image: url(../ico/file.svg);} */
 .image__progress {background-image: url(../ico/Frame\ 5.png);}
-.image__box {background-image: url(../ico/Frame\ 7.png);}
+
 body.dark .image__stopwatch {background-image: url(../ico/Frame\ 4.png);}
 body.dark .image__new {background-image: url(../ico/Frame\ 6.png);}
 body.dark .image__file {background-image: url(../ico/file.svg);}
 body.dark .image__progress {background-image: url(../ico/Frame\ 5.png);}
-body.dark .image__box {background-image: url(../ico/Frame\ 7.png);}
 @media only screen and (min-width: 700px){
     .icon {
         height: 3em;
@@ -220,12 +186,14 @@ body.dark .image__box {background-image: url(../ico/Frame\ 7.png);}
 /*------------------------------------------*/ 
 
 
+
+
+
+/*-------------------------------------------*/
 .head__text {
     padding-left: 10px;
 }
-
-
-
+/*-------------------------------------------*/
 
 
 
@@ -280,18 +248,6 @@ body.dark .text_help {
 
 
 
-/*-----------------FOOTER-------------------*/
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.create{margin: auto; text-align: center;}
-
-/*------------------------------------------*/
-
-
-
 /*------------------------------------------*/
 
 .btn__setting {
@@ -326,9 +282,13 @@ body.dark .ico__setting {
     background-image: url(../ico/setting.png);
 }
 
+/*-------------------------------------------*/
 
-/*------------------------------------------*/
 
+
+
+
+/*-------------------------------------------*/
 
 .prog__prev {
     display: flex;
@@ -355,30 +315,15 @@ body.dark .prog__prev {
 /* .txt__prog_prew2 { color: #F2F2F2; } */
 .txt__prog_prew3 { font-weight: 500; color: var(--text-dark); padding-top: 5px ;}
 /*------------------------------------------*/
-body.dark .txt__prog_prew2 {
-    color: #E6E6E6;
-}
-body.dark .txt__prog_prew3 {
-    color: #b8b8b8;
-}
+body.dark .txt__prog_prew2 { color: #E6E6E6; }
+body.dark .txt__prog_prew3 { color: #b8b8b8; }
 
-/* .flex {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px 0;
-}
-.foto {
-    display: block;
-    width: 100px;
-    height: 150px;
-    background: rgb(247, 247, 247);
-    background-image: url(../svg/undraw_home_screen_4n7s.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-}
-.foto_txt {padding-left: 15px;} */
+/*-------------------------------------------*/
 
+
+
+
+/*-------------------------------------------*/
 /* .child {
         
     grid-column: 0;
@@ -390,7 +335,12 @@ body.dark .txt__prog_prew3 {
         grid-column: 1fr;
     }
 } */
+/*-------------------------------------------*/
 
+
+
+
+/*-------------------------------------------*/
 .box_flex_items {
     display: flex;
     flex-direction: column;
@@ -419,3 +369,8 @@ body.dark .ico__right {background-image: url(../ico/right.svg);}
         display: block;
     }
 }
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
