@@ -2,10 +2,8 @@ body {
     font-family: 'Inter', sans-serif;
     /* background: #f3f3f3; */
 }
-body.dark  {
-    background: var(--fon-dark);
-}
-
+body.dark { background: var(--fon-dark); }
+/*-------------------------------------------*/
 .off__teg { color: #141414; font-weight: 400;}
 body.dark .off__teg { color: #8f8f8f; }
 /*-------------------------------------------*/
@@ -180,8 +178,9 @@ body.dark .line {
     }
 }
 .img__prog1 {
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-name: an5;
+    transition-timing-function: ease-out;
 }
 @keyframes an5 {
     from {

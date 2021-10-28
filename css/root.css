@@ -63,6 +63,7 @@ body::-webkit-scrollbar-thumb {background-color: #333;}
 .m__right {
     margin-right: 1rem;
 }
+.m__left { margin-left: 0.4rem; }
 /* .m_font_weight { font-weight: 500; } */
 /*------------------------------------------*/
 
@@ -273,9 +274,9 @@ body.dark .preloader {
 		margin-right: 12px;
 	}
     .header__open{
-		padding: 10px 0;
-		margin-left: 10px;
-		margin-right: 10px;
+		padding: 12px 0;
+		margin-left: 12px;
+		margin-right: 12px;
 	}
 }
 .items__header{
@@ -284,7 +285,7 @@ body.dark .preloader {
 }
 .head__text {
 	font-size: 24px;
-	font-weight: 500;
+	font-weight: 600;
 	transition: 0.3s;
 }
 .head__text2 {
