@@ -84,9 +84,7 @@ body.dark #clock {color: var(--text-light);background: #09090a;}
 .box h4 {font-weight: 500;}
 .item {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
     padding: 1.4em 1.2em;
     border-radius: 12px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20);
@@ -103,6 +101,11 @@ body.dark .item:hover {
     background: var(--box_dark);
     border: 1px solid #505050;
     /* border: 0px; */
+}
+@media only screen and (max-width: 380px){
+    .item {
+        align-items: center;
+    }
 }
 .item h4{
     padding-top: 5px;
@@ -129,13 +132,12 @@ body.dark .item:hover {
 } */
 @media only screen and (max-width: 380px) {
     .box {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10px;
         margin-bottom: 10px;
         grid-gap: 10px;
     }
     .item {
-        justify-content: flex-start;
         font-size: 14px;
         padding: 1em 1em;
     }
@@ -146,7 +148,6 @@ body.dark .item:hover {
         margin-top: 15px;
     }
     .item {
-        justify-content: flex-start;
         font-size: 14px;
     }
 }
@@ -155,7 +156,6 @@ body.dark .item:hover {
         grid-template-columns: repeat(3, 1fr);
     }
     .item {
-        flex-direction: column;
         font-size: 14px;
     }
 }
@@ -174,7 +174,6 @@ body.dark .item:hover {
         grid-template-columns: repeat(6, 1fr);
     }
     .item {
-        flex-direction: column;
         font-size: 14px;
     }
 }
@@ -188,6 +187,11 @@ body.dark .item:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 2.5em 2.5em;
+}
+@media only screen and (max-width: 380px){
+    .icon {
+        margin-right: 15px;
+    }
 }
 .image__programs {background-image: url(../ico/Group\ 118.png);}
 body.dark .image__programs {background-image: url(../ico/Group\ 118.png);}
@@ -380,5 +384,33 @@ body.dark .txt__prog_prew3 {
     .child {
         
         grid-column: 1fr;
+    }
+}
+
+.box_flex_items {
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 380px){
+    .box_flex_items {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.ico__right {
+    display: none;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../ico/right_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+}
+body.dark .ico__right {background-image: url(../ico/right.svg);}
+@media only screen and (max-width: 380px){
+    .ico__right {
+        display: block;
     }
 }
