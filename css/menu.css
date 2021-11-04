@@ -343,7 +343,7 @@ body.dark .txt__prog_prew3 { color: #b8b8b8; }
     background-size: 1em 1em;
 }
 body.dark .ico__right {background-image: url(../ico/right.svg);}
-@media screen and (min-width: 250px) and (max-width: 430px) {
+@media screen and (min-width: 250px) and (max-width: 350px) {
     .ico__right { display: block; }
 }
 /*-------------------------------------------*/
