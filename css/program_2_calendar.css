@@ -9,24 +9,11 @@ body.dark  { background: #060606; }
 .text_day {
     font-size: 24px;
 }
-.flex__day {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.text_day_none {
+    color: #2D2D2D;
+    font-size: 24px;
 }
-.right {
-    display: block;
-	background-image: url(../ico/right_dark.svg);
-	height: 1.4em;
-	width: 1.4em;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 1.2em 1.2em;
-}
-body.dark .right {
-    background-image: url(../ico/right.svg);
-}
+
 /*----------------CALENDAR-----------------*/
 /* .select_x {
     display: flex;
@@ -41,11 +28,8 @@ body.dark .right {
 } */
 .select {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     border-radius: 12px;
     color: #E5E5E5;
     padding: 1.4em 1.2em;
@@ -54,37 +38,24 @@ body.dark .right {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20);
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
-body.dark .select {
-    background: var(--box_dark);
-    border: 1px solid #131314;
-}
-body.dark .select h2{
-    color: #2C2C2E;
-}
-body.dark .select p{
-    color: #cfd0d6;
-}
 .select:hover {
-    /* box-shadow: 0px 0px 6px #2cf8ff; */
     border: 1px solid #3C3C3E;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .select:hover {
     transform: scale(1.02);
 }
-/* .select h4 {
-    font-size: 18px;
-    font-weight: 500;
+body.dark .select {
+    background: none;
+    border: 1px solid #2D2D2D;
+}
+body.dark .select:hover {
+    border: 1px solid #C72A2A;
+}
+/* body.dark .select h2{
+    color: #2C2C2E;
 } */
-.select p {
-    margin-top: 0px;
-    font-size: 18px;
-    
-}
-.text__pr {
-    color: #5d5d5e;
-    font-weight: 400;
-}
+
 
 
 .calendar {
@@ -99,52 +70,37 @@ body.dark .select p{
 }
 @media only screen and (max-width: 320px) {
     .calendar {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;}
     .select {
-        flex-direction: row;
-        justify-content: space-between;
         padding: 1em 1.2em;
     }
     .select h4 {
         font-size: 15px;
         font-weight: 600;
         padding-bottom: 0px;
-    }
-    .select p {
-        margin-top: 5px;
-        font-size: 14px;
-        /* margin-right: 40px; */
-    }
-    
+    }  
 }
 @media only screen and (min-width: 320px) {
-    .calendar {grid-template-columns: repeat(2,1fr);}
+    .calendar {grid-template-columns: repeat(4,1fr);}
     .select {
-        justify-content: space-around;
-        align-items: flex-start;
         padding: 1.2em 1em;
-    }
-    .select p {
-        margin-top: 5px;
-        margin-left: 0px; 
-        font-size: 14px;
     }
 }
 @media only screen and (min-width: 600px) {
-    .calendar {grid-template-columns: repeat(3,1fr);}
-}
-@media only screen and (min-width: 800px) {
-    .calendar {grid-template-columns: repeat(4,1fr);}
-}
-@media only screen and (min-width: 1100px) {
-    .calendar {grid-template-columns: repeat(5,1fr);}
-}
-@media only screen and (min-width: 1200px) {
     .calendar {grid-template-columns: repeat(6,1fr);}
 }
+@media only screen and (min-width: 800px) {
+    .calendar {grid-template-columns: repeat(8,1fr);}
+}
+@media only screen and (min-width: 1100px) {
+    .calendar {grid-template-columns: repeat(8,1fr);}
+}
+@media only screen and (min-width: 1200px) {
+    .calendar {grid-template-columns: repeat(8,1fr);}
+}
 @media only screen and (min-width: 1600px) {
-    .calendar {grid-template-columns: repeat(5,1fr);}
+    .calendar {grid-template-columns: repeat(10,1fr);}
 }
 /*------------------------------------------*/
 /*------------------------------------------*/
@@ -167,7 +123,7 @@ body.dark .select p{
 .hint__line {
     width: 3px;
     height: 100%;
-    background: #FFAA05;
+    background: #C72A2A;
     border-radius: 4px;
 }
 
@@ -175,8 +131,8 @@ body.dark .select p{
     color: var(--text-dark);
     font-size: 14px;
     font-weight: 600;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-left: 15px;
 }
 body.dark .hint__text {
@@ -310,9 +266,10 @@ body.dark .pin__calendar h3{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 15px;
+    padding: 12px;
     border-radius: 12px;
     border: 1px dashed #d1d1d1;
+    padding-top: 15px;
     margin-bottom: 15px;
 }
 body.dark .box__dished {
