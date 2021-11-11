@@ -1,6 +1,5 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: #f3f3f3;
 }
 body.dark  { background: var(--fon-dark); }
 /*------------------------------------------*/
@@ -10,7 +9,7 @@ body.dark  { background: var(--fon-dark); }
 /*------------------------------------------*/
 .txt__categoru {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -29,7 +28,11 @@ body.dark .txt__categoru { font-weight: 400; }
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 10px;
-    padding-top: 15px;
+    background: #eeeeee;
+    border-radius: 12px;
+}
+body.dark .box {
+    background: var(--box_dark);
 }
 .box h4 {font-weight: 500;}
 .item {
@@ -47,7 +50,7 @@ body.dark .txt__categoru { font-weight: 400; }
 }
 body.dark .item {
     background: var(--box_dark);
-    border: 1px solid var(--box_dark)
+    border: 0px solid var(--box_dark)
     /* border: 0px; */
 }
 .item:hover {
@@ -56,7 +59,8 @@ body.dark .item {
     transform: scale(1.02);
 }
 body.dark .item:hover {
-    border: 1px solid #505050;
+    background: #3787D0;
+    border: 0px solid #505050;
     /* border: 0px; */
 }
 .item h4{
@@ -112,6 +116,7 @@ body.dark .item:hover {
     .box {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 15px;
+        padding: 20px;
     }
     .item {
         flex-direction: column;
@@ -162,49 +167,5 @@ body.dark .ico__right {background-image: url(../ico/right.svg);}
 
 /* ---------------------------------------- */
 
-#convas {
-    padding-bottom: 0px;
-}
-body.dark #convas {
-    background: none;
-}
-@media screen and (max-width: 720px) {
-    #convas {
-        padding-bottom: 0px;
-    }
-}
-/* --- */
-#convas2 {
-    background: #fff;
-    border-radius: 18px 18px 0px 0px;
-    min-height: 100vh;
-    
-}
-body.dark #convas2 {
-    background: none;
-    /* border-top: 1px solid #0B0B0C; */
-}
-@media screen and (max-width: 720px) {
-    #convas2 {
-        padding-top: 15px;
-        border-radius: 15px 15px 0px 0px;
-    }
-}
-
-#convas2 {
-    animation-duration: 0.6s;
-    animation-name: an1;
-  }
-
-@keyframes an1 {
-    from {
-        margin-top: 40px;
-        padding: 50px 0;
-    }
-    
-    to {
-
-    }
-}
 
 /* ---------------------------------------- */
