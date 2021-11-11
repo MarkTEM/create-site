@@ -40,10 +40,16 @@ body.dark { background: var(--fon-dark); }
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: 12px;
+    /* grid-gap: 12px; */
+     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    background: var(--box_light);
     margin-top: 30px;
+    border-radius: 12px;
     margin-bottom: 15px;
     /* transition: 0.3s; */
+}
+body.dark .box {
+    background: var(--box_dark);
 }
 .box h4 {font-weight: 500;}
 .item {
@@ -51,21 +57,26 @@ body.dark { background: var(--fon-dark); }
     justify-content: space-between;
     padding: 1.4em 1.2em;
     border-radius: 12px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
-    border: 1px solid #e4e4e4;
+    /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15); */
+    border: 0px solid #e4e4e4;
     /* text-transform: uppercase; */
-    background: var(--box_light);
+    /* background: var(--box_light); */
     transition-duration: 0.3s;
     transition-property: border;
 }
+.item:hover {
+    border: 0px solid #3C3C3E;
+    transition: 0.3s;
+    transform: scale(1.03);  
+}
 body.dark .item {
     background: var(--box_dark);
-    border: 1px solid var(--box_dark)
+    border: 0px solid var(--box_dark)
     /* border: 0px; */
 }
 body.dark .item:hover {
-    background: var(--box_dark);
-    border: 1px solid #505050;
+    background: #3787D0;
+    border: 0px solid #505050;
     /* border: 0px; */
 }
 @media only screen and (max-width: 345px){
@@ -81,26 +92,21 @@ body.dark .item:hover {
         padding-left: 0px;
     }
 }
-.item:hover {
-    border: 1px solid #3C3C3E;
-    transition: 0.3s;
-    transform: scale(1.03);
-    
-}
 
-@media only screen and (max-width: 350px) {
+
+@media only screen and (max-width: 420px) {
     .box {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 10px;
-        margin-bottom: 10px;
-        grid-gap: 10px;
+        margin-bottom: 15px;
+        /* grid-gap: 10px; */
     }
     .item {
         font-size: 14px;
         padding: 1em 1em;
     }
 }
-@media only screen and (min-width: 350px) {
+@media only screen and (min-width: 420px) {
     .box {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 15px;
@@ -145,7 +151,7 @@ body.dark .item:hover {
     background-position: center center;
     background-size: 2.5em 2.5em;
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 420px){
     .icon { margin-right: 15px; }
 }
 .image__programs {background-image: url(../ico/Group\ 118.png);}
@@ -325,7 +331,7 @@ body.dark .txt__prog_prew3 { color: #b8b8b8; }
     flex-direction: column;
     flex-wrap: wrap;
 }
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 420px){
     .box_flex_items {
         flex-direction: row;
         align-items: center;
@@ -343,7 +349,7 @@ body.dark .txt__prog_prew3 { color: #b8b8b8; }
     background-size: 1em 1em;
 }
 body.dark .ico__right {background-image: url(../ico/right.svg);}
-@media screen and (min-width: 250px) and (max-width: 350px) {
+@media screen and (min-width: 250px) and (max-width: 420px) {
     .ico__right { display: block; }
 }
 /*-------------------------------------------*/
@@ -378,7 +384,7 @@ body.dark .akk_logo {background-image: url(../ico/ava_dark.svg);}
     background-image: url(../ico/ease.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.5em 1.5em;
+    background-size: 1.4em 1.4em;
     margin-left: 0.2rem;
 }
 /*-------------------------------------------*/
