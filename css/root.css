@@ -435,7 +435,7 @@ body.dark .btn__akk:hover {
 .btn__ok {
     margin: 10px 5px;
     padding: 0.7em 1.5em;
-    border-radius: 2em;
+    border-radius: 12px;
     color: #fff;
     background: #0fb8f6;
 }
@@ -671,7 +671,7 @@ body.dark #convas {
     padding-top: 30px;
     padding-bottom: 60px;
     /* margin-top: -20px; */
-    background: #fff;
+    background: #FAFAFA;
     min-height: 100vh;
 }
 body.dark #convas2 {

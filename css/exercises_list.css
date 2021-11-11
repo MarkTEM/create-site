@@ -1,12 +1,8 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--fon-dark);
-    min-height: 120vh;
 }
-body.dark  {
-    background: var(--fon-dark);
-}
-/* ---------------Title---------------- */
+body.dark  { background: #060606; }
+/*------------------------------------------*/
 .text__title {
     padding-left: 18px;
     font-weight: 500;
@@ -299,44 +295,7 @@ body.dark .box__color {
 } */
 
 /*------------------------------------------*/
-#convas {
-    padding-bottom: 20px;
-}
-body.dark #convas {
-    background: none;
-}
-#convas2 {
-    padding-top: 30px;
-    padding-bottom: 120px;
-    background: #fff;
-    border-radius: 18px 18px 0px 0px;
-    min-height: 100vh;
-}
-body.dark #convas2 {
-    background: #1B1B1B;
-    border-top: 1px solid #0B0B0C;
-}
-@media screen and (max-width: 720px) {
-    #convas2 {
-        padding-top: 15px;
-        border-radius: 15px 15px 0px 0px;
-    }
-}
-#convas2 {
-    animation-duration: 0.6s;
-    animation-name: an1;
-}
 
-@keyframes an1 {
-    from {
-        margin-top: 60px;
-        padding: 50px 0;
-    }
-    
-    to {
-
-    }
-}
 /*------------------------------------------*/
 
 .dit {
