@@ -701,28 +701,3 @@ body.dark #convas2 {
 
 /* ---------------------------------------- */
 
-.rr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 400px;
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
-.item__rr {
-	display: block;
-	background-image: url(../svg/rr1.svg);
-	height: 100%;
-	width: 50%;
-    border-radius: 12px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 70%;
-    background-color: #f1f1f1;
-    border: 1px solid #f1f1f1;
-	transition: 0.2s;
-}
-.text__rr {
-    padding: 15px;
-}

@@ -41,7 +41,7 @@ body.dark { background: var(--fon-dark); }
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     /* grid-gap: 12px; */
-     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
     background: var(--box_light);
     margin-top: 30px;
     border-radius: 12px;
@@ -54,7 +54,7 @@ body.dark .box {
 .box h4 {font-weight: 500;}
 .item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1.4em 1.2em;
     border-radius: 12px;
     /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15); */
@@ -104,6 +104,7 @@ body.dark .item:hover {
     .item {
         font-size: 14px;
         padding: 1em 1em;
+        justify-content: space-between;
     }
 }
 @media only screen and (min-width: 420px) {
@@ -227,7 +228,7 @@ body.dark .card_help {
     font-size: 15px;
     color: var(--text-dark);
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 body.dark .text_help {
@@ -284,7 +285,7 @@ body.dark .ico__setting { background-image: url(../ico/setting.png); }
     background: #fff;
     max-width: 400px;
     border: 1px solid #e4e4e4;
-    box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 15%);
     padding: 20px;
     border-radius: 12px;
     /* transition: 0.6s; */
@@ -296,12 +297,6 @@ body.dark .prog__prev {
 @media screen and (max-width: 720px) {
     .prog__prev { padding: 15px; }
 }
-.txt__prog_prew1 { font-weight: 500; color: var(--text-dark); padding-bottom: 10px; padding-top: 20px; }
-/* .txt__prog_prew2 { color: #F2F2F2; } */
-.txt__prog_prew3 { font-weight: 500; color: var(--text-dark); padding-top: 5px ;}
-/*------------------------------------------*/
-body.dark .txt__prog_prew2 { color: #E6E6E6; }
-body.dark .txt__prog_prew3 { color: #b8b8b8; }
 
 /*-------------------------------------------*/
 
@@ -330,6 +325,7 @@ body.dark .txt__prog_prew3 { color: #b8b8b8; }
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
 }
 @media only screen and (max-width: 420px){
     .box_flex_items {
@@ -401,3 +397,10 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* .new {
+    padding: 1em 1em;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 15%);
+} */
