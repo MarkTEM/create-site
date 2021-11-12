@@ -270,7 +270,10 @@ body.dark .teg2 {
 }
 /* ------------------------------------- */
 
-
+.flex2 {
+    display: flex;
+    align-items: center;
+}
 
 
 /* ------------------------------------- */
@@ -279,7 +282,7 @@ body.dark .teg2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 10px 10px 10px;
+    padding: 120px 12px 12px 12px;
 }
 .text__ok {
     color: #575757;
@@ -476,6 +479,7 @@ body.dark .color_fix { color: #7e8183; font-weight: 400;}
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-right: 20px;
 }
 body.dark .number { border-right: 2px solid #191919; }
 /*------------------------------------------*/
