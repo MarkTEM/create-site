@@ -124,6 +124,9 @@ body.dark .box__color {
     background-position: center center;
     background-size: 100%;
 }
+body.dark .photo {
+    background-image: url(../upr/upr1p2.jpg);
+}
 /* -------------2------------------ */
 
 .item {
@@ -276,7 +279,7 @@ body.dark .teg2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 10px;
+    padding: 120px 10px 10px 10px;
 }
 .text__ok {
     color: #575757;
@@ -367,7 +370,7 @@ body.dark .item__day {
 
 
 /* ---------------------------------------- */
-.hint {
+/* .hint {
     display: flex;
     justify-content: flex-start;
     padding-top: 30px;
@@ -379,14 +382,14 @@ body.dark .item__day {
         display: flex;
         justify-content: flex-start;
     }
-}
+} */
 /*------------------------------------------*/
-.pin__line {
+/* .pin__line {
     width: 3px;
     height: 100%;
     background: #FFAA05;
     border-radius: 4px;
-}
+} */
 
 .pin__text {
     color: var(--text-dark);
@@ -435,22 +438,46 @@ body.dark .el1 {
 @media only screen and (max-width: 480px) { .el1 { margin-right: 0px; }}
 .flex_el {
     display: flex;
+    justify-content: space-between;
     align-items: center
 }
-.line_el {
+/* .line_el {
     height: 40px;
     margin-left: 20px;
     margin-right: 20px;
     border-right: 1px solid #c9c9c9;
 }
-body.dark .line_el { border: 1px solid #191919; }
+body.dark .line_el { border: 1px solid #191919; } */
 
-.color_fix {font-size: 14px; color: #15beb3; font-weight: 500; padding-top: 5px;}
+
+.flex__temp {
+    display: flex;
+    align-items: center;
+}
+.color_fix {
+    margin-right: 10px;
+}
+.color_fix2 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 5px;
+    background: mediumslateblue  ;
+    border-radius: 8px;
+    padding: 8px;
+}
 body.dark .color_fix { color: #7e8183; font-weight: 400;}
 /* ---------------------------------------- */
 
-
-
+.number {
+    height: 40px;
+    width: 30px;
+    border-right: 2px solid #191919;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+body.dark .number { border-right: 2px solid #191919; }
 /*------------------------------------------*/
 .prog_prew {
     display: block;
@@ -497,6 +524,7 @@ body.dark .filter { background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #14
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 15px;
     border-radius: 12px;
     border: 1px dashed #d1d1d1;
@@ -607,5 +635,28 @@ body.dark .hint__text {
 }
 
 
+/*------------------------------------------*/
 
+/* .hint__day {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+@media only screen and (max-width: 720px) {
+    .hint__days {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
 
+.hint__element2 {
+    display: flex;
+    min-width: 70px;
+}
+.hint__line3 {
+    width: 3px;
+    height: 100%;
+    background: #a0a0a0;
+    border-radius: 4px;
+} */
