@@ -71,7 +71,8 @@ body.dark .box {
 }
 body.dark .item {
     background: var(--box_dark);
-    border: 0px solid var(--box_dark)
+    border-bottom: 1px solid #191919;
+    /* border: 0px solid var(--box_dark) */
     /* border: 0px; */
 }
 body.dark .item:hover {
