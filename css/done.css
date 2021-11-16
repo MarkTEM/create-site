@@ -9,8 +9,7 @@ body.dark { background: var(--fon-dark); }
 /*------------------------------------------*/
 
 .text_light {
-    color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
 }
 
@@ -65,15 +64,14 @@ body.dark { background: var(--fon-dark); }
     cursor: pointer;
     font-size: 15px;
     text-align: center;
-    /* margin: 10px 5px; */
     padding: 0.7em 1.5em;
     border-radius: 12px;
+    background: #0fb8f6;
     color: #fff;
     font-weight: 500;
     padding: 0.7em 1.5em;
-    background: #fff;
 }
-body.dark .btn__category { background: #0fb8f6; }
+body.dark .btn__category { background: #3787D0; }
 @media only screen and (max-width: 720px){
     .btn__category {
         width: 100%;
@@ -90,25 +88,29 @@ body.dark .btn__category { background: #0fb8f6; }
     background-position: center center;
     background-size: 1.0em 1.0em;
 }
-.ico__right {background-image: url(../ico/right.svg);}
+.ico__right {background-image: url(../ico/right_dark.svg);}
+body.dark .ico__right { background-image: url(../ico/right.svg); }
 /*------------------------------------------*/
 
 .box {
-    background: var(--box_dark);
+    background: var(--box_light);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 15%);
     border-radius: 20px;
 }
+body.dark .box { background: var(--box_dark); }
 .box2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--box_dark);
+    background: var(--box_light);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 15%);
     padding: 1em 1em;
     border-radius: 12px;
     cursor: pointer;
 }
-.box2:hover {
-    background: #3787D0;
-}
+body.dark .box2 { background: var(--box_dark); }
+.box2:hover { background: #0fb8f6; }
+body.dark .box2:hover { background: #3787D0; }
 .prog__photo {
     padding-bottom: 70%;
     width: 100%;
@@ -129,8 +131,6 @@ body.dark .btn__category { background: #0fb8f6; }
     background-image: url(../ico/done.svg);
     height: 3.0em;
     width: 3.0em;
-    border-radius: 2px;
-    cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 4.0em 4.0em;
