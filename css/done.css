@@ -14,6 +14,7 @@ body.dark { background: var(--fon-dark); }
     font-size: 18px;
 }
 
+
 /*------------------------------------------*/
 /* .wrapper {
     display: flex;
@@ -23,7 +24,7 @@ body.dark { background: var(--fon-dark); }
 /*------------------------------------------*/
 
 .box__done {
-    margin-top: 10%;
+    margin-top: 50%;
 }
 .ch {
     position: absolute;
@@ -36,7 +37,7 @@ body.dark { background: var(--fon-dark); }
 .box {
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
+    /* margin-top: 15%; */
     /* max-width: 500px; */
     margin-bottom: 20px;
 }
@@ -134,8 +135,8 @@ body.dark .btn__category {
 }
 .icon {
     display: block;
-    height: 2.0em;
-    width: 2.0em;
+    height: 1.0em;
+    width: 1.0em;
     border-radius: 2px;
     cursor: pointer;
     background-repeat: no-repeat;
@@ -147,7 +148,6 @@ body.dark .btn__category {
 
 .box {
     background: var(--box_dark);
-    padding: 15px;
     border-radius: 20px;
 }
 .box2 {
@@ -155,8 +155,12 @@ body.dark .btn__category {
     justify-content: space-between;
     align-items: center;
     background: var(--box_dark);
-    padding: 15px 20px;
+    padding: 1em 1em;
     border-radius: 12px;
+    cursor: pointer;
+}
+.box2:hover {
+    background: #3787D0;
 }
 .prog__photo {
     /* display: block; */
@@ -172,7 +176,7 @@ body.dark .btn__category {
 .flex1 {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    padding: 15px;
 }
 .ico__dove {
     display: block;
@@ -201,3 +205,7 @@ body.dark .btn__category {
       margin-left: 0%;
     }
 } */
+
+.pad {
+    margin-top: 10px;
+}
