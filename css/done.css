@@ -14,44 +14,23 @@ body.dark { background: var(--fon-dark); }
     font-size: 18px;
 }
 
-
-/*------------------------------------------*/
-/* .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-/*------------------------------------------*/
-
-.box__done {
-    margin-top: 50%;
-}
 .ch {
     position: absolute;
     bottom: 10px;
     width: 100%;
 }
 
-
 /*------------------------------------------*/
 .box {
     display: flex;
     flex-direction: column;
-    /* margin-top: 15%; */
-    /* max-width: 500px; */
     margin-bottom: 20px;
 }
-/* @media only screen and (max-width: 720px) {
-    .box {
-        
-    }
-} */
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* height: 50px; */
 }
 
 .item2 h4 {
@@ -59,32 +38,6 @@ body.dark { background: var(--fon-dark); }
     font-weight: 400;
     font-size: 14px;
 }
-/* .icon__done {
-    margin-bottom: 15px;
-	background-image: url(../svg/dove.svg);
-	height: 3.6em;
-	width: 3.6em;
-	box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
-	border-radius: 2em;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-.icon__done {
-    animation-duration: 0.6s;
-    animation-name: slidein;
-}
-  
-  @keyframes slidein {
-    from {
-      width: 0px;
-      height: 0px;
-    }
-  
-    to {
-      margin-left: 0%;
-    }
-} */
-
 
 .item {
     /* animation-delay: 1s; */
@@ -119,14 +72,8 @@ body.dark { background: var(--fon-dark); }
     font-weight: 500;
     padding: 0.7em 1.5em;
     background: #fff;
-    /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20); */
-    /* margin-left: 20px; */
 }
-body.dark .btn__category {
-    background: linear-gradient(
-        139.21deg
-        , #32BCA3 14.62%, #2196F3 124.55%);
-}
+body.dark .btn__category { background: #0fb8f6; }
 @media only screen and (max-width: 720px){
     .btn__category {
         width: 100%;
@@ -163,7 +110,6 @@ body.dark .btn__category {
     background: #3787D0;
 }
 .prog__photo {
-    /* display: block; */
     padding-bottom: 70%;
     width: 100%;
     border-radius: 15px;
@@ -190,21 +136,6 @@ body.dark .btn__category {
     background-size: 4.0em 4.0em;
     margin-right: 10px;
 }
-/* .ico__dove {
-    animation-duration: 1.6s;
-    animation-name: slidein2;
-}
-  
-  @keyframes slidein2 {
-    from {
-      width: 0px;
-      height: 0px;
-    }
-  
-    to {
-      margin-left: 0%;
-    }
-} */
 
 .pad {
     margin-top: 10px;
