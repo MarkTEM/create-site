@@ -442,8 +442,8 @@ footer {
         display: block;
         background: #ececec;
         height: 1px;
-        width: 90%;
+        width: 94%;
         margin: 0 auto;
     }
-    body.dark .bat__line {background: #141414;}
+    body.dark .bat__line {background: #181818;}
 }
