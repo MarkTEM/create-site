@@ -180,7 +180,7 @@ body.dark .text_prev2 { color: #B6B8C9; } */
 
 
 /*---------------PLEROADER------------------*/
-/* .preloader {
+.preloader {
 	position: fixed;
     background: #fff;
 	width: 100%;
@@ -240,7 +240,7 @@ body.dark .preloader {
 }
 .hide {
     opacity: 0;
-} */
+}
 /*------------------------------------------*/
 
 
