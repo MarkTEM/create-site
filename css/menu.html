@@ -21,83 +21,96 @@
     <!----------------------------------------->
 </head>
 <body>
+    <!-- <button id="fullscr"></button> -->
+    <!----------------------------------------->
     <div class="preloader">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-		
 	</div>
+    <!----------------------------------------->
 
 
-    <div class="prew"></div>
-    <!-- <details>
-        <summary>Новое</summary>
-        <p>Какой то текст</p>
-        <a href="">Ссылка</a>
-    </details> -->
-    <div class="clock_flex">
-        <div id="clock"></div>
-        <script>
-            window.onload = function(){
-                window.setInterval(function(){
-                    var now = new Date();
-                    var clock = document.getElementById("clock");
-                    clock.innerHTML = now.toLocaleTimeString();
-                }, 1000);
-                };
-                
-        </script>
-    </div>
 
+    <!----------------------------------------->
     <section id="convas">
-        <section class="header">
-            <div class="items__header">
-                <a href="index.html" class="text__color head__text">Bs</a>
+        <section class="header2">
+
+
+            <!-- <div class="items__header">
+                <div class="icon__logo image__box"></div>
+                <a href="index.html" class="head__text">: :</a>
                 
-                    
-    
-            </div>
-    
+            </div> -->
+            
             <div class="items__header">
-                <button class="btn__akk">Войти</button>
-                <button id="DarkMode" class="btn__theme">Темная тема</button>
-                <a href="" class="btn__setting">
+                <!-- <button class="btn__akk">Войти</button> -->
+                <a href="index.html" class="head__text">Bs</a>
+                <!-- <div class="flex__akk">
+                    <div class="flex_log"><div class="akk_logo"></div><h4 class="text__color text__weight2">@Bs_off</h4><div class="ease"></div></div>
+                </div> -->
+                <!-- <button id="DarkMode" class="btn__theme">Темная тема</button> -->
+            </div>
+            <div class="items__header">
+                <a href="settings.html" class="btn__setting">
                     <div class="ico__setting"></div>
                 </a>
             </div>
-    
-        </section>
-    </section>
 
-    <section class="wrapper">
-        
-    </section>
-
-    <section id="convas2">
-        <section class="wrapper">
-            <!-- <h4 class="txt__prog_prew1">Активно:</h4> -->
-            <div class="prog__prev">
-                <div>
-                    
-                    <h3 class="txt__prog_prew2">Отжимания+</h3>
-                    <h5 class="txt__prog_prew3">Выполненно: 4/7</h5>
-                </div>
-                <a href="program_2/program_2_day1.html" class="m__btn btn__start">Продолжить</a>
-            </div>
-
+            <!-- <section class="header2">
+                <div class="prew__prog"></div>
+            </section> -->
+            <div class="head__line"></div>
 
             
-            <h4 class="text__color txt__categoru">Категории:</h4>
+        </section>
+        <section class="prew__items wrapper">
+            <div class="flex__akk">
+                <div class="flex_log"><div class="akk_logo"></div><h4 class="akk_text text__weight2">@Bs_off</h4><div class="ease"></div></div>
+            </div>
+            <div class="search">
+                <form method="get" action="/"></form>
+                <input class="search2" type="search" placeholder="Поиск по сайту">
+            </div>
+        </section>
+        <!-- <div class="line"></div> -->
+    </section>
+    <!----------------------------------------->
+
+
+
+    <!----------------------------------------->
+    <section id="convas2">
+        <section class="wrapper">
+
+            <!-- <details class="new">
+                <summary class="color__text">Новое</summary>
+                <p>Какой то текст</p>
+                <a href="">Ссылка</a>
+            </details> -->
+            <!-- <div class="prog__prev">
+                <div class="m__right">
+                    <h3 class="text__color text__weight2">Отжимания+</h3>
+                    <h5 class="txt__prog_prew3 text__weight">Выполненно: 4/7</h5>
+                </div>
+                <a href="program_2/program_2_day1.html" class="m__btn btn__start">Продолжить</a>
+            </div> -->
+
+
             <div class="box">
-                <a href="programs.html" class="item"><div class="icon image__programs"></div><h4 class="text__color">Программы</h4></a>
-                <a href="prog_quik_start.html" class="item"><div class="icon image__training"></div><h4 class="text__color">Тренировка</h4></a>
-                <a href="exercises.html" class="item"><div class="icon image__upr"></div><h4 class="text__color">Упражнения</h4></a>
-                <a href="program_1_calendar.html" class="item"><div class="icon image__calendar"></div><h4 class="text__color">Календарь</h4></a>
-                <a href="404.html" class="item"><div class="icon image__progress"></div><h4 class="text__color">Статистика</h4></a>
-                <a href="404.html" class="item"><div class="icon image__new"></div><h4 class="text__color">Обновления</h4></a>
-                <a href="vika.html" class="item"><div class="icon image__box"></div><h4 class="text__color">Товары</h4></a>
+                <a href="programs.html" class="item"><div class="box_flex_items"><div class="icon image__programs"></div><h4 class="text__color text__weight">Программы</h4></div><div class="ico__right"></div></a>
+                <div class="bat__line"></div>
+                <a href="prog_quik_start.html" class="item"><div class="box_flex_items"><div class="icon image__training"></div><h4 class="text__color text__weight">Тренировка</h4></div><div class="ico__right"></div></a>
+                <div class="bat__line"></div>
+                <a href="exercises.html" class="item"><div class="box_flex_items"><div class="icon image__upr"></div><h4 class="text__color text__weight">Упражнения</h4></div><div class="ico__right"></div></a>
+                <div class="bat__line"></div>
+                <a href="stopwatch.html" class="item"><div class="box_flex_items"><div class="icon image__stopwatch"></div><h4 class="text__color text__weight">Счетчики</h4></div><div class="ico__right"></div></a>
+                <div class="bat__line"></div>
+                <a href="404.html" class="item"><div class="box_flex_items"><div class="icon image__progress"></div><h4 class="text__color text__weight">Статистика</h4></div><div class="ico__right"></div></a>
+                <div class="bat__line"></div>
+                <a href="404.html" class="item"><div class="box_flex_items"><div class="icon image__new"></div><h4 class="text__color text__weight">Читать</h4></div><div class="ico__right"></div></a>
             </div>
     
     
@@ -109,12 +122,13 @@
                 <button class="help">Помочь</button>
             </div> -->
             <div class="card_help m_border_radius m_shadow">
-                <h4 class="text__color text_prev2">Поддержка проекта</h4>
+                <h4 class="text__color text_prev2 text__weight2">Поддержка проекта</h4>
                 <!-- <h4 class="text_help">Если вы хотите помочь разроботчикам, вы можете перевести им небольшую сумму денежных средств, тем самым вы поможете развитию проета “Название”</h4> -->
-                <h4 class="text_help">Вы можете внести свой вклад в развитие этого сайта...</h4>
-                <button class="m__btn btn__none">Недоступно</button>
+                <h4 class="text_help">Прими участие в развтии проекта...</h4>
+                <button class="m__btn btn__none">Подробней</button>
             </div>
             <!-------------------------------------------------->
+
         </section>
     </section>
 
@@ -124,17 +138,17 @@
 <!-------------------------------------------------->
     
 <footer>
-    
+    <button id="DarkMode" class="btn__theme">Темная тема</button>
 </footer>
 
 <!-------------------------------------------------->
-
     
     
 <!-------------------------------------------------->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Подключен скрипт js -->
 <script src="js/main.js"></script>
+<!-- <script src="js/fullscr.js"></script> -->
 
 
     
