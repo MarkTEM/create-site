@@ -18,12 +18,12 @@ body.dark { background: var(--fon-dark); }
 .prew__items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
     padding: 12px;
     padding-bottom: 40px;
 }
 .flex__akk {
-    background: #282828;
+    /* background: #282828; */
     padding: 6px;
     border-radius: 12px;
     width: 170px;
@@ -34,6 +34,9 @@ body.dark { background: var(--fon-dark); }
 #convas2 {
     border-radius: 15px 15px 0px 0px;
     margin-top: -20px;
+}
+body.dark #convas2 {
+    margin-top: -60px;
 }
 /*------------------PREW---------------------*/
 
@@ -165,7 +168,7 @@ body.dark .item:hover {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 2.2em 2.2em;
+    background-size: 2.3em 2.3em;
 }
 @media only screen and (max-width: 420px){
     .icon { margin-right: 15px; }
@@ -192,9 +195,22 @@ body.dark .image__progress {background-image: url(../ico/Frame\ 5.png);}
         background-size: 3em 3em;
     }
 }
-
 /*------------------------------------------*/ 
 
+
+.search__ico {
+    background-image: url(../ico/Group\ 223.png);
+    display: block;
+    height: 2.2em;
+    width: 2.2em;
+    background-size: 2em 2em;
+    margin-left: 6px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
 
 
 /*------------------------------------------*/
@@ -443,6 +459,7 @@ footer {
 
 .bat__line {
     display: none;
+    margin-left: 20px;
 }
   
 @media only screen and (max-width: 420px){
