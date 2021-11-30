@@ -55,7 +55,21 @@ a {
     color: var(--text-dark);
 } */
 
-
+.bat__line {
+    display: none;
+    margin-left: 20px;
+}
+  
+@media only screen and (max-width: 420px){
+    .bat__line {
+        display: block;
+        background: #ececec;
+        height: 1px;
+        width: 94%;
+        margin: 0 auto;
+    }
+    body.dark .bat__line {background: #181818;}
+}
 
 
 /*----------------SCROLLBAR-----------------*/
