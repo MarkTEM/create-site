@@ -6,21 +6,35 @@ body {
 body.dark { background: var(--fon-dark); }
 /*-------------------------------------------*/
 
-
-
-
-/*-------------------LOGO--------------------*/
-.icon__logo {
-    display: block;
-    height: 2.5em;
-    width: 2.5em;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 2.5em 2.5em;
+.header2 a {
+    color: var(--box_light);
 }
-.icon__logo { background-image: url(../ico/Frame\ 7.png); }
-/*-------------------------------------------*/
-
+.head__line {
+    width: 100%;
+    height: 1px;
+    background: #1D1D22;
+    margin-top: 12px;
+}
+.prew__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+.flex__akk {
+    background: #282828;
+    padding: 6px;
+    border-radius: 12px;
+    width: 170px;
+}
+#convas {
+    background: var(--fon-dark);
+}
+#convas2 {
+    border-radius: 15px 15px 0px 0px;
+    margin-top: -20px;
+}
 /*------------------PREW---------------------*/
 
 /* @media screen and (max-width: 380px) {
@@ -41,7 +55,7 @@ body.dark { background: var(--fon-dark); }
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     /* grid-gap: 12px; */
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15); */
     background: var(--box_light);
     margin-top: 30px;
     border-radius: 12px;
@@ -183,16 +197,6 @@ body.dark .image__progress {background-image: url(../ico/Frame\ 5.png);}
 
 
 
-
-
-/*-------------------------------------------*/
-.head__text { padding-left: 10px; }
-/*-------------------------------------------*/
-
-
-
-
-
 /*------------------------------------------*/
 
 .card_help {
@@ -200,7 +204,7 @@ body.dark .image__progress {background-image: url(../ico/Frame\ 5.png);}
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: var(--cont-padding);
     /* margin-bottom: 60px; */
     /* border: 1px dashed #aaaaaa; */
     background: var(--box_light);
@@ -215,7 +219,7 @@ body.dark .card_help {
     .card_help {
         text-align: left;
         align-items: flex-start;
-        padding: 20px; 
+        padding: 20px;
     }
 }
 /*------------------------------------------*/
@@ -247,7 +251,7 @@ body.dark .text_help {
     background: #f1f1f1;
     padding: 5px 10px;
     padding: 0.1em 0.1em;
-    border-radius: 12px;
+    border-radius: var(--radius);
     margin-left: 8px;
     border: 1px solid #f1f1f1;
     transition-duration: 0.2s;
@@ -266,7 +270,7 @@ body.dark .btn__setting:hover {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 2em 2em;
-    border-radius: 8px;
+    border-radius: var(--radius);
 }
 body.dark .ico__setting { background-image: url(../ico/setting.png); }
 
@@ -366,7 +370,7 @@ body.dark .ico__right {background-image: url(../ico/right.svg);}
     height: 2.2em;
     width: 2.2em;
     border-radius: 2px;
-    background-image: url(../ico/ava.svg);
+    background-image: url(../ico/ava_dark.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 2.2em 2.2em;
@@ -383,6 +387,10 @@ body.dark .akk_logo {background-image: url(../ico/ava_dark.svg);}
     background-position: center center;
     background-size: 1.4em 1.4em;
     margin-left: 0.2rem;
+}
+.akk_text {
+    color: var(--box_light);
+    font-weight: 500;
 }
 /*-------------------------------------------*/
 
@@ -446,4 +454,24 @@ footer {
         margin: 0 auto;
     }
     body.dark .bat__line {background: #181818;}
+}
+
+
+/* .header2 {
+    background: var(--fon-dark);
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 200px;
+    border-radius: 18px 18px 0px 0px;
+} */
+
+.search2 {
+    width: 100%;
+    padding: 1em;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    background: #282828;
+    color: #fff;
+    font-size: 15px;
 }
