@@ -493,11 +493,12 @@ footer {
     padding: 8px 15px;
     border-radius: 12px;
     color: var(--box_light);
-    font-size: 15px;
-    
+    font-size: 15px; 
 }
+
 details {
     cursor: pointer;
+    transition: 0.3s;
 }
 /* Убираем стандартный маркер Chrome */
 details summary::-webkit-details-marker {
@@ -523,7 +524,35 @@ details[open] summary:before {
     background-position: center center;
     background-size: 1em 1em;
 }
+details[open] {
+    border-radius: 0px; 
+    margin: -12px;
+    /* margin-top: 0px; */
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    transition: 0.6s;
+}
+details[open] .canvas__qs {
+    animation-duration: 0.8s;
+    animation-name: prew__qs;
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+}
+.img__prog1 {
+    animation-duration: 0.3s;
+    animation-name: an5;
+}
+@keyframes prew__qs {
+    from {
+        opacity: 0;
+        margin-left: 150px;
+        transform: scale(0.5);  
+    }
+    
+    to {
 
+    }
+}
 .ico__prog {
     height: 2.2em;
     width: 2.2em;
@@ -539,7 +568,7 @@ summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    border-radius: 12px; 
 }
 .programs__qs::-webkit-scrollbar {width: 6px; height: 6px;}
 .programs__qs::-webkit-scrollbar-track {background-color: #181818; border-radius: 2rem;}
