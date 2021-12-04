@@ -73,14 +73,22 @@ a {
 
 
 /*----------------SCROLLBAR-----------------*/
-body::-webkit-scrollbar {width: 6px;}
-body::-webkit-scrollbar-track {background-color: #060606;}
-body::-webkit-scrollbar-thumb {background-color: #333; border-radius: 2rem;}
+body::-webkit-scrollbar {width: 10px;}
+body::-webkit-scrollbar-corner {height: 10px;}
+body::-webkit-scrollbar-track {background-color: #060606; border-radius: 2rem;}
+body::-webkit-scrollbar-thumb {background-color: #333; border-radius: 2rem; border: 2px solid;}
 body::-webkit-scrollbar-track-piece {
     border-radius: 2rem;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    /* margin-top: 4px; */
+    /* margin-bottom: 4px; */
 }
+/* ::-webkit-scrollbar-button:vertical:start:decrement {
+    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
+    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #333;
+} */
+
 /*body::-webkit-scrollbar-thumb:hover {background-color: rgb(46, 146, 228);}*/
 /*body::-webkit-scrollbar-button {background-color: #858585; height: 10px;}*/
 /*------------------------------------------*/
