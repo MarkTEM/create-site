@@ -525,12 +525,12 @@ details[open] summary:before {
     background-size: 1em 1em;
 }
 details[open] {
-    border-radius: 0px; 
-    margin: -12px;
+    border-radius: 12px; 
+    margin: -6px;
     /* margin-top: 0px; */
     margin-bottom: 10px;
     padding-bottom: 20px;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 details[open] .canvas__qs {
     animation-duration: 0.8s;
@@ -563,6 +563,7 @@ details[open] .canvas__qs {
     background-position: center center;
     background-size: 1em 1em;
 }
+
 summary {
     list-style: none;
     display: flex;
@@ -578,17 +579,19 @@ summary {
 
 
 .programs__qs {
-    overflow: auto ;
-    /* border-radius: 12px; */
-    /* border: 1px solid #3787D0; */
+    overflow: auto;
     position: relative;
     height: 190px;
     margin-top: 8px;
 }
 .canvas__qs {
     position: absolute;
-    display: flex;
+    min-width: 100%;
     height: 100%;
+    display: flex;
+}
+@media screen and (min-width: 480px) {
+    .canvas__qs { justify-content: center; }
 }
 .photo__qs {
     position: relative;
@@ -622,7 +625,7 @@ summary {
     background: rgb(247, 247, 247);
     background-image: url(../img/prog2.jfif);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 
