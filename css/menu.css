@@ -542,11 +542,13 @@ summary {
     
 }
 .programs__qs::-webkit-scrollbar {width: 6px; height: 6px;}
+.programs__qs::-webkit-scrollbar-track {background-color: #181818; border-radius: 2rem;}
 .programs__qs::-webkit-scrollbar-thumb {background-color: #333; border-radius: 2rem;}
 
 
+
 .programs__qs {
-    overflow: scroll ;
+    overflow: auto ;
     /* border-radius: 12px; */
     /* border: 1px solid #3787D0; */
     position: relative;
@@ -561,7 +563,6 @@ summary {
 .photo__qs {
     position: relative;
     border-radius: 12px;
-    /* display: block; */
     width: 270px;
     height: 170px;
     background: rgb(247, 247, 247);
@@ -574,7 +575,6 @@ summary {
     position: relative;
     margin-left: 15px;
     border-radius: 12px;
-    /* display: block; */
     width: 270px;
     height: 170px;
     background: rgb(247, 247, 247);
@@ -587,7 +587,6 @@ summary {
     position: relative;
     margin-left: 15px;
     border-radius: 12px;
-    /* display: block; */
     width: 270px;
     height: 170px;
     background: rgb(247, 247, 247);
@@ -610,3 +609,4 @@ summary {
     backdrop-filter: blur(5px);
     border-bottom: 0px solid rgba(45, 45, 45, 1);
 }
+
