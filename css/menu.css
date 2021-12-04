@@ -541,13 +541,16 @@ summary {
     align-items: center;
     
 }
+.programs__qs::-webkit-scrollbar {width: 6px; height: 6px;}
+.programs__qs::-webkit-scrollbar-thumb {background-color: #333; border-radius: 2rem;}
+
 
 .programs__qs {
     overflow: scroll ;
     /* border-radius: 12px; */
     /* border: 1px solid #3787D0; */
     position: relative;
-    height: 180px;
+    height: 190px;
     margin-top: 8px;
 }
 .canvas__qs {
@@ -568,6 +571,7 @@ summary {
     background-size: cover;
 }
 .photo__qs2 {
+    position: relative;
     margin-left: 15px;
     border-radius: 12px;
     /* display: block; */
@@ -580,6 +584,7 @@ summary {
     background-size: cover;
 }
 .photo__qs3 {
+    position: relative;
     margin-left: 15px;
     border-radius: 12px;
     /* display: block; */
@@ -599,8 +604,9 @@ summary {
     align-items: center;
     bottom: 0;
     padding: 12px;
-    width: 100%;
+    width: 100.5%;
     border-radius: 12px;
     background: rgba(45, 45, 45, 0.8);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
+    border-bottom: 0px solid rgba(45, 45, 45, 1);
 }
