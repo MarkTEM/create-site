@@ -544,6 +544,7 @@ summary {
 .programs__qs::-webkit-scrollbar {width: 6px; height: 6px;}
 .programs__qs::-webkit-scrollbar-track {background-color: #181818; border-radius: 2rem;}
 .programs__qs::-webkit-scrollbar-thumb {background-color: #333; border-radius: 2rem;}
+.programs__qs::-webkit-scrollbar-thumb:hover {background-color: #444;}
 
 
 
