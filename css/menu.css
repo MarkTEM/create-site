@@ -483,6 +483,58 @@ footer {
     border-bottom: 1px solid #3787D0;
 }
 
+
+
+
+
+.qs__prog {
+    display: flex;
+    background: #282828;
+    padding: 8px 15px;
+    border-radius: 12px;
+    color: var(--box_light);
+    font-size: 15px;
+    
+}
+/* Добавляем собственный маркер для открытого состояния */
+details summary:before {
+    content: ' ';
+    height: 2.2em;
+    width: 2.2em;
+    background-image: url(../ico/button_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+    order: 1;
+}
+details[open] summary:before {
+    content: ' ';
+    height: 2.2em;
+    width: 2.2em;
+    background-image: url(../ico/top_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+}
+
+.ico__prog {
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../ico/button_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+}
+summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
 .programs__qs {
     overflow: scroll ;
     border-radius: 12px;
