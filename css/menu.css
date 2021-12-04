@@ -547,7 +547,7 @@ summary {
     /* border-radius: 12px; */
     /* border: 1px solid #3787D0; */
     position: relative;
-    height: 150px;
+    height: 180px;
     margin-top: 8px;
 }
 .canvas__qs {
@@ -559,8 +559,8 @@ summary {
     position: relative;
     border-radius: 12px;
     /* display: block; */
-    width: 200px;
-    height: 140px;
+    width: 270px;
+    height: 170px;
     background: rgb(247, 247, 247);
     background-image: url(../img/prog3.jpg);
     background-repeat: no-repeat;
@@ -571,8 +571,8 @@ summary {
     margin-left: 15px;
     border-radius: 12px;
     /* display: block; */
-    width: 200px;
-    height: 140px;
+    width: 270px;
+    height: 170px;
     background: rgb(247, 247, 247);
     background-image: url(../img/prog4.jpg);
     background-repeat: no-repeat;
@@ -583,8 +583,8 @@ summary {
     margin-left: 15px;
     border-radius: 12px;
     /* display: block; */
-    width: 200px;
-    height: 140px;
+    width: 270px;
+    height: 170px;
     background: rgb(247, 247, 247);
     background-image: url(../img/prog2.jfif);
     background-repeat: no-repeat;
@@ -594,9 +594,13 @@ summary {
 
 .item__qs {
     position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     bottom: 0;
-    padding: 10px;
+    padding: 12px;
     width: 100%;
     border-radius: 12px;
-    background: var(--box_dark);
+    background: rgba(45, 45, 45, 0.8);
+    backdrop-filter: blur(8px);
 }
