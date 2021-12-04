@@ -17,10 +17,10 @@ body.dark { background: var(--fon-dark); }
 }
 .prew__items {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
     /* padding: 12px; */
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 .flex__akk {
     /* background: #282828; */
@@ -489,12 +489,19 @@ footer {
 
 .qs__prog {
     display: flex;
-    background: #282828;
+    background: var(--box_dark);
     padding: 8px 15px;
     border-radius: 12px;
     color: var(--box_light);
     font-size: 15px;
     
+}
+details {
+    cursor: pointer;
+}
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+    display: none
 }
 /* Добавляем собственный маркер для открытого состояния */
 details summary:before {
@@ -537,12 +544,11 @@ summary {
 
 .programs__qs {
     overflow: scroll ;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     /* border: 1px solid #3787D0; */
     position: relative;
-    height: 160px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    height: 150px;
+    margin-top: 8px;
 }
 .canvas__qs {
     position: absolute;
