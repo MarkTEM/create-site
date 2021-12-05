@@ -120,7 +120,7 @@ body.dark .item:hover {
 @media only screen and (max-width: 420px) {
     .box {
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 10px;
+        margin-top: 12px;
         margin-bottom: 15px;
         /* grid-gap: 10px; */
     }
@@ -503,6 +503,7 @@ footer {
 }
 
 details {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -641,7 +642,7 @@ summary {
     width: 100.5%;
     border-radius: 12px;
     background: rgba(45, 45, 45, 0.8);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     border-bottom: 0px solid rgba(45, 45, 45, 1);
 }
 
