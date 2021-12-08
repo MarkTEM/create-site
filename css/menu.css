@@ -561,6 +561,7 @@ summary {
 }
 .photo__qs, .photo__qs2, .photo__qs3 {
     position: relative;
+    background: #ffffff21;
     border-radius: var(--radius2);
     width: 270px;
     height: 170px;
