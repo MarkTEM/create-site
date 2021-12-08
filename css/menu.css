@@ -5,6 +5,9 @@ body {
 }
 body.dark { background: var(--fon-dark); }
 /*-------------------------------------------*/
+#convas2 {
+    padding-bottom: 60px;
+}
 
 .header2 a {
     color: var(--box_light);
@@ -567,7 +570,7 @@ summary {
 }
 .photo__qs  { background-image: url(../img/prog3.webp); }
 .photo__qs2 { background-image: url(../img/prog4.webp); margin-left: 15px; }
-.photo__qs3 { background-image: url(../img/prog2.webp); margin-left: 15px; }
+.photo__qs3 { background-image: url(../img/prog2.webp); margin-left: 15px; background-position: bottom;}
 
 .item__qs {
     position: absolute;
