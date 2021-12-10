@@ -512,13 +512,13 @@ details[open] .canvas__qs {
     animation-duration: 0.6s;
     animation-name: prew__qs;
     transition-timing-function: ease-in-out;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 @keyframes prew__qs {
     from {
         opacity: 0;
-        margin-left: 200px;
-        transform: scale(0.4);
+        margin-left: 100px;
+        transform: scale(0.6);
     }
     
     to {
