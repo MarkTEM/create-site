@@ -68,6 +68,7 @@ body.dark .box {
 .item {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 1.2em 1em;
     border-radius: 12px;
     /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15); */
@@ -271,7 +272,8 @@ body.dark .text_help {
     transition-property: border;
 }
 .btn__setting:hover { border: 1px solid #505050; }
-body.dark .btn__setting { border: 1px solid #242424; background: #242424; }
+body.dark .btn__setting { border: 1px solid #24242400; background: none; }
+/* body.dark .btn__setting { border: 1px solid #242424; background: #242424; } */
 body.dark .btn__setting:hover {
     border: 1px solid #505050;
 }
@@ -595,5 +597,51 @@ body.dark .item__qs {
     background: rgba(45, 45, 45, 0.8);
     backdrop-filter: blur(4px);
     color: var(--text-light);
+}
+/*-------------------------------------------*/
+.chi_gl {
+    background: var(--box_dark);
+    /* padding: 14px; */
+    border-radius: var(--radius2);
+    margin-bottom: 15px;
+}
+.chi {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 1em 1em;
+}
+.chi__flex {
+    display: flex;
+    align-items: center;
+}
+.chi__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 6px 14px;
+    border-bottom: 1px solid #3786d000;
+}
+.chi__text:hover {
+    background: #2c2c2c;
+    transition: 0.3s;
+    /* transform: scale(1.02); */
+    /* border-bottom: 1px solid #3787D0; */
+}
+.chi__il {
+    display: flex;
+    align-items: center;
+}
+.el1 {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #0AB5FE;
+    margin-right: 12px;
+}
+
+.chi__txt {
+    color: #88888E;
 }
 /*-------------------------------------------*/
