@@ -351,6 +351,17 @@ body.dark .ico__right {background-image: url(../ico/right.svg);}
 @media screen and (min-width: 250px) and (max-width: 420px) {
     .ico__right { display: block; }
 }
+.ico__right2 {
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../ico/right_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+}
+body.dark .ico__right2 {background-image: url(../ico/right.svg);}
 /*-------------------------------------------*/
 
 @media screen and (max-width: 315px) {
@@ -528,8 +539,8 @@ details[open] .canvas__qs {
 }
 @keyframes prew__qs {
     from {
-        opacity: 1;
-        margin-left: 200px;
+        opacity: 1%;
+        margin-left: 180px;
         transform: scale(0.4);
     }
     
@@ -585,6 +596,21 @@ summary {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    animation-duration: 0.8s;
+    animation-name: phopto__qs;
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+}
+@keyframes phopto__qs {
+    from {
+        /* width: 500px; */
+        margin-right: 300px;
+        transform: scale(0.2);
+    }
+    
+    to {
+
+    }
 }
 .photo__qs  { background-image: url(../img/prog3.webp); }
 .photo__qs2 { background-image: url(../img/prog4.webp); margin-left: 15px; }
@@ -659,7 +685,18 @@ body.dark .item__qs {
 .chi__txt {
     color: #88888E;
 }
-.mar__but1 {
+
+
+
+.bat__line__chi {
+    display: block;
+    background: #ececec;
+    height: 1px;
+    /* width: 94%; */
+    margin: 0 auto;
     margin-bottom: 6px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
+body.dark .bat__line__chi {background: #181818;}
 /*-------------------------------------------*/
