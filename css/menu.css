@@ -596,22 +596,8 @@ summary {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation-duration: 0.8s;
-    animation-name: phopto__qs;
-    transition-timing-function: ease-in-out;
-    transition: 0.3s;
 }
-@keyframes phopto__qs {
-    from {
-        /* width: 500px; */
-        margin-right: 300px;
-        transform: scale(0.2);
-    }
-    
-    to {
 
-    }
-}
 .photo__qs  { background-image: url(../img/prog3.webp); }
 .photo__qs2 { background-image: url(../img/prog4.webp); margin-left: 15px; }
 .photo__qs3 { background-image: url(../img/prog2.webp); margin-left: 15px; background-position: bottom;}
