@@ -468,7 +468,7 @@ body.dark .btn__akk:hover {
     padding: 0.7em 1.5em;
     border-radius: 12px;
     color: #fff;
-    background: #0fb8f6;
+    background: #2c86d3;
 }
 @media only screen and (max-width: 720px){
     .btn__ok {
