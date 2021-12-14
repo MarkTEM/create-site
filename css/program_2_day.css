@@ -411,6 +411,8 @@ body.dark .pin__text {
 /*------------------------------------------*/
 .box__el_flex {
     display: grid;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px; */
     margin-top: 5px;
 }
 @media only screen and (max-width: 480px) {
@@ -418,6 +420,11 @@ body.dark .pin__text {
         flex-direction: column;
     }
 }
+/* @media only screen and (max-width: 900px) {
+    .box__el_flex {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
 .box_el1 {
     min-width: 240px;
 }
@@ -431,7 +438,7 @@ body.dark .pin__text {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     min-height: 50px;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 body.dark .el1 {
     /* background: var(--box_item_dark); */
@@ -456,15 +463,45 @@ body.dark .el1 {
 }
 .color_fix2 {
     font-size: 14px;
-    color: #fff;
+    color: #6A81D1;
     font-weight: 500;
     padding-top: 5px;
-    background: #9685ff;
     border-radius: 8px;
     padding: 0.5em 0.8em;
 }
 body.dark .color_fix { color: #7e8183; font-weight: 400;}
-body.dark .color_fix2 { background: rgb(116, 107, 172); font-weight: 400; }
+body.dark .color_fix2 { font-weight: 400; }
+
+.tem__ico {
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../ico/Group\ 237.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 0.8em;
+}
+.tem__ico2 {
+    height: 1.5em;
+    width: 2em;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../ico/Group\ 238.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 0.8em;
+}
+.tem__ico3 {
+    height: 1.5em;
+    width: 2em;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(../ico/Ellipse\ 118.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 0.8em;
+}
 /* ---------------------------------------- */
 
 .number {
