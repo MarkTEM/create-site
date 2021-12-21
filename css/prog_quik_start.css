@@ -156,7 +156,7 @@ body.dark .item2 {
 
 .box2 {
     position: relative;
-    padding-top: 80%;
+    padding-top: 90%;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -164,6 +164,11 @@ body.dark .item2 {
     
     /* min-height: 200px; */
     width: 100%;
+}
+@media only screen and (min-width: 800px) {
+    .box2 {
+        padding-top: 90%;
+    }
 }
 .pfo1 { background-image: url(../img/prog2.webp); background-position: bottom; }
 .pfo2 { background-image: url(../img/prog3.webp); }
@@ -217,7 +222,7 @@ body.dark .box3 {
 @media only screen and (min-width: 800px) {
     #flex {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 /*------------------------------------------*/
