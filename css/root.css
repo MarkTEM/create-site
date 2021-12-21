@@ -588,7 +588,7 @@ body.dark .btn__none { color: #F2F2F2; font-weight: 500; }
 .btn__start {
     text-decoration: none;
     /* background: linear-gradient(120deg, #31be9d 30%, #0d9da7 90%); */
-    background: #3787D0;
+    background: #2c86d3;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 }
 body.dark .btn__start {
