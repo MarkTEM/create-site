@@ -153,39 +153,77 @@ body.dark .item2 {
 
 
 /*------------------------------------------*/
+.img__prog1 {
+    /* position: relative; */
+    /* margin-bottom: -20px; */
+    border-radius: 16px;
+    /* display: block; */
+    width: 100%;
+    /* padding-top: 60%; */
+    background: rgb(247, 247, 247);
+    background-image: url(../img/prog2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+@media only screen and (max-width: 720px) {
+    .img__prog1 {
+        border-radius: 12px 12px 0px 0px;
+        /* padding-top: 60%; */
+        width: 100%;
+    }
+}
+.img__prog1 {
+    animation-duration: 1s;
+    transition-timing-function: ease-in-out;
+    animation-name: an5;
+}
+@keyframes an5 {
+    from {
+        padding-top: 0px;
+    }
+    
+    to {
+
+    }
+}
 .box2 {
-    position: relative;
-    padding-top: 90%;
+    /* position: relative;
+    padding-top: 90%; */
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     
     /* min-height: 200px; */
     width: 100%;
 }
-@media only screen and (min-width: 800px) {
-    .box2 {
-        padding-top: 90%;
-    }
+
+.back {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
 }
 .pfo1 { background-image: url(../img/prog2.webp); background-position: bottom; }
 .pfo2 { background-image: url(../img/prog3.webp); }
 .pfo3 { background-image: url(../img/prog4.webp); }
 
 .box3 {
-    position: absolute;
-    bottom: -2px;
+    /* position: absolute;
+    bottom: -2px; */
     width: 100%;
+    padding-top: 30%;
     border: 1px solid #e4e4e4;
     background: rgba(30, 30, 32, 0.8);
     backdrop-filter: blur(20px);
+    border-radius: 15px;
     padding: 15px;
 }
 body.dark .box3 {
-    background: rgba(30, 30, 32, 0.8);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(180deg, rgba(29, 29, 30, 0.63) 0%, #1D1D1E 100%);
+    padding-top: 30%;
+    backdrop-filter: blur(4px);
     border: none;
 }
 /*------------------------------------------*/
@@ -217,7 +255,7 @@ body.dark .box3 {
 #flex {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
+    grid-gap: 20px;
 }
 @media only screen and (min-width: 800px) {
     #flex {
