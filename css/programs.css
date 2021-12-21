@@ -91,14 +91,24 @@ body.dark .btn__all2 {
         margin-bottom: 30px;
     }
 }
+.back {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+.pfo1 { background-image: url(../img/prog2.webp); background-position: bottom; }
+.pfo2 { background-image: url(../img/prog3.webp); }
+.pfo3 { background-image: url(../img/prog4.webp); }
 .box {
     display: block;
-    background: var(--box_light);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
     padding: 20px;
     min-height: 400px;
 }
 body.dark .box {
-    background: var(--box_dark);
+    background: rgba(30, 30, 32, 0.8);
+    backdrop-filter: blur(30px);
     border: 0px solid #0B0B0C;
 }
 @media only screen and (max-width: 720px) {
@@ -207,7 +217,7 @@ body.dark .line {
     width: 100%;
     height: 100%;
     background: rgb(247, 247, 247);
-    background-image: url(../img/prog1.jpg);
+    background-image: url(../img/prog4.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

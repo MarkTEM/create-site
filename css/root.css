@@ -711,7 +711,7 @@ body.dark #convas {
     padding-top: 30px;
     /* padding-bottom: 60px; */
     /* margin-top: -20px; */
-    background: #F4F4F4;
+    background: var(--fon-light);
     min-height: 100vh;
 }
 @media only screen and (min-width: 720px) {
