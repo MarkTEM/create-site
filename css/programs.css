@@ -204,6 +204,9 @@ body.dark p {
 }
 @keyframes an5 {
     from {
+        margin-left: 150px;
+        width: 20%;
+        opacity: 0;
         padding-bottom: 0px;
     }
     
@@ -212,11 +215,11 @@ body.dark p {
     }
 }
 .img__prog2 {
-    animation-duration: 1.1s;
+    animation-duration: 1.2s;
     animation-name: an5;
 }
 .img__prog3 {
-    animation-duration: 1.2s;
+    animation-duration: 1.4s;
     animation-name: an5;
 }
 
