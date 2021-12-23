@@ -197,8 +197,9 @@ body.dark p {
         width: 100%;
     }
 }
+
 .img__prog1 {
-    animation-duration: 1s;
+    animation-duration: 1.2s;
     transition-timing-function: ease-in-out;
     animation-name: an5;
 }
@@ -215,7 +216,7 @@ body.dark p {
     }
 }
 .img__prog2 {
-    animation-duration: 1.2s;
+    animation-duration: 1.3s;
     animation-name: an5;
 }
 .img__prog3 {
