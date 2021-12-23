@@ -156,7 +156,7 @@ body.dark .item:hover {
 }
 @media only screen and (min-width: 1200px){
     .box__menu {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
     .item {
         font-size: 14px;
@@ -235,6 +235,7 @@ body.dark .image__progress {background-image: url(../ico/Frame\ 5.png);}
     /* border: 1px dashed #aaaaaa; */
     background: var(--box_light);
     border: 1px solid #e4e4e4;
+    border-radius: var(--radius2);
 }
 body.dark .card_help {
     background: var(--box_dark);

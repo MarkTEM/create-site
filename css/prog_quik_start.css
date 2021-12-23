@@ -124,7 +124,6 @@ body.dark .item {
     height: 0.8em;
     width: 1.3em;
     border-radius: 6px;
-    cursor: pointer;
     background-image: url(../ico/ok.svg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -203,7 +202,7 @@ body.dark .item2 {
 .back {
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 18px;
+    border-radius: 20px;
 }
 .pfo1 { background-image: url(../img/prog2.webp); background-position: bottom; }
 .pfo2 { background-image: url(../img/prog3.webp); }
@@ -217,8 +216,9 @@ body.dark .item2 {
     border: 1px solid #e4e4e4;
     background: rgba(30, 30, 32, 0.8);
     backdrop-filter: blur(20px);
-    border-radius: 15px;
+    border-radius: 16px;
     padding: 15px;
+    margin-bottom: -2px;
 }
 body.dark .box3 {
     background: linear-gradient(180deg, rgba(29, 29, 30, 0.63) 0%, #1D1D1E 100%);
