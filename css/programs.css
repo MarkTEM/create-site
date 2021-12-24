@@ -352,12 +352,23 @@ blockquote {
 .txt__qs {
     padding-right: 30px;
 }
+
 details {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     padding-top: 12px;
+    /* height: 200px; */
+    /* overflow: auto; */
+    
     transition: 0.3s;
 }
-
+details[open] {
+    background: #14141441;
+    padding: 15px;
+    margin: -15px;
+    margin-top: 30px;
+    border-radius: 16px;
+    transition: 0.4s;
+}
 summary {
     list-style: none;
     display: flex;
