@@ -198,10 +198,23 @@ body.dark p {
     }
 }
 
-.img__prog1 {
-    animation-duration: 1.2s;
-    transition-timing-function: ease-in-out;
-    animation-name: an5;
+
+
+@media screen and (max-width: 720px) {
+    .img__prog1 {
+        animation-duration: 1.2s;
+        transition-timing-function: ease-in-out;
+        animation-name: an5;
+    }
+    
+    .img__prog2 {
+        animation-duration: 1.3s;
+        animation-name: an5;
+    }
+    .img__prog3 {
+        animation-duration: 1.4s;
+        animation-name: an5;
+    }
 }
 @keyframes an5 {
     from {
@@ -215,14 +228,7 @@ body.dark p {
 
     }
 }
-.img__prog2 {
-    animation-duration: 1.3s;
-    animation-name: an5;
-}
-.img__prog3 {
-    animation-duration: 1.4s;
-    animation-name: an5;
-}
+
 
 .img__prog2 {
     margin-bottom: -20px;
@@ -362,12 +368,17 @@ details {
     transition: 0.3s;
 }
 details[open] {
-    background: #14141441;
-    padding: 15px;
-    margin: -15px;
-    margin-top: 30px;
-    border-radius: 16px;
-    transition: 0.4s;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+@media screen and (min-width: 720px) {
+    details[open] {
+        background: #14141441;
+        padding: 20px;
+        /* margin: -20px; */
+        margin-top: 20px;
+        border-radius: 16px;
+    }
 }
 summary {
     list-style: none;
