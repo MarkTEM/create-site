@@ -41,6 +41,8 @@ a {
     --radius: 10px;
     --radius2: 12px;
 
+    --shad: 0px 1px 4px rgb(0 0 0 / 20%);
+
     --cont-padding: 30px;
     --cont-padding2: 15px;
     
@@ -131,7 +133,7 @@ body::-webkit-scrollbar-track-piece {
 .fit { font-weight: 600; padding-bottom: 3px;}
 .skinny { font-weight: 500;}
 .text_prev    { margin-left: 10px; }
-.text__weight { font-weight: 500; }
+.text__weight { font-weight: 600; }
 body.dark .text__weight { font-weight: 400; }
 .text__weight2 { font-weight: 600; }
 body.dark .text__weight2 { font-weight: 400; }
@@ -638,7 +640,7 @@ body.dark .top__body {
     margin-left: 24px;
     margin-right: 24px;
     height: 8px;
-    background: #cdcdcd;
+    background: #cdcdcdd1;
     border-radius: 2em 2em 0px 0px;
     /* transition: 0.6s; */
 }
@@ -669,8 +671,8 @@ body.dark .list {
     transition-duration: 0.2s;
     transition-property: border;
 }
-.ico__back { background-color: #f1f1f1; border: 1px solid #f1f1f1; background-image: url(../ico/top_dark.svg); }
-body.dark .ico__back { background-color: #242424; border: 1px solid #242424; background-image: url(../ico/top.svg); }
+.ico__back { background-color: #2D2D2D; border: 1px solid #242424; background-image: url(../ico/top.svg); }
+body.dark .ico__back { background-color: #2D2D2D; border: 1px solid #242424; background-image: url(../ico/top.svg); }
 .ico__back:hover {
     border: 1px solid #3C3C3E;
 	transform: scale(1.04);

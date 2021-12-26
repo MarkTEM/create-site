@@ -65,6 +65,7 @@ body.dark .box { background: var(--box_dark); color: var(--text-light); }
     /* grid-gap: 12px; */
     background: var(--box_light);
     border-radius: var(--radius2);
+    box-shadow: var(--shad);
     margin-top: 30px;
     margin-bottom: 15px;
     /* transition: 0.3s; */
@@ -489,6 +490,7 @@ footer {
     padding: 8px 15px;
     border-radius: 12px;
     color: var(--box_light);
+    box-shadow: var(--shad);
     font-size: 15px; 
 }
 body.dark .qs__prog {
@@ -592,6 +594,7 @@ summary {
     position: relative;
     background: #ffffff21;
     border-radius: var(--radius2);
+    box-shadow: var(--shad);
     width: 270px;
     height: 170px;
     background-repeat: no-repeat;
@@ -614,9 +617,8 @@ summary {
     color: #fff;
     width: 100.5%;
     border-radius: 12px;
-    background: rgb(255 255 255 / 70%);
-    background: rgb(0 0 0 / 20%);
-    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
     border-bottom: 0px solid rgba(45, 45, 45, 1);
 }
 body.dark .item__qs {

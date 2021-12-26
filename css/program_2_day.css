@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: #e9e9e9;
+    background: #222222;
 }
 body.dark  {
     background: #060606;
@@ -435,7 +435,6 @@ body.dark .pin__text {
     /* display: table-cell; */
     margin-top: 10px;
     background: var(--box_light);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
     min-height: 50px;
     padding: 10px 20px;
     padding-right: 10px;
@@ -697,3 +696,58 @@ body.dark .hint__text {
     background: #a0a0a0;
     border-radius: 4px;
 } */
+
+
+details {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    padding-top: 12px;
+    transition: 0.3s;
+}
+
+summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+@media screen and (min-width: 720px) {
+    summary:hover {
+        background: rgba(32, 32, 32, 0.8);
+        padding-left: 15px;
+        padding-right: 10px;
+        transition: 0.3s;
+    }
+}
+
+
+details summary:before {
+    content: ' ';
+    height: 2.2em;
+    width: 2.2em;
+    background-image: url(../ico/button_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+    order: 1;
+}
+details[open] summary:before {
+    content: ' ';
+    height: 2.2em;
+    width: 2.2em;
+    background-image: url(../ico/top_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+}
+
+
+
+
+
+.txt_title {
+    font-size: 14px;
+}
