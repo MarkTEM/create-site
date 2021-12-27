@@ -621,9 +621,9 @@ body.dark .top__body {
     /* background: #060606; */
 }
 .top__body {
-    animation-duration: 0.4s;
+    animation-duration: 0.6s;
     animation-name: an4;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: linear;
 }
 
 @keyframes an4 {
@@ -655,7 +655,23 @@ body.dark .list {
         height: 6px;
     }
 }
+.list {
+    animation-duration: 0.6s;
+    animation-name: list_an;
+    transition-timing-function: linear;
+}
 
+@keyframes list_an {
+    from {
+        padding-top: 20px;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    
+    to {
+
+    }
+}
 .head__it {
     margin-left: 15px;
 }
@@ -703,7 +719,7 @@ body.dark #convas {
 }
 @media screen and (max-width: 720px) {
     #convas {
-        border-radius: 15px 15px 0px 0px;
+        border-radius: 16px 16px 0px 0px;
     }
 }
 /* --- */

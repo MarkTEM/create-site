@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: #222222;
+    background: #151516;
 }
 body.dark  {
     background: #060606;
@@ -435,6 +435,7 @@ body.dark .pin__text {
     /* display: table-cell; */
     margin-top: 10px;
     background: var(--box_light);
+    box-shadow: var(--shad);
     min-height: 50px;
     padding: 10px 20px;
     padding-right: 10px;
