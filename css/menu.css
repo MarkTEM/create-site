@@ -628,10 +628,14 @@ body.dark .item__qs {
 }
 /*-------------------------------------------*/
 .chi_gl {
-    background: var(--box_dark);
-    /* padding: 14px; */
+    background: var(--box_light);
+    box-shadow: var(--shad);
     border-radius: var(--radius2);
     margin-bottom: 15px;
+}
+body.dark .chi_gl {
+    background: var(--box_dark);
+    border-radius: var(--radius2);
 }
 .chi {
     display: flex;
