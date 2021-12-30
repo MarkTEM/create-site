@@ -10,14 +10,21 @@ body.dark { background: var(--fon-dark); }
 }
 
 .header2 a {
+    color: var(--box_dark);
+    font-weight: 700;
+}
+body.dark .header2 a {
     color: var(--box_light);
 }
 .head__line {
     width: 100%;
     height: 1px;
-    background: #1D1D22;
+    background: #E0E0E0;
     margin-top: 12px;
 }
+body.dark .head__line  { background: #1D1D22; }
+
+
 .prew__items {
     display: grid;
     align-items: center;
@@ -381,10 +388,10 @@ body.dark .ico__right2 {background-image: url(../ico/right.svg);}
     height: 2.6em;
     width: 2.6em;
     border-radius: 2px;
-    background-image: url(../ico/ava_dark.svg);
+    background-image: url(../ico/ava.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 2.6em 2.6em;
+    background-size: 2.5em 2.5em;
     margin-right: 0.8rem;
 }
 body.dark .akk_logo {background-image: url(../ico/ava_dark.svg);}
@@ -400,9 +407,10 @@ body.dark .akk_logo {background-image: url(../ico/ava_dark.svg);}
     margin-left: 0.2rem;
 }
 .akk_text {
-    color: var(--box_light);
-    font-weight: 500;
+    color: var(--box_dark);
+    font-weight: 600;
 }
+body.dark .akk_text  { color: var(--box_light); }
 /*-------------------------------------------*/
 
 
@@ -470,12 +478,36 @@ footer {
     height: 44px;
     border-radius: 10px;
     border: none;
-    background: #282828;
-    border-bottom: 1px solid var(--fon-dark);
+    background: var(--fon-light);
+    border-bottom: 1px solid var(--fon-light);
+    box-shadow: var(--shad);
     color: #fff;
     font-size: 15px;
+    margin-bottom: 30px;
+}
+body.dark .search2 {
+    background: #282828;
+    border-bottom: 1px solid var(--fon-dark);
 }
 .search2:focus { border-bottom: 1px solid #3787D0; }
+.search {
+    position: relative;
+}
+.search__ico {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    height: 2em;
+    width: 2em;
+    border-radius: 2px;
+    background-image: url(../ico/search_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.4em 1.4em;
+}
+body.dark .search__ico {
+    background-image: url(../ico/search.svg);
+}
 
 /*-------------------------------------------*/
 
@@ -693,3 +725,10 @@ body.dark .chi_gl {
 }
 body.dark .bat__line__chi {background: #181818;}
 /*-------------------------------------------*/
+
+#convas {
+    background: #F4F4F4;
+}
+#convas2 {
+    background: #F4F4F4;
+}

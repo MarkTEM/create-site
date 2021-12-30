@@ -41,7 +41,7 @@ a {
     --radius: 10px;
     --radius2: 12px;
 
-    --shad: 0px 1px 4px rgb(0 0 0 / 20%);
+    --shad: 0px 1px 8px rgb(0 0 0 / 10%);
 
     --cont-padding: 30px;
     --cont-padding2: 15px;
@@ -305,7 +305,7 @@ body.dark .preloader {
     flex-wrap: wrap;
 	padding: 30px;
 	/* height: 60px; */
-	background: var(--fon-dark);
+	/* background: var(--fon-dark); */
 	transition: 0.3s;
 }
 @media only screen and (max-width: 720px) {
