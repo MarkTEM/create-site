@@ -138,7 +138,7 @@ body.dark .item:hover {
     }
     .item {
         font-size: 14px;
-        padding: 1em 1em;
+        padding: 0.8em 0.8em;
         justify-content: space-between;
     }
 }
