@@ -46,9 +46,9 @@ body.dark .head__line  { background: #1D1D22; }
     border-radius: 15px 15px 0px 0px;
     margin-top: -20px;
 }
-body.dark #convas2 {
+/* body.dark #convas2 {
     margin-top: -60px;
-}
+} */
 
 
 /*-------------------BOX---------------------*/
@@ -385,13 +385,13 @@ body.dark .ico__right2 {background-image: url(../ico/right.svg);}
     margin-right: 8px;
 }
 .akk_logo {
-    height: 2.6em;
-    width: 2.6em;
+    height: 3em;
+    width: 3em;
     border-radius: 2px;
     background-image: url(../ico/ava.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 2.5em 2.5em;
+    background-size: 2.6em 2.6em;
     margin-right: 0.8rem;
 }
 body.dark .akk_logo {background-image: url(../ico/ava_dark.svg);}
@@ -492,18 +492,19 @@ body.dark .search2 {
 .search2:focus { border-bottom: 1px solid #3787D0; }
 .search {
     position: relative;
+    
 }
 .search__ico {
     position: absolute;
     right: 20px;
-    top: 6px;
+    top: 5px;
     height: 2em;
     width: 2em;
     border-radius: 2px;
     background-image: url(../ico/search_dark.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.4em 1.4em;
+    background-size: 1.2em 1.2em;
 }
 body.dark .search__ico {
     background-image: url(../ico/search.svg);
