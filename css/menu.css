@@ -31,7 +31,7 @@ body.dark .head__line  { background: #1D1D22; }
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     /* padding: 12px; */
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 .flex__akk {
     /* background: #282828; */
