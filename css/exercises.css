@@ -71,7 +71,7 @@ body.dark .item:hover {
     /* border: 0px; */
 }
 .item h4{
-    padding-left: 10px;
+    padding-left: 0.8em;
     font-size: 15px;
 }
 
@@ -157,13 +157,13 @@ body.dark .item:hover {
 }
 .image__programs {
     display: block;
-    height: 3em;
-    width: 3em;
+    height: 3.2em;
+    width: 3.2em;
     border-radius: 5px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 3em 3em;
+    background-size: 3.2em 3.2em;
 }
 .ico__right {background-image: url(../ico/right_dark.svg);}
 body.dark .ico__right {background-image: url(../ico/right.svg);}
