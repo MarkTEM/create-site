@@ -83,7 +83,7 @@ body.dark .item:hover {
     .item {
         justify-content: flex-start;
         font-size: 14px;
-        padding: 0.8em 1em;
+        padding: 0.6em 0.8em;
     }
 }
 @media only screen and (min-width: 420px) {
@@ -169,8 +169,51 @@ body.dark .item:hover {
 body.dark .ico__right {background-image: url(../ico/right.svg);}
 .ico__gr {background-image: url(../upr/scale_1200.jpg);}
 body.dark .ico__gr {background-image: url(../upr/tors_dark.png);}
+.ico__gr2 {background-image: url(../upr/scale_1200.jpg);}
+body.dark .ico__gr2 {background-image: url(../upr/body.png);}
 
+/*-------------------------------------------*/
 
+.search2 {
+    width: 100%;
+    padding: 1em;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    background: var(--fon-light);
+    border-bottom: 1px solid var(--fon-light);
+    box-shadow: var(--shad);
+    color: #282828;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+body.dark .search2 {
+    color: #fff;
+    background: #282828;
+    border-bottom: 1px solid var(--fon-dark);
+}
+.search2:focus { border-bottom: 1px solid #3787D0; }
+.search {
+    position: relative;
+    
+}
+.search__ico {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    height: 2em;
+    width: 2em;
+    border-radius: 2px;
+    background-image: url(../ico/search_dark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.2em 1.2em;
+}
+body.dark .search__ico {
+    background-image: url(../ico/search.svg);
+}
+
+/*-------------------------------------------*/
 
 /* ---------------------------------------- */
 /* ---------------------------------------- */
