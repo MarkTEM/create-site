@@ -13,7 +13,10 @@ body.dark .off__teg { color: var(--text-light); }
 .tag__bar {display: flex; flex-wrap: wrap;}
 /*-------------------------------------------*/
 
-
+#convas2 {
+    margin-top: -20px;
+    padding-bottom: 200px;
+}
 
 /*-------------------------------------------*/
 .hint__text {
@@ -151,9 +154,9 @@ body.dark .box {
     padding-bottom: 10px;
 }
 .box__item {
-    animation-duration: 0.8s;
+    animation-duration: 0.7s;
     animation-name: box_it;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: linear;
 }
 @keyframes box_it {
     from {
@@ -199,7 +202,7 @@ body.dark p {
     padding: 8px 16px;
     border-radius: 8px;
     background: #333333;
-    color: var(--text-light);
+    color: #fff;
     /* font-size: 14px; */
     font-weight: 400;
     font-size: 14px;
@@ -207,7 +210,7 @@ body.dark p {
 }
 body.dark .tag__items {
     background: #151515b9;
-    color: #fff;
+    color: var(--text-light);
     /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); */
     /* border: 1px solid #151515; */
 }
@@ -261,8 +264,8 @@ body.dark .tag__items {
 }
 @keyframes an5 {
     from {
-        margin-left: 150px;
-        width: 20%;
+        margin-left: 40px;
+        width: 80%;
         opacity: 0;
         padding-bottom: 0px;
     }
@@ -311,10 +314,6 @@ body.dark .tag__items {
 }
 
 
-
-#convas2 {
-    margin-top: -20px;
-}
 
 
 
@@ -404,27 +403,33 @@ blockquote {
     padding-right: 30px;
 }
 
-details {
+.dital {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     padding-top: 12px;
+    border-radius: 8px;
     /* height: 200px; */
     /* overflow: auto; */
     position: relative;
     transition: 0.3s;
 }
-details[open] {
+.dital[open] {
     margin-top: 20px;
-    background: #1d1d1d;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     margin: -15px;
     border-radius: 16px;
     margin-top: 20px;
     padding: 15px;
-    border: 1px solid #2c2c31;
+    background: #ffffff94;
+    border: 1px solid #dadadf;
     transition: 0.3s;
 }
+body.dark .dital[open] {
+    background: #1d1d1d;
+    border: 1px solid #2c2c31;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
 @media screen and (min-width: 720px) {
-    details[open] {
+    .dital[open] {
         position: relative;
         background: #14141441;
         padding: 20px;
