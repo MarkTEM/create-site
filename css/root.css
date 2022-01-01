@@ -591,6 +591,16 @@ body.dark .btn__none { color: #F2F2F2; font-weight: 500; }
     background: #2c86d3;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
 }
+.btn__lock {
+    text-decoration: none;
+    /* background: linear-gradient(120deg, #31be9d 30%, #0d9da7 90%); */
+    border: 1px solid #5e6263;
+    color: #5e6263;
+    border-radius: var(--radius);
+    font-size: 15px;
+    padding: 0.7em 1.5em;
+}
+
 body.dark .btn__start {
     font-weight: 400;
 }
