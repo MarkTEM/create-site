@@ -136,10 +136,12 @@ body.dark .box__g {
 .pfo1 { background-image: url(../img/prog2.webp); background-position: bottom; }
 .pfo2 { background-image: url(../img/prog3.webp); }
 .pfo3 { background-image: url(../img/prog4.webp); }
+
+
 .box {
     display: block;
     background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     padding: 20px;
     min-height: 400px;
     width: 100%;
@@ -436,7 +438,7 @@ blockquote {
 .dital[open] {
     margin-top: 20px;
     margin: -15px;
-    border-radius: 16px;
+    border-radius: 16px 16px 16px 16px;
     margin-top: 20px;
     padding: 15px;
     background: #ffffffe0;
@@ -450,11 +452,15 @@ body.dark .dital[open] {
 @media screen and (min-width: 720px) {
     .dital[open] {
         position: relative;
-        background: #14141441;
+        background: #14141414;
+        border: 1px solid #b0b0b1;
+        border-radius: 0px 16px 16px 0px;
+        border-left: 0px;
+        margin: -20px;
         padding: 20px;
         /* margin: -20px; */
         margin-top: 20px;
-        border-radius: 16px;
+        /* border-radius: 16px; */
     }
 }
 summary {
