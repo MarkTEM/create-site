@@ -293,7 +293,7 @@ body.dark .box__prew {
     backdrop-filter: blur(30px);
 }
 .txt__qs {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     margin-right: 10px;
 }
@@ -301,7 +301,7 @@ body.dark .txt__qs {
     font-weight: 500;
 }
 .progress {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
 }
 /* ---------------------------------------- */
