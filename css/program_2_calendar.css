@@ -52,7 +52,27 @@ body.dark .select:hover {
     color: #2C2C2E;
 } */
 
-
+.select2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1.4em 1.2em;
+    background: #1d1d1d;
+    /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20); */
+    /* text-shadow: 0px 2px 2px #0d0f11b9; */
+}
+.text_day2{
+    font-size: 15px;
+}
+.txt__callend {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
 
 .calendar {
     position: relative;
@@ -118,14 +138,14 @@ body.dark .select:hover {
 }
 .icon__done {
     position: absolute;
-    right: 8px;
-    bottom: 8px;
+    bottom: 2px;
+    right: 2px;
 	background-image: url(../ico/done2.svg);
 	height: 2.2em;
 	width: 2.2em;
 	background-repeat: no-repeat;
 	background-position: center center;
-    background-size: 2.0em 2.0em;
+    background-size: 1.5em 1.5em;
 }
 /*------------------------------------------*/
 
@@ -301,7 +321,7 @@ body.dark .txt__qs {
     margin-top: 20px;
     margin: -15px;
     border-radius: 16px;
-    margin-top: 20px;
+    margin-top: 5px;
     padding: 15px;
     background: #ffffffe0;
     border: 1px solid #dadadf;
@@ -361,7 +381,18 @@ details[open] summary:before {
     background-size: 1em 1em;
 }
 
-
+.flex__dit {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.flex__dit h4{
+    display: flex;
+    justify-content: space-between;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+}
 /*------------------------------------------*/
 
 
