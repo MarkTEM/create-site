@@ -53,7 +53,11 @@
                 </div> -->
                 <!-- <button id="DarkMode" class="btn__theme">Темная тема</button> -->
             </div>
+            
             <div class="items__header">
+                
+                <button data-view="search_on" class="btn__theme">Поиск</button>
+                <button data-view="search_off" class="btn__theme">Убрать поиск</button>
                 <a href="settings.html" class="btn__setting">
                     <div class="ico__setting"></div>
                 </a>
@@ -63,15 +67,24 @@
                 <div class="prew__prog"></div>
             </section> -->
             <div class="head__line"></div>
-
+            
             
         </section>
-        <div class="search wrapper">
+        
+        <section class="wrapper">
+            <div class="items">
+                <div class="search">
+                    
             
-            <form method="get" action="/"></form>
-            <input class="search2" type="search" placeholder="Поиск по сайту">
-            <div class="search__ico"></div>
-        </div>
+                    <form method="get" action="/"></form>
+                    <input class="search2" type="search" placeholder="Поиск по сайту">
+                    <div class="search__ico"></div>
+                </div>
+            </div>
+        </section>
+        
+
+        
         <section class="prew__items wrapper">
             <div class="flex__akk">
                 <div class="flex_log"><div class="akk_logo"></div><h4 class="akk_text text__weight2">@Bs_off</h4><div class="ease"></div></div>
@@ -94,8 +107,15 @@
                 <p>Какой то текст</p>
                 <a href="">Ссылка</a>
             </details> -->
+            
             <details class="qs__prog">
-                <summary class="text__color text__weight">Активные</summary>
+                <summary class="text__color text__weight">Активные
+                    <!-- <div class="next2">
+                        <h5>Перейти</h5>
+                        <div class="ico_next"></div>
+                    </div> -->
+                </summary>
+                
                 <section class="programs__qs">
                     <div class="canvas__qs">
                         <div class="photo__qs">
@@ -118,6 +138,10 @@
                         </div>
                     </div>
                 </section>
+                <div class="next">
+                    <h5>Перейти</h5>
+                    <div class="ico_next"></div>
+                </div>
             </details>
             
 
@@ -141,6 +165,11 @@
                     <div class="chi__flex">
                         <div class="icon image__new"></div>
                         <h4 class="text__color text__weight">Читать:</h4>
+                        
+                    </div>
+                    <div class="next2">
+                        <h5>Перейти</h5>
+                        <div class="ico_next"></div>
                     </div>
                 </div>
                 <div class="bat__line__chi"></div>
@@ -190,6 +219,7 @@
 <!-------------------------------------------------->
     
 <footer>
+    <!-- <button id="DarkMode" class="btn__theme">Темная тема</button> -->
     <button id="DarkMode" class="btn__theme">Темная тема</button>
 </footer>
 
