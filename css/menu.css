@@ -473,6 +473,8 @@ footer {
 /*-------------------------------------------*/
 
 .search2 {
+    overflow: hidden;
+    top: -50px;
     width: 100%;
     padding: 1em;
     height: 44px;
@@ -483,7 +485,7 @@ footer {
     box-shadow: var(--shad);
     color: #fff;
     font-size: 15px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 body.dark .search2 {
     background: #282828;
@@ -686,13 +688,14 @@ body.dark .chi_gl {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
     border-radius: 8px;
     padding: 6px 14px;
     border-bottom: 1px solid #3786d000;
 }
 .chi__text:hover {
     background: #2c2c2c;
-    transition: 0.3s;
+    transition: 0.6s;
     /* transform: scale(1.02); */
     /* border-bottom: 1px solid #3787D0; */
 }
@@ -732,4 +735,69 @@ body.dark .bat__line__chi {background: #181818;}
 }
 #convas2 {
     background: #F4F4F4;
+}
+
+
+.items {
+    padding: 0px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background: #282828;
+    transition: 0.3s;
+}
+.items[data-temp="search_on"] {
+    padding: 12px;
+    padding-bottom: 80px;
+    background: #0AB5FE;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+.items[data-temp="search_off"] {
+    transition: 0.3s;
+}
+
+
+
+
+.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    background: #13131480;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.next h5{
+    color: #29A3D8;
+    font-weight: 400;
+}
+
+
+.ico_next {
+    position: relative;
+    height: 1.4em;
+    width: 1.4em;
+    background-image: url(../ico/next.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.4em 1.4em;
+    justify-content: flex-start;
+    margin-left: 4px;
+}
+.next2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.next2:hover {
+    background: #13131480;
+    padding: 0px 15px;
+}
+.next2 h5{
+    color: #29A3D8;
+    font-weight: 400;
 }
