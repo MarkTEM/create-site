@@ -40,11 +40,22 @@ DarkMode.onclick = () => {
     localStorage.theme = document.body.className || "light"
 }
 
+const items = document.querySelector('.items');
+
+document.querySelectorAll('button[data-view]').forEach(item => {
+  item.addEventListener('click', () => {
+    const view = item.dataset.view;
+    items.dataset.temp = view;
+  })
+})
 
 
 document.querySelector('.b-7').addEventListener('click' , () => {
   let data = document.querySelector('i-7').innerHTML = '';
 });
+
+
+
 
 
 
