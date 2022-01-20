@@ -305,7 +305,7 @@ body.dark .btn__setting:hover {
 	width: 2em;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 2em 2em;
+	background-size: 1.9em 1.8em;
     border-radius: var(--radius);
 }
 body.dark .ico__setting { background-image: url(../ico/setting.png); }
@@ -494,6 +494,7 @@ body.dark .search2 {
 .search2:focus { border-bottom: 1px solid #3787D0; }
 .search {
     position: relative;
+    width: 100%;
     
 }
 .search__ico {
@@ -511,7 +512,38 @@ body.dark .search2 {
 body.dark .search__ico {
     background-image: url(../ico/search.svg);
 }
-
+.search__ico2 {
+    height: 2.3em;
+    width: 2.3em;
+    border-radius: 2px;
+    background-image: url(../ico/search.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.6em 1.6em;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.search__ico2:hover {
+    border: 1px solid #303030;
+}
+.search_close__ico {
+    display: block;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 2.3em;
+    width: 2.3em;
+    border-radius: 2px;
+    background-image: url(../ico/close.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1em 1em;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.search_close__ico:hover {
+    border: 1px solid #303030;
+}
 /*-------------------------------------------*/
 
 
@@ -761,15 +793,19 @@ body.dark .bat__line__chi {background: #181818;}
 
 
 .items {
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 0px;
     border-radius: 12px;
     margin-bottom: 10px;
     /* background: #282828; */
     transition: 0.3s;
 }
 .items[data-temp="search_on"] {
-    padding-bottom: 80px;
-    background: #0AB5FE;
+    height: 90px;
+    background: var(--box_dark);
     border-radius: 12px;
     margin-bottom: 30px;
 }
@@ -866,6 +902,9 @@ body.dark .bat__line__chi {background: #181818;}
     border-radius: 8px;
     transition: all 0.3s;
     cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+    .next2 { background: #13131480; padding: 0px 15px;}
 }
 .next2:hover {
     background: #13131480;
