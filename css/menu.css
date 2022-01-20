@@ -526,7 +526,7 @@ body.dark .search__ico {
     border-radius: 12px;
     color: var(--box_light);
     box-shadow: var(--shad);
-    font-size: 15px; 
+    font-size: 15px;
 }
 body.dark .qs__prog {
     background: var(--box_dark);
@@ -537,9 +537,31 @@ details {
     /* cursor: pointer; */
     transition: 0.3s;
 }
+details .can{
+    overflow: hidden;
+    height: 200px;
+    transition: 0.3s;
+}
+.can {
+    animation: can 0.5s ease-in-out;
+}
+@keyframes can {
+    from {
+        height: 0px;
+    }
+    
+    to {
+
+    }
+}
+
 /* Убираем стандартный маркер Chrome */
 details summary::-webkit-details-marker {
     display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+    list-style: none;
 }
 /* Добавляем собственный маркер для открытого состояния */
 details summary:before {
