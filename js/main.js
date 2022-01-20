@@ -42,7 +42,7 @@ DarkMode.onclick = () => {
 
 const items = document.querySelector('.items');
 
-document.querySelectorAll('button[data-view]').forEach(item => {
+document.querySelectorAll('a[data-view]').forEach(item => {
   item.addEventListener('click', () => {
     const view = item.dataset.view;
     items.dataset.temp = view;
