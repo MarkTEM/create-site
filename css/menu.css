@@ -543,7 +543,7 @@ details .can{
     transition: 0.3s;
 }
 .can {
-    animation: can 0.5s ease-in-out;
+    animation: can 0.3s ease-in-out;
 }
 @keyframes can {
     from {
@@ -831,8 +831,9 @@ body.dark .bat__line__chi {background: #181818;}
     justify-content: space-between;
     align-items: center;
 }
-.bar_sell h4 {
-    color: var(--text-light);
+.txt_bar {
+    color: #29A3D8;
+    font-size: 12px;
     font-weight: 400;
 }
 .next {
@@ -844,10 +845,7 @@ body.dark .bat__line__chi {background: #181818;}
     margin-top: 10px;
     border-radius: 8px;
 }
-.next h5{
-    color: #29A3D8;
-    font-weight: 400;
-}
+
 
 
 .ico_next {
