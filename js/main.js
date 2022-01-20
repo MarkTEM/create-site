@@ -49,6 +49,15 @@ document.querySelectorAll('button[data-view]').forEach(item => {
   })
 })
 
+const rem = document.querySelector('.rem');
+
+document.querySelectorAll('button[data-opp]').forEach(item => {
+  item.addEventListener('click', () => {
+    const view = item.dataset.opp;
+    rem.dataset.re = view;
+  })
+})
+
 
 document.querySelector('.b-7').addEventListener('click' , () => {
   let data = document.querySelector('i-7').innerHTML = '';
