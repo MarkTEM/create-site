@@ -742,23 +742,77 @@ body.dark .bat__line__chi {background: #181818;}
     padding: 0px;
     border-radius: 12px;
     margin-bottom: 10px;
-    background: #282828;
+    /* background: #282828; */
     transition: 0.3s;
 }
 .items[data-temp="search_on"] {
-    padding: 12px;
     padding-bottom: 80px;
     background: #0AB5FE;
     border-radius: 12px;
     margin-bottom: 30px;
 }
 .items[data-temp="search_off"] {
+    overflow: hidden;
+    height: 0px;
+    transition: 0.3s;
+}
+/* .hid {
+    overflow: hidden;
+    height: 200px;
+    transition: 1.3s;
+}
+.hid{
+    animation-duration: 2.5s;
+    animation-name: hid;
+    animation-fill-mode: both;
+}
+
+@keyframes hid {
+    from {
+        opacity: 0;
+        height: 0px;
+    }
+    
+    to {
+
+    }
+} */
+
+/* ---------------------------------------- */
+.rem {
+    overflow: hidden;
+    height: 0px;
+    transition: 0.3s;
+}
+.rem[data-re="rem_on"] {
+    height: 200px;
+    margin-top: 15px;
+    /* background: #1e1e1e; */
+}
+.rem[data-re="rem_off"] {
+    overflow: hidden;
+    height: 0px;
     transition: 0.3s;
 }
 
 
+.fix {
+    padding: 8px 12px;
+    background: var(--box_dark);
+    box-shadow: var(--shad);
+    margin-top: 15px;
+    border-radius: 12px;
+}
 
-
+.bar_sell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar_sell h4 {
+    color: var(--text-light);
+    font-weight: 400;
+}
 .next {
     display: flex;
     align-items: center;
