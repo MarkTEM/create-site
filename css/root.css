@@ -746,24 +746,10 @@ body.dark #convas {
     }
 }
 body.dark #convas2 {
-    display: block;
     background: var(--fon-dark);
-    background-image: url(../img/bg.jpg);
-	background-repeat: repeat;
-	background-position: center center;
     /* border-top: 1px solid #0B0B0C; */
 }
-.filtl {
-    margin-top: -30px;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    margin-bottom: -60px;
-    /* background-image: url(../img/bg3.png); */
-	/* background-repeat: repeat; */
-	/* background-position: center center; */
-    background: rgb(18 18 18 / 85%);
-    backdrop-filter: blur(50px);
-}
+
 #convas2 {
     /* animation-delay: 1s; */
     animation-duration: 0.5s;
