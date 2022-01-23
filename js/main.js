@@ -40,37 +40,44 @@ DarkMode.onclick = () => {
     localStorage.theme = document.body.className || "light"
 }
 
-const items = document.querySelector('.items');
+// const items = document.querySelector('.items');
 
-document.querySelectorAll('a[data-view]').forEach(item => {
-  item.addEventListener('click', () => {
-    const view = item.dataset.view;
-    items.dataset.temp = view;
-  })
-})
+// document.querySelectorAll('a[data-view]').forEach(item => {
+//   item.addEventListener('click', () => {
+//     const view = item.dataset.view;
+//     items.dataset.temp = view;
+//     localStorage.setItem('temp, view');
+//   })
+// })
 
-const rem = document.querySelector('.rem');
+// const rem = document.querySelector('.rem');
 
-document.querySelectorAll('button[data-opp]').forEach(item => {
-  item.addEventListener('click', () => {
-    const view = item.dataset.opp;
-    rem.dataset.re = view;
-  })
-})
+// document.querySelectorAll('button[data-opp]').forEach(item => {
+//   item.addEventListener('click', () => {
+//     const view = item.dataset.opp;
+//     rem.dataset.re = view;
+//   })
+// })
 
+
+// Вид секции профиля
 const prew__items = document.querySelector('.prew__items');
+const tempvid =localStorage.getItem('tempvid');
+prew__items.dataset.tempvid = tempvid;
 
 document.querySelectorAll('a[data-vid]').forEach(item => {
   item.addEventListener('click', () => {
-    const view = item.dataset.vid;
-    prew__items.dataset.vidd = view;
-  })
-})
-
-
-document.querySelector('.b-7').addEventListener('click' , () => {
-  let data = document.querySelector('i-7').innerHTML = '';
+      const vid = item.dataset.vid;
+      prew__items.dataset.tempvid = vid;
+      // console.log(vid);
+      localStorage.setItem('tempvid', vid);
+  });
 });
+
+
+// document.querySelector('.b-7').addEventListener('click' , () => {
+//   let data = document.querySelector('i-7').innerHTML = '';
+// });
 
 
 
