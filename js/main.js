@@ -58,6 +58,15 @@ document.querySelectorAll('button[data-opp]').forEach(item => {
   })
 })
 
+const prew__items = document.querySelector('.prew__items');
+
+document.querySelectorAll('a[data-vid]').forEach(item => {
+  item.addEventListener('click', () => {
+    const view = item.dataset.vid;
+    prew__items.dataset.vidd = view;
+  })
+})
+
 
 document.querySelector('.b-7').addEventListener('click' , () => {
   let data = document.querySelector('i-7').innerHTML = '';
