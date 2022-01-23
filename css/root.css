@@ -26,7 +26,7 @@ a {
     --text-light: #E5E5E5;
     --text-light2: #fff;
     --text-dark: #3C3C3E;
-    --fon-light: #fff;
+    --fon-light: #f5f5f5;
     --fon-dark: #141414;
     --sheet: #fff;
     --card-dark: #191b1d;
@@ -36,12 +36,14 @@ a {
     --box_dark: #202020;
     --box_item_dark: #252525;
 
+
+    --color-txt: #E5E5E5;
     /*  */
     --white: #fff;
     --radius: 10px;
     --radius2: 12px;
 
-    --shad: 0px 1px 8px rgb(0 0 0 / 10%);
+    --shad: 0px 1px 2px rgb(0 0 0 / 10%);
 
     --cont-padding: 30px;
     --cont-padding2: 15px;
@@ -292,7 +294,6 @@ body.dark .preloader {
 	justify-content: space-between;
     flex-wrap: wrap;
 	padding: 30px 0;
-	/* height: 60px; */
     margin-left: 30px;
     margin-right: 30px;
 	
@@ -304,8 +305,6 @@ body.dark .preloader {
 	justify-content: space-between;
     flex-wrap: wrap;
 	padding: 30px;
-	/* height: 60px; */
-	/* background: var(--fon-dark); */
 	transition: 0.3s;
 }
 @media only screen and (max-width: 720px) {
@@ -321,8 +320,6 @@ body.dark .preloader {
 	padding: 30px 0;
 	margin-left: 30px;
 	margin-right: 30px;
-	/* height: 60px; */
-	
 	transition: 0.3s;
 }
 @media only screen and (max-width: 720px) {
@@ -714,40 +711,16 @@ body.dark .ico__back:hover {
 
 
 /* ---------------------------------------- */
-#convas {
-    background: var(--fon-light);
-    border-radius: 18px 18px 0px 0px;
-    /* transition: 0.3s; */
-    /* z-index: 5;
-    position: relative; */
-}
 
-body.dark #convas {
-    border-radius: 18px 18px 0px 0px;
-    background: var(--fon-dark);
-    
-}
-@media screen and (max-width: 720px) {
-    #convas {
-        border-radius: 16px 16px 0px 0px;
-    }
-}
 /* --- */
 #convas2 {
     padding-top: 30px;
-    /* padding-bottom: 60px; */
-    /* margin-top: -20px; */
-    background: var(--fon-light);
     min-height: 100vh;
 }
 @media only screen and (min-width: 720px) {
     #convas2 {
         padding-bottom: 60px;
     }
-}
-body.dark #convas2 {
-    background: var(--fon-dark);
-    /* border-top: 1px solid #0B0B0C; */
 }
 
 #convas2 {
@@ -761,9 +734,7 @@ body.dark #convas2 {
 /* ----------------Animate----------------- */
 
 @keyframes an1 {
-    from {
-        padding-top: 100px;
-    }
+    from { padding-top: 100px; }
     
     to {
 
