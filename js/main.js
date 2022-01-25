@@ -40,15 +40,14 @@ DarkMode.onclick = () => {
     localStorage.theme = document.body.className || "light"
 }
 
-// const items = document.querySelector('.items');
+const items = document.querySelector('.items');
 
-// document.querySelectorAll('a[data-view]').forEach(item => {
-//   item.addEventListener('click', () => {
-//     const view = item.dataset.view;
-//     items.dataset.temp = view;
-//     localStorage.setItem('temp, view');
-//   })
-// })
+document.querySelectorAll('a[data-view]').forEach(item => {
+  item.addEventListener('click', () => {
+    const view = item.dataset.view;
+    items.dataset.temp = view;
+  })
+})
 
 // const rem = document.querySelector('.rem');
 
