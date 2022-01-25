@@ -46,7 +46,7 @@ body.dark .head__line  { background: #1D1D22; }
     flex-direction: column;
     padding-bottom: 20px;
     padding-top: 20px;
-    background: #0e0e0e;
+    /* background: #0e0e0e; */
     transition: 0.3s;
 }
 
