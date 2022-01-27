@@ -405,7 +405,7 @@ body.dark .btn__all2:hover {
 }
 /*-------------------------------------------*/
 .an_hed_txt {
-    animation: an_hed_txt 0.6s ease-in-out;
+    animation: an_hed_txt 1s ease-in-out;
 }
 @keyframes an_hed_txt {
     0% {
@@ -416,7 +416,7 @@ body.dark .btn__all2:hover {
     }
     
     50% {
-        margin-left: 30px;
+        margin-left: 50px;
     }
     100% {
 
