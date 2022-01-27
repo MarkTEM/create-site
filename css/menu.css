@@ -252,32 +252,32 @@ body.dark .item:hover {
 
 .icon {
     display: block;
-    height: 2.5em;
-    width: 2.5em;
+    height: 2.4em;
+    width: 2.4em;
     border-radius: 2px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 2.3em 2.3em;
+    background-size: 1.8em 1.8em;
 }
 @media only screen and (max-width: 420px){
     .icon { margin-right: 15px; }
 }
 .image__programs {background-image: url(../ico/Group\ 118.png);}
-body.dark .image__programs {background-image: url(../ico/Group\ 118.png);}
+body.dark .image__programs {background-image: url(../ico/i1.png);}
 .image__training {background-image: url(../ico/Group\ 120.png);}
-body.dark .image__training {background-image: url(../ico/Group\ 120.png);}
+body.dark .image__training {background-image: url(../ico/i2.png);}
 .image__upr {background-image: url(../ico/Group\ 121.png);}
-body.dark .image__upr {background-image: url(../ico/Group\ 121.png);}
+body.dark .image__upr {background-image: url(../ico/i3.png);}
 .image__stopwatch {background-image: url(../ico/Frame\ 4.png);}
 .image__new {background-image: url(../ico/Frame\ 6.png);}
 /* .image__file {background-image: url(../ico/file.svg);} */
 .image__progress {background-image: url(../ico/Frame\ 5.png);}
 
-body.dark .image__stopwatch {background-image: url(../ico/Frame\ 4.png);}
+body.dark .image__stopwatch {background-image: url(../ico/i4.png);}
 body.dark .image__new {background-image: url(../ico/Frame\ 6.png);}
 body.dark .image__file {background-image: url(../ico/file.svg);}
-body.dark .image__progress {background-image: url(../ico/Frame\ 5.png);}
+body.dark .image__progress {background-image: url(../ico/i5.png);}
 @media only screen and (min-width: 420px){
     .icon {
         height: 2.5em;
@@ -1097,18 +1097,6 @@ body.dark .bat__line__chi {background: #181818;}
         opacity: 0;
         margin-top: 40px;
         /* padding-top: 40px; */
-        transform: scale(0.9);
-    }
-
-    to {
-
-    }
-}
-@keyframes vidan {
-    from {
-        opacity: 0;
-        margin-top: 100px;
-        margin-bottom: 100px;
         transform: scale(0.9);
     }
 
