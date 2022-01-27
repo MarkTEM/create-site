@@ -639,7 +639,7 @@ body.dark .head__line { background: #1D1D22; }
     transition-property: border;
 }
 .ico__back { border: 1px solid #242424; background-image: url(../ico/top.svg); }
-body.dark .ico__back {  border: 1px solid #242424; background-image: url(../ico/top.svg); }
+body.dark .ico__back {  border: 1px solid #242424; background-image: url(../ico/ico_left.svg); }
 .ico__back:hover {
     border: 1px solid #3C3C3E;
 	transform: scale(1.04);

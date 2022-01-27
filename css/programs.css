@@ -25,13 +25,14 @@ body.dark .off__teg { color: #8f8f8f; }
     margin-left: 5px;
 }
 body.dark .hint__text { font-weight: 400; }
+
 /*-------------------------------------------*/
 .flex__batt {
     display: flex;
     align-items: center;
     /* margin-top: 15px; */
-    margin-bottom: 60px;
-    margin-top: -30px;
+    margin-bottom: 30px;
+    margin-top: 0px;
     /* margin-left: 12px; */
     border-radius: 10px;
     padding: 2px;
@@ -79,6 +80,7 @@ body.dark .btn__all2:hover {
     background: none;
     transition: 0.3s;
 }
+/*-------------------------------------------*/
 
 .txt__qs {
     font-size: 18px;
