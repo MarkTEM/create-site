@@ -1096,8 +1096,8 @@ body.dark .bat__line__chi {background: #181818;}
     from {
         opacity: 0;
         margin-top: 40px;
-        padding-top: 100px;
-        transform: scale(0.6);
+        /* padding-top: 40px; */
+        transform: scale(0.9);
     }
 
     to {
