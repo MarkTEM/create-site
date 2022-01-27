@@ -1072,3 +1072,29 @@ body.dark .bat__line__chi {background: #181818;}
     color: #29A3D8;
     font-weight: 400;
 }
+
+
+.qs__prog {
+    animation: box__menu 0.5s ease-out;
+}
+.box__menu {
+    animation: box__menu 0.6s ease-out;
+}
+.chi_gl {
+    animation: box__menu 0.7s ease-out;
+}
+.card_help {
+    animation: box__menu 0.8s ease-out;
+}
+@keyframes box__menu {
+    from {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    to {
+
+    }
+}
