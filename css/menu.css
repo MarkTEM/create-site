@@ -1075,22 +1075,22 @@ body.dark .bat__line__chi {background: #181818;}
 
 
 .vid__akk {
-    animation: vidan 0.5s ease-out;
+    animation: vidan 0.4s ease-out;
 }
 .prew__items {
-    animation: box__menu 0.5s ease-out;
+    animation: box__menu 0.4s ease-out;
 }
 .qs__prog {
-    animation: box__menu 0.5s ease-out;
+    animation: box__menu 0.4s ease-out;
 }
 .box__menu {
-    animation: box__menu 0.6s ease-out;
+    animation: box__menu 0.5s ease-out;
 }
 .chi_gl {
-    animation: box__menu 0.7s ease-out;
+    animation: box__menu 0.6s ease-out;
 }
 .card_help {
-    animation: box__menu 0.8s ease-out;
+    animation: box__menu 0.7s ease-out;
 }
 @keyframes box__menu {
     from {
@@ -1098,7 +1098,7 @@ body.dark .bat__line__chi {background: #181818;}
         margin-top: 20px;
         margin-bottom: 20px;
         transform: rotate(45deg);
-        transform: scale(0.6);
+        transform: scale(0.9);
     }
 
     to {
@@ -1110,7 +1110,7 @@ body.dark .bat__line__chi {background: #181818;}
         opacity: 0;
         margin-top: 100px;
         margin-bottom: 100px;
-        transform: scale(0.6);
+        transform: scale(0.9);
     }
 
     to {
