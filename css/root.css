@@ -431,34 +431,7 @@ body.dark .icon__menu:hover {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
     cursor: pointer;
 }
-.btn__akk {
-    border: none;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 2em;
-    font-size: 14px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 0.7em 1.5em;
-    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.10);
-}
-.btn__akk:hover {
-    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
-}
-body.dark .btn__akk {
-    background: none;
-    border: 1px solid #303030;
-    color: #c4c4c4;
-    
-}
-body.dark .btn__akk:hover {
-    background: linear-gradient(139.21deg, #32BCA3 14.62%, #2196F3 124.55%);
-    border: 1px solid #32BCA3;
-    color: #fff;
-    
-}
+
 
 .btn__ok {
     text-align: center;
@@ -526,19 +499,9 @@ body.dark .btn__theme:hover {
 
 /*------------------------------------------*/
 footer {
-    margin-top: -20px;
     width: 100%;
     height: 200px;
-    /* background: #111111; */
-    background: #e9e9e9;
-    background: #060606;
-    /* border-radius: 18px 18px 0px 0px; */
-    border-radius: 0px 0px 0px 0px;
-}
-@media screen and (max-width: 720px) {
-    footer {
-        border-radius: 15px 15px 0px 0px;
-    }
+    background: #0c0c0c;
 }
 /*------------------------------------------*/
 
