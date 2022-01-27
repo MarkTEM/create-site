@@ -609,77 +609,7 @@ body.dark .btn__start {
 
 
 
-/* List */
-/*------------------------------------------*/
-.buttom {
-    width: 100%;
-    height: 20px;
-    background: #fff;
-    border-radius: 2em 2em 0px 0px;
-}
-body.dark .buttom {
-    background: var(--fon-dark);  
-}
-.top__body {
-    /* background: #e9e9e9;  */
-    padding-top: 15px;
-    /* margin-top: 200px; */
-}
-body.dark .top__body {
-    /* background: #060606; */
-}
-.top__body {
-    animation-duration: 0.6s;
-    animation-name: an4;
-    transition-timing-function: linear;
-}
 
-@keyframes an4 {
-    from {
-        padding-top: 100px;
-    }
-    
-    to {
-
-    }
-}
-
-.list {
-    margin-left: 24px;
-    margin-right: 24px;
-    height: 8px;
-    background: #cdcdcdd1;
-    border-radius: 2em 2em 0px 0px;
-    /* transition: 0.6s; */
-}
-body.dark .list {
-    background: #202020;
-}
-@media only screen and (max-width: 700px) {
-    .top__body {
-        padding-top: 10px;
-    }
-    .list {
-        height: 6px;
-    }
-}
-.list {
-    animation-duration: 0.6s;
-    animation-name: list_an;
-    transition-timing-function: linear;
-}
-
-@keyframes list_an {
-    from {
-        padding-top: 20px;
-        margin-left: 50%;
-        margin-right: 50%;
-    }
-    
-    to {
-
-    }
-}
 .head__it {
     margin-left: 15px;
 }
@@ -695,8 +625,8 @@ body.dark .list {
     transition-duration: 0.2s;
     transition-property: border;
 }
-.ico__back { background-color: #2D2D2D; border: 1px solid #242424; background-image: url(../ico/top.svg); }
-body.dark .ico__back { background-color: #2D2D2D; border: 1px solid #242424; background-image: url(../ico/top.svg); }
+.ico__back { border: 1px solid #242424; background-image: url(../ico/top.svg); }
+body.dark .ico__back {  border: 1px solid #242424; background-image: url(../ico/top.svg); }
 .ico__back:hover {
     border: 1px solid #3C3C3E;
 	transform: scale(1.04);

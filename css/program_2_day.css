@@ -2,9 +2,10 @@ body {
     font-family: 'Inter', sans-serif;
     background: #151516;
 }
-body.dark  {
+/* body.dark  {
     background: #060606;
-}
+} */
+body.dark { background: var(--fon-dark); }
 /* ---------------------------------------- */
 
 

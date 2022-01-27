@@ -13,20 +13,6 @@ body.dark .off__teg { color: #8f8f8f; }
 .tag__bar {display: flex; flex-wrap: wrap;}
 /*-------------------------------------------*/
 
-#convas {
-    margin-top: 15px;
-    background: #F4F4F4;
-    box-shadow: 0px -2px 4px rgb(0 0 0 / 10%);
-    border-top: 1px solid #dadadf;
-}
-body.dark #convas {
-    border-top: 1px solid #0f0f0f;
-}
-#convas2 {
-    margin-top: -20px;
-    padding-bottom: 200px;
-    background: #F4F4F4;
-}
 
 /*-------------------------------------------*/
 .hint__text {
@@ -111,7 +97,7 @@ body.dark .txt__qs {
     /* display: flex; */
     display: grid;
     grid-template-columns: 50% 1fr;
-    box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+    box-shadow: 0px 7px 10px rgb(0 0 0 / 20%);
     border-radius: 18px;
     border: 1px solid #dadadf;
     /* width: 70%; */
@@ -120,6 +106,7 @@ body.dark .txt__qs {
 }
 body.dark .box__g {
     border: 1px solid #0f0f0f;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
 }
 @media screen and (max-width: 720px) {
     .box__g {
@@ -140,7 +127,7 @@ body.dark .box__g {
 
 .box {
     display: block;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.84);
     backdrop-filter: blur(30px);
     padding: 20px;
     min-height: 400px;
