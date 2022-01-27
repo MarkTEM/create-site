@@ -607,7 +607,20 @@ body.dark .btn__start {
 }
 /*------------------------------------------*/
 
+/*------------------------------------------*/
 
+.head__line {
+    width: 100%;
+    height: 1px;
+    background: #E0E0E0;
+    margin-top: 12px;
+}
+body.dark .head__line { background: #1D1D22; }
+
+
+
+
+/*------------------------------------------*/
 
 
 .head__it {

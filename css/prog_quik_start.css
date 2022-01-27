@@ -354,20 +354,7 @@ details[open] summary:before {
     align-items: center;
 }
 
-/*------------------------------------------*/
 
-.head__line {
-    width: 100%;
-    height: 1px;
-    background: #E0E0E0;
-    margin-top: 12px;
-}
-body.dark .head__line { background: #1D1D22; }
-
-
-
-
-/*------------------------------------------*/
 #flex {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
