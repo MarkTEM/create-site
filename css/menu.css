@@ -252,14 +252,19 @@ body.dark .item:hover {
 
 .icon {
     display: block;
-    height: 2.4em;
-    width: 2.4em;
+    /* height: 2.4em;
+    width: 2.4em; */
+    height: 2.8em;
+    width: 2.8em;
     border-radius: 2px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1.8em 1.8em;
+    background-color: #13131480;
+    border-radius: 8px;
 }
+
 @media only screen and (max-width: 420px){
     .icon { margin-right: 15px; }
 }
@@ -280,10 +285,14 @@ body.dark .image__file {background-image: url(../ico/file.svg);}
 body.dark .image__progress {background-image: url(../ico/i5.png);}
 @media only screen and (min-width: 420px){
     .icon {
-        height: 2.5em;
-        width: 2.5em;
-        background-size: 2.5em 2.5em;
+        height: 2.8em;
+        width: 2.8em;
+        background-size: 2em 2em;
+        background-color: #13131480;
     }
+}
+.item:hover .icon {
+    background-color: #13131421;
 }
 /*------------------------------------------*/ 
 
