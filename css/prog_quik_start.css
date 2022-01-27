@@ -410,7 +410,7 @@ body.dark .btn__all2:hover {
 @keyframes an_hed_txt {
     0% {
         margin-left: -30px;
-        opacity: 0;
+        opacity: 0%;
         /* transform: scale(0.6); */
         font-size: 0px;
     }

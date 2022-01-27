@@ -669,7 +669,7 @@ body.dark .ico__back:hover {
 
 #convas2 {
     /* animation-delay: 1s; */
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-name: an1;
     transition-timing-function: ease-in-out;
     /* animation-iteration-count: infinite; */
@@ -678,9 +678,12 @@ body.dark .ico__back:hover {
 /* ----------------Animate----------------- */
 
 @keyframes an1 {
-    from { padding-top: 100px; }
+    0% { opacity: 0%; padding-top: 100px; }
     
-    to {
+    50% {
+        padding-top: 10px;
+    }
+    100% {
 
     }
 }
