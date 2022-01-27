@@ -1075,7 +1075,7 @@ body.dark .bat__line__chi {background: #181818;}
 
 
 .vid__akk {
-    animation: vidan 0.4s ease-out;
+    animation: box__menu 0.4s ease-out;
 }
 .prew__items {
     animation: box__menu 0.4s ease-out;
@@ -1095,10 +1095,9 @@ body.dark .bat__line__chi {background: #181818;}
 @keyframes box__menu {
     from {
         opacity: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        transform: rotate(45deg);
-        transform: scale(0.9);
+        margin-top: 40px;
+        padding-top: 100px;
+        transform: scale(0.6);
     }
 
     to {
