@@ -153,14 +153,6 @@ body.dark .text__color2 {
 
 
 .text__gag {font-weight: 400;}
-/*^^^^^^^^^^^^^^^ TEXT DARK ^^^^^^^^^^^^^^^^*/
-/* body.dark .text__weight { font-weight: 500; }
-body.dark .text_prev  { color: #B6B8C9; }
-body.dark .text_prev2 { color: #B6B8C9; } */
-/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
-
-
-
 
 /*-----------------WRAPPER-----------------*/
 .wrapper {
@@ -409,17 +401,6 @@ body.dark .icon__menu:hover {
 /*------------------------------------------*/
 /*------------------------------------------*/
 
-
-
-
-
-/* .selectcolor {
-    border-radius: 18px;
-    background: #fff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-} */
-
-
 .mod__btn, .btn2 {
     text-decoration: none;
     border: none;
@@ -529,11 +510,9 @@ body.dark .m__btn {
 .btn__none {
     display: inline-block;
     text-decoration: none;
-    /* cursor: pointer; */
     color: #36393A;
     border: 1px solid #36393A;
     font-weight: 600;
-    /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); */
     background: none;
 }
 .btn__none:hover {
@@ -633,18 +612,19 @@ body.dark .ico__back:hover {
 #convas2 {
     /* animation-delay: 1s; */
     animation-duration: 1s;
-    animation-name: an1;
+    animation-name: con_an1;
     transition-timing-function: ease-in-out;
     /* animation-iteration-count: infinite; */
-    /* animation-direction: alternate; */
+    animation-direction: alternate;
 }
 /* ----------------Animate----------------- */
 
-@keyframes an1 {
-    0% { opacity: 0%; padding-top: 100px; }
+@keyframes con_an1 {
+    0% { opacity: 0%; padding-top: 100px; transform: scale(0.9);}
     
     50% {
         padding-top: 10px;
+        opacity: 50%;
     }
     100% {
 
@@ -652,3 +632,15 @@ body.dark .ico__back:hover {
 }
 
 /* ---------------------------------------- */
+#convas2 {
+    animation: box__menu 0.6s ease-out;
+    animation-direction: alternate;
+}
+@keyframes box__menu {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to { }
+}

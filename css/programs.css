@@ -516,20 +516,19 @@ body.dark .ico_page {
 }
 
 .an_hed_txt {
-    animation: an_hed_txt 1s ease-in-out;
+    animation: an_hed_txt 0.8s ease-in-out;
 }
 @keyframes an_hed_txt {
     0% {
-        margin-left: 0px;
         opacity: 0%;
-        /* transform: scale(0.6); */
         font-size: 0px;
     }
     
     50% {
-        margin-left: 50px;
+        margin-left: 30px;
     }
     100% {
 
     }
 }
+
