@@ -311,11 +311,12 @@ body.dark .text__ok {
         flex-direction: column;
     }
 }
-/* @media only screen and (max-width: 900px) {
+@media only screen and (min-width: 680px) {
     .box__el_flex {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
     }
-} */
+}
 .box_el1 {
     min-width: 240px;
 }
@@ -326,14 +327,12 @@ body.dark .text__ok {
     /* display: table-cell; */
     margin-top: 10px;
     background: var(--box_light);
-    box-shadow: var(--shad);
     min-height: 50px;
-    padding: 10px 20px;
-    padding-right: 10px;
-    border-radius: 15px;
+    padding: 10px 15px;
+    border-radius: 12px;
 }
+@media only screen and (min-width: 680px) { .el1 { margin-top: 0px; } }
 body.dark .el1 {
-    /* background: var(--box_item_dark); */
     background: var(--box_dark);
 }
 @media only screen and (max-width: 480px) { .el1 { margin-right: 0px; }}
@@ -357,53 +356,69 @@ body.dark .el1 {
     font-size: 13px;
     color: #6A81D1;
     font-weight: 500;
-    padding-top: 5px;
-    border-radius: 8px;
-    padding: 0.5em 0.8em;
+    /* padding: 0.5em 0.8em; */
 }
 body.dark .color_fix { color: #7e8183; font-weight: 400;}
 body.dark .color_fix2 { font-weight: 400; }
 
-.tem__ico {
-    height: 1.5em;
-    width: 1.5em;
+.flex__temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.flex__temp:hover {
+    background: #191919;
+    padding: 4px 6px;
+    border-radius: 8px;
+    transition: 0.6s;
+}
+.flex__temp:hover .color_fix2 {
+    /* display: block; */
+    width: 100px;
+    padding-left: 15px;
+    transition: 0.2s;
+}
+.color_fix2 {
+    /* display: none; */
+    overflow: hidden;
+    width: 0px;
+    transition: 0.4s;
+}
+/* ---------------------------------------- */
+.tem__ico, .tem__ico2, .tem__ico3{
+    height: 2em;
+    width: 2em;
     border-radius: 2px;
     cursor: pointer;
     background-image: url(../ico/Group\ 237.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: auto 0.8em;
+    background-size: 2em;
+}
+.tem__ico {
+    background-image: url(../ico/Group\ 237.png);
 }
 .tem__ico2 {
-    height: 1.5em;
-    width: 2em;
-    border-radius: 2px;
-    cursor: pointer;
     background-image: url(../ico/Group\ 238.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto 0.8em;
 }
 .tem__ico3 {
-    height: 1.5em;
-    width: 2em;
-    border-radius: 2px;
-    cursor: pointer;
     background-image: url(../ico/Ellipse\ 118.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto 0.8em;
 }
 /* ---------------------------------------- */
 
+
+/* ---------------------------------------- */
 .number {
     height: 40px;
-    width: 30px;
+    width: 40px;
     border-right: 1px solid #cacaca;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin-right: 20px;
+    border-radius: 8px;
+    background: rgb(25, 25, 26);
 }
 body.dark .number { border-right: 2px solid #191919; }
 /*------------------------------------------*/
@@ -412,8 +427,8 @@ body.dark .number { border-right: 2px solid #191919; }
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    padding: 15px;
+    justify-content: flex-start;
+    padding: 12px 15px;
     border-radius: 12px;
     border: 1px dashed #d1d1d1;
     /* margin-top: 30px; */
@@ -621,6 +636,8 @@ details[open] summary:before {
 
 
 .txt_title {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
+    color: #c6c6c6;
+    /* transition: 1s; */
 }
