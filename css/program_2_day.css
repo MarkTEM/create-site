@@ -368,6 +368,7 @@ body.dark .color_fix2 { font-weight: 400; }
     cursor: pointer;
 }
 .flex__temp:hover {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background: #191919;
     padding: 4px 6px;
     border-radius: 8px;
@@ -641,3 +642,22 @@ details[open] summary:before {
     color: #c6c6c6;
     /* transition: 1s; */
 }
+/*-------------------------------------------*/
+.an_hed_txt {
+    animation: an_hed_txt 0.8s ease-in-out;
+}
+@keyframes an_hed_txt {
+    0% {
+        margin-left: -30px;
+        opacity: 0%;
+        font-size: 0px;
+    }
+    
+    50% {
+        margin-left: 20px;
+    }
+    100% {
+
+    }
+}
+/*------------------------------------------*/
