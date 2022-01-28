@@ -358,6 +358,7 @@ body.dark .preloader {
 
 .icon__menu {
     display: block;
+    position: relative;
     background-image: url(../ico/Menu_dark.svg);
     height: 2.6em;
     width: 2.8em;
@@ -370,16 +371,30 @@ body.dark .preloader {
 	transition: 0.2s;
 }
 .icon__menu:hover {
-	background-color: #f1f1f1;
+	border: 1px solid #505050;
 	transform: scale(1.04);
 }
 body.dark .icon__menu {
     background-image: url(../ico/MenuBurger.svg);
 }
 body.dark .icon__menu:hover {
-	background-color: #242424;
-	transform: scale(1.04);
+	border: 1px solid #505050;
+	/* transform: scale(1.04); */
 }
+/*-------xxx---*/
+.icon__menu:hover::before {
+    content: 'Категории';
+    position: absolute;
+    top: 50px;
+    margin-left: -50px;
+    padding: 0.4em 0.8em;
+    font-size: 14px;
+    color: #969696;
+    border-radius: 8px;
+    left: 0px;
+    background: #212122;
+}
+/*-------xxx---*/
 /*------------------------------------------*/
 .icon__bs {
 	display: block;
@@ -575,6 +590,7 @@ body.dark .head__line { background: #1D1D22; }
 }
 .ico__back {
     display: block;
+    position: relative;
     height: 2.5em;
     width: 2.5em;
     border-radius: var(--radius);
@@ -595,7 +611,19 @@ body.dark .ico__back:hover {
     border: 1px solid #505050;
 	transform: scale(1.04);
 }
-
+.ico__back:hover::after {
+    content: 'Предыдущая';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 0.4em 0.8em;
+    font-size: 14px;
+    color: #969696;
+    border-radius: 8px;
+    left: 0px;
+    background: #212122;
+    transition: 2s;
+}
 /* ---------------------------------------- */
 
 /* --- */

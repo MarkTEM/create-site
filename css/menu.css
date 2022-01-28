@@ -1089,4 +1089,9 @@ body.dark .bat__line__chi {background: #181818;}
     font-weight: 400;
 }
 
-
+#msg {
+    background: var(--fon-dark);
+}
+#msg:-ms-fullscreen { background: #6088a5; }
+#msg:-webkit-full-screen { background: #6088a5; }
+#msg:-moz-full-screen { background: #6088a5; }
