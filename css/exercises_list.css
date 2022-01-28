@@ -1,8 +1,8 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: #e9e9e9;
+    background: var(--fon-light);
 }
-body.dark  { background: #060606; }
+body.dark { background: var(--fon-dark); }
 /*------------------------------------------*/
 
 
@@ -186,10 +186,7 @@ body.dark .box__color {
     flex-direction: column;
     justify-content: flex-start
 }
-/* ----text----- */
-.item__text {
-    /* margin-bottom: 10px; */
-}
+
 @media only screen and (max-width: 720px) {
     .item__text {
         order: 2;
