@@ -615,7 +615,7 @@ body.dark .ico__back:hover {
 /* ----------------Animate----------------- */
 
 @keyframes con_an1 {
-    0% { opacity: 0%; padding-top: 100px; transform: scale(0.9);}
+    0% { opacity: 0%; padding-top: 100px;}
     
     50% {
         padding-top: 10px;
