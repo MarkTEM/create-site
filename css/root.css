@@ -634,11 +634,12 @@ body.dark .ico__back:hover {
 @keyframes an_hed_txt {
     0% {
         opacity: 0%;
-        font-size: 0px;
+        /* font-size: 0px; */
     }
     
-    50% {
-        margin-left: 15px;
+    70% {
+        opacity: 20%;
+        margin-left: 50px;
     }
     100% { }
 }
