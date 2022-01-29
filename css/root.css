@@ -53,6 +53,9 @@ a {
 
     --cont-padding: 30px;
     --cont-padding2: 15px;
+
+    --bg-charph: rgba(30, 30, 31, 0.8);
+    --blur: blur(40px);
     
 }
 /* Не работает */
