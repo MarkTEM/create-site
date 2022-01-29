@@ -317,6 +317,7 @@ body.dark .text__ok {
         grid-gap: 10px;
     }
 }
+
 .box_el1 {
     min-width: 240px;
 }
@@ -642,22 +643,44 @@ details[open] summary:before {
     color: #c6c6c6;
     /* transition: 1s; */
 }
-/*-------------------------------------------*/
-.an_hed_txt {
-    animation: an_hed_txt 0.8s ease-in-out;
-}
-@keyframes an_hed_txt {
-    0% {
-        margin-left: -30px;
-        opacity: 0%;
-        font-size: 0px;
-    }
-    
-    50% {
-        margin-left: 20px;
-    }
-    100% {
-
-    }
-}
 /*------------------------------------------*/
+/*------------------------------------------*/
+
+
+/*-------------------------------------------*/
+.view__panel {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.vid__txt {
+    color: #47474E;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.view__line, .view__grid {
+    display: block;
+    height: 2.4em;
+    width: 2.4em;
+    border-radius: 10px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2em 2em;
+    border: 0px;
+    cursor: pointer;
+}
+.view__line {
+    background-image: url(../ico/v1.png);
+    position: relative;
+}
+.view__line:hover, .view__grid:hover{
+    border: 1px solid #404040;
+    transition: 0.3s;
+}
+.view__grid {
+    background-image: url(../ico/v2.png);
+}
+
+/*-------------------------------------------*/

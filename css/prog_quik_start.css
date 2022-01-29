@@ -404,23 +404,5 @@ body.dark .btn__all2:hover {
     transition: 0.3s;
 }
 /*-------------------------------------------*/
-.an_hed_txt {
-    animation: an_hed_txt 1s ease-in-out;
-}
-@keyframes an_hed_txt {
-    0% {
-        margin-left: -30px;
-        opacity: 0%;
-        /* transform: scale(0.6); */
-        font-size: 0px;
-    }
-    
-    50% {
-        margin-left: 50px;
-    }
-    100% {
 
-    }
-}
-/*------------------------------------------*/
 /*------------------------------------------*/

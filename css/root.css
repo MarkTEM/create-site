@@ -341,19 +341,12 @@ body.dark .preloader {
 	font-weight: 600;
 	transition: 0.3s;
 }
-.head__text2 {
-	font-size: 24px;
-	font-weight: 600;
-	transition: 0.3s;
-}
+
 /* body.dark .head__text {color: var(--text-dark);} */
 @media only screen and (max-width: 720px) {
     .head__text {
 		font-size: 18px;
 	}
-    .head__text2 {
-        font-size: 18px;
-    }
 }
 
 .icon__menu {
@@ -381,20 +374,7 @@ body.dark .icon__menu:hover {
 	border: 1px solid #505050;
 	/* transform: scale(1.04); */
 }
-/*-------xxx---*/
-.icon__menu:hover::before {
-    content: 'Категории';
-    position: absolute;
-    top: 50px;
-    margin-left: -50px;
-    padding: 0.4em 0.8em;
-    font-size: 14px;
-    color: #969696;
-    border-radius: 8px;
-    left: 0px;
-    background: #212122;
-}
-/*-------xxx---*/
+
 /*------------------------------------------*/
 .icon__bs {
 	display: block;
@@ -611,19 +591,7 @@ body.dark .ico__back:hover {
     border: 1px solid #505050;
 	transform: scale(1.04);
 }
-.ico__back:hover::after {
-    content: 'Предыдущая';
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    padding: 0.4em 0.8em;
-    font-size: 14px;
-    color: #969696;
-    border-radius: 8px;
-    left: 0px;
-    background: #212122;
-    transition: 2s;
-}
+
 /* ---------------------------------------- */
 
 /* --- */
@@ -660,15 +628,18 @@ body.dark .ico__back:hover {
 }
 
 /* ---------------------------------------- */
-/* #convas2 {
-    animation: box__menu 0.6s ease-out;
-    animation-direction: alternate;
+.head__text {
+    animation: an_hed_txt 0.6s ease-in-out;
 }
-@keyframes box__menu {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
+@keyframes an_hed_txt {
+    0% {
+        opacity: 0%;
+        font-size: 0px;
     }
-
-    to { }
-} */
+    
+    50% {
+        margin-left: 15px;
+    }
+    100% { }
+}
+/* ---------------------------------------- */
