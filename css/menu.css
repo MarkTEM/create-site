@@ -6,7 +6,7 @@ body {
 }
 body.dark { background: var(--fon-dark); 
     background-image: url(/img/ch_fon.png);
-    background-color: rgba(40, 40, 218, 0.74);
+    /* background-color: rgba(40, 40, 218, 0.74); */
     
 }
 body::before {
