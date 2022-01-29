@@ -4,23 +4,7 @@ body {
     /* min-height: 200vh; */
     background: var(--fon-light);
 }
-body.dark { background: var(--fon-dark); 
-    background-image: url(../img/35135-grafika_abstraktsiya_linii_seryie.webp);
-    /* background-color: rgba(40, 40, 218, 0.74); */
-    
-}
-body::before {
-    content: ' ';
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(15, 15, 15, 0.7);
-    background-image: url(../img/eff.png);
-    background-repeat: repeat;
-    background-size: 100px 100px;
-    backdrop-filter: blur(40px);
-}
+
 /*-------------------------------------------*/
 #convas2 {
     padding-bottom: 20%;
@@ -1100,9 +1084,24 @@ body.dark .bat__line__chi {background: #181818;}
     font-weight: 400;
 }
 
-#msg {
-    background: var(--fon-dark);
+
+
+
+body.dark { background: var(--fon-dark); 
+    background-image: url(../img/ch_fon.webp);
+    background-repeat: repeat;
+    /* background-color: rgba(40, 40, 218, 0.74); */
+    
 }
-#msg:-ms-fullscreen { background: #6088a5; }
-#msg:-webkit-full-screen { background: #6088a5; }
-#msg:-moz-full-screen { background: #6088a5; }
+body::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(15, 15, 15, 0.7);
+    background-image: url(../img/eff.png);
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    backdrop-filter: blur(40px);
+}
