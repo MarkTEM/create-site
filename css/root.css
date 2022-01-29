@@ -18,7 +18,23 @@ a {
     color: #202128;
 }
 /*-------------------------------------------*/
-
+body.dark { background: var(--fon-dark); 
+    background-image: url(../img/35135-grafika_abstraktsiya_linii_seryie.webp);
+    /* background-color: rgba(40, 40, 218, 0.74); */
+    
+}
+body::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(15, 15, 15, 0.7);
+    background-image: url(../img/eff.png);
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    backdrop-filter: blur(40px);
+}
 
 /*----------------Collors-------------------*/
 :root {
@@ -54,7 +70,7 @@ a {
     --cont-padding: 30px;
     --cont-padding2: 15px;
 
-    --bg-charph: rgba(30, 30, 31, 0.8);
+    --bg-charph: rgb(21 21 21);
     --blur: blur(40px);
     
 }
