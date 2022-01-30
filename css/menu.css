@@ -1096,24 +1096,3 @@ summary {
     font-weight: 400;
 }
 
-
-
-
-body.dark { background: var(--fon-dark); 
-    background-image: url(../img/ch_fon.webp);
-    background-repeat: repeat;
-    /* background-color: rgba(40, 40, 218, 0.74); */
-    
-}
-body::before {
-    content: ' ';
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: rgba(15, 15, 15, 0.7);
-    background-image: url(../img/eff.png);
-    background-repeat: repeat;
-    background-size: 100px 100px;
-    backdrop-filter: blur(40px);
-}
