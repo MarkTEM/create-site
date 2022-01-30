@@ -106,17 +106,13 @@ body {
 .item__text::-webkit-scrollbar-thumb {background-color: rgb(190, 190, 190);} */
 
 .dit {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     cursor: pointer;
     /* background: #f5f5f5; */
     padding: 5px 0px;
 }
-@media only screen and (max-width: 720px) {
-    .dit {
-        font-weight: 500;
-    }
-}
+
 @media only screen and (max-width: 600px) {
     .item__text {
         order: 2;
@@ -312,7 +308,7 @@ body {
 }
 @media only screen and (min-width: 680px) { .el1 { margin-top: 0px; } }
 .el1 {
-    background: var(--box_dark);
+    background: rgba(21, 21, 21, 0.705);
 }
 @media only screen and (max-width: 480px) { .el1 { margin-right: 0px; }}
 .flex_el {
@@ -573,7 +569,7 @@ details[open] {
 }
 @media screen and (min-width: 720px) {
     details[open] {
-        background: #1b1b1bab;
+        background: rgba(21, 21, 21, 0.705);
         border-radius: var(--radius2);
         padding: 15px;
         margin-top: 20px;
