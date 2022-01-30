@@ -1,26 +1,17 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: #151516;
+    background: var(--fon-dark);
     /* transition: background-color 1s; */
 }
-/* body.dark  { background: #060606; } */
-body.dark { background: var(--fon-dark); }
-
 
 .text_day {
     font-size: 24px;
 }
 .text_day_none {
-    color: #dadada;
-    font-size: 22px;
-    font-weight: 400;
-}
-body.dark .text_day_none {
     color: #2D2D2D;
     font-size: 24px;
+    font-weight: 400;
 }
-
-
 
 
 /*----------------CALENDAR-----------------*/
@@ -31,7 +22,7 @@ body.dark .text_day_none {
     border-radius: 12px;
     padding: 1.4em 1.2em;
     background: none;
-    border: 1px solid #b4b4b4;
+    border: 1px solid #2D2D2D;
     /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.20); */
     /* text-shadow: 0px 2px 2px #0d0f11b9; */
 }
@@ -40,15 +31,10 @@ body.dark .text_day_none {
     transition: 0.2s;
 }
 .select:hover {
+    border: 1px solid #C72A2A;
     transform: scale(1.02);
 }
-body.dark .select {
-    background: none;
-    border: 1px solid #2D2D2D;
-}
-body.dark .select:hover {
-    border: 1px solid #C72A2A;
-}
+
 /* body.dark .select h2{
     color: #2C2C2E;
 } */
@@ -159,13 +145,10 @@ body.dark .select:hover {
 /*------------------------------------------*/
 
 .calenrar_txt {
-    font-size: 18px;
-    font-weight: 600;
-}
-body.dark .calenrar_txt {
     font-size: 17px;
     font-weight: 400;
 }
+
 /*------------------------------------------*/
 
 /*------------------------------------------*/
@@ -183,15 +166,13 @@ body.dark .calenrar_txt {
     align-items: center;
     padding: 12px;
     border-radius: 12px;
-    border: 1px dashed #d1d1d1;
+    border: 1px dashed #303030;
     padding-top: 15px;
     margin-bottom: 15px;
 }
-body.dark .box__dished {
-    border: 1px dashed #303030;
-}
-.text__dished {font-size: 14px; font-weight: 500; padding-right: 12px;}
-body.dark .text__dished { font-weight: 400; }
+
+.text__dished {font-size: 14px; font-weight: 400; padding-right: 12px;}
+
 @media only screen and (min-width: 720px) { .text__dished { font-size: 15px; }}
 /*------------------------------------------*/
 
@@ -205,7 +186,7 @@ body.dark .text__dished { font-weight: 400; }
 /*------------------------------------------*/
 .note {
     display: block;
-	background-image: url(../ico/note_dark.svg);
+	background-image: url(../ico/note.svg);
 	height: 1.6em;
 	width: 1.6em;
 	background-repeat: no-repeat;
@@ -213,26 +194,20 @@ body.dark .text__dished { font-weight: 400; }
 	background-size: 1.4em 1.4em;
     margin-right: 0.6rem;
 }
-body.dark .note {
-    background-image: url(../ico/note.svg);
-}
+
 /*------------------------------------------*/
 
 
 #convas_no_padding {
     padding-top: 0px;
     padding-bottom: 60px;
-    background: #fff;
+    background: var(--fon-dark);
     min-height: 100vh;
 }
 @media only screen and (min-width: 520px) {
     #convas_no_padding {
         padding-top: 30px;
     }
-}
-body.dark #convas_no_padding {
-    background: var(--fon-dark);
-    /* border-top: 1px solid #0B0B0C; */
 }
 
 #convas_no_padding {
@@ -264,11 +239,9 @@ body.dark #convas_no_padding {
     background-image: url(../img/prog2.webp); background-position: bottom;
     margin-bottom: 30px;
     box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
-    border: 1px solid #e4e4e4;
-}
-body.dark .prew__prog {
     border: 1px solid #2c2c31;
 }
+
 @media screen and (min-width: 720px) {
     .prew__prog {
         padding-top: 200px;
@@ -284,23 +257,18 @@ body.dark .prew__prog {
 
 .box__prew {
     padding: 15px;
-    background: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
-    backdrop-filter: blur(20px);
-    border-radius: 15px;
-}
-body.dark .box__prew {
     background: rgba(30, 30, 32, 0.7);
     backdrop-filter: blur(30px);
+    border-radius: 15px;
 }
+
 .txt__qs {
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
     margin-right: 10px;
 }
-body.dark .txt__qs {
-    font-weight: 500;
-}
+
 .progress {
     font-size: 13px;
     font-weight: 400;
@@ -324,14 +292,11 @@ body.dark .txt__qs {
     border-radius: 16px;
     margin-top: 5px;
     padding: 15px;
-    background: #ffffffe0;
-    border: 1px solid #dadadf;
-    transition: 0.3s;
-}
-body.dark .dital[open] {
     background: #1d1d1dc7;
     border: 1px solid #2c2c31;
+    transition: 0.3s;
 }
+
 @media screen and (min-width: 720px) {
     .dital[open] {
         position: relative;

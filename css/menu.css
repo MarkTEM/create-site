@@ -2,7 +2,6 @@ body {
     font-family: 'Inter', sans-serif;
     /* transition: background-color 0s; */
     /* min-height: 200vh; */
-    background: var(--fon-light);
 }
 
 /*-------------------------------------------*/
@@ -79,12 +78,12 @@ body {
 }
 /*-------------------BOX---------------------*/
 .box {
-    background: var(--box_light);
+    background: var(--box_dark);
     border-radius: var(--radius2);
-    color: var(--text-dark);
+    color: var(--text-light);;
     padding: 1em 1em;
 }
-body.dark .box { background: var(--box_dark); color: var(--text-light); }
+
 /*-------------------------------------------*/
 
 
@@ -96,7 +95,7 @@ body.dark .box { background: var(--box_dark); color: var(--text-light); }
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     /* grid-gap: 12px; */
-    background: var(--box_light);
+    background: var(--box_dark);
     border-radius: var(--radius2);
     box-shadow: var(--shad);
     margin-top: 30px;
@@ -139,13 +138,8 @@ body.dark .box { background: var(--box_dark); color: var(--text-light); }
     }
 } */
 
-body.dark .box__menu { background: var(--box_dark); 
-    background: var(--bg-charph);
-    backdrop-filter: var(--blur);
-}
-
 @media only screen and (min-width: 420px) {
-    body.dark .box__menu {
+    .box__menu {
         background: none;
     }
 }
@@ -170,13 +164,13 @@ body.dark .box__menu { background: var(--box_dark);
     transition: 0.3s;
     transform: scale(1.03);  
 }
-body.dark .item {
+.item {
     background: rgb(21 21 21);
     /* border-bottom: 1px solid #191919; */
     /* border: 0px solid var(--box_dark) */
     /* border: 0px; */
 }
-body.dark .item:hover {
+.item:hover {
     background: #3787D0;
     border: 0px solid #505050;
     /* border: 0px; */
@@ -317,17 +311,11 @@ body.dark .image__progress {background-image: url(../ico/i5.png);}
     padding: var(--cont-padding);
     /* margin-bottom: 60px; */
     /* border: 1px dashed #aaaaaa; */
-    background: var(--box_light);
-    border: 1px solid #e4e4e4;
+    background: rgb(21 21 21);
+    border: 0px solid #131314;
     border-radius: var(--radius2);
 }
-body.dark .card_help {
-    background: var(--box_dark);
-    border: 0px solid #131314;
-    background: var(--bg-charph);
-    backdrop-filter: var(--blur);
-    /* border: 1px dashed #252525; */  
-}
+
 @media only screen and (max-width: 420px) {
     .card_help {
         text-align: left;
@@ -361,24 +349,19 @@ body.dark .text_help {
 
 /*------------------------------------------*/
 .btn__setting {
-    background: #f1f1f1;
     padding: 5px 10px;
     padding: 0.1em 0.1em;
     border-radius: var(--radius);
     margin-left: 8px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #24242400; background: none;
     transition-duration: 0.2s;
     transition-property: border;
 }
 .btn__setting:hover { border: 1px solid #505050; }
-body.dark .btn__setting { border: 1px solid #24242400; background: none; }
-/* body.dark .btn__setting { border: 1px solid #242424; background: #242424; } */
-body.dark .btn__setting:hover {
-    border: 1px solid #505050;
-}
+
 .ico__setting {
 	display: block;
-	background-image: url(../ico/setting_dark.png);
+	background-image: url(../ico/setting.png);
 	height: 2em;
 	width: 2em;
 	background-repeat: no-repeat;
@@ -386,13 +369,8 @@ body.dark .btn__setting:hover {
 	background-size: 1.6em 1.6em;
     border-radius: var(--radius);
 }
-body.dark .ico__setting { background-image: url(../ico/setting.png); }
 
 /*-------------------------------------------*/
-
-
-
-
 /*-------------------------------------------*/
 /* .child {
         
@@ -406,10 +384,6 @@ body.dark .ico__setting { background-image: url(../ico/setting.png); }
     }
 } */
 /*-------------------------------------------*/
-
-
-
-
 /*-------------------------------------------*/
 .box_flex_items {
     display: flex;
@@ -429,12 +403,12 @@ body.dark .ico__setting { background-image: url(../ico/setting.png); }
     width: 2.2em;
     border-radius: 2px;
     cursor: pointer;
-    background-image: url(../ico/right_dark.svg);
+    background-image: url(../ico/right.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1em 1em;
 }
-body.dark .ico__right {background-image: url(../ico/right.svg);}
+
 @media screen and (min-width: 250px) and (max-width: 420px) {
     .ico__right { display: block; }
 }
@@ -443,12 +417,12 @@ body.dark .ico__right {background-image: url(../ico/right.svg);}
     width: 2.2em;
     border-radius: 2px;
     cursor: pointer;
-    background-image: url(../ico/right_dark.svg);
+    background-image: url(../ico/right.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1em 1em;
 }
-body.dark .ico__right2 {background-image: url(../ico/right.svg);}
+
 /*-------------------------------------------*/
 
 @media screen and (max-width: 315px) {
@@ -480,7 +454,6 @@ body.dark .ico__right2 {background-image: url(../ico/right.svg);}
     background-position: center center;
     background-size: 100%;
 }
-body.dark .akk_logo { background-image: url(../ico/ava.png); }
 
 .ease {
     height: 2em;
@@ -559,17 +532,14 @@ footer {
     height: 44px;
     border-radius: 10px;
     border: none;
-    background: var(--fon-light);
-    border-bottom: 1px solid var(--fon-light);
+    background: #282828;
+    border-bottom: 1px solid var(--fon-dark);
     box-shadow: var(--shad);
     color: #fff;
     font-size: 15px;
     /* margin-bottom: 30px; */
 }
-body.dark .search2 {
-    background: #282828;
-    border-bottom: 1px solid var(--fon-dark);
-}
+
 .search2:focus { border-bottom: 1px solid #3787D0; }
 .search {
     position: relative;
@@ -583,14 +553,12 @@ body.dark .search2 {
     height: 2em;
     width: 2em;
     border-radius: 2px;
-    background-image: url(../ico/search_dark.svg);
+    background-image: url(../ico/search.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1.2em 1.2em;
 }
-body.dark .search__ico {
-    background-image: url(../ico/search.svg);
-}
+
 .search__ico2 {
     height: 2.2em;
     width: 2.2em;
@@ -879,28 +847,21 @@ summary {
     /* color: rgb(192, 36, 36); */
     width: 100.5%;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(8px);
-    border-bottom: 0px solid rgba(45, 45, 45, 1);
-}
-body.dark .item__qs {
     background: rgba(45, 45, 45, 0.8);
     backdrop-filter: blur(4px);
     color: var(--color-txt);
+    border-bottom: 0px solid rgba(45, 45, 45, 1);
 }
+
 /*-------------------------------------------*/
 .chi_gl {
-    background: var(--box_light);
-    box-shadow: var(--shad);
-    border-radius: var(--radius2);
-    margin-bottom: 15px;
-}
-body.dark .chi_gl {
     background: var(--box_dark);
     border-radius: var(--radius2);
     background: var(--bg-charph);
     backdrop-filter: var(--blur);
+    margin-bottom: 15px;
 }
+
 .chi {
     display: flex;
     justify-content: space-between;
@@ -948,7 +909,7 @@ body.dark .chi_gl {
 
 .bat__line__chi {
     display: block;
-    background: #ececec;
+    background: #181818;
     height: 1px;
     /* width: 94%; */
     margin: 0 auto;
@@ -956,7 +917,7 @@ body.dark .chi_gl {
     margin-left: 12px;
     margin-right: 12px;
 }
-body.dark .bat__line__chi {background: #181818;}
+
 /*-------------------------------------------*/
 
 

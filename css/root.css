@@ -18,8 +18,9 @@ a {
     color: #202128;
 }
 /*-------------------------------------------*/
-body.dark { background: var(--fon-dark); 
-    background-image: url(../img/35135-grafika_abstraktsiya_linii_seryie.webp);
+body { background: var(--fon-dark); 
+    background-image: url(../img/ch_fon.webp);
+    background-repeat: repeat;
     /* background-color: rgba(40, 40, 218, 0.74); */
     
 }
@@ -93,12 +94,11 @@ body::before {
 @media only screen and (max-width: 420px){
     .bat__line {
         display: block;
-        background: #ececec;
+        background: #181818;
         height: 1px;
         width: 94%;
         margin: 0 auto;
     }
-    body.dark .bat__line {background: #181818;}
 }
 
 
@@ -160,21 +160,12 @@ body::-webkit-scrollbar-track-piece {
 .fit { font-weight: 600; padding-bottom: 3px;}
 .skinny { font-weight: 500;}
 .text_prev    { margin-left: 10px; }
-.text__weight { font-weight: 600; }
-body.dark .text__weight { font-weight: 400; }
-.text__weight2 { font-weight: 600; }
-body.dark .text__weight2 { font-weight: 400; }
+.text__weight { font-weight: 400; }
+.text__weight2 { font-weight: 400; }
 
 
-.text__color {color: var(--text-dark);}
-body.dark .text__color {
-    color: var(--text-light);
-}
-.text__color2 {color: var(--text-light2);}
-body.dark .text__color2 {
-    color: var(--text-dark);
-}
-
+.text__color { color: var(--text-light); }
+.text__color2 { color: var(--text-dark); }
 
 .text__gag {font-weight: 400;}
 
@@ -238,7 +229,7 @@ body.dark .text__color2 {
 /*---------------PLEROADER------------------*/
 .preloader {
 	position: fixed;
-    background: #fff;
+    background: #101010;
 	width: 100%;
 	height: 100%;
 	top: 50%;
@@ -249,9 +240,7 @@ body.dark .text__color2 {
 	justify-content: center;
 	align-items: center;
 }
-body.dark .preloader {
-    background: #101010;
-}
+
 .preloader span {
 	display: block;
 	height: 8px;
@@ -371,7 +360,7 @@ body.dark .preloader {
 .icon__menu {
     display: block;
     position: relative;
-    background-image: url(../ico/Menu_dark.svg);
+    background-image: url(../ico/MenuBurger.svg);
     height: 2.6em;
     width: 2.8em;
     border-radius: 8px;
@@ -385,13 +374,6 @@ body.dark .preloader {
 .icon__menu:hover {
 	border: 1px solid #505050;
 	transform: scale(1.04);
-}
-body.dark .icon__menu {
-    background-image: url(../ico/MenuBurger.svg);
-}
-body.dark .icon__menu:hover {
-	border: 1px solid #505050;
-	/* transform: scale(1.04); */
 }
 
 /*------------------------------------------*/
@@ -468,29 +450,20 @@ body.dark .icon__menu:hover {
     font-size: 14px;
     padding: 0.7em 1.5em;
     background: none;
-    color: #353636;
-    border: 1px solid #36393A;
+    color: #E5E5E5;
+    border: 1px solid #303030;
     margin-left: 10px;
-    font-weight: 600;
+    font-weight: 500;
     transition-duration: 0.2s;
     transition-property: background-color;
+    transition: 0.2s;
 }
 .btn__theme:hover {
-    background: #353636;
-    color: #E5E5E5;
-}
-body.dark .btn__theme {
-    background: none;
-    border: 1px solid #303030;
-    color: #E5E5E5;
-    font-weight: 500;
-}
-body.dark .btn__theme:hover {
     background: nine;
     border: 1px solid #717175;
     color: #c4c4c4;
-    
 }
+
 /*------------------------------------------*/
 
 
@@ -512,15 +485,12 @@ footer {
 /*------------------M-BTN-------------------*/
 .m__btn {
     border-radius: var(--radius);
-    color: #ffffff;
+    color: rgb(255 255 255);
     font-size: 15px;
     padding: 0.7em 1.5em;
+    ont-weight: 400;
 }
-body.dark .m__btn {
-    color: rgb(255 255 255);
-    font-weight: 400;
-    
-}
+
 /*------------------------------------------*/
 
 
@@ -538,9 +508,10 @@ body.dark .m__btn {
     background: #36393A;
     color: #F2F2F2;
     border: 1px solid #36393A;
+    font-weight: 500;
     /* transition: 0.8s; transform: scale(1.00); */
 }
-body.dark .btn__none { color: #F2F2F2; font-weight: 500; }
+
 /*------------------------------------------*/
 
 /*------------------------------------------*/
@@ -549,6 +520,7 @@ body.dark .btn__none { color: #F2F2F2; font-weight: 500; }
     /* background: linear-gradient(120deg, #31be9d 30%, #0d9da7 90%); */
     background: #2c86d3;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+    font-weight: 400;
 }
 .btn__lock {
     text-decoration: none;
@@ -560,29 +532,32 @@ body.dark .btn__none { color: #F2F2F2; font-weight: 500; }
     padding: 0.7em 1.5em;
 }
 
-body.dark .btn__start {
-    font-weight: 400;
-}
 .btn__start:hover {
     background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
 }
 /*------------------------------------------*/
+
+
+
+
 
 /*------------------------------------------*/
 
 .head__line {
     width: 100%;
     height: 1px;
-    background: #E0E0E0;
+    background: #1D1D22;
     margin-top: 12px;
 }
-body.dark .head__line { background: #1D1D22; }
+
+/*------------------------------------------*/
+
+
 
 
 
 
 /*------------------------------------------*/
-
 
 .head__it {
     margin-left: 15px;
@@ -600,13 +575,8 @@ body.dark .head__line { background: #1D1D22; }
     transition-duration: 0.2s;
     transition-property: border;
 }
-.ico__back { border: 1px solid #242424; background-image: url(../ico/top.svg); }
-body.dark .ico__back {  border: 1px solid #242424; background-image: url(../ico/ico_left.svg); }
+.ico__back { border: 1px solid #242424; background-image: url(../ico/ico_left.svg) }
 .ico__back:hover {
-    border: 1px solid #3C3C3E;
-	transform: scale(1.04);
-}
-body.dark .ico__back:hover {
     border: 1px solid #505050;
 	transform: scale(1.04);
 }
