@@ -1,11 +1,8 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: #151516;
+    /* background: var(--fon-dark); */
 }
-/* body.dark  {
-    background: #060606;
-} */
-body.dark { background: var(--fon-dark); }
+
 /* ---------------------------------------- */
 
 
@@ -27,13 +24,9 @@ body.dark { background: var(--fon-dark); }
 .upr2 { margin-bottom: 10px;}
 .box__color {
     border-radius: 8px;
-    /* border: 1px solid #e5e5e5; */
     margin: 20px 0;
-    /* transition: 0.3s; */
 }
-body.dark .box__color {
-    border: 0px;
-}
+
 @media only screen and (max-width: 420px) {
     .box__color {
         border-radius: 12px;
@@ -94,14 +87,12 @@ body.dark .box__color {
     width: 100%;
     border-radius: 8px;
     background: rgb(247, 247, 247);
-    background-image: url(../upr/upr1.jpg);
+    background-image: url(../upr/upr1p2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
 }
-body.dark .photo {
-    background-image: url(../upr/upr1p2.jpg);
-}
+
 /* -------------2------------------ */
 
 .item {
@@ -155,13 +146,11 @@ body.dark .photo {
     }
 }
 .hint__element {
-    background: #c7c7c7;
+    background: #313136;
     width: 3px;
     border-radius: 4px;
 }
-body.dark .hint__element {
-    background: #313136;
-}
+
 .hint__line2 {
     display: flex;
     width: 3px;
@@ -221,28 +210,20 @@ body.dark .hint__element {
 }
 /* ----------------TEG------------------- */
 .teg {
-    font-weight: 600;
-    color: var(--text-dark);
-    border: 1px solid #ff636b;
-}
-body.dark .teg {
     font-weight: 500;
     color: #B9B9BE;
     border: 1px solid #C72A2A;
     background: none;
 }
+
 .teg2 {
-    font-weight: 600;
-    color: #3C3C3E;
+    font-weight: 500;
+    color: #c4c4ca;
     border: 1px solid #3C3C3E;
     margin-top: 4px;
     /* background: transparent; */
 }
-body.dark .teg2 {
-    font-weight: 500;
-    color: #c4c4ca;
-    border: 1px solid #3C3C3E;
-}
+
 /* ------------------------------------- */
 
 .flex2 {
@@ -260,17 +241,14 @@ body.dark .teg2 {
     padding: 120px 12px 12px 12px;
 }
 .text__ok {
-    color: #575757;
+    color: #C4C4C4;
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-align: center;
 }
-body.dark .text__ok {
-    font-weight: 400;
-    color: #C4C4C4;
-}
+
 @media only screen and (max-width: 720px) { .text__ok { font-size: 13px; }}
 .icon__down {
     background-image: url(../ico/down.svg);
@@ -333,7 +311,7 @@ body.dark .text__ok {
     border-radius: 12px;
 }
 @media only screen and (min-width: 680px) { .el1 { margin-top: 0px; } }
-body.dark .el1 {
+.el1 {
     background: var(--box_dark);
 }
 @media only screen and (max-width: 480px) { .el1 { margin-right: 0px; }}
@@ -356,11 +334,10 @@ body.dark .el1 {
 .color_fix2 {
     font-size: 13px;
     color: #6A81D1;
-    font-weight: 500;
+    font-weight: 400;
     /* padding: 0.5em 0.8em; */
 }
-body.dark .color_fix { color: #7e8183; font-weight: 400;}
-body.dark .color_fix2 { font-weight: 400; }
+
 
 .flex__temp {
     display: flex;
@@ -414,7 +391,7 @@ body.dark .color_fix2 { font-weight: 400; }
 .number {
     height: 40px;
     width: 40px;
-    border-right: 1px solid #cacaca;
+    border-right: 2px solid #191919;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -422,7 +399,7 @@ body.dark .color_fix2 { font-weight: 400; }
     border-radius: 8px;
     background: rgb(25, 25, 26);
 }
-body.dark .number { border-right: 2px solid #191919; }
+
 /*------------------------------------------*/
 
 .box__dished {
@@ -432,20 +409,18 @@ body.dark .number { border-right: 2px solid #191919; }
     justify-content: flex-start;
     padding: 12px 15px;
     border-radius: 12px;
-    border: 1px dashed #d1d1d1;
+    border: 1px dashed #303030;
     /* margin-top: 30px; */
     margin-bottom: 15px;
 }
-body.dark .box__dished {
-    border: 1px dashed #303030;
-}
-.text__dished {font-size: 14px; font-weight: 500;}
-body.dark .text__dished { font-weight: 400; }
+
+.text__dished {font-size: 14px; font-weight: 400;}
+
 @media only screen and (min-width: 720px) { .text__dished { font-size: 15px; }}
 
 .note {
     display: block;
-	background-image: url(../ico/note_dark.svg);
+	background-image: url(../ico/note.svg);
 	height: 1.6em;
 	width: 1.6em;
 	background-repeat: no-repeat;
@@ -453,25 +428,18 @@ body.dark .text__dished { font-weight: 400; }
 	background-size: 1.4em 1.4em;
     margin-right: 0.6rem;
 }
-body.dark .note {
-    background-image: url(../ico/note.svg);
-}
 
 
 #convas_no_padding {
     padding-top: 0px;
     padding-bottom: 60px;
-    background: #fff;
+    background: var(--fon-dark);
     min-height: 100vh;
 }
 @media only screen and (min-width: 520px) {
     #convas_no_padding {
         padding-top: 30px;
     }
-}
-body.dark #convas_no_padding {
-    background: var(--fon-dark);
-    /* border-top: 1px solid #0B0B0C; */
 }
 
 #convas_no_padding {
@@ -511,26 +479,19 @@ body.dark #convas_no_padding {
 .hint__line {
     width: 3px;
     height: 100%;
-    background: #f55050;
-    border-radius: 4px;
-}
-body.dark .hint__line {
     background: #C72A2A;
     border-radius: 4px;
 }
 
 .hint__text {
-    color: var(--text-dark);
+    color: var(--text-light);
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     padding-top: 4px;
     padding-bottom: 4px;
     margin-left: 15px;
 }
-body.dark .hint__text {
-    color: var(--text-light);
-    font-weight: 400;
-}
+
 /*------------------------------------------*/
 
 
@@ -684,3 +645,21 @@ details[open] summary:before {
 }
 
 /*-------------------------------------------*/
+body.dark { background: var(--fon-dark); 
+    background-image: url(../img/ch_fon.webp);
+    background-repeat: repeat;
+    /* background-color: rgba(40, 40, 218, 0.74); */
+    
+}
+body::before {
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(15, 15, 15, 0.7);
+    background-image: url(../img/eff.png);
+    background-repeat: repeat;
+    background-size: 100px 100px;
+    backdrop-filter: blur(40px);
+}
