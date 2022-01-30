@@ -103,7 +103,6 @@ body {
 
 .menu_left {
     background: var(--box_dark);
-    margin: 30px auto;
     height: 268px;
     margin-bottom: 20vh;
     border-radius: var(--radius);
@@ -328,9 +327,6 @@ body {
 .image__new {background-image: url(../ico/Frame\ 6.png);}
 /* .image__file {background-image: url(../ico/file.svg);} */
 .image__progress { background-image: url(../ico/i5.png); }
-
-body.dark .image__new {background-image: url(../ico/Frame\ 6.png);}
-body.dark .image__file {background-image: url(../ico/file.svg);}
 
 @media only screen and (min-width: 420px){
     .icon {
