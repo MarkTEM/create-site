@@ -18,13 +18,14 @@ a {
     color: #202128;
 }
 /*-------------------------------------------*/
-body { background: var(--fon-dark); 
+body { 
+    background: var(--fon-dark);
     /* background-image: url(../img/ch_fon.webp); */
-    background-repeat: repeat;
-    background-color: var(--fon-dark);
+    /* background-repeat: repeat; */
+    /* background-color: var(--fon-dark); */
     
 }
-body::before {
+/* body::before {
     content: ' ';
     position: fixed;
     width: 100%;
@@ -34,9 +35,12 @@ body::before {
     background-image: url(../img/eff.png);
     background-repeat: repeat;
     background-size: 50px 50px;
-    /* backdrop-filter: blur(40px); */
+    
+} */
+body {
+    background-image: repeating-linear-gradient(-45deg, rgba(44, 44, 44, 0.25), rgba(44, 44, 44, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 8px 8px;
 }
-
 /*----------------Collors-------------------*/
 :root {
     --primary-color: #EFEFEF;
@@ -549,6 +553,7 @@ footer {
     background: #1D1D22;
     margin-top: 12px;
 }
+@media screen and (min-width: 720px) { .head__line { margin-top: 28px; } }
 
 /*------------------------------------------*/
 
@@ -596,7 +601,7 @@ footer {
 
 #convas2 {
     /* animation-delay: 1s; */
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-name: con_an1;
     transition-timing-function: ease-in-out;
     /* animation-iteration-count: infinite; */
@@ -605,11 +610,11 @@ footer {
 /* ----------------Animate----------------- */
 
 @keyframes con_an1 {
-    0% { opacity: 0%; padding-top: 100px;}
+    0% { opacity: 10%; padding-top: 100px;}
     
     50% {
-        padding-top: 10px;
-        opacity: 30%;
+        padding-top: 15px;
+        opacity: 40%;
     }
     100% {
 

@@ -811,7 +811,7 @@ details[open] summary:before {
 }
 details[open] {
     border-radius: 12px; 
-    margin: -6px;
+    /* margin: -6px; */
     /* margin-top: 0px; */
     margin-bottom: 10px;
     padding-bottom: 15px;
