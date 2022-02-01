@@ -1,8 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--fon-light);
 }
-body.dark { background: var(--fon-dark); }
 /*------------------------------------------*/
 
 
@@ -92,7 +90,7 @@ body.dark .text__title {
 /* --------------Box--------------- */
 
 .box__color {
-    background: var(--box_light);
+    background: var(--box_dark);
     border-radius: 18px;
     padding: 20px;
     margin: 20px 0;
@@ -168,6 +166,7 @@ body.dark .box__color {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 102%;
+    border-radius: var(--radius);
 }
 .upr1 {
     background-image: url(../upr/upr1.jpg);
