@@ -15,7 +15,9 @@
 a {
     /* transition: all 0.3s ease; */
     text-decoration: none;
-    color: #202128;
+    /* color: #00D1FF; */
+    color: var(--color-txt);
+    font-weight: 400;
 }
 /*-------------------------------------------*/
 body { 
@@ -23,8 +25,10 @@ body {
     /* background-image: url(../img/ch_fon.webp); */
     /* background-repeat: repeat; */
     /* background-color: var(--fon-dark); */
-    
+    /* color: #00D1FF; */
+    color: var(--color-txt);
 }
+
 /* body::before {
     content: ' ';
     position: fixed;
@@ -49,7 +53,7 @@ body {
     --grey: #777;
     --light-color: rgb(228, 13, 13);
     --btn-color: rgb(0, 140, 255);
-    --text-light: #E5E5E5;
+    /* --text-light: #E5E5E5; */
     --text-light2: #fff;
     --text-dark: #3C3C3E;
     --fon-light: #f5f5f5;
@@ -60,11 +64,11 @@ body {
     --box_light: #fff;
     /* --box_dark: #262626; */
     --box: #202020;
-    --box_dark: #202020;
     --box_item_dark: #252525;
 
 
     --color-txt: #E5E5E5;
+    --color-box: #202020;
     /*  */
     --white: #fff;
     --radius: 10px;
@@ -114,8 +118,8 @@ body::-webkit-scrollbar-thumb {background-color: #333; border-radius: 2rem;}
 body::-webkit-scrollbar-thumb:hover {background-color: #444;}
 body::-webkit-scrollbar-track-piece {
     border-radius: 2rem;
-    /* margin-top: 4px; */
-    /* margin-bottom: 4px; */
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 /* ::-webkit-scrollbar-button:vertical:start:decrement {
     background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
@@ -137,7 +141,6 @@ body::-webkit-scrollbar-track-piece {
     margin-right: 1rem;
 }
 .m__left { margin-left: 0.4rem; }
-/* .m_font_weight { font-weight: 500; } */
 /*------------------------------------------*/
 
 
@@ -149,29 +152,22 @@ body::-webkit-scrollbar-track-piece {
 @media only screen and (max-width: 720px) { h5 { font-size: 12px; } }
 @media only screen and (min-width: 720px) { h5 { font-size: 14px; } }
 /*------------------------------------------*/
-/* h3 { font-weight: 600;} */
 
 /*---------------TEXT WEIGHT----------------*/
 
-.text_prev, .text_prev2 {
-    /* color: var(--text-light); */
-    font-weight: 500;
-    font-size: 16px;
-}
-/* body.dark .text_prev, .text_prev2 {
-    color: var(--text-dark); font-weight: 600;
-} */
 .fit { font-weight: 600; padding-bottom: 3px;}
 .skinny { font-weight: 500;}
 .text_prev    { margin-left: 10px; }
-.text__weight { font-weight: 400; }
-.text__weight2 { font-weight: 400; }
-
-
-.text__color { color: var(--text-light); }
-.text__color2 { color: var(--text-dark); }
 
 .text__gag {font-weight: 400;}
+
+
+h1 { font-size: 22px; font-weight: 400;}
+h2 { font-size: 18px; font-weight: 400;}
+h4 { font-size: 15px; font-weight: 400;}
+p {
+    color: #a1a1a1;
+}
 
 /*-----------------WRAPPER-----------------*/
 .wrapper {

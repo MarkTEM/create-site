@@ -29,17 +29,12 @@ body.dark .txt__categoru { font-weight: 400; }
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     /* grid-gap: 10px; */
-    background: var(--box_light);
+    background: var(--color-box);
     border-radius: 12px;
 }
 
-body.dark .box { background: var(--box_dark); }
-
 @media only screen and (min-width: 420px){
     .box {
-        background: none;
-    }
-    body.dark .box {
         background: none;
     }
 }
@@ -50,15 +45,13 @@ body.dark .box { background: var(--box_dark); }
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    background: var(--box_light);
-    padding: 1em 1em;
+    background: var(--color-box);
+    padding: .6em .6em;
     border-radius: 12px;
     border-bottom: 2px #4343c4;
     min-height: 60px;
 }
-body.dark .item {
-    background: var(--box_dark);
-}
+
 .item:hover {
     border: 1px solid #3C3C3E;
     transition: 0.3s;
@@ -164,12 +157,9 @@ body.dark .item:hover {
     background-position: center center;
     background-size: 3.2em 3.2em;
 }
-.ico__right {background-image: url(../ico/right_dark.svg);}
-body.dark .ico__right {background-image: url(../ico/right.svg);}
-.ico__gr {background-image: url(../upr/scale_1200.jpg);}
-body.dark .ico__gr {background-image: url(../upr/tors_dark.png);}
-.ico__gr2 {background-image: url(../upr/scale_1200.jpg);}
-body.dark .ico__gr2 {background-image: url(../upr/body.png);}
+.ico__right {background-image: url(../ico/right.svg);}
+.ico__gr {background-image: url(../upr/tors_dark.png);}
+.ico__gr2 {background-image: url(../upr/body.png);}
 
 /*-------------------------------------------*/
 
@@ -179,23 +169,16 @@ body.dark .ico__gr2 {background-image: url(../upr/body.png);}
     height: 44px;
     border-radius: 10px;
     border: none;
-    background: var(--fon-light);
-    border-bottom: 1px solid var(--fon-light);
-    box-shadow: var(--shad);
+    background: var(--color-box);
+    /* border-bottom: 1px solid #3C3C3E; */
     color: #282828;
     font-size: 15px;
     margin-bottom: 30px;
 }
-body.dark .search2 {
-    color: #fff;
-    background: var(--box_dark);
-    border-bottom: 1px solid var(--fon-dark);
-}
 .search2:focus { border-bottom: 1px solid #3787D0; }
-.search {
-    position: relative;
-    
-}
+
+.search { position: relative; }
+
 .search__ico {
     position: absolute;
     right: 8px;
@@ -207,9 +190,6 @@ body.dark .search2 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1.2em 1.2em;
-}
-body.dark .search__ico {
-    background-image: url(../ico/search.svg);
 }
 
 /*-------------------------------------------*/

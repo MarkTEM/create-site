@@ -299,6 +299,7 @@ body {
     margin-left: 12px;
 }
 .el1 {
+    background: var(--color-box);
     /* display: table-cell; */
     margin-top: 10px;
     min-height: 50px;
@@ -306,10 +307,9 @@ body {
     border-radius: 12px;
 }
 @media only screen and (min-width: 680px) { .el1 { margin-top: 0px; } }
-.el1 {
-    background: var(--box_dark);
-}
 @media only screen and (max-width: 480px) { .el1 { margin-right: 0px; }}
+
+
 .flex_el {
     display: flex;
     justify-content: space-between;
