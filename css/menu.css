@@ -16,67 +16,7 @@ body {
 }
 
 
-.prew__items {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    padding-bottom: 40px;
-    transition: 0.3s;
-}
-.prew__items[data-tempvid="vid2"] {
-    display: flex;
-    flex-direction: row;
-    /* background: #29A3D8; */
-    justify-content: space-between;
-    padding-bottom: 40px;
-    transition: 0.3s;
-}
-.prew__items[data-tempvid="vid1"] {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    /* background: #0e0e0e; */
-    transition: 0.3s;
-}
 
-.flex__akk {
-    /* background: #282828; */
-    border-radius: 12px;
-    width: 170px;
-}
-
-.prew__items2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    padding-bottom: 40px;
-    transition: 0.3s;
-}
-.akk_logo {
-    position: relative;
-}
-.espos {
-    position: absolute;
-    bottom: -5px;
-    left: -5px;
-}
-.flex_log2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 1.4rem;
-}
-.akk_text2 {
-    margin-top: 15px;
-    color: var(--text-light);
-    font-size: 16px;
-    font-weight: 600;
-}
 /*-------------------BOX---------------------*/
 .box {
     background: var(--color-box);
@@ -323,8 +263,8 @@ body {
 @media only screen and (max-width: 420px){
     .icon { margin-right: 15px; }
 }
-.image__programs { background-image: url(../ico/i1.png); }
-.image__training { background-image: url(../ico/i2.png); }
+.image__programs { background-image: var(--ico-prog); }
+.image__training { background-image: var(--ico-traning); }
 .image__upr { background-image: url(../ico/i3.png); }
 .image__stopwatch { background-image: url(../ico/i4.png); }
 .image__new {background-image: url(../ico/Frame\ 6.png);}
@@ -409,7 +349,7 @@ body.dark .text_help {
     padding: 5px 10px;
     padding: 0.1em 0.1em;
     border-radius: var(--radius);
-    margin-left: 8px;
+    margin-left: 20px;
     border: 1px solid #24242400; background: none;
     transition-duration: 0.2s;
     transition-property: border;
@@ -418,7 +358,7 @@ body.dark .text_help {
 
 .ico__setting {
 	display: block;
-	background-image: url(../ico/setting.png);
+	background-image: var(--ico-setting);
 	height: 2em;
 	width: 2em;
 	background-repeat: no-repeat;
@@ -491,15 +431,27 @@ body.dark .text_help {
 .flex_log {
     display: flex;
     align-items: center;
+    /* margin-right: 20px; */
+    border-radius: var(--radius2);
+    padding: 2px 10px;
+    transition: .2s;
 }
+@media only screen and (max-width: 480px) {
+    .flex_log {
+		width: 100%;
+        justify-content: center;
+        margin: 20px auto;
+	}
+}
+.flex_log:hover { cursor: pointer; background: #111111;}
 .akk_logo {
     display: block;
-    height: 3.4em;
-    width: 3.4em;
+    height: 2.8em;
+    width: 2.8em;
     background-image: url(../ico/ava.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 3.4em 3.4em;
+    background-size: 2.8em 2.8em;
 }
 .akk_logo2 {
     display: block;
@@ -511,20 +463,31 @@ body.dark .text_help {
     background-position: center center;
     background-size: 100%;
 }
-
+.vertical_line {
+    background: #222222;
+    width: 2px;
+    height: 30px;
+    margin: auto 30px;
+}
+@media only screen and (max-width: 720px) {
+    .vertical_line {
+		display: none;
+	}
+}
 .ease {
     height: 2em;
     width: 2em;
     background-image: url(../ico/ease.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.4em 1.4em;
-    margin-left: 0.4rem;
+    background-size: 1.5em 1.5em;
 }
 .akk_text {
     color: var(--color-txt);
-    font-weight: 600;
-    margin-left: 0.8rem;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-right: .6rem;
 }
 
 /*-------------------------------------------*/
@@ -610,7 +573,7 @@ footer {
     height: 2em;
     width: 2em;
     border-radius: 2px;
-    background-image: url(../ico/search.svg);
+    background-image: var(--ico-search);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1.2em 1.2em;
@@ -620,12 +583,13 @@ footer {
     height: 2.2em;
     width: 2.2em;
     border-radius: 2px;
-    background-image: url(../ico/search.png);
+    background-image: var(--ico-search);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.4em 1.4em;
+    background-size: 1.6em 1.6em;
     cursor: pointer;
     border-radius: 8px;
+    /* margin-left: 20px; */
 }
 .search__ico2:hover {
     border: 1px solid #303030;
@@ -649,40 +613,33 @@ footer {
     border: 1px solid #303030;
 }
 
-.batt {
-    display: flex;
-}
-
-
-
 /*------------------ICO--------------------*/
 
-.red, .progress {
+.progress, .settings {
     display: block;
-    height: 2.4em;
-    width: 2.4em;
+    height: 2.2em;
+    width: 2.2em;
     border-radius: 10px;
-    margin: 5px;
+    margin-left: 20px;
+    /* background-color: #fff; */
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.5em 1.5em;
-    border: 1px solid #222222;
+    background-size: 1.6em 1.6em;
+    border: 0px solid #222222;
     cursor: pointer;
+    transition: 0.2s;
 }
-.red {
-    background-image: url(../ico/red.png);
-}
-.red:hover {
-    border: 1px solid #404040;
-    transition: 0.3s;
-}
-.progress {
-    
-    background-image: url(../ico/progress.png);
-}
+
+.progress { background-image: var(--ico-progress); }
+.settings { background-image: url(../ico/settings.png); }
+
 .progress:hover {
-    border: 1px solid #404040;
-    transition: 0.3s;
+    border: 1px solid #505050;
+    transition: 0.2s;
+}
+.settings:hover {
+    border: 1px solid #505050;
+    transition: 0.2s;
 }
 /*-------------------------------------------*/
 /*-------------------------------------------*/
@@ -746,6 +703,7 @@ footer {
     border-radius: 12px;
     box-shadow: var(--shad);
     font-size: 15px;
+    max-width: 500px;
 }
 
 details {
@@ -897,10 +855,23 @@ summary {
 }
 
 /*-------------------------------------------*/
+
+.grid_1 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+@media screen and (max-width: 920px) {
+    .grid_1 {
+        grid-template-columns: 1fr;
+    }
+}
 .chi_gl {
     background: var(--color-box);
     border-radius: var(--radius2);
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    /* max-width: 500px; */
 }
 
 .chi {

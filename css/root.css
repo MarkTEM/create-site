@@ -41,13 +41,13 @@ body {
     background-size: 50px 50px;
     
 } */
-body {
+/* body {
     background-image: repeating-linear-gradient(-45deg, rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25) 1px, transparent 1px, transparent 6px);
     background-size: 8px 8px;
 }
 @media only screen and (max-width: 720px){
-    body { background-size: 4px 4px; }
-}
+    body { background-size: 6px 6px; }
+} */
 /*----------------Collors-------------------*/
 :root {
     --primary-color: #EFEFEF;
@@ -60,32 +60,59 @@ body {
     --text-light2: #fff;
     --text-dark: #3C3C3E;
     --fon-light: #f5f5f5;
-    --fon-dark: #141414;
     --sheet: #fff;
     --card-dark: #191b1d;
     --line-dark: #26282B;
     --box_light: #fff;
     /* --box_dark: #262626; */
-    --box: #202020;
+    --box: #202ff020;
     --box_item_dark: #252525;
 
 
-    --color-txt: #E5E5E5;
-    --color-box: #202020;
+    
+    --fon-dark: #f5f5f5;
+    --color-txt: #141414;
+    --color-box: #fff;
+    --color-line: #E4E4E4;
     /*  */
     --white: #fff;
     --radius: 10px;
     --radius2: 12px;
 
-    --shad: 0px 1px 2px rgb(0 0 0 / 10%);
+    --shad: 0px 1px 6px rgb(0 0 0 / 10%);
 
     --cont-padding: 30px;
     --cont-padding2: 15px;
 
     --bg-charph: rgb(21 21 21);
     --blur: blur(40px);
+
+
+    --ico-setting: url(../ico/setting_dark.png);
+    --ico-search: url(../ico/search_dark.png);
+    --ico-progress: url(../ico/i5_dark.png);
+
+    --ico-prog: url(../ico/i1_dark.png);
+    --ico-traning: url(../ico/i2_dark.png);
     
 }
+
+:root[data-theme='dark'] {
+    --fon-dark: #141414;
+    --color-txt: #E5E5E5;
+    --color-box: #1D1D1E;
+    --color-line: #252525;
+
+    --ico-setting: url(../ico/setting.png);
+    --ico-search: url(../ico/search.png);
+    --ico-progress: url(../ico/i5.png);
+
+    --ico-prog: url(../ico/i1.png);
+    --ico-traning: url(../ico/i2.png);
+
+}
+
+
 /* Не работает */
 @media (max-wight: 500px) {
     :root {
@@ -105,7 +132,7 @@ body {
 @media only screen and (max-width: 420px){
     .bat__line {
         display: block;
-        background: #181818;
+        background: var(--color-line);
         height: 1px;
         width: 94%;
         margin: 0 auto;
@@ -346,6 +373,12 @@ p {
 .items__header{
 	display: flex;
 	align-items: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 720px) {
+    .items__header {
+		justify-content: center;
+	}
 }
 .head__text {
 	font-size: 24px;
@@ -453,7 +486,7 @@ p {
     font-size: 14px;
     padding: 0.7em 1.5em;
     background: none;
-    color: #E5E5E5;
+    color: var(--color-txt);
     border: 1px solid #303030;
     margin-left: 10px;
     font-weight: 500;
@@ -490,8 +523,8 @@ footer {
     border-radius: var(--radius);
     color: rgb(255 255 255);
     font-size: 15px;
-    padding: 0.7em 1.5em;
-    ont-weight: 400;
+    padding: .7em 1.5em;
+    /* ont-weight: 400; */
 }
 
 /*------------------------------------------*/
@@ -549,7 +582,7 @@ footer {
 .head__line {
     width: 100%;
     height: 1px;
-    background: #1D1D22;
+    background: var(--color-line);
     margin-top: 12px;
 }
 @media screen and (min-width: 720px) { .head__line { margin-top: 28px; } }
