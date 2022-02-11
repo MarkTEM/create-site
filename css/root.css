@@ -97,7 +97,7 @@ body {
     
 }
 
-:root[data-theme='dark'] {
+body.dark {
     --fon-dark: #141414;
     --color-txt: #E5E5E5;
     --color-box: #1D1D1E;
@@ -109,6 +109,9 @@ body {
 
     --ico-prog: url(../ico/i1.png);
     --ico-traning: url(../ico/i2.png);
+
+}
+:root[data-theme='dark'] {
 
 }
 
@@ -143,14 +146,14 @@ body {
 /*----------------SCROLLBAR-----------------*/
 body::-webkit-scrollbar {width: 6px; height: 6px;}
 body::-webkit-scrollbar-corner {height: 10px;}
-body::-webkit-scrollbar-track {background-color: #0606067a;}
-body::-webkit-scrollbar-thumb {background-color: #333; border-radius: 2rem;}
-body::-webkit-scrollbar-thumb:hover {background-color: #444;}
-body::-webkit-scrollbar-track-piece {
+body::-webkit-scrollbar-track { background-color: #0606067a;
     border-radius: 2rem;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
+body::-webkit-scrollbar-thumb { background-color: #333; border-radius: 2rem; }
+body::-webkit-scrollbar-thumb:hover { background-color: #444; }
+body::-webkit-scrollbar-track-piece { border-radius: 2rem; }
 /* ::-webkit-scrollbar-button:vertical:start:decrement {
     background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
     linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
@@ -381,7 +384,7 @@ p {
 	}
 }
 .head__text {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 600;
 	transition: 0.3s;
 }
@@ -395,22 +398,19 @@ p {
 
 .icon__menu {
     display: block;
-    position: relative;
-    background-image: url(../ico/MenuBurger.svg);
-    height: 2.6em;
-    width: 2.8em;
+    /* position: relative; */
+    background-image: url(../ico/setting.png);
+    height: 2.2em;
+    width: 2.2em;
     border-radius: 8px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.8em 2.0em;
+    background-size: 1.6em 1.6em;
 	background-color: #2c2e3300;
 	transition: 0.2s;
 }
-.icon__menu:hover {
-	border: 1px solid #505050;
-	transform: scale(1.04);
-}
+.icon__menu:hover { border: 1px solid #505050; }
 
 /*------------------------------------------*/
 .icon__bs {
@@ -602,20 +602,23 @@ footer {
 .ico__back {
     display: block;
     position: relative;
-    height: 2.5em;
-    width: 2.5em;
+    height: 2.6em;
+    width: 2.6em;
     border-radius: var(--radius);
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.2em 1.2em;
+    background-size: 1.6em 1.6em;
     transition-duration: 0.2s;
-    transition-property: border;
+    /* transition-property: border; */
+    /* margin-right: .5rem; */
 }
-.ico__back { border: 1px solid #242424; background-image: url(../ico/ico_left.svg) }
+.ico__back { 
+    /* border: 1px solid #242424; */
+    background-image: url(../ico/ico_left.png) }
 .ico__back:hover {
-    border: 1px solid #505050;
-	transform: scale(1.04);
+    border: 1px solid #404040;
+    transition: 0.2s;
 }
 
 /* ---------------------------------------- */

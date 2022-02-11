@@ -1,7 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     /* background: #f3f3f3; */
-    /* background: var(--fon-dark); */
+    background: var(--fon-dark);
 }
 
 /*-------------------------------------------*/
@@ -31,28 +31,18 @@ body.dark .hint__text { font-weight: 400; }
     margin-bottom: 30px;
     margin-top: 0px;
     /* margin-left: 12px; */
-    border-radius: 10px;
-    padding: 2px;
-    background: #0f0f0f;
+    border-radius: var(--radius);
+    padding: .4em;
+    background: var(--color-box);
 }
 
-
-.btn__all {
-    color: #32BCA3;
-    font-size: 15px;
-    border-radius: 2em;
-    padding: 0.4em 1.2em;
-    margin-top: 10px;
-    margin-right: 10px;
-    border: 1px solid #32BCA3;
-}
 
 .m2 {margin-left: 5px;}
 .btn__all2 {
-    color: var(--text-light);
+    color: #9F9F9F;
     background: none;
     font-size: 15px;
-    border: 1px solid var(--box_dark);
+    border: 1px solid #0b0b0c00;
     font-weight: 400;
     border-radius: 8px;
     padding: 0.5em 1.2em;
@@ -465,14 +455,21 @@ details[open] summary:before {
 
 .icon {
     /* display: block; */
-    height: 2.8em;
-    width: 2.8em;
+    height: 2.2em;
+    width: 2.2em;
     border-radius: 2px;
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.8em 1.8em;
+    background-size: 1.4em 1.4em;
     background-image: url(../ico/page.png);
 }
 
+
+.vertical_line {
+    background: var(--fon-dark);
+    width: 1.5px;
+    height: 30px;
+    margin: auto 10px;
+}
 
