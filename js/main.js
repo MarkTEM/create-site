@@ -29,16 +29,16 @@ window.addEventListener('load', () => {
   },600)
 });
 
-if (!localStorage.theme) localStorage.theme = "light"
-document.body.className = localStorage.theme
-DarkMode.innerText = document.body.classList.contains("dark") ? "Светлая тема" : "Тёмная тема"
+// if (!localStorage.theme) localStorage.theme = "light"
+// document.body.className = localStorage.theme
+// DarkMode.innerText = document.body.classList.contains("dark") ? "Светлая тема" : "Тёмная тема"
 
 
-DarkMode.onclick = () => {
-    document.body.classList.toggle("dark")
-    DarkMode.innerText = document.body.classList.contains("dark") ? "Светлая тема" : "Тёмная тема"
-    localStorage.theme = document.body.className || "light"
-}
+// DarkMode.onclick = () => {
+//     document.body.classList.toggle("dark")
+//     DarkMode.innerText = document.body.classList.contains("dark") ? "Светлая тема" : "Тёмная тема"
+//     localStorage.theme = document.body.className || "light"
+// }
 
 const items = document.querySelector('.items');
 
@@ -73,6 +73,48 @@ document.querySelectorAll('a[data-vid]').forEach(item => {
   });
 });
 
+
+
+
+// Тема
+function theme() {
+      const toggleTheme = document.querySelector('.toggle-theme')
+      let el = document.documentElement
+
+      toggleTheme.addEventListener('click', () => {
+        if(el.hasAttribute('data-theme')) {
+          el.removeAttribute('data-theme')
+          localStorage.removeItem('theme')
+        } else {
+          el.setAttribute('data-theme', 'dark')
+          localStorage.setItem('theme', 'dark')
+        }
+      
+      })
+
+      if(localStorage.getItem('theme') !== null) {
+        el.setAttribute('data-theme', 'dark')
+      }
+}
+
+theme()
+
+// function theme() {
+//   const toggleTheme = document.querySelector('.toggle-theme')
+//   const toggleTheme2 = document.querySelector('.toggle-theme2')
+  
+//   toggleTheme.addEventListener('click', () => {
+//     document.documentElement.setAttribute('data-theme', 'dark')
+    
+//   toggleTheme2.addEventListener('click', () => {
+//     document.documentElement.setAttribute('data-theme', 'light')
+//       console.log('click')
+//   })
+  
+//   })
+// }
+
+// theme()
 
 
 // document.querySelector('.b-7').addEventListener('click' , () => {
