@@ -17,9 +17,9 @@ body {
 
 .contetn__line {
     height: 1px;
-    width: 50%;
-    background: #222222;
-    margin: 20px auto;
+    width: 90%;
+    background: #22222275;
+    margin: 15px auto;
 }
 
 /*-------------------BOX---------------------*/
@@ -215,8 +215,8 @@ body {
 @media only screen and (max-width: 420px) {
     .box__menu {
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         /* grid-gap: 10px; */
     }
     .item {
@@ -265,8 +265,8 @@ body {
     display: block;
     /* height: 2.4em;
     width: 2.4em; */
-    height: 2.8em;
-    width: 2.8em;
+    height: 2.6em;
+    width: 2.6em;
     border-radius: 2px;
     cursor: pointer;
     background-repeat: no-repeat;
@@ -688,8 +688,8 @@ footer {
     max-width: 500px;
 }
 .qs__prog[open] {
-    padding: 15px 20px;
     margin: -5px;
+    margin-bottom: 5px;
 
 }
 
@@ -797,7 +797,7 @@ summary {
     overflow: auto;
     position: relative;
     height: 190px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 .canvas__qs {
     position: absolute;
@@ -811,7 +811,7 @@ summary {
 .photo__qs, .photo__qs2, .photo__qs3 {
     position: relative;
     background: #ffffff21;
-    border-radius: var(--radius2);
+    border-radius: 16px;
     box-shadow: var(--shad);
     width: 270px;
     height: 170px;
@@ -834,7 +834,7 @@ summary {
     /* margin: -01px; */
     /* color: rgb(192, 36, 36); */
     width: 100.5%;
-    border-radius: 12px;
+    border-radius: 16px;
     background: rgba(45, 45, 45, 0.8);
     backdrop-filter: blur(4px);
     color: var(--color-txt);
@@ -1002,15 +1002,19 @@ summary {
     font-size: 12px;
     font-weight: 400;
 }
+
 .next {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 8px 15px;
     background: #13131480;
+    cursor: pointer;
     margin-top: 10px;
     border-radius: 8px;
+    transition: .2s;
 }
+.next:hover { background: #2a2a2c80; }
 
 
 
@@ -1023,7 +1027,18 @@ summary {
     background-position: center center;
     background-size: 1.4em 1.4em;
     justify-content: flex-start;
-    margin-left: 4px;
+    margin-right: 6px;
+}
+.ico_plus {
+    position: relative;
+    height: 1.4em;
+    width: 1.4em;
+    background-image: url(../ico/plus.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.4em 1.4em;
+    justify-content: flex-start;
+    margin-right: 6px;
 }
 .next2 {
     display: flex;
