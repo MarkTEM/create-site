@@ -15,7 +15,12 @@ body {
     font-weight: 600;
 }
 
-
+.contetn__line {
+    height: 1px;
+    width: 50%;
+    background: #222222;
+    margin: 20px auto;
+}
 
 /*-------------------BOX---------------------*/
 .box {
@@ -69,8 +74,8 @@ body {
     grid-template-rows: 1fr;
     /* grid-gap: 12px; */
     background: var(--color-box);
-    border-radius: var(--radius2);
-    box-shadow: var(--shad);
+    border-radius: 16px;
+    /* box-shadow: var(--shad); */
     margin-top: 30px;
     margin-bottom: 15px;
     /* transition: 0.3s; */
@@ -173,7 +178,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1.2em 1em;
-    border-radius: 12px;
+    border-radius: 16px;
     border: 0px solid #e4e4e4;
     /* text-transform: uppercase; */
     transition-duration: 0.3s;
@@ -210,13 +215,13 @@ body {
 @media only screen and (max-width: 420px) {
     .box__menu {
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 12px;
-        margin-bottom: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         /* grid-gap: 10px; */
     }
     .item {
         font-size: 14px;
-        padding: 1em 1em;
+        padding: 1em 1.2em;
         justify-content: space-between;
     }
 }
@@ -461,7 +466,8 @@ body.dark .text_help {
     .flex_log {
 		width: 100%;
         justify-content: center;
-        margin: 20px auto;
+        margin: 15px auto;
+        margin-top: 50px;
         background: #111111;
         padding: 6px 10px;
 	}
@@ -675,17 +681,22 @@ footer {
 .qs__prog {
     display: flex;
     background: var(--color-box);
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 12px;
-    box-shadow: var(--shad);
+    /* box-shadow: var(--shad); */
     font-size: 15px;
     max-width: 500px;
+}
+.qs__prog[open] {
+    padding: 15px 20px;
+    margin: -5px;
+
 }
 
 details {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     /* cursor: pointer; */
-    transition: 0.3s;
+    transition: 0.2s;
 }
 details .can{
     overflow: hidden;
@@ -734,7 +745,7 @@ details[open] summary:before {
     background-size: 1em 1em;
 }
 details[open] {
-    border-radius: 12px; 
+    border-radius: 16px; 
     /* margin: -6px; */
     /* margin-top: 0px; */
     margin-bottom: 10px;
@@ -836,7 +847,7 @@ summary {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
 }
 @media screen and (max-width: 920px) {
     .grid_1 {
