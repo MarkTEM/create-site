@@ -352,14 +352,16 @@ details[open] summary:before {
     position: relative;
     /* width: 100%; */
     align-items: center;
-    border: 1px solid rgba(39, 39, 40, 0.5);
+    justify-content: center;
+    /* border: 1px solid rgba(39, 39, 40, 0.5); */
     border-radius: 10px;
     margin: 0 12px;
     padding: 0 8px;
+    margin-bottom: 15px;
 }
 .breadcrumb::-webkit-scrollbar { height: 4px; }
-.breadcrumb::-webkit-scrollbar-track {background-color: rgba(10, 10, 10, 0.3); border-radius: 2rem;}
-.breadcrumb::-webkit-scrollbar-thumb {background: rgba(62, 62, 62, 0.6); border-radius: 2rem;}
+.breadcrumb::-webkit-scrollbar-track {background-color: rgba(10, 10, 10, 0.5); border-radius: 2rem;}
+.breadcrumb::-webkit-scrollbar-thumb {background: rgba(62, 62, 62, 0.5); border-radius: 2rem;}
 .breadcrumb::-webkit-scrollbar-thumb:hover {background-color: #444;}
 .ico_breadcrumb {
     display: block;
@@ -376,8 +378,9 @@ details[open] summary:before {
     overflow: auto;
     white-space: nowrap;
 }
+
 ul.breadcrumb {
-    margin: 6px 0px;
+    /* margin: 10px 0px; */
     padding: 6px 0;
     list-style: none;
     
