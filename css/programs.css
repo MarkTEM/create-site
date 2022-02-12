@@ -32,7 +32,7 @@ body.dark .hint__text { font-weight: 400; }
     margin-top: 0px;
     /* margin-left: 12px; */
     border-radius: var(--radius);
-    padding: .4em;
+    padding: .3em;
     background: var(--color-box);
 }
 
