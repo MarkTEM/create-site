@@ -221,7 +221,7 @@ body {
     }
     .item {
         font-size: 14px;
-        padding: 1em 1.2em;
+        padding: .8em 1em;
         justify-content: space-between;
     }
 }
@@ -893,8 +893,8 @@ summary {
     align-items: center;
 }
 .el1 {
-    height: 8px;
-    width: 8px;
+    height: 6px;
+    width: 6px;
     border-radius: 50%;
     background: #0AB5FE;
     margin-right: 12px;
