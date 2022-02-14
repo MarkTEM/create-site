@@ -785,7 +785,8 @@ summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 12px; 
+    border-radius: 12px;
+    color: var(--color-txt);
     cursor: pointer;
 }
 .programs__qs::-webkit-scrollbar {width: 6px; height: 6px;}

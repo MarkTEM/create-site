@@ -21,7 +21,12 @@ body {
 
 /* BOX */
 /* ---------------------------------------- */
-.upr2 { margin-bottom: 10px;}
+.upr2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-txt);
+    margin-bottom: 15px;
+}
 .box__color {
     border-radius: 8px;
     margin: 20px 0;
@@ -106,8 +111,8 @@ body {
 .item__text::-webkit-scrollbar-thumb {background-color: rgb(190, 190, 190);} */
 
 .dit {
-    font-weight: 500;
     font-size: 14px;
+    font-weight: 400;
     cursor: pointer;
     /* background: #f5f5f5; */
     padding: 5px 0px;
@@ -135,6 +140,10 @@ body {
     display: flex;
     justify-content: flex-start;
     padding-bottom: 15px;
+}
+.box__tag h5 {
+    font-weight: 400;
+    margin-right: 1em;
 }
 @media only screen and (max-width: 420px) {
     .box__tag {
@@ -300,6 +309,7 @@ body {
 }
 .el1 {
     background: var(--color-box);
+    border: 1px solid #212124;
     /* display: table-cell; */
     margin-top: 10px;
     min-height: 50px;
@@ -402,8 +412,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    padding: 12px 15px;
-    border-radius: 12px;
+    padding: .6em .8em;
+    border-radius: 10px;
     border: 1px dashed #303030;
     /* margin-top: 30px; */
     margin-bottom: 15px;
@@ -424,38 +434,6 @@ body {
     margin-right: 0.6rem;
 }
 
-
-#convas_no_padding {
-    padding-top: 0px;
-    padding-bottom: 60px;
-    background: var(--fon-dark);
-    min-height: 100vh;
-}
-@media only screen and (min-width: 520px) {
-    #convas_no_padding {
-        padding-top: 30px;
-    }
-}
-
-#convas_no_padding {
-    /* animation-delay: 1s; */
-    animation-duration: 0.5s;
-    animation-name: convas_no_padding;
-    transition-timing-function: ease-in-out;
-    /* animation-iteration-count: infinite; */
-    /* animation-direction: alternate; */
-}
-/* ----------------Animate----------------- */
-
-@keyframes convas_no_padding {
-    from {
-        padding-top: 100px;
-    }
-    
-    to {
-
-    }
-}
 /*------------------------------------------*/
 
 .hint {
@@ -479,7 +457,7 @@ body {
 }
 
 .hint__text {
-    color: var(--text-light);
+    color: var(--color-txt);
     font-size: 15px;
     font-weight: 400;
     padding-top: 4px;
@@ -538,6 +516,7 @@ summary {
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
+    color: var(--color-txt);
     font-size: 15px;
     cursor: pointer;
     transition: 0.3s;
@@ -562,6 +541,10 @@ details summary:before {
     order: 1;
 }
 details[open] {
+    background: #1a1a1a;
+    border-radius: var(--radius2);
+    border: 1px solid #212124;
+    padding: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
     transition: 0.3s;
@@ -569,11 +552,11 @@ details[open] {
 @media screen and (min-width: 720px) {
     details[open] {
         background: rgb(27, 27, 27);
+        border: 1px solid #212124;
         border-radius: var(--radius2);
         padding: 15px;
         margin-top: 20px;
         margin-bottom: 20px;
-        transition: 0.3s;
     }
 }
 
@@ -587,7 +570,7 @@ details[open] summary:before {
     background-size: 1em 1em;
 }
 
-.txt__opp { color: #a1a1a1; }
+.txt__opp { color: #808080; }
 /*------------------------------------------*/
 
 

@@ -210,14 +210,12 @@ body.dark .item {
     border-radius: 16px;
     margin-top: 20px;
     padding: 15px;
-    background: #ffffffe0;
-    border: 1px solid #dadadf;
-    transition: 0.3s;
-}
-body.dark .dital[open] {
-    background: #1d1d1dc7;
+    background: var(--color-box);
     border: 1px solid #2c2c31;
+    transition: 0.3s;
+    
 }
+
 @media screen and (min-width: 720px) {
     .dital[open] {
         position: relative;
@@ -235,6 +233,7 @@ summary {
     align-items: center;
     border-radius: 8px;
     font-size: 15px;
+    color: #969696;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -344,74 +343,3 @@ details[open] summary:before {
     background: none;
     transition: 0.3s;
 }
-/*-------------------------------------------*/
-/* Хлебные крошки */
-
-.bread_nav { 
-    display: flex;
-    position: relative;
-    /* width: 100%; */
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid rgba(39, 39, 40, 0.5); */
-    border-radius: 10px;
-    margin: 0 12px;
-    padding: 0 8px;
-    margin-bottom: 15px;
-}
-.breadcrumb::-webkit-scrollbar { height: 4px; }
-.breadcrumb::-webkit-scrollbar-track {background-color: rgba(10, 10, 10, 0.5); border-radius: 2rem;}
-.breadcrumb::-webkit-scrollbar-thumb {background: rgba(62, 62, 62, 0.5); border-radius: 2rem;}
-.breadcrumb::-webkit-scrollbar-thumb:hover {background-color: #444;}
-.ico_breadcrumb {
-    display: block;
-    height: 40px;
-    width: 40px;
-    border-radius: 2px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 1.4em 1.4em;
-    background-image: url(../ico/burger.svg);
-    margin-right: 10px;
-}
-.breadcrumb {
-    overflow: auto;
-    white-space: nowrap;
-}
-
-ul.breadcrumb {
-    /* margin: 10px 0px; */
-    padding: 8px 0;
-    list-style: none;
-    
-  }
-  
-  /* Display list items side by side */
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 14px;
-    font-weight: 400;
-    color: #29A3D8;
-  }
-  
-  /* Add a slash symbol (/) before/behind each list item */
-  ul.breadcrumb li+li:before {
-    padding: 0 6px;
-    font-size: 15px;
-    color: #3A3A3A;
-    content: "»\00a0";
-  }
-  
-  /* Add a color to all links inside the list */
-  ul.breadcrumb li a {
-    color: #9F9F9F;
-    text-decoration: none;
-  }
-  
-  /* Add a color on mouse-over */
-  ul.breadcrumb li a:hover {
-    color: #29A3D8;
-    text-decoration: underline;
-  }
-/* Хлебные крошки */
-/*-------------------------------------------*/
