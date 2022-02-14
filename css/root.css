@@ -253,11 +253,11 @@ p {
 }
 @media only screen and (min-width: 1400px) {
     .wrapper {
-        max-width: 1110px;
+        max-width: 1200px;
         padding-left: 0px;
         padding-right: 0px;
     }
-    .wrap { width: 1200px; padding: 20px 12px;}
+    .wrap { width: 1200px; padding: 20px 0px;}
 }
 /*------------------------------------------*/
 
