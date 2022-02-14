@@ -639,6 +639,7 @@ footer {
 #convas2 {
     padding-top: 30px;
     min-height: 100vh;
+    /* background: linear-gradient(180deg, rgba(16, 16, 16, 0.66) 0%, rgba(16, 16, 16, 0) 12.46%); */
 }
 @media only screen and (min-width: 720px) {
     #convas2 {
