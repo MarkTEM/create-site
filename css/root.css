@@ -32,7 +32,9 @@ body {
 h1, h2, h3, h4, h5 {
     color: var(--color-txt);
 }
-
+h1, h2, h3, h4, h5 {
+    color: var(--color-txt);
+}
 /* body::before {
     content: ' ';
     position: fixed;
@@ -74,13 +76,16 @@ h1, h2, h3, h4, h5 {
 
     
     --fon-dark: #f5f5f5;
-    --color-txt: #141414;
+    --color-txt: #202020;
     --color-box: #fff;
+    --color-items: #f2f2f2;
     --color-line: #E4E4E4;
     /*  */
     --white: #fff;
     --radius: 10px;
     --radius2: 12px;
+
+    --font-wight: 600;
 
     --shad: 0px 1px 6px rgb(0 0 0 / 10%);
 
@@ -90,7 +95,7 @@ h1, h2, h3, h4, h5 {
     --bg-charph: rgb(21 21 21);
     --blur: blur(40px);
 
-
+    --ico-back: url(../ico/ico-back-dark.svg);
     --ico-setting: url(../ico/setting_dark.png);
     --ico-search: url(../ico/search_dark.png);
     --ico-progress: url(../ico/i5_dark.png);
@@ -104,8 +109,12 @@ body.dark {
     --fon-dark: #141414;
     --color-txt: #E5E5E5;
     --color-box: #1D1D1E;
+    --color-items: #181818;
     --color-line: #252525;
 
+    --font-wight: 500;
+
+    --ico-back: url(../ico/ico_left.png);
     --ico-setting: url(../ico/setting.png);
     --ico-search: url(../ico/search.png);
     --ico-progress: url(../ico/i5.png);
@@ -629,10 +638,11 @@ footer {
     transition-duration: 0.2s;
     /* transition-property: border; */
     /* margin-right: .5rem; */
-}
-.ico__back { 
     /* border: 1px solid #242424; */
-    background-image: url(../ico/ico_left.png) }
+    background-image: var(--ico-back);
+    transition: 0.2s;
+}
+
 .ico__back:hover {
     border: 1px solid #404040;
     transition: 0.2s;
@@ -643,7 +653,7 @@ footer {
 /* --- */
 #convas2 {
     padding-top: 30px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* background: linear-gradient(180deg, rgba(16, 16, 16, 0.66) 0%, rgba(16, 16, 16, 0) 12.46%); */
 }
 @media only screen and (min-width: 720px) {

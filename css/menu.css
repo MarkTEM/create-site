@@ -112,7 +112,7 @@ body {
     margin-left: 6px;
     /* margin-top: 6px; */
     /* margin-bottom: 6px; */
-    background: #181818;
+    background: var(--color-items);
     /* padding: 5px; */
     /* margin-top: 2px; */
     /* margin-bottom: 2px; */
@@ -462,14 +462,15 @@ body.dark .text_help {
     
 }
 .mar_but {
-    background: #181818;
-    padding: 6px 10px;
+    
 }
 .flex_log {
     display: flex;
     align-items: center;
+    background: var(--color-items);
     /* margin-right: 20px; */
     border-radius: var(--radius2);
+    padding: 6px 10px;
     transition: .2s;
 }
 @media only screen and (max-width: 480px) {
@@ -524,7 +525,7 @@ body.dark .text_help {
 .akk_text {
     color: var(--color-txt);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: var(--font-wight);
     margin-left: 1rem;
     margin-right: .6rem;
 }
