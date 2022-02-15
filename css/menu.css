@@ -581,7 +581,7 @@ footer {
     height: 44px;
     border-radius: 10px;
     border: none;
-    background: #282828;
+    background: #222324;
     border-bottom: 1px solid var(--fon-dark);
     box-shadow: var(--shad);
     color: #fff;
@@ -589,7 +589,7 @@ footer {
     /* margin-bottom: 30px; */
 }
 
-.search2:focus { border-bottom: 1px solid #3787D0; }
+.search2:focus { border: 1px solid #3e3e44; }
 .search {
     position: relative;
     width: 100%;
@@ -626,7 +626,7 @@ footer {
 .search_close__ico {
     display: block;
     margin-top: 5px;
-    margin-right: 5px;
+    margin-left: 5px;
     margin-bottom: 5px;
     height: 2.3em;
     width: 2.3em;
@@ -680,17 +680,17 @@ footer {
 /*-------------------------------------------*/
 .qs__prog {
     display: flex;
-    padding: 10px 15px;
-    border-radius: 12px;
+    /* padding: 10px 15px; */
+    border-radius: 16px;
     /* box-shadow: var(--shad); */
     font-size: 15px;
-    max-width: 500px;
+    /* max-width: 500px; */
     transition: .3s;
 }
 .qs__prog[open] {
-    background: var(--color-box);
-    border: 1px solid #303030;
-    margin: -5px;
+    /* background: var(--color-box); */
+    /* border: 1px solid #303030; */
+    /* margin: -5px; */
     margin-bottom: 5px;
 
 }
@@ -734,8 +734,8 @@ details[open]  summary {
     transition: .3s;
 }
 details h2 {
-    margin-top: -10px;
-    margin-bottom: 5px;
+    /* margin-top: -10px; */
+    /* margin-bottom: 5px; */
     font-weight: 500;
 }
 /* Добавляем собственный маркер для открытого состояния */
@@ -816,16 +816,16 @@ summary {
 }
 .canvas__qs {
     position: absolute;
-    min-width: 100%;
+    /* min-width: 100%; */
     height: 100%;
     display: flex;
+    gap: 15px;
 }
 @media screen and (min-width: 480px) {
     .canvas__qs { justify-content: center; }
 }
-.photo__qs, .photo__qs2, .photo__qs3 {
+.photo__qs, .photo__qs2, .photo__qs3, .photo__qs_none {
     position: relative;
-    background: #ffffff21;
     border-radius: 10px;
     box-shadow: var(--shad);
     width: 270px;
@@ -835,10 +835,14 @@ summary {
     background-size: cover;
 }
 
-.photo__qs  { background-image: url(../img/prog3.webp); }
-.photo__qs2 { background-image: url(../img/prog4.webp); margin-left: 15px; }
-.photo__qs3 { background-image: url(../img/prog2.webp); margin-left: 15px; background-position: bottom;}
+.photo__qs  { background-image: url(../img/prog3.webp); margin-right: 0px; }
+.photo__qs2 { background-image: url(../img/prog4.webp); margin-right: 0px; }
+.photo__qs3 { background-image: url(../img/prog2.webp); margin-right: 0px; background-position: bottom;}
 
+.photo__qs_none {
+    margin-right: 15px;
+    border: 1px dashed #272728;
+}
 .item__qs {
     position: absolute;
     display: flex;
@@ -939,7 +943,7 @@ summary {
 
 .items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: flex-end;
     overflow: hidden;
     height: 0px;
@@ -949,8 +953,7 @@ summary {
     transition: 0.3s;
 }
 .items[data-temp="search_on"] {
-    height: 90px;
-    background: var(--color-box);
+    height: 50px;
     border-radius: 12px;
     margin-bottom: 30px;
 }
@@ -1013,45 +1016,45 @@ summary {
     align-items: center;
 }
 .txt_bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: var(--color-box);
+    border-radius: 8px;
     color: #29A3D8;
     font-size: 12px;
     font-weight: 400;
+    transition: .2s;
 }
+.txt_bar:hover { background: #29292b; }
 
 .next {
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 8px 15px;
-    background: #13131480;
+    gap: 10px;
     cursor: pointer;
-    margin-top: 10px;
-    border-radius: 8px;
-    transition: .2s;
+    /* margin-top: 10px; */ 
 }
-.next:hover { background: #2a2a2c80; }
-
-
 
 .ico_next {
     position: relative;
-    height: 1.4em;
-    width: 1.4em;
+    height: 1.6em;
+    width: 1.6em;
     background-image: url(../ico/next.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.4em 1.4em;
+    background-size: 1.6em 1.6em;
     justify-content: flex-start;
     margin-right: 6px;
 }
 .ico_plus {
     position: relative;
-    height: 1.4em;
-    width: 1.4em;
+    height: 1.6em;
+    width: 1.6em;
     background-image: url(../ico/plus.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1.4em 1.4em;
+    background-size: 1.6em 1.6em;
     justify-content: flex-start;
     margin-right: 6px;
 }
@@ -1075,3 +1078,11 @@ summary {
     font-weight: 400;
 }
 
+
+
+@media screen and (min-width: 1100px) {
+    .wrapper {
+        margin-left: 10%;
+        transition: .3s;
+    }
+}
