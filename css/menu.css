@@ -260,6 +260,16 @@ body {
 
 
 /*-------------------ICON-------------------*/
+.ico_logo {
+    height: 2.6em;
+    width: 2.6em;
+    border-radius: 2px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2em 2em;
+    background-image: url(../ico/logo_ico_shad.png);
+}
 
 .icon {
     display: block;
