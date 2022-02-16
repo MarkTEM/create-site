@@ -106,7 +106,7 @@ body {
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     border-radius: 16px;
-    padding: 15px;
+    /* padding: 15px; */
 }
 @media only screen and (max-width: 600px) {
     .box {
