@@ -21,14 +21,14 @@ body {
     align-items: center;
     margin-bottom: 40px;
 }
-.title_page h2{
-    margin-bottom: 10px;
+.title_page h3{
+    margin-bottom: 5px;
     font-weight: 500;
 }
 .prew_muscle {
     display: block;
-    height: 5em;
-    width: 5em;
+    height: 4em;
+    width: 4em;
     border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -37,9 +37,9 @@ body {
     transition: .3s;
 }
 .prew_muscle:hover {
-    height: 8em;
-    width: 8em;
-    margin-right: 40px;
+    height: 6em;
+    width: 6em;
+    margin-right: 20px;
 }
 .mus_5 { background-image: url(../upr/tors_dark.png); }
 
