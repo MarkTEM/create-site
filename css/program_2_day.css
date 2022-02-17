@@ -64,7 +64,7 @@ body {
 @media only screen and (min-width: 600px) {
     .box {
         align-items: start;
-        grid-template-columns: 250px 1fr;
+        grid-template-columns: 1fr 1.5fr;
         /* grid-auto-rows: 1fr; */
         grid-gap: 0px 15px;
     }
@@ -72,14 +72,14 @@ body {
 @media only screen and (min-width: 930px) {
     .box {
         align-items: start;
-        grid-template-columns: 350px 1fr;
+        grid-template-columns: 1fr 1.2fr;
         /* grid-auto-rows: 350px 1fr; */
     }
 }
 @media only screen and (min-width: 1200px) {
     .box {
         /* align-items: center; */
-        grid-template-columns: 350px 1fr;
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
         grid-gap: 0px 15px;
     }
@@ -95,7 +95,7 @@ body {
     background-image: url(../upr/upr1p2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: 102%;
 }
 
 /* -------------2------------------ */
