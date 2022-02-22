@@ -201,10 +201,8 @@ body.dark .hint__text {
 
 @keyframes an3 {
     from {
-        /* opacity: 0; */
         padding-top: 0px;
         font-size: 10px;
-        /* padding-left: 60px; */
     }
     
     to { }
@@ -265,7 +263,6 @@ body.dark .calenrar_txt {
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* margin-bottom: 15px; */
 }
 .item {
     width: 12px;
@@ -281,7 +278,6 @@ body.dark .calenrar_txt {
     margin-top: 8px;
     margin-right: 8px;
     border-radius: 4px;
-    /* background: #02b4eb; */
     background: linear-gradient(135deg, #16967e 0%, #0291ce 100%);
 }
 
@@ -296,10 +292,8 @@ body.dark .calenrar_txt {
 
 @keyframes an3 {
     from {
-        /* opacity: 0; */
         padding-top: 100px;
         font-size: 10px;
-        /* padding-left: 60px; */
     }
     
     to { }
@@ -341,7 +335,6 @@ body.dark #convas2 {
 }
 @media screen and (max-width: 720px) {
     #convas2 {
-        /* padding-top: 20px; */
         border-radius: 15px 15px 0px 0px;
     }
 }
