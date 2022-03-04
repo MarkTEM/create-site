@@ -47,12 +47,12 @@ h1, h2, h3, h4, h5 {
     background-size: 50px 50px;
     
 } */
-@media only screen and (min-width: 720px){
+/* @media only screen and (min-width: 720px){
     body {
         background-image: repeating-linear-gradient(-45deg, rgba(30, 30, 30, 0.25), rgba(30, 30, 30, 0.25) 1px, transparent 1px, transparent 6px);
         background-size: 8px 8px;
     }
-}
+} */
 /*----------------Collors-------------------*/
 :root {
     --primary-color: #EFEFEF;
@@ -96,9 +96,12 @@ h1, h2, h3, h4, h5 {
     --blur: blur(40px);
 
     --ico-back: url(../ico/ico-back-dark.svg);
+    --ico-menu: url(../ico/menu_dark.png);
+    --ico-page: url(../ico/page_dark.png);
     --ico-setting: url(../ico/setting_dark.png);
     --ico-search: url(../ico/search_dark.png);
     --ico-progress: url(../ico/i5_dark.png);
+    
 
     --ico-prog: url(../ico/i1_dark.png);
     --ico-traning: url(../ico/i2_dark.png);
@@ -115,6 +118,8 @@ body.dark {
     --font-wight: 500;
 
     --ico-back: url(../ico/ico_left.png);
+    --ico-menu: url(../ico/menu3.png);
+    --ico-page: url(../ico/page.png);
     --ico-setting: url(../ico/setting.png);
     --ico-search: url(../ico/search.png);
     --ico-progress: url(../ico/i5.png);
@@ -210,8 +215,12 @@ body::-webkit-scrollbar-track-piece { border-radius: 2rem; }
 h1 { font-size: 22px; font-weight: 400;}
 h2 { font-size: 18px; font-weight: 400;}
 h4 { font-size: 15px; font-weight: 400;}
+h5 { font-size: 14px; font-weight: 400;}
 p {
     color: #a1a1a1;
+    font-size: 15px;
+    font-weight: 400;
+    /* line-height: 150%; */
 }
 
 /*-----------------WRAPPER-----------------*/
@@ -355,9 +364,11 @@ p {
     margin-left: 30px;
     margin-right: 30px;
 	transition: 0.3s;
+    
 }
 .header2 {
-	display: flex;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
 	justify-content: space-between;
     flex-wrap: wrap;
@@ -378,6 +389,7 @@ p {
 	margin-left: 30px;
 	margin-right: 30px;
 	transition: 0.3s;
+    
 }
 @media only screen and (max-width: 720px) {
     .header{
@@ -415,10 +427,13 @@ p {
 	}
 }
 
+
+
+
 .icon__menu {
     display: block;
     /* position: relative; */
-    background-image: url(../ico/menu3.png);
+    background-image: var(--ico-menu);
     height: 2.5em;
     width: 2.5em;
     border-radius: 8px;
@@ -581,9 +596,14 @@ footer {
     text-decoration: none;
     /* background: linear-gradient(120deg, #31be9d 30%, #0d9da7 90%); */
     background: #2c86d3;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+    /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20); */
     font-weight: 400;
 }
+.btn__start:hover {
+    background: linear-gradient(130deg, #008cff 15%, #4f11fc 220%); 
+}
+
+
 .btn__lock {
     text-decoration: none;
     /* background: linear-gradient(120deg, #31be9d 30%, #0d9da7 90%); */
@@ -594,9 +614,6 @@ footer {
     padding: 0.7em 1.5em;
 }
 
-.btn__start:hover {
-    background: linear-gradient(136.2deg, #00D1FF 16.28%, #FA00FF 224.54%);
-}
 /*------------------------------------------*/
 
 
@@ -773,3 +790,61 @@ ul.breadcrumb {
   }
 /* Хлебные крошки */
 /*-------------------------------------------*/
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 720px) {
+    .opennav {
+        display: block;
+        background-image: url(../ico/menu3.png);
+        height: 2em;
+        width: 2em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 1.4em 1.4em;
+        border-radius: var(--radius);
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 0px;
+        transition: 0.3s; 
+    }
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /* padding-top: 30px; */
+    transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* .sidenav:hover {
+    width: 300px;
+    transition: 0.3s;
+} */
+  
+  
+
+  
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 25px; */
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main, #convas {
+    transition: margin-left .4s;
+}
